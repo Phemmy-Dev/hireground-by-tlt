@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Home",
+        "path": "/",
+        "cName": "nav-links"
+    },
+    {
+        "title": "About",
+        "path": "/about",
+        "cName": "nav-links"
+    }, 
+    {
+        "title": "Speakers",
+        "path": "/speakers",
+        "cName": "nav-links"
+    },
+    {
+        "title": "Sponsors",
+        "path": "/sponsors",
+        "cName": "nav-links"
+    },
+    {
+        "title": "Contact",
+        "path": "/contact",
+        "cName": "nav-links"
+    }
+    ]
