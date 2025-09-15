@@ -117,34 +117,42 @@ const BackStory = () => {
               <div className="space-y-8">
                 {/* Opening Quote */}
                 <div className="border-l-4 border-orange-500 pl-6">
-                  <p className="text-2xl sm:text-3xl lg:text-4xl text-gray-800 leading-relaxed font-bold italic">
+                  <p className="text-2xl sm:text-3xl lg:text-3xl text-gray-800 leading-relaxed font-bold italic">
                     "It started as a conversation between two visionaries. How do we 
-                    reinvent the status quo and create a space where ideas break 
-                    boundaries? And if you were in the room last year, you felt it."
+                    empower the next generation of professionals and create a space where careers 
+                    are transformed?
                   </p>
                 </div>
                 
                 {/* Extended Story Content */}
                 <div className="space-y-6">
                   <p className="text-lg sm:text-md text-gray-700 leading-relaxed">
-                    The energy was electric. Minds collided, barriers crumbled, and something 
-                    extraordinary emerged from the chaos of innovation. We didn't just host 
-                    an event—we ignited a movement that continues to ripple through industries, 
-                    transforming the way we think, work, and dream.
-                  </p>
-                  
-                  <p className="text- sm:text-md text-gray-700 leading-relaxed">
-                    Every conversation sparked new possibilities. Every connection opened doors 
-                    to uncharted territories. Every moment was a testament to the power of 
-                    bringing visionaries together in one space, with one purpose: to push 
-                    beyond what's possible and redefine the boundaries of innovation.
+                    The energy was transformative. Young graduates found clarity, career changers 
+                    discovered new paths, and job seekers gained the confidence they needed. We didn't 
+                    just host a career fair—we ignited a movement that continues to shape professional 
+                    journeys across industries, empowering individuals to unlock their true potential.
                   </p>
                   
                   <p className="text-lg sm:text-md text-gray-700 leading-relaxed">
-                    The ripple effects continue today. Partnerships were forged, startups were born, 
-                    careers were transformed, and entire industries were disrupted—all because we 
-                    dared to create a space where the impossible becomes inevitable and where 
-                    breakthrough ideas find their voice.
+                    Every workshop sparked new insights. Every networking session opened doors 
+                    to opportunities. Every CV review session was a step closer to landing that 
+                    dream job. This was the power of bringing career experts, industry leaders, 
+                    and ambitious professionals together with one purpose: to transform careers 
+                    and break through employment barriers.
+                  </p>
+                  
+                  <p className="text-lg sm:text-md text-gray-700 leading-relaxed">
+                    The success stories continue today. Fresh graduates landed their first jobs, 
+                    career changers successfully pivoted industries, professionals mastered interview 
+                    skills, and countless individuals built the confidence to pursue their dream roles—all 
+                    because HireGround provided the knowledge, network, and support they needed.
+                  </p>
+
+                  <p className="text-lg sm:text-md text-gray-700 leading-relaxed">
+                    From corps members who discovered their career paths, to experienced professionals 
+                    who learned new networking strategies, to job seekers who finally cracked the 
+                    interview code—HireGround became the catalyst that transformed careers and 
+                    launched thousands of success stories into the professional world.
                   </p>
                 </div>
               </div>
@@ -241,9 +249,9 @@ const BackStory = () => {
                   {/* Features */}
                   <div className="space-y-4">
                     {[
-                      { icon: HiUsers, text: "Connect with Visionaries" },
-                      { icon: HiLightBulb, text: "Breakthrough Ideas" },
-                      { icon: HiTrendingUp, text: "Exponential Growth" }
+                      { icon: HiUsers, text: "Connect with Industry Leaders" },
+                      { icon: HiLightBulb, text: "Master Career Skills" },
+                      { icon: HiTrendingUp, text: "Accelerate Your Growth" }
                     ].map((feature, index) => (
                       <motion.div
                         key={index}
@@ -287,18 +295,18 @@ const BackStory = () => {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8">
             <div className="text-center p-6 lg:p-8 bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl border border-orange-100 hover:shadow-2xl hover:scale-105 transition-all duration-300">
               <div className="text-4xl lg:text-5xl font-bold text-orange-600 mb-3">500+</div>
-              <div className="text-lg text-gray-700 font-semibold">Attendees</div>
-              <div className="text-sm text-gray-500 mt-1">Industry Leaders</div>
+              <div className="text-lg text-gray-700 font-semibold">Job Seekers</div>
+              <div className="text-sm text-gray-500 mt-1">Career Transformations</div>
             </div>
             <div className="text-center p-6 lg:p-8 bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl border border-orange-100 hover:shadow-2xl hover:scale-105 transition-all duration-300">
               <div className="text-4xl lg:text-5xl font-bold text-orange-600 mb-3">50+</div>
-              <div className="text-lg text-gray-700 font-semibold">Expert Speakers</div>
-              <div className="text-sm text-gray-500 mt-1">World-Class Minds</div>
+              <div className="text-lg text-gray-700 font-semibold">Career Coaches</div>
+              <div className="text-sm text-gray-500 mt-1">Industry Experts</div>
             </div>
             <div className="text-center p-6 lg:p-8 bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl border border-orange-100 hover:shadow-2xl hover:scale-105 transition-all duration-300">
-              <div className="text-4xl lg:text-5xl font-bold text-orange-600 mb-3">24h</div>
-              <div className="text-lg text-gray-700 font-semibold">Experience</div>
-              <div className="text-sm text-gray-500 mt-1">Non-Stop Innovation</div>
+              <div className="text-4xl lg:text-5xl font-bold text-orange-600 mb-3">8h</div>
+              <div className="text-lg text-gray-700 font-semibold">Intensive Training</div>
+              <div className="text-sm text-gray-500 mt-1">Skills & Networking</div>
             </div>
           </div>
         </motion.div>
@@ -313,12 +321,12 @@ const BackStory = () => {
         >
           <div className="max-w-5xl mx-auto bg-white/90 backdrop-blur-lg rounded-3xl p-8 lg:p-12 shadow-2xl border border-orange-100">
             <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Where Ideas Break Boundaries
+              Where Careers Break Barriers
             </h3>
             <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 leading-relaxed mb-8">
-              Join us for an experience that transcends traditional networking. 
-              This isn't just an event—it's a catalyst for transformation, innovation, 
-              and the birth of revolutionary ideas that will shape the future.
+              Join us for an experience that transcends traditional job hunting. 
+              This isn't just a career fair—it's a catalyst for professional transformation, 
+              skill mastery, and the launch of extraordinary career journeys that will shape your future.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <span className="text-orange-600 font-semibold text-lg">Ready to transform your career?</span>

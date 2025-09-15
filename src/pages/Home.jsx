@@ -3,6 +3,10 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import BackStory from '../components/sections/BackStory'
 import SpeakersSection from '../components/sections/SpeakersSection'
+import FaqSection from '../components/sections/FaqSection'
+import Sponsors from '../components/sections/Sponsors'
+import Cta from '../components/sections/Cta'
+import Footer from '../components/Footer'
 import herobg from '../assets/images/herobg.jpg'
 
 const Home = () => {
@@ -12,6 +16,10 @@ const Home = () => {
         <Hero title='HireGround' text='Ready, Set, Your Career starts here' herobtn='Get Your Tickets' contCname='hero_cont' sectionCname='hero_text' heroImg={herobg} />
         <BackStory />
         <SpeakersSection />
+        <FaqSection />
+        <Sponsors />
+        <Cta />
+        <Footer />
     </div>
   )
 }
