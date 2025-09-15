@@ -53,7 +53,7 @@ const Navbar = () => {
                             <img 
                                 src={Logo} 
                                 alt="HireGround Logo" 
-                                className="h-14 sm:h-14 w-auto object-contain transition-all duration-300 hover:brightness-110 drop-shadow-lg"
+                                className="h-8 sm:h-14 w-auto object-contain transition-all duration-300 hover:brightness-110 drop-shadow-lg"
                             />
                         </Link>
                     </motion.div>
@@ -71,15 +71,15 @@ const Navbar = () => {
                                     to={item.path} 
                                     className={`relative px-4 py-2 text-base font-medium transition-all duration-300 group ${
                                         location.pathname === item.path
-                                            ? 'text-blue-600' 
-                                            : 'text-gray-700 hover:text-blue-600'
+                                            ? 'text-orange-600' 
+                                            : 'text-gray-700 hover:text-orange-600'
                                     }`}
                                 >
                                     {item.title}
                                     <span className={`absolute bottom-0 left-0 w-full h-0.5 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 ${
                                         location.pathname === item.path 
-                                            ? 'scale-x-100 bg-gradient-to-r from-blue-500 to-purple-500' 
-                                            : 'bg-gradient-to-r from-blue-500 to-purple-500'
+                                            ? 'scale-x-100 bg-gradient-to-r from-orange-500 to-red-500' 
+                                            : 'bg-gradient-to-r from-orange-500 to-red-500'
                                     }`}></span>
                                 </Link>
                             </motion.div>
@@ -92,10 +92,10 @@ const Navbar = () => {
                             transition={{ duration: 0.5, delay: 0.4 }}
                         >
                             <a 
-                                href="https://wa.link/7hogep" 
+                                href="" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
-                                className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-blue-700 hover:to-purple-700 transform hover:-translate-y-1 transition-all duration-300"
+                                className="px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-orange-700 hover:to-red-700 transform hover:-translate-y-1 transition-all duration-300"
                             >
                                 Get a Ticket
                             </a>
@@ -141,8 +141,8 @@ const Navbar = () => {
                                             to={item.path} 
                                             className={`block px-4 py-3 text-lg font-medium rounded-xl transition-all duration-300 ${
                                                 location.pathname === item.path
-                                                    ? 'bg-gradient-to-r from-blue-50 to-purple-50 text-blue-600 border-l-4 border-blue-500'
-                                                    : 'text-gray-700 hover:bg-gray-50 hover:text-blue-600'
+                                                    ? 'bg-gradient-to-r from-orange-50 to-red-50 text-orange-600 border-l-4 border-orange-500'
+                                                    : 'text-gray-700 hover:bg-gray-50 hover:text-orange-600'
                                             }`}
                                             onClick={() => setIsOpen(false)}
                                         >
@@ -159,12 +159,12 @@ const Navbar = () => {
                                     className="pt-4 border-t border-gray-200/50"
                                 >
                                     <a 
-                                        href="wa.link/7hogep" 
+                                        href="" 
                                         target="_blank" 
                                         rel="noopener noreferrer"
-                                        className="block w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold text-center rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                                        className="block w-full px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold text-center rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                                     >
-                                        Join Our Community
+                                        Get a Ticket
                                     </a>
                                 </motion.div>
                             </div>
