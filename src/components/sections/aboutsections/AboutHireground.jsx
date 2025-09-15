@@ -198,7 +198,7 @@ const AboutHireground = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
               {stats.map((stat, index) => (
                 <motion.div
                   key={index}
@@ -206,12 +206,12 @@ const AboutHireground = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="text-center bg-white rounded-xl p-6 shadow-sm"
+                  className="text-center bg-white rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105"
                 >
-                  <div className="text-3xl md:text-4xl font-bold text-orange-600 mb-2">
+                  <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-orange-600 mb-1 sm:mb-2">
                     {stat.number}
                   </div>
-                  <div className="text-gray-600 font-medium text-sm">
+                  <div className="text-gray-600 font-medium text-xs sm:text-sm lg:text-base leading-tight px-1">
                     {stat.label}
                   </div>
                 </motion.div>

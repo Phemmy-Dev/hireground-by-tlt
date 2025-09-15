@@ -10,7 +10,7 @@ const OrganizingTeam = () => {
     {
       id: 1,
       name: "Joshua Oroge ",
-      role: "HireGround Event Director",
+      role: "HireGround Project Lead",
       image: JoshuaImage,
       linkedin: "#",
       twitter: "#",
@@ -19,7 +19,7 @@ const OrganizingTeam = () => {
     {
       id: 2,
       name: "Oluwabukunmi Olaopa",
-      role: "HireGround Co-organizer",
+      role: "HireGround Programme Coordinator",
       image: BukunmiImage,
       linkedin: "#",
       twitter: "#",

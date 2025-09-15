@@ -98,15 +98,12 @@ const Cta = () => {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
-                  className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-orange-600 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden min-w-[200px]"
+                  className="group inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-orange-600 hover:bg-orange-700 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 min-w-[200px]"
                 >
-                  <span className="relative flex items-center gap-3">
+                  <span className="flex items-center gap-3">
                     Get Your Ticket
                     <FiArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                   </span>
-                  
-                  {/* Subtle hover effect */}
-                  <div className="absolute inset-0 bg-orange-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </motion.a>
 
                 {/* Secondary CTA */}
