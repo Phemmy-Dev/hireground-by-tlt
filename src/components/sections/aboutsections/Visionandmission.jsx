@@ -45,7 +45,7 @@ const VisionAndMission = () => {
                 <h3 className="text-2xl font-bold text-gray-900">Our Vision</h3>
               </div>
               <p className="text-gray-700 leading-relaxed text-lg mb-4">
-                To become Africa's premier platform for career transformation, where talent meets opportunity and dreams become reality.
+                To see a generation of young Nigerians graduates, undergraduates, and corps members, empowered with the confidence, competence, and character to excel in interviews, secure opportunities, and contribute meaningfully to society.
               </p>
               <div className="bg-white/60 rounded-lg p-4 border border-blue-200">
                 <p className="text-blue-800 font-medium text-sm italic">
@@ -69,7 +69,7 @@ const VisionAndMission = () => {
                 <h3 className="text-2xl font-bold text-gray-900">Our Mission</h3>
               </div>
               <p className="text-gray-700 leading-relaxed text-lg mb-4">
-                To empower individuals with the knowledge, skills, and connections needed to excel in their chosen careers while fostering a community of growth and opportunity.
+                To equip 1,000 young pe ople with practical interview readiness and employability skills through targeted training, mentorship, and community support, thereby bridging the gap between education and workplace success.
               </p>
               <div className="bg-white/60 rounded-lg p-4 border border-orange-200">
                 <p className="text-orange-800 font-medium text-sm italic">
