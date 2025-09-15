@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { FiLinkedin, FiTwitter, FiMail, FiPhone } from 'react-icons/fi'
-import JoshuaImage from '../assets/images/organisingteam/joshua.jpg'
+import JoshuaImage from '../assets/images/organisingteam/Joshua.jpg'
 import BukunmiImage from '../assets/images/organisingteam/Oluwabukunmi.jpg'
 
 const OrganizingTeam = () => {
@@ -153,64 +153,63 @@ const OrganizingTeam = () => {
                 viewport={{ once: true }}
                 className="group"
               >
-                <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:-translate-y-2">
+                <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-orange-200 hover:-translate-y-1">
                   
                   {/* Smart Image Container */}
-                  <div className="relative h-80 overflow-hidden bg-gray-100 rounded-t-2xl">
+                  <div className="relative h-72 overflow-hidden bg-gray-50">
                     <TeamMemberImage 
                       src={member.image}
                       alt={member.name}
                       name={member.name}
                     />
                     
-                    {/* Social Overlay */}
-                    <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
-                      <div className="flex gap-4">
+                    {/* Professional Social Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                      <div className="absolute bottom-4 left-4 right-4 flex justify-center gap-3">
                         <motion.a
                           href={member.linkedin}
                           target="_blank"
                           rel="noopener noreferrer"
-                          whileHover={{ scale: 1.2 }}
+                          whileHover={{ scale: 1.1, y: -2 }}
                           whileTap={{ scale: 0.9 }}
-                          className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-blue-600 transition-all duration-300"
+                          className="w-9 h-9 bg-white/90 backdrop-blur-sm rounded-lg flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-lg"
                         >
-                          <FiLinkedin className="w-5 h-5" />
+                          <FiLinkedin className="w-4 h-4" />
                         </motion.a>
                         <motion.a
                           href={member.twitter}
                           target="_blank"
                           rel="noopener noreferrer"
-                          whileHover={{ scale: 1.2 }}
+                          whileHover={{ scale: 1.1, y: -2 }}
                           whileTap={{ scale: 0.9 }}
-                          className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-blue-400 transition-all duration-300"
+                          className="w-9 h-9 bg-white/90 backdrop-blur-sm rounded-lg flex items-center justify-center text-blue-400 hover:bg-blue-400 hover:text-white transition-all duration-300 shadow-lg"
                         >
-                          <FiTwitter className="w-5 h-5" />
+                          <FiTwitter className="w-4 h-4" />
                         </motion.a>
                         <motion.a
                           href={`mailto:${member.email}`}
-                          whileHover={{ scale: 1.2 }}
+                          whileHover={{ scale: 1.1, y: -2 }}
                           whileTap={{ scale: 0.9 }}
-                          className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-orange-600 transition-all duration-300"
+                          className="w-9 h-9 bg-white/90 backdrop-blur-sm rounded-lg flex items-center justify-center text-orange-600 hover:bg-orange-600 hover:text-white transition-all duration-300 shadow-lg"
                         >
-                          <FiMail className="w-5 h-5" />
+                          <FiMail className="w-4 h-4" />
                         </motion.a>
                       </div>
                     </div>
                   </div>
 
-                  {/* Content */}
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  {/* Enhanced Content */}
+                  <div className="p-6 text-center">
+                    <h3 className="text-lg font-bold text-gray-900 mb-2 leading-tight">
                       {member.name}
                     </h3>
                     
-                    <div className="text-orange-600 font-semibold text-sm mb-4 uppercase tracking-wide">
+                    <div className="text-orange-600 font-medium text-sm leading-relaxed">
                       {member.role}
                     </div>
                     
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      {member.bio}
-                    </p>
+                    {/* Professional Divider */}
+                    <div className="w-12 h-0.5 bg-orange-200 mx-auto mt-4"></div>
                   </div>
                 </div>
               </motion.div>
