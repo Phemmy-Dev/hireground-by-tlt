@@ -14,7 +14,7 @@ const Sponsors = () => {
         <SponsorsSectionHero />
         <IntroToSponsors />
         <WhySponsor />
-        <SponsorBenefits />
+        {/* <SponsorBenefits /> */}
         <SponsorCta />
         <FaqSection />
         <Footer />
