@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { FiArrowRight, FiCalendar, FiUsers, FiStar } from 'react-icons/fi'
 
 const Cta = () => {
@@ -93,7 +94,7 @@ const Cta = () => {
               >
                 {/* Primary CTA */}
                 <motion.a
-                  href="https://wa.link/7hogep"
+                  href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.02, y: -2 }}
@@ -107,16 +108,18 @@ const Cta = () => {
                 </motion.a>
 
                 {/* Secondary CTA */}
-                <motion.button
-                  whileHover={{ scale: 1.02, y: -2 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="group inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-gray-700 bg-white border-2 border-gray-300 rounded-xl hover:border-orange-300 hover:text-orange-600 transition-all duration-300 min-w-[200px]"
-                >
-                  <span className="flex items-center gap-3">
-                    Learn More
-                    <FiArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-                  </span>
-                </motion.button>
+                <Link to="/about">
+                  <motion.button
+                    whileHover={{ scale: 1.02, y: -2 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="group inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-gray-700 bg-white border-2 border-gray-300 rounded-xl hover:border-orange-300 hover:text-orange-600 transition-all duration-300 min-w-[200px]"
+                  >
+                    <span className="flex items-center gap-3">
+                      Learn More
+                      <FiArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                    </span>
+                  </motion.button>
+                </Link>
               </motion.div>
 
               {/* Trust Indicators */}

@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { HiChevronLeft, HiChevronRight, HiSparkles, HiEye, HiArrowRight } from 'react-icons/hi';
 
 const SpeakersSection = () => {
@@ -277,15 +278,17 @@ const SpeakersSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center mt-12 lg:mt-16"
         >
-          <motion.button
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.95 }}
-            className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300"
-            style={{ backgroundColor: '#ff7300' }}
-          >
-            <span className="mr-3">SEE ALL SPEAKERS</span>
-            <HiArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" />
-          </motion.button>
+          <Link to="/speakers">
+            <motion.button
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300"
+              style={{ backgroundColor: '#ff7300' }}
+            >
+              <span className="mr-3">SEE ALL SPEAKERS</span>
+              <HiArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" />
+            </motion.button>
+          </Link>
         </motion.div>
 
         {/* Scroll Indicators - Mobile */}

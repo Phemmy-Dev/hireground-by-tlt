@@ -21,26 +21,14 @@ const Footer = () => {
     event: [
       { name: 'About HireGround', path: '/about' },
       { name: 'Speakers', path: '/speakers' },
-      { name: 'Schedule', path: '/schedule' },
-      { name: 'Sponsors', path: '/sponsors' }
+      { name: 'Sponsors', path: '/sponsors' },
+      { name: 'Contact Us', path: '/contact' }
     ],
-    attendees: [
-      { name: 'Register Now', path: '/register' },
-      { name: 'Ticket Pricing', path: '/pricing' },
-      { name: 'Venue Info', path: '/venue' },
-      { name: 'FAQ', path: '/faq' }
-    ],
-    resources: [
-      { name: 'Career Resources', path: '/resources' },
-      { name: 'Job Board', path: '/jobs' },
-      { name: 'Blog', path: '/blog' },
-      { name: 'Past Events', path: '/archive' }
-    ],
-    support: [
-      { name: 'Contact Us', path: '/contact' },
-      { name: 'Help Center', path: '/help' },
-      { name: 'Privacy Policy', path: '/privacy' },
-      { name: 'Terms of Service', path: '/terms' }
+    quickLinks: [
+      { name: 'Home', path: '/' },
+      { name: 'Get Tickets', href: 'https://wa.link/7hogep', external: true },
+      { name: 'Become a Sponsor', href: 'mailto:partnerships@hireground.com', external: true },
+      { name: 'Partnership Inquiry', href: 'mailto:partnerships@hireground.com', external: true }
     ]
   }
 
@@ -84,7 +72,7 @@ const Footer = () => {
                   className="h-12 w-auto mb-4"
                 />
                 <p className="text-gray-400 leading-relaxed mb-6 max-w-sm">
-                  Empowering careers, connecting talent, and building the future of work. Join the movement that's transforming how we think about career growth.
+                  Africa's premier career transformation event. Connecting talent, empowering professionals, and shaping the future of work across the continent.
                 </p>
               </div>
 
@@ -92,11 +80,15 @@ const Footer = () => {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center gap-3 text-gray-400">
                   <FiMail className="w-4 h-4 text-orange-500" />
-                  <span className="text-sm">hello@hireground.com</span>
+                  <a href="mailto:hello@hireground.com" className="text-sm hover:text-orange-500 transition-colors duration-300">
+                    hello@hireground.com
+                  </a>
                 </div>
                 <div className="flex items-center gap-3 text-gray-400">
-                  <FiPhone className="w-4 h-4 text-orange-500" />
-                  <span className="text-sm">+234 (0) 123 456 7890</span>
+                  <FiMail className="w-4 h-4 text-orange-500" />
+                  <a href="mailto:partnerships@hireground.com" className="text-sm hover:text-orange-500 transition-colors duration-300">
+                    partnerships@hireground.com
+                  </a>
                 </div>
                 <div className="flex items-center gap-3 text-gray-400">
                   <FiMapPin className="w-4 h-4 text-orange-500" />
@@ -124,7 +116,7 @@ const Footer = () => {
             </motion.div>
 
             {/* Links Sections */}
-            <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
               
               {/* Event Links */}
               <motion.div
@@ -133,7 +125,7 @@ const Footer = () => {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
               >
-                <h4 className="font-semibold text-white mb-4">Event</h4>
+                <h4 className="font-semibold text-white mb-4">Explore</h4>
                 <ul className="space-y-3">
                   {footerLinks.event.map((link, index) => (
                     <li key={index}>
@@ -148,67 +140,34 @@ const Footer = () => {
                 </ul>
               </motion.div>
 
-              {/* Attendees Links */}
+              {/* Quick Action Links */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                <h4 className="font-semibold text-white mb-4">Attendees</h4>
+                <h4 className="font-semibold text-white mb-4">Take Action</h4>
                 <ul className="space-y-3">
-                  {footerLinks.attendees.map((link, index) => (
+                  {footerLinks.quickLinks.map((link, index) => (
                     <li key={index}>
-                      <Link 
-                        to={link.path}
-                        className="text-gray-400 hover:text-orange-500 transition-colors duration-300 text-sm"
-                      >
-                        {link.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-
-              {/* Resources Links */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                viewport={{ once: true }}
-              >
-                <h4 className="font-semibold text-white mb-4">Resources</h4>
-                <ul className="space-y-3">
-                  {footerLinks.resources.map((link, index) => (
-                    <li key={index}>
-                      <Link 
-                        to={link.path}
-                        className="text-gray-400 hover:text-orange-500 transition-colors duration-300 text-sm"
-                      >
-                        {link.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-
-              {/* Support Links */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                viewport={{ once: true }}
-              >
-                <h4 className="font-semibold text-white mb-4">Support</h4>
-                <ul className="space-y-3">
-                  {footerLinks.support.map((link, index) => (
-                    <li key={index}>
-                      <Link 
-                        to={link.path}
-                        className="text-gray-400 hover:text-orange-500 transition-colors duration-300 text-sm"
-                      >
-                        {link.name}
-                      </Link>
+                      {link.external ? (
+                        <a 
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-gray-400 hover:text-orange-500 transition-colors duration-300 text-sm"
+                        >
+                          {link.name}
+                        </a>
+                      ) : (
+                        <Link 
+                          to={link.path}
+                          className="text-gray-400 hover:text-orange-500 transition-colors duration-300 text-sm"
+                        >
+                          {link.name}
+                        </Link>
+                      )}
                     </li>
                   ))}
                 </ul>

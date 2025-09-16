@@ -294,12 +294,12 @@ const BackStory = () => {
         >
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8">
             <div className="text-center p-6 lg:p-8 bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl border border-orange-100 hover:shadow-2xl hover:scale-105 transition-all duration-300">
-              <div className="text-4xl lg:text-5xl font-bold text-orange-600 mb-3">500+</div>
+              <div className="text-4xl lg:text-5xl font-bold text-orange-600 mb-3">1000+</div>
               <div className="text-lg text-gray-700 font-semibold">Job Seekers</div>
               <div className="text-sm text-gray-500 mt-1">Career Transformations</div>
             </div>
             <div className="text-center p-6 lg:p-8 bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl border border-orange-100 hover:shadow-2xl hover:scale-105 transition-all duration-300">
-              <div className="text-4xl lg:text-5xl font-bold text-orange-600 mb-3">50+</div>
+              <div className="text-4xl lg:text-5xl font-bold text-orange-600 mb-3">20+</div>
               <div className="text-lg text-gray-700 font-semibold">Career Coaches</div>
               <div className="text-sm text-gray-500 mt-1">Industry Experts</div>
             </div>

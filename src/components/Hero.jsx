@@ -76,7 +76,7 @@ const Hero = ({ title, text, heroImg, herobtn }) => {
             className="mb-12 sm:mb-16"
           >
             <Link 
-              to="/who-we-are"
+              to="/"
               className="group relative inline-flex items-center px-8 sm:px-10 py-4 sm:py-5 text-lg sm:text-xl font-semibold text-white overflow-hidden rounded-full shadow-2xl transform transition-all duration-300 hover:-translate-y-2 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-orange-500/50"
               style={{ backgroundColor: '#ff7300' }}
             >

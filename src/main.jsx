@@ -8,7 +8,7 @@ import About from './pages/About.jsx'
 import Sponsors from './pages/Sponsors.jsx'
 import Speakers from './pages/Speakers.jsx'
 import Contact from './pages/Contact.jsx'
-// import PageNotFound from './pages/PageNotFound'
+import NotFound from './pages/NotFound.jsx'
 
 
 
@@ -33,10 +33,10 @@ const router = createBrowserRouter([
     path: '/contact',
     element: <Contact />,
   },
-  // {
-  //   path: '*',
-  //   element: <PageNotFound />,
-  // },
+  {
+    path: '*',
+    element: <NotFound />,
+  },
 ])
 
 createRoot(document.getElementById('root')).render(
