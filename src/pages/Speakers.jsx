@@ -4,7 +4,7 @@ import { FiX, FiCalendar, FiMapPin, FiUsers } from 'react-icons/fi'
 import Navbar from '../components/Navbar'
 import Cta from '../components/sections/Cta'
 import Footer from '../components/Footer'
-import JoshuaImage from '../assets/images/speakers/joshua.jpg'
+import JoshuaImage from '../assets/images/speakers/Joshua.jpg'
 import GovernerImage from '../assets/images/speakers/govAbdulraham.webp'
 
 const Speakers = () => {
