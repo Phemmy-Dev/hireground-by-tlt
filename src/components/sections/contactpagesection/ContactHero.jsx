@@ -70,8 +70,8 @@ const ContactHero = () => {
                   </div>
                   <div className="min-w-0 flex-1">
                     <p className="text-xs sm:text-sm text-gray-500 font-medium">Email us at</p>
-                    <a href="mailto:hello@hireground.com" className="text-sm sm:text-base text-gray-900 font-semibold hover:text-orange-600 transition-colors duration-300 truncate block">
-                      hello@hireground.com
+                    <a href="mailto:bukunmi@thelightutors.com" className="text-sm sm:text-base text-gray-900 font-semibold hover:text-orange-600 transition-colors duration-300 truncate block">
+                      bukunmi@thelightutors.com
                     </a>
                   </div>
                 </motion.div>
@@ -144,7 +144,7 @@ const ContactHero = () => {
                       </div>
                       <div className="min-w-0 flex-1">
                         <p className="text-xs sm:text-sm text-gray-500 font-medium">General Inquiries</p>
-                        <p className="text-sm sm:text-base text-gray-900 font-semibold truncate">hello@hireground.com</p>
+                        <p className="text-sm sm:text-base text-gray-900 font-semibold truncate">bukunmi@thelightutors.com</p>
                       </div>
                     </motion.div>
 
@@ -157,7 +157,7 @@ const ContactHero = () => {
                       </div>
                       <div className="min-w-0 flex-1">
                         <p className="text-xs sm:text-sm text-gray-500 font-medium">Partnerships</p>
-                        <p className="text-sm sm:text-base text-gray-900 font-semibold truncate">partnerships@hireground.com</p>
+                        <p className="text-sm sm:text-base text-gray-900 font-semibold truncate">joshua@thelightutors.com</p>
                       </div>
                     </motion.div>
 
@@ -170,7 +170,7 @@ const ContactHero = () => {
                       </div>
                       <div className="min-w-0 flex-1">
                         <p className="text-xs sm:text-sm text-gray-500 font-medium">Event Location</p>
-                        <p className="text-sm sm:text-base text-gray-900 font-semibold">Lagos, Nigeria</p>
+                        <p className="text-sm sm:text-base text-gray-900 font-semibold">Kwara, Nigeria</p>
                       </div>
                     </motion.div>
                   </div>

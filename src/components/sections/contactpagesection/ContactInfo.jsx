@@ -7,27 +7,26 @@ const ContactInfo = () => {
     {
       icon: <FiMail className="w-6 h-6" />,
       title: "Email Us",
-      primary: "hello@hireground.com",
-      secondary: "partnerships@hireground.com",
+      primary: "bukunmi@thelightutors.com",
       description: "For general inquiries and partnerships",
-      action: "mailto:hello@hireground.com",
+      action: "mailto:bukunmi@thelightutors.com",
       color: "bg-blue-100 text-blue-600"
     },
     {
       icon: <FiPhone className="w-6 h-6" />,
       title: "Call Us",
-      primary: "+234 (0) 123 456 7890",
+      primary: "+234 (0) 913 268 1049",
       secondary: "Available during business hours",
       description: "Speak directly with our team",
-      action: "tel:+2341234567890",
+      action: "tel:+2349132681049",
       color: "bg-green-100 text-green-600"
     },
     {
       icon: <FiMapPin className="w-6 h-6" />,
       title: "Visit Us",
-      primary: "Lagos, Nigeria",
-      secondary: "Event Location: TBD",
-      description: "Main office and event venue",
+      primary: "Kwara State, Nigeria",
+      secondary: "Banquet Hall, Ilorin",
+      description: "Event venue",
       action: "#",
       color: "bg-purple-100 text-purple-600"
     },
@@ -97,7 +96,7 @@ const ContactInfo = () => {
                 {method.title}
               </h3>
               
-              <p className="text-lg font-semibold text-gray-800 mb-1">
+              <p className="text-base sm:text-lg font-semibold text-gray-800 mb-1 break-words overflow-wrap-anywhere leading-tight">
                 {method.primary}
               </p>
               
