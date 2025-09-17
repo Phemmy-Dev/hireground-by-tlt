@@ -27,8 +27,8 @@ const Footer = () => {
     quickLinks: [
       { name: 'Home', path: '/' },
       { name: 'Get Tickets', href: 'https://wa.link/7hogep', external: true },
-      { name: 'Become a Sponsor', href: 'mailto:partnerships@hireground.com', external: true },
-      { name: 'Partnership Inquiry', href: 'mailto:partnerships@hireground.com', external: true }
+      { name: 'Become a Sponsor', href: 'mailto:bukunmi@thelightutors.com', external: true },
+      { name: 'Partnership Inquiry', href: 'mailto:bukunmi@thelightutors.com', external: true }
     ]
   }
 
@@ -80,19 +80,13 @@ const Footer = () => {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center gap-3 text-gray-400">
                   <FiMail className="w-4 h-4 text-orange-500" />
-                  <a href="mailto:hello@hireground.com" className="text-sm hover:text-orange-500 transition-colors duration-300">
-                    hello@hireground.com
-                  </a>
-                </div>
-                <div className="flex items-center gap-3 text-gray-400">
-                  <FiMail className="w-4 h-4 text-orange-500" />
-                  <a href="mailto:partnerships@hireground.com" className="text-sm hover:text-orange-500 transition-colors duration-300">
-                    partnerships@hireground.com
+                  <a href="mailto:bukunmi@thelightutors.com" className="text-sm hover:text-orange-500 transition-colors duration-300">
+                    bukunmi@thelightutors.com
                   </a>
                 </div>
                 <div className="flex items-center gap-3 text-gray-400">
                   <FiMapPin className="w-4 h-4 text-orange-500" />
-                  <span className="text-sm">Lagos, Nigeria</span>
+                  <span className="text-sm">Kwara, Nigeria</span>
                 </div>
               </div>
 

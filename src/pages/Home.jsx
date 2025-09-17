@@ -16,8 +16,8 @@ const Home = () => {
         <Hero title='HireGround' text='Ready, Set, Your Career starts here' herobtn='Get Your Tickets' contCname='hero_cont' sectionCname='hero_text' heroImg={herobg} />
         <BackStory />
         <SpeakersSection />
-        <FaqSection />
         <Sponsors />
+        <FaqSection />
         <Cta />
         <Footer />
     </div>

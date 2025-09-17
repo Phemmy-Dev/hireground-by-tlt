@@ -133,37 +133,14 @@ const Cta = () => {
                 <div className="flex items-center justify-center gap-8 text-sm text-gray-500">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span>500+ Attendees Expected</span>
+                    <span>1000+ Attendees Expected</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                    <span>50+ Industry Speakers</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                    <span>2-Day Event</span>
+                    <span>20+ Industry Speakers</span>
                   </div>
                 </div>
               </motion.div>
-            </div>
-          </motion.div>
-
-          {/* Urgency Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
-            viewport={{ once: true }}
-            className="mt-8 text-center"
-          >
-            <div className="bg-orange-50 border border-orange-200 rounded-2xl p-6 max-w-md mx-auto">
-              <div className="flex items-center justify-center gap-2 mb-2">
-                <div className="w-3 h-3 bg-orange-500 rounded-full animate-pulse"></div>
-                <span className="text-orange-800 font-semibold text-sm">Early Bird Ends Soon</span>
-              </div>
-              <p className="text-orange-700 text-sm">
-                Save 30% on ticket prices. Only available for the first 100 registrations.
-              </p>
             </div>
           </motion.div>
         </div>

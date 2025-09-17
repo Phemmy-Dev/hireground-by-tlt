@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import kwgovtlogo from '../../assets/images/sponsors/kwgovlogo.webp'
 import tltsponsorlogo from '../../assets/images/sponsors/tltsponsor.png'
+import INeedAGoodTeamLogo from '../../assets/images/sponsors/ineedagoodteamlogo.jpg'
 
 const Sponsors = () => {
   // Sponsor data - all sponsors are equal
@@ -20,9 +21,9 @@ const Sponsors = () => {
     },
     {
       id: 3,
-      name: 'Partner Sponsor',
-      logo: null,
-      isReal: false
+      name: 'I Need A Good Team',
+      logo: INeedAGoodTeamLogo,
+      isReal: true
     },
     {
       id: 4,
@@ -125,7 +126,7 @@ const Sponsors = () => {
             className="mb-16"
           >
             <motion.a
-              href="mailto:sponsors@hireground.com"
+              href="mailto:bukunmi@thelightutors.com"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center px-8 py-4 bg-gray-900 text-white font-semibold rounded-xl hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl"

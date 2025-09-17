@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { HiChevronLeft, HiChevronRight, HiSparkles, HiEye, HiArrowRight } from 'react-icons/hi';
+import JoshuaImage from '../../assets/images/speakers/Joshua.jpg';
 
 const SpeakersSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -11,57 +12,45 @@ const SpeakersSection = () => {
   const speakers = [
     {
       id: 1,
-      name: "Seyi Abiodun",
-      title: "Executive-level Business Consultant",
-      subtitle: "Strategic Innovation Leader",
-      image: "/api/placeholder/400/500", // Replace with actual image
-      company: "Tech Innovations Ltd",
-      specialties: ["Business Strategy", "Digital Transformation", "Leadership"]
+      name: "Joshua Oroge",
+      title: "CEO/Founder",
+      image: JoshuaImage,
+      company: "The Light Tutors Ltd.",
     },
     {
       id: 2,
       name: "Rufai Ismaila",
       title: "Visual Artist",
-      subtitle: "Creative Visionary",
-      image: "/api/placeholder/400/500", // Replace with actual image
+      image: "/api/placeholder/400/500",
       company: "Kingsville Studios",
-      specialties: ["Visual Arts", "Creative Direction", "Brand Design"]
     },
     {
       id: 3,
       name: "Al Amin Idris",
       title: "CEO of Interface Africa",
-      subtitle: "Tech Entrepreneur",
       image: "/api/placeholder/400/500", // Replace with actual image
       company: "Interface Africa",
-      specialties: ["Tech Leadership", "Innovation", "Africa Tech"]
     },
     {
       id: 4,
       name: "Ganiyat Sani",
       title: "Cultural Manager and Curator",
-      subtitle: "Cultural Innovation Expert",
       image: "/api/placeholder/400/500", // Replace with actual image
       company: "Cultural Dynamics",
-      specialties: ["Cultural Management", "Arts Curation", "Community Building"]
     },
     {
       id: 5,
       name: "Sarah Johnson",
       title: "Product Design Lead",
-      subtitle: "UX Innovation Specialist",
       image: "/api/placeholder/400/500", // Replace with actual image
       company: "Design Forward",
-      specialties: ["Product Design", "User Experience", "Design Systems"]
     },
     {
       id: 6,
       name: "Michael Chen",
       title: "Startup Founder",
-      subtitle: "Serial Entrepreneur",
       image: "/api/placeholder/400/500", // Replace with actual image
       company: "NextGen Ventures",
-      specialties: ["Startup Growth", "Venture Capital", "Innovation"]
     }
   ];
 
@@ -326,8 +315,22 @@ const SpeakerCard = ({ speaker }) => {
       
       {/* Image Container */}
       <div className="relative overflow-hidden aspect-[4/5] bg-gradient-to-br from-gray-200 to-gray-300">
-        {/* Image Placeholder */}
-        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-orange-100 to-red-100">
+        {/* Actual Image */}
+        {speaker.image && !speaker.image.includes('/api/placeholder') ? (
+          <img
+            src={speaker.image}
+            alt={speaker.name}
+            className="absolute inset-0 w-full h-full object-cover"
+            onError={(e) => {
+              // Fallback to placeholder if image fails to load
+              e.target.style.display = 'none';
+              e.target.parentNode.querySelector('.image-fallback').style.display = 'flex';
+            }}
+          />
+        ) : null}
+        
+        {/* Image Placeholder/Fallback */}
+        <div className={`absolute inset-0 flex items-center justify-center bg-gradient-to-br from-orange-100 to-red-100 image-fallback ${speaker.image && !speaker.image.includes('/api/placeholder') ? 'hidden' : ''}`}>
           <div className="text-center p-8">
             <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-xl">
@@ -337,24 +340,6 @@ const SpeakerCard = ({ speaker }) => {
             <p className="text-gray-600 text-sm">Speaker Photo</p>
           </div>
         </div>
-        
-        {/* Hover Overlay */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: isHovered ? 1 : 0 }}
-          transition={{ duration: 0.3 }}
-          className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent flex items-end justify-center p-6"
-        >
-          <motion.button
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: isHovered ? 0 : 20, opacity: isHovered ? 1 : 0 }}
-            transition={{ duration: 0.3, delay: 0.1 }}
-            className="flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full text-orange-600 font-medium text-sm hover:bg-white transition-all duration-300"
-          >
-            <HiEye className="w-4 h-4" />
-            View Profile
-          </motion.button>
-        </motion.div>
 
         {/* Top Right Badge */}
         <div className="absolute top-4 right-4 px-3 py-1 bg-orange-500 text-white text-xs font-bold rounded-full">
@@ -372,9 +357,6 @@ const SpeakerCard = ({ speaker }) => {
           <p className="text-orange-600 font-semibold text-base mb-1">
             {speaker.title}
           </p>
-          <p className="text-gray-600 text-sm">
-            {speaker.subtitle}
-          </p>
         </div>
 
         {/* Company */}
@@ -383,22 +365,6 @@ const SpeakerCard = ({ speaker }) => {
           <span className="text-gray-700 font-medium text-sm">{speaker.company}</span>
         </div>
 
-        {/* Specialties */}
-        <div className="flex flex-wrap gap-2">
-          {speaker.specialties.slice(0, 2).map((specialty, index) => (
-            <span
-              key={index}
-              className="px-3 py-1 bg-orange-50 text-orange-700 text-xs font-medium rounded-full border border-orange-200"
-            >
-              {specialty}
-            </span>
-          ))}
-          {speaker.specialties.length > 2 && (
-            <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded-full">
-              +{speaker.specialties.length - 2} more
-            </span>
-          )}
-        </div>
       </div>
 
       {/* Bottom Gradient */}

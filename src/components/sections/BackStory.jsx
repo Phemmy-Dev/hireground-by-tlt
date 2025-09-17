@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { HiSparkles, HiLightBulb, HiTrendingUp, HiUsers, HiPhotograph } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 
 const BackStory = () => {
   const containerVariants = {
@@ -267,13 +268,15 @@ const BackStory = () => {
                   </div>
 
                   {/* CTA Button */}
+                  <Link to="/about">
                   <motion.button
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
                     className="w-full bg-white text-orange-600 font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                   >
-                    Join The Movement
+                    Learn More About HireGround
                   </motion.button>
+                  </Link>
                 </div>
 
                 {/* Decorative Elements */}

@@ -239,20 +239,24 @@ const FaqSection = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
-                <motion.button
+                <a href="mailto:bukunmi@thelightutors.com">
+                  <motion.button
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   className="px-8 py-4 bg-white text-orange-600 font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Contact Support
-                </motion.button>
+                </motion.button>cta
+                </a>
+                <a href="https://bit.ly/vtltcf25" target="_blank" rel="noopener noreferrer">
                 <motion.button
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   className="px-8 py-4 bg-white/20 backdrop-blur-sm text-white font-bold rounded-full border border-white/30 hover:bg-white/30 transition-all duration-300"
                 >
-                  Join Our Community
+                  Become a Volunteer
                 </motion.button>
+                </a>
               </div>
             </div>
           </div>
