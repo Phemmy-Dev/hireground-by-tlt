@@ -13,13 +13,6 @@ const WhySponsor = () => {
       subtext: "Expected Attendees"
     },
     {
-      icon: <FiGlobe className="w-8 h-8" />,
-      title: "Pan-African Network",
-      description: "Expand your reach across 30+ African countries with professionals who are driving economic growth and innovation across the continent.",
-      highlight: "30+",
-      subtext: "Countries Represented"
-    },
-    {
       icon: <FiTrendingUp className="w-8 h-8" />,
       title: "Premium Brand Positioning",
       description: "Position your brand as a thought leader in Africa's professional development space with our engaged, high-intent audience.",
@@ -66,8 +59,8 @@ const WhySponsor = () => {
           </p>
         </motion.div>
 
-        {/* Main Value Propositions - Asymmetric Grid */}
-        <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 mb-20">
+        {/* Main Value Propositions - Centered Two-Column Grid */}
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-16 mb-20 max-w-5xl mx-auto">
           {mainReasons.map((reason, index) => (
             <motion.div
               key={index}
@@ -77,31 +70,31 @@ const WhySponsor = () => {
               transition={{ duration: 0.7, delay: index * 0.2 }}
               className="group relative"
             >
-              {/* Card with unique styling */}
-              <div className="relative bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-2">
+              {/* Card with enhanced styling for two-column layout */}
+              <div className="relative bg-gradient-to-br from-white to-gray-50 rounded-3xl p-10 lg:p-12 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-2">
                 
                 {/* Decorative element */}
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-orange-400 to-red-500 rounded-full opacity-10 group-hover:opacity-20 transition-opacity duration-500"></div>
+                <div className="absolute -top-6 -right-6 w-32 h-32 bg-gradient-to-br from-orange-400 to-red-500 rounded-full opacity-10 group-hover:opacity-20 transition-opacity duration-500"></div>
                 
                 {/* Icon and highlight number */}
-                <div className="flex items-start justify-between mb-6">
-                  <div className="w-16 h-16 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center group-hover:bg-orange-600 group-hover:text-white transition-all duration-300">
+                <div className="flex items-start justify-between mb-8">
+                  <div className="w-20 h-20 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center group-hover:bg-orange-600 group-hover:text-white transition-all duration-300">
                     {reason.icon}
                   </div>
                   <div className="text-right">
-                    <div className="text-3xl font-bold text-orange-600 leading-none">
+                    <div className="text-4xl lg:text-5xl font-bold text-orange-600 leading-none">
                       {reason.highlight}
                     </div>
-                    <div className="text-xs text-gray-500 font-medium">
+                    <div className="text-sm text-gray-500 font-medium">
                       {reason.subtext}
                     </div>
                   </div>
                 </div>
 
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-orange-600 transition-colors duration-300">
+                <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6 group-hover:text-orange-600 transition-colors duration-300">
                   {reason.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed text-lg">
                   {reason.description}
                 </p>
 
@@ -178,7 +171,7 @@ const WhySponsor = () => {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a
-                  href="mailto:partnerships@hireground.com"
+                  href="mailto:bukunmi@thelightutors.com"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   className="inline-flex items-center px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-xl shadow-xl transition-all duration-300"

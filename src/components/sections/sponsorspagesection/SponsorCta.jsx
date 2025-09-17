@@ -98,7 +98,7 @@ const SponsorCta = () => {
           >
             {/* Primary CTA - Become a Sponsor */}
             <motion.a
-              href="mailto:partnerships@hireground.com"
+              href="mailto:bukunmi@thelightutors.com"
               onHoverStart={() => setHoveredButton('sponsor')}
               onHoverEnd={() => setHoveredButton(null)}
               whileHover={{ scale: 1.05, y: -3 }}

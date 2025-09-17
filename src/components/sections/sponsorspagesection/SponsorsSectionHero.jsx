@@ -83,7 +83,7 @@ const SponsorsSectionHero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg sm:text-xl lg:text-xl text-gray-200 mb-8 leading-relaxed max-w-3xl mx-auto"
           >
-            Join Kwara's premier career transformation event and connect with thousands of professionals, 
+            Join Kwara's career transformation event and connect with thousands of professionals, 
             industry leaders, and emerging talent while showcasing your brand to a highly engaged audience.
           </motion.p>
 
@@ -181,10 +181,10 @@ const SponsorsSectionHero = () => {
             <p className="text-gray-300 text-sm sm:text-base">
               For partnership inquiries: 
               <a 
-                href="mailto:partnerships@hireground.com" 
+                href="mailto:bukunmi@thelightutors.com" 
                 className="text-orange-400 hover:text-orange-300 ml-2 font-semibold underline"
               >
-                partnerships@hireground.com
+                bukunmi@thelightutors.com
               </a>
             </p>
           </motion.div>
