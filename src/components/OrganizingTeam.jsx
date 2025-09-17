@@ -230,7 +230,7 @@ const OrganizingTeam = () => {
               </h3>
               
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                We're always looking for passionate individuals who share our vision of transforming careers and empowering professionals across Africa. Be part of something bigger.
+                We're always looking for passionate individuals who share our vision of transforming careers and empowering professionals across Nigeria. Be part of something bigger.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

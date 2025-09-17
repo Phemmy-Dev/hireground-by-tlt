@@ -5,7 +5,7 @@ import React from 'react'
 const Hero = ({ title, text, heroImg, herobtn }) => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Advanced Overlay */}
+      {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
           src={heroImg} 
@@ -103,31 +103,10 @@ const Hero = ({ title, text, heroImg, herobtn }) => {
               <div className="absolute inset-0 rounded-full opacity-0 group-active:opacity-30 group-active:animate-ping bg-white transition-opacity duration-150"></div>
             </Link>
           </motion.div>
-
-          {/* Stats or Features (Optional Enhancement) */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.6 }}
-            className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 text-center mb-8"
-          >
-            <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 sm:p-6 border border-white/20">
-              <div className="text-2xl sm:text-3xl font-bold text-white mb-2">500+</div>
-              <div className="text-sm sm:text-base text-gray-300">Success Stories</div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 sm:p-6 border border-white/20">
-              <div className="text-2xl sm:text-3xl font-bold text-white mb-2">50+</div>
-              <div className="text-sm sm:text-base text-gray-300">Expert Speakers</div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 sm:p-6 border border-white/20">
-              <div className="text-2xl sm:text-3xl font-bold text-white mb-2">24/7</div>
-              <div className="text-sm sm:text-base text-gray-300">Support Available</div>
-            </div>
-          </motion.div>
         </div>
       </div>
 
-      {/* Enhanced Scroll Indicator */}
+      {/* Scroll Indicator */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

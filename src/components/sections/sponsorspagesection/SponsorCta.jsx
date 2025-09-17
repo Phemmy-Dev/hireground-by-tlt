@@ -83,7 +83,7 @@ const SponsorCta = () => {
             </h2>
 
             <p className="text-xl sm:text-2xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Join the brands and leaders who are already transforming Africa's professional landscape. 
+              Join the brands and leaders who are already transforming Nigeria's professional landscape. 
               Your sponsorship decision today becomes tomorrow's success story.
             </p>
           </motion.div>

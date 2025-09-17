@@ -25,7 +25,7 @@ const SponsorsSectionHero = () => {
 
   // Event statistics for credibility
   const eventStats = [
-    { icon: <FiUsers className="w-5 h-5" />, number: "10,000+", label: "Expected Attendees" },
+    { icon: <FiUsers className="w-5 h-5" />, number: "1000+", label: "Expected Attendees" },
     { icon: <FiCalendar className="w-5 h-5" />, number: "2", label: "Days of Networking" },
     { icon: <FiTrendingUp className="w-5 h-5" />, number: "50+", label: "Industry Leaders" },
     { icon: <FiStar className="w-5 h-5" />, number: "100+", label: "Companies Participating" }
@@ -72,7 +72,7 @@ const SponsorsSectionHero = () => {
             Partner with <span className="text-orange-400">HireGround</span>
             <br />
             <span className="text-xl sm:text-3xl lg:text-3xl xl:text-5xl font-semibold text-gray-200">
-              Shape Africa's Future
+              Shape Nigeria's Future
             </span>
           </motion.h1>
 
@@ -83,7 +83,7 @@ const SponsorsSectionHero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg sm:text-xl lg:text-xl text-gray-200 mb-8 leading-relaxed max-w-3xl mx-auto"
           >
-            Join Africa's premier career transformation event and connect with thousands of professionals, 
+            Join Kwara's premier career transformation event and connect with thousands of professionals, 
             industry leaders, and emerging talent while showcasing your brand to a highly engaged audience.
           </motion.p>
 

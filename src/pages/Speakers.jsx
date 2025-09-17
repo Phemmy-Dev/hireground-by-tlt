@@ -14,16 +14,6 @@ const Speakers = () => {
   const speakers = [
     {
       id: 1,
-      name: "Joshua Oroge",
-      title: "CEO/Founder",
-      company: "The Light Tutors",
-      location: "Lagos, Nigeria",
-      image: JoshuaImage,
-      bio: "Joshua Oroge is a visionary leader in the education technology space, dedicated to transforming learning experiences across Africa.",
-      fullBio: "Joshua Oroge is the CEO and Founder of The Light Tutors, an innovative edtech company focused on providing high-quality tutoring services to students across Africa. With a background in computer science and a passion for education, Joshua has been at the forefront of leveraging technology to enhance learning outcomes.\n\nUnder his leadership, The Light Tutors has developed a unique platform that connects students with experienced tutors, offering personalized learning experiences tailored to individual needs. Joshua is committed to making quality education accessible to all and has implemented several initiatives to support underprivileged students.\n\nIn addition to his work at The Light Tutors, Joshua is a sought-after speaker and mentor in the edtech community, regularly sharing his insights on the future of education and the role of technology in driving positive change."
-    },
-    {
-      id: 2,
       name: "Gov. AbdulRahman AbdulRazaq",
       title: "Executive Governor",
       company: "Kwara State",
@@ -31,6 +21,16 @@ const Speakers = () => {
       image: GovernerImage,
       bio: "Gov. AbdulRahman AbdulRazaq is a seasoned entrepreneur and investor who has been at the forefront of supporting innovative startups across West Africa.",
       fullBio: "Gov. AbdulRahman AbdulRazaq serves as the Executive Governor of Kwara State, where he has implemented several initiatives to promote economic development and innovation. With over 12 years of experience in public service and governance, he has been instrumental in driving policies that support local entrepreneurs and attract investment to the region.\n\nBefore becoming Governor, AbdulRahman founded two successful companies in the fintech and logistics sectors. His deep understanding of the African market dynamics and his extensive network of investors and entrepreneurs have made him a sought-after advisor for emerging businesses.\n\nAbdulRahman is passionate about economic development in Africa and believes that supporting local entrepreneurs is key to unlocking the continent's potential. He regularly mentors young business leaders and serves on the boards of several nonprofit organizations focused on entrepreneurship education."
+    },
+    {
+      id: 2,
+      name: "Joshua Oroge",
+      title: "CEO/Founder",
+      company: "The Light Tutors",
+      location: "Lagos, Nigeria",
+      image: JoshuaImage,
+      bio: "Joshua Oroge is a visionary leader in the education technology space, dedicated to transforming learning experiences across Africa.",
+      fullBio: "Joshua Oroge is the CEO and Founder of The Light Tutors, an innovative edtech company focused on providing high-quality tutoring services to students across Africa. With a background in computer science and a passion for education, Joshua has been at the forefront of leveraging technology to enhance learning outcomes.\n\nUnder his leadership, The Light Tutors has developed a unique platform that connects students with experienced tutors, offering personalized learning experiences tailored to individual needs. Joshua is committed to making quality education accessible to all and has implemented several initiatives to support underprivileged students.\n\nIn addition to his work at The Light Tutors, Joshua is a sought-after speaker and mentor in the edtech community, regularly sharing his insights on the future of education and the role of technology in driving positive change."
     },
     {
       id: 3,

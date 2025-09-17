@@ -184,7 +184,7 @@ const VisionAndMission = () => {
                 Join Our Mission
               </h3>
               <p className="text-lg opacity-90 mb-6 max-w-2xl mx-auto">
-                Be part of a movement that's reshaping careers and transforming lives across Africa. Your journey to professional excellence starts here.
+                Be part of a movement that's reshaping careers and transforming lives across the world. Your journey to professional excellence starts here.
               </p>
               <motion.a
                 href="/contact"

@@ -113,7 +113,7 @@ const Sponsors = () => {
             viewport={{ once: true }}
             className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8"
           >
-            As a sponsor, your brand gets visibility to over 10,000 people. What better way to get your brand in front of people?
+            As a sponsor, your brand gets visibility to over 1000 people. What better way to get your brand in front of people?
           </motion.p>
 
           {/* CTA Button */}
@@ -207,7 +207,7 @@ const Sponsors = () => {
                   </svg>
                 </div>
                 <h4 className="font-semibold text-gray-900 mb-2">Brand Visibility</h4>
-                <p className="text-gray-600 text-sm">Get your brand in front of 10,000+ career-focused professionals</p>
+                <p className="text-gray-600 text-sm">Get your brand in front of 1000+ career-focused professionals</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">

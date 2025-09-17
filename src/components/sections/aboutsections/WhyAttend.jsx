@@ -17,17 +17,17 @@ const WhyAttend = () => {
   const reasons = [
     {
       icon: <FiUsers className="w-8 h-8" />,
-      title: "Network with 10,000+ Professionals",
+      title: "Network with 1000+ Professionals",
       description: "Connect with industry leaders, entrepreneurs, and like-minded individuals who can accelerate your career growth.",
       color: "from-blue-500 to-blue-600",
       bgColor: "bg-blue-50",
       borderColor: "border-blue-200",
-      stats: "10,000+ Attendees"
+      stats: "1000+ Attendees"
     },
     {
       icon: <FiBriefcase className="w-8 h-8" />,
       title: "Access Exclusive Job Opportunities",
-      description: "Get first access to job openings from 100+ companies actively recruiting at the event.",
+      description: "Get first access to job openings from 20+ companies actively recruiting at the event.",
       color: "from-green-500 to-green-600",
       bgColor: "bg-green-50",
       borderColor: "border-green-200",
@@ -60,15 +60,15 @@ const WhyAttend = () => {
       borderColor: "border-indigo-200",
       stats: "Global Reach"
     },
-    {
-      icon: <FiAward className="w-8 h-8" />,
-      title: "Get Industry Recognition",
-      description: "Showcase your achievements and get recognized through our awards and recognition programs.",
-      color: "from-yellow-500 to-yellow-600",
-      bgColor: "bg-yellow-50",
-      borderColor: "border-yellow-200",
-      stats: "Recognition Awards"
-    }
+    // {
+    //   icon: <FiAward className="w-8 h-8" />,
+    //   title: "Get Industry Recognition",
+    //   description: "Showcase your achievements and get recognized through our awards and recognition programs.",
+    //   color: "from-yellow-500 to-yellow-600",
+    //   bgColor: "bg-yellow-50",
+    //   borderColor: "border-yellow-200",
+    //   stats: "Recognition Awards"
+    // }
   ]
 
   const testimonials = [
@@ -193,7 +193,7 @@ const WhyAttend = () => {
                 </div>
                 <div className="bg-white/10 rounded-xl p-4 backdrop-blur-sm">
                   <div className="text-2xl font-bold mb-1">Limited Seats</div>
-                  <div className="text-sm opacity-80">Only 10,000 spots available</div>
+                  <div className="text-sm opacity-80">Only 1000 spots available</div>
                 </div>
                 <div className="bg-white/10 rounded-xl p-4 backdrop-blur-sm">
                   <div className="text-2xl font-bold mb-1">2 Days Only</div>
