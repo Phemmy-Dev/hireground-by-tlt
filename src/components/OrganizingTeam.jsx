@@ -13,8 +13,7 @@ const OrganizingTeam = () => {
       role: "HireGround Project Lead",
       image: JoshuaImage,
       linkedin: "#",
-      twitter: "#",
-      email: "adebayo@hireground.com"
+      email: "Joshua@thelightutors.com"
     },
     {
       id: 2,
@@ -22,8 +21,7 @@ const OrganizingTeam = () => {
       role: "HireGround Programme Coordinator",
       image: BukunmiImage,
       linkedin: "#",
-      twitter: "#",
-      email: "fatima@hireground.com"
+      email: "bukunmi@thelightutors.com"
     },
     {
       id: 3,
@@ -31,7 +29,6 @@ const OrganizingTeam = () => {
       role: "Head, Partnerships & Sponsors",
       image: null, // Add your image import here
       linkedin: "#",
-      twitter: "#",
       email: "chinedu@hireground.com"
     },
     {
@@ -40,7 +37,6 @@ const OrganizingTeam = () => {
       role: "Head, Content & Speakers",
       image: null, // Add your image import here
       linkedin: "#",
-      twitter: "#",
       email: "aisha@hireground.com"
     },
     {
@@ -49,16 +45,14 @@ const OrganizingTeam = () => {
       role: "Head, Technology & Innovation",
       image: null, // Add your image import here
       linkedin: "#",
-      twitter: "#",
       email: "olumide@hireground.com"
     },
     {
       id: 6,
-      name: "Kemi Adeleke",
-      role: "Head, Community Relations",
+      name: "Oluwafemi Akinruntan",
+      role: "Technical Support Lead",
       image: null, // Add your image import here
       linkedin: "#",
-      twitter: "#",
       email: "kemi@hireground.com"
     }
   ]
@@ -177,16 +171,6 @@ const OrganizingTeam = () => {
                           <FiLinkedin className="w-4 h-4" />
                         </motion.a>
                         <motion.a
-                          href={member.twitter}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          whileHover={{ scale: 1.1, y: -2 }}
-                          whileTap={{ scale: 0.9 }}
-                          className="w-9 h-9 bg-white/90 backdrop-blur-sm rounded-lg flex items-center justify-center text-blue-400 hover:bg-blue-400 hover:text-white transition-all duration-300 shadow-lg"
-                        >
-                          <FiTwitter className="w-4 h-4" />
-                        </motion.a>
-                        <motion.a
                           href={`mailto:${member.email}`}
                           whileHover={{ scale: 1.1, y: -2 }}
                           whileTap={{ scale: 0.9 }}
@@ -235,7 +219,8 @@ const OrganizingTeam = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a
-                  href="/volunteer"
+                  href="https://bit.ly/vtltcf25"
+                  target='_blank'
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   className="inline-flex items-center px-8 py-4 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transition-all duration-300 shadow-lg"
@@ -244,7 +229,8 @@ const OrganizingTeam = () => {
                 </motion.a>
                 
                 <motion.a
-                  href="/careers"
+                  href="https://docs.google.com/document/d/1JDUvt-nRoGU8mJBeLXcOxkrUFE9Lx5Ig2sM33rLlZPk/edit?tab=t.0#heading=h.kmm8prf9zyf2"
+                  target='_blank'
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="inline-flex items-center px-8 py-4 bg-white border-2 border-orange-300 text-orange-600 font-semibold rounded-xl hover:bg-orange-50 transition-all duration-300"
@@ -274,23 +260,23 @@ const OrganizingTeam = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a
-                  href="mailto:team@hireground.com"
+                  href="mailto:bukunmi@thelightutors.com"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="inline-flex items-center px-6 py-3 bg-gray-900 text-white font-medium rounded-lg hover:bg-gray-800 transition-all duration-300"
                 >
                   <FiMail className="mr-2 w-4 h-4" />
-                  team@hireground.com
+                  bukunmi@thelightutors.com
                 </motion.a>
                 
                 <motion.a
-                  href="tel:+2341234567890"
+                  href="tel:+2349132681049"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="inline-flex items-center px-6 py-3 bg-gray-100 text-gray-700 font-medium rounded-lg hover:bg-gray-200 transition-all duration-300"
                 >
                   <FiPhone className="mr-2 w-4 h-4" />
-                  +234 (0) 123 456 7890
+                  +234 (0) 913 268 1049
                 </motion.a>
               </div>
             </div>

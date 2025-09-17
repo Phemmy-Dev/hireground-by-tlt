@@ -31,7 +31,7 @@ const WhyAttend = () => {
       color: "from-green-500 to-green-600",
       bgColor: "bg-green-50",
       borderColor: "border-green-200",
-      stats: "100+ Companies"
+      stats: "20+ Companies"
     },
     {
       icon: <FiBook className="w-8 h-8" />,
@@ -40,7 +40,7 @@ const WhyAttend = () => {
       color: "from-purple-500 to-purple-600",
       bgColor: "bg-purple-50",
       borderColor: "border-purple-200",
-      stats: "50+ Expert Speakers"
+      stats: "20+ Expert Speakers"
     },
     {
       icon: <FiTrendingUp className="w-8 h-8" />,
@@ -186,7 +186,7 @@ const WhyAttend = () => {
               </p>
 
               {/* Urgency Indicators */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
                 <div className="bg-white/10 rounded-xl p-4 backdrop-blur-sm">
                   <div className="text-2xl font-bold mb-1">Early Bird</div>
                   <div className="text-sm opacity-80">Save 30% on tickets</div>
@@ -194,10 +194,6 @@ const WhyAttend = () => {
                 <div className="bg-white/10 rounded-xl p-4 backdrop-blur-sm">
                   <div className="text-2xl font-bold mb-1">Limited Seats</div>
                   <div className="text-sm opacity-80">Only 1000 spots available</div>
-                </div>
-                <div className="bg-white/10 rounded-xl p-4 backdrop-blur-sm">
-                  <div className="text-2xl font-bold mb-1">2 Days Only</div>
-                  <div className="text-sm opacity-80">Intensive career bootcamp</div>
                 </div>
               </div>
 
@@ -211,15 +207,6 @@ const WhyAttend = () => {
                 >
                   Get Your Ticket Now
                   <FiArrowRight className="ml-2 w-5 h-5" />
-                </motion.a>
-                
-                <motion.a
-                  href="/schedule"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-orange-600 transition-all duration-300 text-lg"
-                >
-                  View Event Schedule
                 </motion.a>
               </div>
             </div>

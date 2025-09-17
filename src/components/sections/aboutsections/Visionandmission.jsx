@@ -187,7 +187,7 @@ const VisionAndMission = () => {
                 Be part of a movement that's reshaping careers and transforming lives across the world. Your journey to professional excellence starts here.
               </p>
               <motion.a
-                href="/contact"
+                href="https://bit.ly/vtltcf25"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 className="inline-flex items-center px-8 py-4 bg-white text-orange-600 font-semibold rounded-xl hover:bg-gray-50 transition-all duration-300 shadow-lg"

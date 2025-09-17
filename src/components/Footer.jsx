@@ -72,7 +72,7 @@ const Footer = () => {
                   className="h-12 w-auto mb-4"
                 />
                 <p className="text-gray-400 leading-relaxed mb-6 max-w-sm">
-                  Kwara's premier career transformation event. Connecting talent, empowering professionals, and shaping the future of work across the continent.
+                  Kwara's  career transformation event. Connecting talent, empowering professionals, and shaping the future of work across the continent.
                 </p>
               </div>
 

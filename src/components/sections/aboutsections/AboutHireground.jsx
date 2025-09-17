@@ -92,7 +92,7 @@ const AboutHireground = () => {
                   whileTap={{ scale: 0.98 }}
                   className="inline-flex items-center px-6 py-3 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
-                  Join HireGround 2025
+                  Get Your Ticket
                   <FiArrowRight className="ml-2 w-5 h-5" />
                 </motion.a>
                 

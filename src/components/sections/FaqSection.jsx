@@ -246,7 +246,7 @@ const FaqSection = () => {
                   className="px-8 py-4 bg-white text-orange-600 font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Contact Support
-                </motion.button>cta
+                </motion.button>
                 </a>
                 <a href="https://bit.ly/vtltcf25" target="_blank" rel="noopener noreferrer">
                 <motion.button
