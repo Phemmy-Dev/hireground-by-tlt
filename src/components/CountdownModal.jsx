@@ -109,8 +109,7 @@ const CountdownModal = ({ isOpen, onClose }) => {
                 </div>
 
                 <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-                  Africa's premier career transformation summit. Join us for networking, 
-                  learning, and life-changing opportunities.
+                  The Biggest Career transformation Summit in Kwara State.
                 </p>
               </div>
 
