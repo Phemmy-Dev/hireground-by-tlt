@@ -4,11 +4,14 @@ import { FiX, FiCalendar, FiMapPin, FiUsers } from 'react-icons/fi'
 import Navbar from '../components/Navbar'
 import Cta from '../components/sections/Cta'
 import Footer from '../components/Footer'
+import CountdownModal from '../components/CountdownModal'
+import { useCountdownModal } from '../hooks/useCountdownModal'
 import JoshuaImage from '../assets/images/speakers/Joshua.jpg'
 import GovernerImage from '../assets/images/speakers/govAbdulraham.webp'
 
 const Speakers = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState(null)
+  const { showCountdownModal, handleCloseModal } = useCountdownModal()
 
   // Professional speakers data - placeholder cards
   const speakers = [
@@ -203,7 +206,8 @@ const Speakers = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navbar />
+      <div className={`transition-all duration-300 ${showCountdownModal ? 'blur-sm' : ''}`}>
+        <Navbar />
       
       {/* Hero Section */}
       <section className="pt-32 sm:pt-36 lg:pt-40 pb-12 bg-gradient-to-r from-orange-600 to-red-600">
@@ -290,9 +294,10 @@ const Speakers = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <Cta />
-      <Footer />
+        {/* CTA Section */}
+        <Cta />
+        <Footer />
+      </div>
 
       {/* Speaker Modal */}
       {selectedSpeaker && (
@@ -301,6 +306,12 @@ const Speakers = () => {
           onClose={() => setSelectedSpeaker(null)}
         />
       )}
+
+      {/* Countdown Modal */}
+      <CountdownModal 
+        isOpen={showCountdownModal} 
+        onClose={handleCloseModal} 
+      />
     </div>
   )
 }

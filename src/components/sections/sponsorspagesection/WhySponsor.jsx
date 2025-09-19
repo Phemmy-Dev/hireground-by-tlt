@@ -8,14 +8,14 @@ const WhySponsor = () => {
     {
       icon: <FiUsers className="w-8 h-8" />,
       title: "Reach 1000+ Professionals",
-      description: "Connect with Africa's most ambitious professionals, from emerging talent to C-suite executives, all actively seeking career transformation.",
+      description: "Connect with Kwara's most ambitious professionals, from emerging talent to C-suite executives, all actively seeking career transformation.",
       highlight: "1000+",
       subtext: "Expected Attendees"
     },
     {
       icon: <FiTrendingUp className="w-8 h-8" />,
       title: "Premium Brand Positioning",
-      description: "Position your brand as a thought leader in Africa's professional development space with our engaged, high-intent audience.",
+      description: "Position your brand as a thought leader in a professional development space with our engaged, high-intent audience.",
       highlight: "Premium",
       subtext: "Brand Positioning"
     }
@@ -25,7 +25,6 @@ const WhySponsor = () => {
   const additionalBenefits = [
     { icon: <FiTarget />, text: "Direct access to top talent for recruitment" },
     { icon: <FiZap />, text: "Instant brand recognition in professional circles" },
-    { icon: <FiAward />, text: "Association with Africa's premier career event" },
     { icon: <FiStar />, text: "Networking with industry leaders and innovators" },
     { icon: <FiHeart />, text: "Social impact through career transformation support" },
     { icon: <FiGlobe />, text: "Multi-channel exposure across digital platforms" }
@@ -54,7 +53,7 @@ const WhySponsor = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Join the movement that's reshaping Africa's professional landscape. 
+            Join the movement that's reshaping Nigeria's professional landscape. 
             Your sponsorship doesn't just support an event—it fuels careers, builds futures, and creates lasting impact.
           </p>
         </motion.div>
@@ -165,7 +164,7 @@ const WhySponsor = () => {
                 Ready to Make Your Mark?
               </h4>
               <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-                Don't just sponsor an event. Invest in Africa's future and position your brand 
+                Don't just sponsor an event. Invest in Nigeria's future and position your brand 
                 at the forefront of the continent's professional transformation.
               </p>
               
@@ -201,7 +200,7 @@ const WhySponsor = () => {
         >
           <blockquote className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 italic max-w-4xl mx-auto leading-relaxed">
             "When you sponsor HireGround, you're not just reaching an audience—
-            <span className="text-orange-600"> you're shaping the future leaders of Africa.</span>"
+            <span className="text-orange-600"> you're shaping the future leaders of Nigeria.</span>"
           </blockquote>
         </motion.div>
 

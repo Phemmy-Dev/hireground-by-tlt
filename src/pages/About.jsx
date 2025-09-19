@@ -8,18 +8,31 @@ import OrganizingTeam from '../components/OrganizingTeam'
 import Cta from '../components/sections/Cta'
 import Footer from '../components/Footer'
 import FaqSection from '../components/sections/FaqSection'
+import CountdownModal from '../components/CountdownModal'
+import { useCountdownModal } from '../hooks/useCountdownModal'
+
 const About = () => {
+  const { showCountdownModal, handleCloseModal } = useCountdownModal()
+
   return (
     <>
-      <Navbar />
-      <AboutHero />
-      <AboutHireground />
-      <Visionandmission />
-      <WhyAttend />
-      {/* <Cta /> */}
-      <OrganizingTeam />
-      <FaqSection />
-      <Footer />
+      <div className={`transition-all duration-300 ${showCountdownModal ? 'blur-sm' : ''}`}>
+        <Navbar />
+        <AboutHero />
+        <AboutHireground />
+        <Visionandmission />
+        <WhyAttend />
+        {/* <Cta /> */}
+        <OrganizingTeam />
+        <FaqSection />
+        <Footer />
+      </div>
+      
+      {/* Countdown Modal */}
+      <CountdownModal 
+        isOpen={showCountdownModal} 
+        onClose={handleCloseModal} 
+      />
     </>
   )
 }

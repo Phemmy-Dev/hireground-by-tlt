@@ -194,7 +194,7 @@ const AboutHireground = () => {
                 HireGround by the Numbers
               </h3>
               <p className="text-lg text-gray-600">
-                Join thousands of professionals in Africa's largest career transformation event
+                Join thousands of professionals in this career transformation event
               </p>
             </div>
 
