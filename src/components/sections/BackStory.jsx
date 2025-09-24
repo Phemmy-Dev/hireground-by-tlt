@@ -95,7 +95,7 @@ const BackStory = () => {
               className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent"
               style={{ color: '#ff7300' }}
             >
-              The Spark
+              HireGround
             </span>
           </motion.h2>
         </motion.div>
@@ -119,42 +119,52 @@ const BackStory = () => {
                 {/* Opening Quote */}
                 <div className="border-l-4 border-orange-500 pl-6">
                   <p className="text-2xl sm:text-3xl lg:text-3xl text-gray-800 leading-relaxed font-bold italic">
-                    "It started as a conversation between two visionaries. How do we 
-                    empower the next generation of professionals and create a space where careers 
-                    are transformed?
+                    From One Conversation to 10,000 Careers"
                   </p>
                 </div>
                 
-                {/* Extended Story Content */}
+                {/* Story Content */}
                 <div className="space-y-6">
                   <p className="text-lg sm:text-md text-gray-700 leading-relaxed">
-                    The energy was transformative. Young graduates found clarity, career changers 
-                    discovered new paths, and job seekers gained the confidence they needed. We didn't 
-                    just host a career fair—we ignited a movement that continues to shape professional 
-                    journeys across industries, empowering individuals to unlock their true potential.
+                    It began with a single encounter — a young lady who thought she had ruined her interview because she didn't ask a single question. That moment revealed something bigger: countless young Nigerians are stepping into interviews unprepared, not because they lack talent, but because they've never been taught how to show up.
                   </p>
                   
                   <p className="text-lg sm:text-md text-gray-700 leading-relaxed">
-                    Every workshop sparked new insights. Every networking session opened doors 
-                    to opportunities. Every CV review session was a step closer to landing that 
-                    dream job. This was the power of bringing career experts, industry leaders, 
-                    and ambitious professionals together with one purpose: to transform careers 
-                    and break through employment barriers.
+                    At The Light Tutors, we've seen it all — candidates logging in from noisy buses, interviews taken in pyjamas, some even joining from a football pitch. It's not a lack of potential. It's a lack of preparation.
                   </p>
                   
-                  <p className="text-lg sm:text-md text-gray-700 leading-relaxed">
-                    The success stories continue today. Fresh graduates landed their first jobs, 
-                    career changers successfully pivoted industries, professionals mastered interview 
-                    skills, and countless individuals built the confidence to pursue their dream roles—all 
-                    because HireGround provided the knowledge, network, and support they needed.
-                  </p>
+                  <div className="bg-orange-50 rounded-2xl p-6 border-l-4 border-orange-500">
+                    <p className="text-xl font-bold text-orange-800 mb-2">
+                      That's why we created HireGround.
+                    </p>
+                  </div>
 
                   <p className="text-lg sm:text-md text-gray-700 leading-relaxed">
-                    From corps members who discovered their career paths, to experienced professionals 
-                    who learned new networking strategies, to job seekers who finally cracked the 
-                    interview code—HireGround became the catalyst that transformed careers and 
-                    launched thousands of success stories into the professional world.
+                    What started as a small training idea has grown into a nationwide movement — a Career Fair designed to empower over 10,000 young Nigerians with the skills they need to land jobs and thrive at work:
                   </p>
+
+                  {/* Skills List */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+                    {[
+                      "Interview etiquette",
+                      "CV & cover letter writing", 
+                      "Workplace skills",
+                      "Career readiness"
+                    ].map((skill, index) => (
+                      <div key={index} className="flex items-center space-x-3 bg-white rounded-xl p-4 border border-orange-200 shadow-sm">
+                        <div className="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center">
+                          <span className="text-white text-sm font-bold">✓</span>
+                        </div>
+                        <span className="text-gray-700 font-medium">{skill}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="text-center bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-6 text-white">
+                    <p className="text-xl font-bold mb-2">This is more than an event. It's a launchpad.</p>
+                    <div className="text-2xl font-bold">🚀 HireGround 2025</div>
+                    <div className="text-lg">Ready. Set. Your Career Starts Here.</div>
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -237,22 +247,24 @@ const BackStory = () => {
                 {/* Content */}
                 <div className="relative z-10 space-y-8">
                   <div className="space-y-6">
-                    <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
-                      BIGGER, BOLDER, AND
-                    </h3>
-                    <div className="bg-white/20 backdrop-blur-md rounded-2xl p-6 border border-white/30">
-                      <h4 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
-                        BEYOND BOUNDARIES.
-                      </h4>
+                    <div className="text-center">
+                      <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight mb-4">
+                        READY, SET,
+                      </h3>
+                      <div className="bg-white/20 backdrop-blur-md rounded-2xl p-6 border border-white/30">
+                        <h4 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white leading-tight">
+                          YOUR CAREER STARTS HERE
+                        </h4>
+                      </div>
                     </div>
                   </div>
 
                   {/* Features */}
                   <div className="space-y-4">
                     {[
-                      { icon: HiUsers, text: "Connect with Industry Leaders" },
-                      { icon: HiLightBulb, text: "Master Career Skills" },
-                      { icon: HiTrendingUp, text: "Accelerate Your Growth" }
+                      { icon: HiUsers, text: "Gain Real Employability Skills." },
+                      { icon: HiLightBulb, text: "Meet Top Employers and Recruiters." },
+                      { icon: HiTrendingUp, text: "Unlock Career Opportunities." }
                     ].map((feature, index) => (
                       <motion.div
                         key={index}
@@ -297,19 +309,19 @@ const BackStory = () => {
         >
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8">
             <div className="text-center p-6 lg:p-8 bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl border border-orange-100 hover:shadow-2xl hover:scale-105 transition-all duration-300">
-              <div className="text-4xl lg:text-5xl font-bold text-orange-600 mb-3">1000+</div>
-              <div className="text-lg text-gray-700 font-semibold">Job Seekers</div>
-              <div className="text-sm text-gray-500 mt-1">Career Transformations</div>
+              <div className="text-4xl lg:text-5xl font-bold text-orange-600 mb-3">10,000+</div>
+              <div className="text-lg text-gray-700 font-semibold">Young Nigerians</div>
+              <div className="text-sm text-gray-500 mt-1">To Be Empowered</div>
             </div>
             <div className="text-center p-6 lg:p-8 bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl border border-orange-100 hover:shadow-2xl hover:scale-105 transition-all duration-300">
-              <div className="text-4xl lg:text-5xl font-bold text-orange-600 mb-3">20+</div>
-              <div className="text-lg text-gray-700 font-semibold">Career Coaches</div>
-              <div className="text-sm text-gray-500 mt-1">Industry Experts</div>
+              <div className="text-4xl lg:text-5xl font-bold text-orange-600 mb-3">4</div>
+              <div className="text-lg text-gray-700 font-semibold">Core Skills</div>
+              <div className="text-sm text-gray-500 mt-1">Career Readiness</div>
             </div>
             <div className="text-center p-6 lg:p-8 bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl border border-orange-100 hover:shadow-2xl hover:scale-105 transition-all duration-300">
-              <div className="text-4xl lg:text-5xl font-bold text-orange-600 mb-3">8h</div>
-              <div className="text-lg text-gray-700 font-semibold">Intensive Training</div>
-              <div className="text-sm text-gray-500 mt-1">Skills & Networking</div>
+              <div className="text-4xl lg:text-5xl font-bold text-orange-600 mb-3">1</div>
+              <div className="text-lg text-gray-700 font-semibold">Movement</div>
+              <div className="text-sm text-gray-500 mt-1">Nationwide Impact</div>
             </div>
           </div>
         </motion.div>
@@ -324,23 +336,25 @@ const BackStory = () => {
         >
           <div className="max-w-5xl mx-auto bg-white/90 backdrop-blur-lg rounded-3xl p-8 lg:p-12 shadow-2xl border border-orange-100">
             <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Where Careers Break Barriers
+              Join the Movement
             </h3>
             <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 leading-relaxed mb-8">
-              Join us for an experience that transcends traditional job hunting. 
-              This isn't just a career fair—it's a catalyst for professional transformation, 
-              skill mastery, and the launch of extraordinary career journeys that will shape your future.
+              This isn't just another career fair. It's a movement to ensure no young Nigerian 
+              walks into an interview unprepared or leaves university without the skills 
+              employers demand. Together, we're building the future workforce Nigeria deserves.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <span className="text-orange-600 font-semibold text-lg">Ready to transform your career?</span>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                style={{ backgroundColor: '#ff7300' }}
-              >
-                Get Your Tickets Now
-              </motion.button>
+              <span className="text-orange-600 font-semibold text-lg">Ready to transform your future?</span>
+              <Link to="/contact">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                  style={{ backgroundColor: '#ff7300' }}
+                >
+                  Get Your Tickets Now
+                </motion.button>
+              </Link>
             </div>
           </div>
         </motion.div>

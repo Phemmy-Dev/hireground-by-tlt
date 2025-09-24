@@ -5,7 +5,6 @@ import { HiChevronLeft, HiChevronRight, HiSparkles, HiEye, HiArrowRight } from '
 import JoshuaImage from '../../assets/images/speakers/Joshua.jpg';
 
 const SpeakersSection = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
   const scrollContainerRef = useRef(null);
 
   // Sample speakers data - replace with your actual data
@@ -279,21 +278,6 @@ const SpeakersSection = () => {
             </motion.button>
           </Link>
         </motion.div>
-
-        {/* Scroll Indicators - Mobile */}
-        <div className="flex lg:hidden justify-center mt-8 gap-2">
-          {[0, 1, 2].map((dot, index) => (
-            <button
-              key={index}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                index === currentIndex 
-                  ? 'bg-orange-500 w-8' 
-                  : 'bg-gray-300'
-              }`}
-              onClick={() => setCurrentIndex(index)}
-            />
-          ))}
-        </div>
       </div>
     </section>
   );
