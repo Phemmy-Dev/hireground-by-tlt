@@ -6,6 +6,7 @@ import BukunmiImage from '../assets/images/organisingteam/Oluwabukunmi.jpg'
 import AaliyahImage from '../assets/images/organisingteam/aaliyah.jpg'
 import EriImage from '../assets/images/organisingteam/eri.jpg'
 import PriscillaImage from '../assets/images/organisingteam/priscilla.jpg'
+import FemiImage from '../assets/images/organisingteam/femi.jpg'
 import { a } from 'framer-motion/m'
 
 const OrganizingTeam = () => {
@@ -55,8 +56,8 @@ const OrganizingTeam = () => {
       id: 6,
       name: "Oluwafemi Akinruntan",
       role: "Technical Support Lead",
-      image: null, // Add your image import here
-      linkedin: "#",
+      image: FemiImage,
+      linkedin: "https://www.linkedin.com/in/oluwafemi-akinruntan/",
       email: "oluwafemiakinruntan@thelightutors.com"
     }
   ]

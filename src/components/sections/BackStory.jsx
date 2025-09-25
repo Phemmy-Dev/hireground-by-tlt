@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { HiSparkles, HiLightBulb, HiTrendingUp, HiUsers, HiPhotograph } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
+import hiregroundimg from "../../assets/images/hireground.jpg"
 
 const BackStory = () => {
   const containerVariants = {
@@ -178,26 +179,25 @@ const BackStory = () => {
               className="relative group"
             >
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-                {/* Image Container - Ready for actual image */}
-                <div className="aspect-[4/3] bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 flex items-center justify-center relative">
-                  {/* Placeholder Content */}
-                  <div className="text-center p-8 z-10">
-                    <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-6 bg-gradient-to-r from-orange-500 to-red-500 rounded-3xl flex items-center justify-center shadow-2xl">
-                      <HiPhotograph className="w-10 h-10 sm:w-12 sm:h-12 text-white" />
-                    </div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-gray-700 mb-3">
-                      Last Year's HireGround
-                    </h3>
-                    <p className="text-gray-600 text-sm sm:text-base">
-                      Add your amazing event photos here
-                    </p>
-                    <p className="text-gray-500 text-xs sm:text-sm mt-2">
-                      Showcase the energy, connections, and breakthrough moments
-                    </p>
-                  </div>
+                {/* Image Container - Using actual hireground image */}
+                <div className="aspect-[4/3] relative overflow-hidden">
+                  <img 
+                    src={hiregroundimg}
+                    alt="HireGround Event - Career transformation in action"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
                   
-                  {/* Decorative overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
+                  {/* Overlay with event info */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent flex items-end">
+                    <div className="p-6 text-white">
+                      <h3 className="text-xl sm:text-2xl font-bold mb-2">
+                        HireGround in Action
+                      </h3>
+                      <p className="text-sm sm:text-base opacity-90">
+                        Empowering careers, transforming futures
+                      </p>
+                    </div>
+                  </div>
                 </div>
                 
                 {/* Floating decorative element */}
