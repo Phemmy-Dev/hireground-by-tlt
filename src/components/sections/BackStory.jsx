@@ -314,9 +314,9 @@ const BackStory = () => {
               <div className="text-sm text-gray-500 mt-1">To Be Empowered</div>
             </div>
             <div className="text-center p-6 lg:p-8 bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl border border-orange-100 hover:shadow-2xl hover:scale-105 transition-all duration-300">
-              <div className="text-4xl lg:text-5xl font-bold text-orange-600 mb-3">4</div>
-              <div className="text-lg text-gray-700 font-semibold">Core Skills</div>
-              <div className="text-sm text-gray-500 mt-1">Career Readiness</div>
+              <div className="text-4xl lg:text-5xl font-bold text-orange-600 mb-3">6h</div>
+              <div className="text-lg text-gray-700 font-semibold">Intensive Training</div>
+              <div className="text-sm text-gray-500 mt-1">Skills & Networking</div>
             </div>
             <div className="text-center p-6 lg:p-8 bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl border border-orange-100 hover:shadow-2xl hover:scale-105 transition-all duration-300">
               <div className="text-4xl lg:text-5xl font-bold text-orange-600 mb-3">1</div>

@@ -1,10 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { FiUsers, FiTrendingUp, FiAward, FiGlobe, FiArrowRight, FiPlay } from 'react-icons/fi'
+import hiregroundimg from '../../../assets/images/hireground2.jpg'
 
 const AboutHireground = () => {
   // Placeholder for main about image - you can replace this
-  const aboutImage = null // Add your image import here later
+  const aboutImage = hiregroundimg // Add your image import here later
 
   const ImagePlaceholder = ({ className, label }) => (
     <div className={`${className} bg-gradient-to-br from-gray-100 to-gray-200 border-2 border-dashed border-gray-300 rounded-2xl flex flex-col items-center justify-center p-8 transition-all duration-300 hover:border-orange-300 hover:from-orange-50 hover:to-orange-100`}>

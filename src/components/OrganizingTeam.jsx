@@ -3,6 +3,10 @@ import { motion } from 'framer-motion'
 import { FiLinkedin, FiTwitter, FiMail, FiPhone } from 'react-icons/fi'
 import JoshuaImage from '../assets/images/organisingteam/Joshua.jpg'
 import BukunmiImage from '../assets/images/organisingteam/Oluwabukunmi.jpg'
+import AaliyahImage from '../assets/images/organisingteam/aaliyah.jpg'
+import EriImage from '../assets/images/organisingteam/eri.jpg'
+import PriscillaImage from '../assets/images/organisingteam/priscilla.jpg'
+import { a } from 'framer-motion/m'
 
 const OrganizingTeam = () => {
   // Team members data - easily customizable
@@ -25,27 +29,27 @@ const OrganizingTeam = () => {
     },
     {
       id: 3,
-      name: "Chinedu Okafor",
-      role: "Head, Partnerships & Sponsors",
-      image: null, // Add your image import here
-      linkedin: "#",
-      email: "chinedu@hireground.com"
+      name: "Priscilla Solomon-Lasisi",
+      role: "Head, Programs & Speakership",
+      image: PriscillaImage,
+      linkedin: "https://www.linkedin.com/in/priscilla-solomon-lasisi-058816210/",
+      email: "priscillasolomonlasisi@thelightutors.com"
     },
     {
       id: 4,
-      name: "Aisha Mohammed",
-      role: "Head, Content & Speakers",
-      image: null, // Add your image import here
-      linkedin: "#",
-      email: "aisha@hireground.com"
+      name: "Aaliyah Momoh",
+      role: "Head, Publicity & Media",
+      image: AaliyahImage,
+      linkedin: "https://www.linkedin.com/in/aaliyah-momoh-155070225/",
+      email: "aaliyahmomoh@hireground.com"
     },
     {
       id: 5,
-      name: "Olumide Adebisi",
-      role: "Head, Technology & Innovation",
-      image: null, // Add your image import here
-      linkedin: "#",
-      email: "olumide@hireground.com"
+      name: "Erioluwa Oladeji",
+      role: "Head, Registration & Data Management",
+      image: EriImage,
+      linkedin: "https://ng.linkedin.com/in/erioluwa-oladeji-b3260b235",
+      email: "oladejie@thelightutors.com"
     },
     {
       id: 6,
@@ -53,7 +57,7 @@ const OrganizingTeam = () => {
       role: "Technical Support Lead",
       image: null, // Add your image import here
       linkedin: "#",
-      email: "kemi@hireground.com"
+      email: "oluwafemiakinruntan@thelightutors.com"
     }
   ]
 
