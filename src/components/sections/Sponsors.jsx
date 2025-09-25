@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import kwgovtlogo from '../../assets/images/sponsors/kwgovlogo.webp'
 import tltsponsorlogo from '../../assets/images/sponsors/tltsponsor.png'
 import INeedAGoodTeamLogo from '../../assets/images/sponsors/ineedagoodteamlogo.jpg'
+import Mindshiftlogo from '../../assets/images/sponsors/mindshiftlogo.png'
 
 const Sponsors = () => {
   // Sponsor data - all sponsors are equal
@@ -13,12 +14,12 @@ const Sponsors = () => {
       logo: tltsponsorlogo,
       isReal: true
     },
-    {
-      id: 2,
-      name: 'Kwara State Government',
-      logo: kwgovtlogo,
-      isReal: true
-    },
+    // {
+    //   id: 2,
+    //   name: 'Kwara State Government',
+    //   logo: kwgovtlogo,
+    //   isReal: true
+    // },
     {
       id: 3,
       name: 'I Need A Good Team',
@@ -27,46 +28,46 @@ const Sponsors = () => {
     },
     {
       id: 4,
-      name: 'Partner Sponsor',
-      logo: null,
-      isReal: false
+      name: 'MindShift Consulting Inc',
+      logo: Mindshiftlogo,
+      isReal: true
     },
-    {
-      id: 5,
-      name: 'Partner Sponsor',
-      logo: null,
-      isReal: false
-    },
-    {
-      id: 6,
-      name: 'Partner Sponsor',
-      logo: null,
-      isReal: false
-    },
-    {
-      id: 7,
-      name: 'Partner Sponsor',
-      logo: null,
-      isReal: false
-    },
-    {
-      id: 8,
-      name: 'Partner Sponsor',
-      logo: null,
-      isReal: false
-    },
-    {
-      id: 9,
-      name: 'Partner Sponsor',
-      logo: null,
-      isReal: false
-    },
-    {
-      id: 10,
-      name: 'Partner Sponsor',
-      logo: null,
-      isReal: false
-    }
+    // {
+    //   id: 5,
+    //   name: 'Partner Sponsor',
+    //   logo: null,
+    //   isReal: false
+    // },
+    // {
+    //   id: 6,
+    //   name: 'Partner Sponsor',
+    //   logo: null,
+    //   isReal: false
+    // },
+    // {
+    //   id: 7,
+    //   name: 'Partner Sponsor',
+    //   logo: null,
+    //   isReal: false
+    // },
+    // {
+    //   id: 8,
+    //   name: 'Partner Sponsor',
+    //   logo: null,
+    //   isReal: false
+    // },
+    // {
+    //   id: 9,
+    //   name: 'Partner Sponsor',
+    //   logo: null,
+    //   isReal: false
+    // },
+    // {
+    //   id: 10,
+    //   name: 'Partner Sponsor',
+    //   logo: null,
+    //   isReal: false
+    // }
   ]
 
   const PlaceholderLogo = ({ name }) => {

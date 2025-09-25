@@ -15,18 +15,18 @@ const Speakers = () => {
 
   // Professional speakers data - placeholder cards
   const speakers = [
+    // {
+    //   id: 1,
+    //   name: "Gov. AbdulRahman AbdulRazaq",
+    //   title: "Executive Governor",
+    //   company: "Kwara State",
+    //   location: "Kwara State, Nigeria",
+    //   image: GovernerImage,
+    //   bio: "Gov. AbdulRahman AbdulRazaq is a seasoned entrepreneur and investor who has been at the forefront of supporting innovative startups across West Africa.",
+    //   fullBio: "Gov. AbdulRahman AbdulRazaq serves as the Executive Governor of Kwara State, where he has implemented several initiatives to promote economic development and innovation. With over 12 years of experience in public service and governance, he has been instrumental in driving policies that support local entrepreneurs and attract investment to the region.\n\nBefore becoming Governor, AbdulRahman founded two successful companies in the fintech and logistics sectors. His deep understanding of the African market dynamics and his extensive network of investors and entrepreneurs have made him a sought-after advisor for emerging businesses.\n\nAbdulRahman is passionate about economic development in Africa and believes that supporting local entrepreneurs is key to unlocking the continent's potential. He regularly mentors young business leaders and serves on the boards of several nonprofit organizations focused on entrepreneurship education."
+    // },
     {
       id: 1,
-      name: "Gov. AbdulRahman AbdulRazaq",
-      title: "Executive Governor",
-      company: "Kwara State",
-      location: "Kwara State, Nigeria",
-      image: GovernerImage,
-      bio: "Gov. AbdulRahman AbdulRazaq is a seasoned entrepreneur and investor who has been at the forefront of supporting innovative startups across West Africa.",
-      fullBio: "Gov. AbdulRahman AbdulRazaq serves as the Executive Governor of Kwara State, where he has implemented several initiatives to promote economic development and innovation. With over 12 years of experience in public service and governance, he has been instrumental in driving policies that support local entrepreneurs and attract investment to the region.\n\nBefore becoming Governor, AbdulRahman founded two successful companies in the fintech and logistics sectors. His deep understanding of the African market dynamics and his extensive network of investors and entrepreneurs have made him a sought-after advisor for emerging businesses.\n\nAbdulRahman is passionate about economic development in Africa and believes that supporting local entrepreneurs is key to unlocking the continent's potential. He regularly mentors young business leaders and serves on the boards of several nonprofit organizations focused on entrepreneurship education."
-    },
-    {
-      id: 2,
       name: "Joshua Oroge",
       title: "CEO/Founder",
       company: "The Light Tutors",
@@ -35,56 +35,56 @@ const Speakers = () => {
       bio: "Joshua Oroge is a visionary leader in the education technology space, dedicated to transforming learning experiences across Africa.",
       fullBio: "Joshua Oroge is the CEO and Founder of The Light Tutors, an innovative edtech company focused on providing high-quality tutoring services to students across Africa. With a background in computer science and a passion for education, Joshua has been at the forefront of leveraging technology to enhance learning outcomes.\n\nUnder his leadership, The Light Tutors has developed a unique platform that connects students with experienced tutors, offering personalized learning experiences tailored to individual needs. Joshua is committed to making quality education accessible to all and has implemented several initiatives to support underprivileged students.\n\nIn addition to his work at The Light Tutors, Joshua is a sought-after speaker and mentor in the edtech community, regularly sharing his insights on the future of education and the role of technology in driving positive change."
     },
-    {
-      id: 3,
-      name: "Sarah Adebayo",
-      title: "Director of Innovation",
-      company: "Global Bank Africa",
-      location: "Accra, Ghana",
-      image: null,
-      bio: "Sarah Adebayo leads digital transformation initiatives in the financial services sector, focusing on innovative banking solutions for emerging markets.",
-      fullBio: "Sarah Adebayo is the Director of Innovation at Global Bank Africa, where she spearheads digital transformation initiatives that are revolutionizing banking across the continent. With over 10 years of experience in financial technology, she has led the development of mobile banking platforms that serve over 5 million customers.\n\nSarah holds an MBA in Finance and has worked with major financial institutions across Africa and Europe. Her expertise in digital payments, blockchain technology, and financial inclusion has made her a key figure in shaping the future of African banking.\n\nShe is committed to increasing financial inclusion across Africa and has launched several initiatives to bring banking services to underserved communities. Sarah is also an advocate for women in fintech and mentors female professionals in the financial services industry."
-    },
-    {
-      id: 4,
-      name: "Michael Obi",
-      title: "Founder & CEO",
-      company: "EduTech Solutions",
-      location: "Port Harcourt, Nigeria",
-      image: null,
-      bio: "Michael Obi is revolutionizing education in Africa through innovative technology solutions that make quality learning accessible to millions of students.",
-      fullBio: "Michael Obi is the Founder and CEO of EduTech Solutions, an educational technology company that has transformed learning experiences for over 2 million students across Africa. His platform provides quality educational content and interactive learning tools to students in remote and underserved areas.\n\nWith a background in both technology and education, Michael identified the critical gap in educational resources across Africa and developed innovative solutions to bridge this divide. His work has been recognized by UNESCO and other international organizations for its impact on educational equity.\n\nMichael is passionate about democratizing education and ensuring that every child in Africa has access to quality learning opportunities. He regularly collaborates with governments and NGOs to implement educational technology initiatives and has received numerous awards for his contributions to education in Africa."
-    },
-    {
-      id: 5,
-      name: "Fatima Al-Zahra",
-      title: "Chief Operating Officer",
-      company: "Green Energy Africa",
-      location: "Cairo, Egypt",
-      image: null,
-      bio: "Fatima Al-Zahra is driving sustainable energy solutions across Africa, leading initiatives that bring clean power to communities throughout the continent.",
-      fullBio: "Fatima Al-Zahra serves as the Chief Operating Officer of Green Energy Africa, a leading renewable energy company that has installed solar power systems in over 500 communities across the continent. With expertise in sustainable energy solutions and project management, she has been instrumental in expanding access to clean electricity.\n\nFatima holds a Master's degree in Environmental Engineering and has over 8 years of experience in the renewable energy sector. She has led cross-functional teams in implementing large-scale solar and wind projects that have brought power to over 1 million people in rural areas.\n\nShe is a strong advocate for environmental sustainability and women's empowerment in the energy sector. Fatima regularly speaks at climate conferences and has been recognized for her contributions to sustainable development in Africa."
-    },
-    {
-      id: 6,
-      name: "David Mensah",
-      title: "Head of Digital Strategy",
-      company: "MediaCorp West Africa",
-      location: "Accra, Ghana",
-      image: null,
-      bio: "David Mensah is transforming media and communications across West Africa through innovative digital strategies and content platforms.",
-      fullBio: "David Mensah is the Head of Digital Strategy at MediaCorp West Africa, where he oversees digital transformation initiatives for one of the region's largest media companies. With over 9 years of experience in digital marketing and content strategy, he has revolutionized how media companies engage with audiences across Africa.\n\nDavid has successfully launched multiple digital platforms that reach over 10 million users monthly. His innovative approach to content distribution and audience engagement has set new standards in the African media industry.\n\nHe is passionate about promoting African stories and voices on global platforms. David mentors young content creators and digital marketers, and he regularly speaks at conferences about the future of media in Africa."
-    },
-    {
-      id: 7,
-      name: "Dr. Kemi Adeleke",
-      title: "Research Director",
-      company: "Health Innovation Lab",
-      location: "Ibadan, Nigeria",
-      image: null,
-      bio: "Dr. Kemi Adeleke is pioneering healthcare innovation in Africa, developing solutions that improve health outcomes for communities across the continent.",
-      fullBio: "Dr. Kemi Adeleke is the Research Director at Health Innovation Lab, where she leads groundbreaking research in healthcare technology and medical innovation. With a medical degree and a PhD in Public Health, she has dedicated her career to addressing healthcare challenges in Africa through innovative solutions.\n\nDr. Adeleke has led research projects that have resulted in the development of low-cost medical devices and telemedicine platforms that serve rural communities. Her work has been published in numerous international journals and has received funding from major global health organizations.\n\nShe is committed to building local capacity in healthcare innovation and has trained over 200 healthcare professionals in research methodology and technology implementation. Dr. Adeleke is also an advocate for women in science and actively promotes STEM education for young girls."
-    }
+    // {
+    //   id: 3,
+    //   name: "Sarah Adebayo",
+    //   title: "Director of Innovation",
+    //   company: "Global Bank Africa",
+    //   location: "Accra, Ghana",
+    //   image: null,
+    //   bio: "Sarah Adebayo leads digital transformation initiatives in the financial services sector, focusing on innovative banking solutions for emerging markets.",
+    //   fullBio: "Sarah Adebayo is the Director of Innovation at Global Bank Africa, where she spearheads digital transformation initiatives that are revolutionizing banking across the continent. With over 10 years of experience in financial technology, she has led the development of mobile banking platforms that serve over 5 million customers.\n\nSarah holds an MBA in Finance and has worked with major financial institutions across Africa and Europe. Her expertise in digital payments, blockchain technology, and financial inclusion has made her a key figure in shaping the future of African banking.\n\nShe is committed to increasing financial inclusion across Africa and has launched several initiatives to bring banking services to underserved communities. Sarah is also an advocate for women in fintech and mentors female professionals in the financial services industry."
+    // },
+    // {
+    //   id: 4,
+    //   name: "Michael Obi",
+    //   title: "Founder & CEO",
+    //   company: "EduTech Solutions",
+    //   location: "Port Harcourt, Nigeria",
+    //   image: null,
+    //   bio: "Michael Obi is revolutionizing education in Africa through innovative technology solutions that make quality learning accessible to millions of students.",
+    //   fullBio: "Michael Obi is the Founder and CEO of EduTech Solutions, an educational technology company that has transformed learning experiences for over 2 million students across Africa. His platform provides quality educational content and interactive learning tools to students in remote and underserved areas.\n\nWith a background in both technology and education, Michael identified the critical gap in educational resources across Africa and developed innovative solutions to bridge this divide. His work has been recognized by UNESCO and other international organizations for its impact on educational equity.\n\nMichael is passionate about democratizing education and ensuring that every child in Africa has access to quality learning opportunities. He regularly collaborates with governments and NGOs to implement educational technology initiatives and has received numerous awards for his contributions to education in Africa."
+    // },
+    // {
+    //   id: 5,
+    //   name: "Fatima Al-Zahra",
+    //   title: "Chief Operating Officer",
+    //   company: "Green Energy Africa",
+    //   location: "Cairo, Egypt",
+    //   image: null,
+    //   bio: "Fatima Al-Zahra is driving sustainable energy solutions across Africa, leading initiatives that bring clean power to communities throughout the continent.",
+    //   fullBio: "Fatima Al-Zahra serves as the Chief Operating Officer of Green Energy Africa, a leading renewable energy company that has installed solar power systems in over 500 communities across the continent. With expertise in sustainable energy solutions and project management, she has been instrumental in expanding access to clean electricity.\n\nFatima holds a Master's degree in Environmental Engineering and has over 8 years of experience in the renewable energy sector. She has led cross-functional teams in implementing large-scale solar and wind projects that have brought power to over 1 million people in rural areas.\n\nShe is a strong advocate for environmental sustainability and women's empowerment in the energy sector. Fatima regularly speaks at climate conferences and has been recognized for her contributions to sustainable development in Africa."
+    // },
+    // {
+    //   id: 6,
+    //   name: "David Mensah",
+    //   title: "Head of Digital Strategy",
+    //   company: "MediaCorp West Africa",
+    //   location: "Accra, Ghana",
+    //   image: null,
+    //   bio: "David Mensah is transforming media and communications across West Africa through innovative digital strategies and content platforms.",
+    //   fullBio: "David Mensah is the Head of Digital Strategy at MediaCorp West Africa, where he oversees digital transformation initiatives for one of the region's largest media companies. With over 9 years of experience in digital marketing and content strategy, he has revolutionized how media companies engage with audiences across Africa.\n\nDavid has successfully launched multiple digital platforms that reach over 10 million users monthly. His innovative approach to content distribution and audience engagement has set new standards in the African media industry.\n\nHe is passionate about promoting African stories and voices on global platforms. David mentors young content creators and digital marketers, and he regularly speaks at conferences about the future of media in Africa."
+    // },
+    // {
+    //   id: 7,
+    //   name: "Dr. Kemi Adeleke",
+    //   title: "Research Director",
+    //   company: "Health Innovation Lab",
+    //   location: "Ibadan, Nigeria",
+    //   image: null,
+    //   bio: "Dr. Kemi Adeleke is pioneering healthcare innovation in Africa, developing solutions that improve health outcomes for communities across the continent.",
+    //   fullBio: "Dr. Kemi Adeleke is the Research Director at Health Innovation Lab, where she leads groundbreaking research in healthcare technology and medical innovation. With a medical degree and a PhD in Public Health, she has dedicated her career to addressing healthcare challenges in Africa through innovative solutions.\n\nDr. Adeleke has led research projects that have resulted in the development of low-cost medical devices and telemedicine platforms that serve rural communities. Her work has been published in numerous international journals and has received funding from major global health organizations.\n\nShe is committed to building local capacity in healthcare innovation and has trained over 200 healthcare professionals in research methodology and technology implementation. Dr. Adeleke is also an advocate for women in science and actively promotes STEM education for young girls."
+    // }
   ]
 
   // Placeholder component for speaker images

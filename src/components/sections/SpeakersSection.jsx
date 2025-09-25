@@ -16,41 +16,41 @@ const SpeakersSection = () => {
       image: JoshuaImage,
       company: "The Light Tutors Ltd.",
     },
-    {
-      id: 2,
-      name: "Rufai Ismaila",
-      title: "Visual Artist",
-      image: "/api/placeholder/400/500",
-      company: "Kingsville Studios",
-    },
-    {
-      id: 3,
-      name: "Al Amin Idris",
-      title: "CEO of Interface Africa",
-      image: "/api/placeholder/400/500", // Replace with actual image
-      company: "Interface Africa",
-    },
-    {
-      id: 4,
-      name: "Ganiyat Sani",
-      title: "Cultural Manager and Curator",
-      image: "/api/placeholder/400/500", // Replace with actual image
-      company: "Cultural Dynamics",
-    },
-    {
-      id: 5,
-      name: "Sarah Johnson",
-      title: "Product Design Lead",
-      image: "/api/placeholder/400/500", // Replace with actual image
-      company: "Design Forward",
-    },
-    {
-      id: 6,
-      name: "Michael Chen",
-      title: "Startup Founder",
-      image: "/api/placeholder/400/500", // Replace with actual image
-      company: "NextGen Ventures",
-    }
+    // {
+    //   id: 2,
+    //   name: "Rufai Ismaila",
+    //   title: "Visual Artist",
+    //   image: "/api/placeholder/400/500",
+    //   company: "Kingsville Studios",
+    // },
+    // {
+    //   id: 3,
+    //   name: "Al Amin Idris",
+    //   title: "CEO of Interface Africa",
+    //   image: "/api/placeholder/400/500", // Replace with actual image
+    //   company: "Interface Africa",
+    // },
+    // {
+    //   id: 4,
+    //   name: "Ganiyat Sani",
+    //   title: "Cultural Manager and Curator",
+    //   image: "/api/placeholder/400/500", // Replace with actual image
+    //   company: "Cultural Dynamics",
+    // },
+    // {
+    //   id: 5,
+    //   name: "Sarah Johnson",
+    //   title: "Product Design Lead",
+    //   image: "/api/placeholder/400/500", // Replace with actual image
+    //   company: "Design Forward",
+    // },
+    // {
+    //   id: 6,
+    //   name: "Michael Chen",
+    //   title: "Startup Founder",
+    //   image: "/api/placeholder/400/500", // Replace with actual image
+    //   company: "NextGen Ventures",
+    // }
   ];
 
   const containerVariants = {
