@@ -17,18 +17,21 @@ const IntroToSponsors = () => {
               Welcome to <span className="text-orange-600">HireGround</span>
             </h2>
             
-            <div className="space-y-6 text-base sm:text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto border-2 border-red-500 ">
-              <h1 className='text-4xl font-bold text-red-500'>Update this</h1>
+            <div className="space-y-6 text-base sm:text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sequi ullam repellendus blanditiis neque recusandae consequatur, sapiente similique nihil minus delectus alias possimus perspiciatis facere iste illo totam dolores quaerat vero asperiores eveniet modi reiciendis ea accusamus? Nulla, quae dolorum quidem labore quam, ratione saepe at voluptates debitis fugiat doloribus.
+                HireGround is more than just a career fair. It's a transformative movement designed to bridge the gap between talent and opportunity across Nigeria. On December 4th, 2025, we're bringing together over 1,000 onsite participants and 10,000+ virtual attendees, creating the largest career development platform in the country.
               </p>
               
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nam iure cupiditate ducimus omnis ipsam animi aperiam, ipsum, ratione necessitatibus, sunt placeat odit eum odio esse exercitationem expedita distinctio possimus dolor assumenda dignissimos eius nostrum dolorum! Pariatur minima quasi possimus?
+                As a HireGround sponsor, you're not just supporting an event; you're investing in the future workforce of Nigeria. Our participants are ambitious young professionals, fresh graduates, and career changers who are serious about their professional growth. They represent the next generation of leaders, innovators, and dedicated employees who will drive businesses forward.
+              </p>
+
+              <p>
+                This is your opportunity to showcase your brand to a highly engaged audience, connect with top-tier talent, and demonstrate your commitment to youth empowerment and professional development. Join us in creating pathways to success and building the careers that will shape Nigeria's future.
               </p>
               
               <p className="text-xl sm:text-2xl font-semibold text-orange-600 mt-8">
-                LET'S MOVE THE WORLD FORWARD TOGETHER.
+                LET'S BUILD THE FUTURE WORKFORCE TOGETHER.
               </p>
             </div>
           </motion.div>
