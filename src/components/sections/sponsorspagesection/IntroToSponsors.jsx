@@ -17,17 +17,14 @@ const IntroToSponsors = () => {
               Welcome to <span className="text-orange-600">HireGround</span>
             </h2>
             
-            <div className="space-y-6 text-base sm:text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+            <div className="space-y-6 text-base sm:text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto border-2 border-red-500 ">
+              <h1 className='text-4xl font-bold text-red-500'>Update this</h1>
               <p>
-                At HireGround, we create experiences that go beyond events, we shape moments that resonate. 
-                In 2024, we connected thousands. In 2025, we embrace transformation, a call to carry the torch forward, 
-                to inspire change, and to evolve.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sequi ullam repellendus blanditiis neque recusandae consequatur, sapiente similique nihil minus delectus alias possimus perspiciatis facere iste illo totam dolores quaerat vero asperiores eveniet modi reiciendis ea accusamus? Nulla, quae dolorum quidem labore quam, ratione saepe at voluptates debitis fugiat doloribus.
               </p>
               
               <p>
-                Our sponsors are not just supporters; they are co-creators of an experience that leaves a lasting impact, 
-                igniting minds, touching hearts, and building a future of endless possibilities. This year, join a 
-                trailblazing community of brands and visionary leaders.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nam iure cupiditate ducimus omnis ipsam animi aperiam, ipsum, ratione necessitatibus, sunt placeat odit eum odio esse exercitationem expedita distinctio possimus dolor assumenda dignissimos eius nostrum dolorum! Pariatur minima quasi possimus?
               </p>
               
               <p className="text-xl sm:text-2xl font-semibold text-orange-600 mt-8">

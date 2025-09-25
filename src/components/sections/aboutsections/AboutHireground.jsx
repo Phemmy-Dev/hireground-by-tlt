@@ -97,14 +97,15 @@ const AboutHireground = () => {
                   <FiArrowRight className="ml-2 w-5 h-5" />
                 </motion.a>
                 
-                <motion.button
+                {/* Commented out intro video btn */}
+                {/* <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="inline-flex items-center px-6 py-3 bg-white border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:border-orange-300 hover:text-orange-600 transition-all duration-300"
                 >
                   <FiPlay className="mr-2 w-5 h-5" />
                   Watch Introduction
-                </motion.button>
+                </motion.button> */}
               </div>
             </motion.div>
 

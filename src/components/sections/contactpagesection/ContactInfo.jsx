@@ -21,15 +21,15 @@ const ContactInfo = () => {
       action: "tel:+2349132681049",
       color: "bg-green-100 text-green-600"
     },
-    {
-      icon: <FiMapPin className="w-6 h-6" />,
-      title: "Visit Us",
-      primary: "Kwara State, Nigeria",
-      secondary: "Banquet Hall, Ilorin",
-      description: "Event venue",
-      action: "#",
-      color: "bg-purple-100 text-purple-600"
-    },
+    // {
+    //   icon: <FiMapPin className="w-6 h-6" />,
+    //   title: "Visit Us",
+    //   primary: "Kwara State, Nigeria",
+    //   secondary: "Banquet Hall, Ilorin",
+    //   description: "Event venue",
+    //   action: "#",
+    //   color: "bg-purple-100 text-purple-600"
+    // },
     {
       icon: <FiClock className="w-6 h-6" />,
       title: "Business Hours",
@@ -44,7 +44,7 @@ const ContactInfo = () => {
   const socialLinks = [
     { icon: <FiTwitter className="w-5 h-5" />, name: "Twitter", url: "#", color: "hover:text-blue-400" },
     { icon: <FiLinkedin className="w-5 h-5" />, name: "LinkedIn", url: "#", color: "hover:text-blue-600" },
-    { icon: <FiInstagram className="w-5 h-5" />, name: "Instagram", url: "#", color: "hover:text-pink-500" },
+    { icon: <FiInstagram className="w-5 h-5" />, name: "Instagram", url: "https://www.instagram.com/thelightutors.csr", color: "hover:text-pink-500" },
     { icon: <FiGlobe className="w-5 h-5" />, name: "Website", url: "#", color: "hover:text-orange-500" }
   ]
 
@@ -76,7 +76,7 @@ const ContactInfo = () => {
         </motion.div>
 
         {/* Contact Methods Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {contactMethods.map((method, index) => (
             <motion.a
               key={index}

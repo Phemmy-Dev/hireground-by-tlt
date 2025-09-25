@@ -55,7 +55,7 @@ const OrganizingTeam = () => {
     {
       id: 6,
       name: "Oluwafemi Akinruntan",
-      role: "Technical Support Lead",
+      role: "Head, Technical & Streaming",
       image: FemiImage,
       linkedin: "https://www.linkedin.com/in/oluwafemi-akinruntan/",
       email: "oluwafemiakinruntan@thelightutors.com"

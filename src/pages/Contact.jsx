@@ -11,7 +11,7 @@ const Contact = () => {
     <div>
       <Navbar />
       <ContactHero />
-      <ContactForm />
+      {/* <ContactForm /> */}
       <ContactInfo />
       <FaqSection />
       <Footer />
