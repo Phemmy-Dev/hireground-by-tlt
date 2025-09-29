@@ -53,7 +53,7 @@ const Navbar = () => {
                             <img 
                                 src={Logo} 
                                 alt="HireGround Logo" 
-                                className="h-8 sm:h-14 w-auto object-contain transition-all duration-300 hover:brightness-110 drop-shadow-lg"
+                                className="h-8 sm:h-11 w-auto object-contain transition-all duration-300 hover:brightness-110 drop-shadow-lg"
                             />
                         </Link>
                     </motion.div>
@@ -97,7 +97,7 @@ const Navbar = () => {
                                 rel="noopener noreferrer"
                                 className="px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-orange-700 hover:to-red-700 transform hover:-translate-y-1 transition-all duration-300"
                             >
-                                Get a Ticket
+                                Tickets Coming Soon
                             </a>
                         </motion.div>
                     </div>
@@ -164,7 +164,7 @@ const Navbar = () => {
                                         rel="noopener noreferrer"
                                         className="block w-full px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold text-center rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                                     >
-                                        Get a Ticket
+                                        Tickets Coming Soon
                                     </a>
                                 </motion.div>
                             </div>

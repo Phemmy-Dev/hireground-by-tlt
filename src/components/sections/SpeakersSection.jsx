@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { HiChevronLeft, HiChevronRight, HiSparkles, HiEye, HiArrowRight } from 'react-icons/hi';
 import JoshuaImage from '../../assets/images/speakers/Joshua.jpg';
+import PaulImage from '../../assets/images/speakers/paul.jpg';
 
 const SpeakersSection = () => {
   const scrollContainerRef = useRef(null);
@@ -16,13 +17,13 @@ const SpeakersSection = () => {
       image: JoshuaImage,
       company: "The Light Tutors Ltd.",
     },
-    // {
-    //   id: 2,
-    //   name: "Rufai Ismaila",
-    //   title: "Visual Artist",
-    //   image: "/api/placeholder/400/500",
-    //   company: "Kingsville Studios",
-    // },
+    {
+      id: 2,
+      name: "Paul Adeagbo",
+      title: "Visual Artist",
+      image: PaulImage,
+      company: "Kingsville Studios",
+    },
     // {
     //   id: 3,
     //   name: "Al Amin Idris",

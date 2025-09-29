@@ -26,7 +26,8 @@ const Footer = () => {
     ],
     quickLinks: [
       { name: 'Home', path: '/' },
-      { name: 'Get Tickets', href: 'https://wa.link/7hogep', external: true },
+      { name: 'Tickets Coming Soon', href: '#', external: false },
+      // { name: 'Get Tickets', href: 'https://wa.link/7hogep', external: true },
       { name: 'Become a Sponsor', href: 'mailto:hireground@thelightutors.com', external: true },
       { name: 'Partnership Inquiry', href: 'mailto:hireground@thelightutors.com', external: true }
     ]

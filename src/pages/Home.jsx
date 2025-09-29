@@ -18,7 +18,8 @@ const Home = () => {
     <div>
         <div className={`transition-all duration-300 ${showCountdownModal ? 'blur-sm' : ''}`}>
           <Navbar />
-          <Hero title='HireGround' text='Ready, Set, Your Career starts here' herobtn='Get Your Tickets' contCname='hero_cont' sectionCname='hero_text' heroImg={herobg} />
+          <Hero title='HireGround' text='Ready, Set, Your Career starts here' herobtn='Tickets Coming Soon' contCname='hero_cont' sectionCname='hero_text' heroImg={herobg} />
+          {/* <Hero title='HireGround' text='Ready, Set, Your Career starts here' herobtn='Get Your Tickets' contCname='hero_cont' sectionCname='hero_text' heroImg={herobg} /> */}
           <BackStory />
           <SpeakersSection />
           <Sponsors />

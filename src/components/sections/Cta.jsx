@@ -102,9 +102,13 @@ const Cta = () => {
                   className="group inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-orange-600 hover:bg-orange-700 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 min-w-[200px]"
                 >
                   <span className="flex items-center gap-3">
-                    Get Your Ticket
+                    Tickets Coming Soon
                     <FiArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                   </span>
+                  {/* <span className="flex items-center gap-3">
+                    Get Your Ticket
+                    <FiArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                  </span> */}
                 </motion.a>
 
                 {/* Secondary CTA */}

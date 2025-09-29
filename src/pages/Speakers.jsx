@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 import CountdownModal from '../components/CountdownModal'
 import { useCountdownModal } from '../hooks/useCountdownModal'
 import JoshuaImage from '../assets/images/speakers/Joshua.jpg'
+import PaulImage from '../assets/images/speakers/paul.jpg'
 import GovernerImage from '../assets/images/speakers/govAbdulraham.webp'
 
 const Speakers = () => {
@@ -35,16 +36,16 @@ const Speakers = () => {
       bio: "Joshua Oroge is a visionary leader in the education technology space, dedicated to transforming learning experiences across Africa.",
       fullBio: "Joshua Oroge is the CEO and Founder of The Light Tutors, an innovative edtech company focused on providing high-quality tutoring services to students across Africa. With a background in computer science and a passion for education, Joshua has been at the forefront of leveraging technology to enhance learning outcomes.\n\nUnder his leadership, The Light Tutors has developed a unique platform that connects students with experienced tutors, offering personalized learning experiences tailored to individual needs. Joshua is committed to making quality education accessible to all and has implemented several initiatives to support underprivileged students.\n\nIn addition to his work at The Light Tutors, Joshua is a sought-after speaker and mentor in the edtech community, regularly sharing his insights on the future of education and the role of technology in driving positive change."
     },
-    // {
-    //   id: 3,
-    //   name: "Sarah Adebayo",
-    //   title: "Director of Innovation",
-    //   company: "Global Bank Africa",
-    //   location: "Accra, Ghana",
-    //   image: null,
-    //   bio: "Sarah Adebayo leads digital transformation initiatives in the financial services sector, focusing on innovative banking solutions for emerging markets.",
-    //   fullBio: "Sarah Adebayo is the Director of Innovation at Global Bank Africa, where she spearheads digital transformation initiatives that are revolutionizing banking across the continent. With over 10 years of experience in financial technology, she has led the development of mobile banking platforms that serve over 5 million customers.\n\nSarah holds an MBA in Finance and has worked with major financial institutions across Africa and Europe. Her expertise in digital payments, blockchain technology, and financial inclusion has made her a key figure in shaping the future of African banking.\n\nShe is committed to increasing financial inclusion across Africa and has launched several initiatives to bring banking services to underserved communities. Sarah is also an advocate for women in fintech and mentors female professionals in the financial services industry."
-    // },
+    {
+      id: 3,
+      name: "Paul Adeagbo",
+      title: "Director of Innovation",
+      company: "Global Bank Africa",
+      location: "Accra, Ghana",
+      image: PaulImage,
+      bio: "Sarah Adebayo leads digital transformation initiatives in the financial services sector, focusing on innovative banking solutions for emerging markets.",
+      fullBio: "Sarah Adebayo is the Director of Innovation at Global Bank Africa, where she spearheads digital transformation initiatives that are revolutionizing banking across the continent. With over 10 years of experience in financial technology, she has led the development of mobile banking platforms that serve over 5 million customers.\n\nSarah holds an MBA in Finance and has worked with major financial institutions across Africa and Europe. Her expertise in digital payments, blockchain technology, and financial inclusion has made her a key figure in shaping the future of African banking.\n\nShe is committed to increasing financial inclusion across Africa and has launched several initiatives to bring banking services to underserved communities. Sarah is also an advocate for women in fintech and mentors female professionals in the financial services industry."
+    },
     // {
     //   id: 4,
     //   name: "Michael Obi",

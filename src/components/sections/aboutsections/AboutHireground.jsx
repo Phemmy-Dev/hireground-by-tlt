@@ -88,6 +88,15 @@ const AboutHireground = () => {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <motion.a
+                  href="#"
+                  whileHover={{ scale: 1.02, y: -2 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="inline-flex items-center px-6 py-3 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+                >
+                  Tickets Coming Soon
+                  <FiArrowRight className="ml-2 w-5 h-5" />
+                </motion.a>
+                {/* <motion.a
                   href="/register"
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
@@ -95,7 +104,7 @@ const AboutHireground = () => {
                 >
                   Get Your Ticket
                   <FiArrowRight className="ml-2 w-5 h-5" />
-                </motion.a>
+                </motion.a> */}
                 
                 {/* Commented out intro video btn */}
                 {/* <motion.button
@@ -238,12 +247,19 @@ const AboutHireground = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a
+                  href="#"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="inline-flex items-center px-8 py-4 bg-white text-orange-600 font-semibold rounded-xl hover:bg-gray-50 transition-all duration-300 shadow-lg"
+                >
+                  Tickets Coming Soon
+                {/* <motion.a
                   href="/register"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   className="inline-flex items-center px-8 py-4 bg-white text-orange-600 font-semibold rounded-xl hover:bg-gray-50 transition-all duration-300 shadow-lg"
                 >
-                  Get Your Ticket Now
+                  Get Your Ticket Now */}
                   <FiArrowRight className="ml-2 w-5 h-5" />
                 </motion.a>
                 <motion.a

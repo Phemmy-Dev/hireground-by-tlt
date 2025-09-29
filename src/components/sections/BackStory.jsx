@@ -352,9 +352,19 @@ const BackStory = () => {
                   className="px-8 py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                   style={{ backgroundColor: '#ff7300' }}
                 >
-                  Get Your Tickets Now
+                  Tickets Coming Soon
                 </motion.button>
               </Link>
+              {/* <Link to="/contact">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                  style={{ backgroundColor: '#ff7300' }}
+                >
+                  Get Your Tickets Now
+                </motion.button>
+              </Link> */}
             </div>
           </div>
         </motion.div>
