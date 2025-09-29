@@ -127,7 +127,7 @@ const Sponsors = () => {
             className="mb-16"
           >
             <motion.a
-              href="mailto:bukunmi@thelightutors.com"
+              href="mailto:hireground@thelightutors.com"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center px-8 py-4 bg-gray-900 text-white font-semibold rounded-xl hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl"

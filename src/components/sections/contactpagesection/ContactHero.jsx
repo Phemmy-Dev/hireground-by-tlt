@@ -70,8 +70,8 @@ const ContactHero = () => {
                   </div>
                   <div className="min-w-0 flex-1">
                     <p className="text-xs sm:text-sm text-gray-500 font-medium">Email us at</p>
-                    <a href="mailto:bukunmi@thelightutors.com" className="text-sm sm:text-base text-gray-900 font-semibold hover:text-orange-600 transition-colors duration-300 truncate block">
-                      bukunmi@thelightutors.com
+                    <a href="mailto:hireground@thelightutors.com" className="text-sm sm:text-base text-gray-900 font-semibold hover:text-orange-600 transition-colors duration-300 truncate block">
+                      hireground@thelightutors.com
                     </a>
                   </div>
                 </motion.div>

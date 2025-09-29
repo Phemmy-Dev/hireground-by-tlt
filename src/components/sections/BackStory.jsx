@@ -127,11 +127,11 @@ const BackStory = () => {
                 {/* Story Content */}
                 <div className="space-y-6">
                   <p className="text-lg sm:text-md text-gray-700 leading-relaxed">
-                    It began with a single encounter — a young lady who thought she had ruined her interview because she didn't ask a single question. That moment revealed something bigger: countless young Nigerians are stepping into interviews unprepared, not because they lack talent, but because they've never been taught how to show up.
+                    It began with a single encounter, a young lady who thought she had ruined her interview because she didn't ask a single question. That moment revealed something bigger: countless young Nigerians are stepping into interviews unprepared, not because they lack talent, but because they've never been taught how to show up.
                   </p>
                   
                   <p className="text-lg sm:text-md text-gray-700 leading-relaxed">
-                    At The Light Tutors, we've seen it all — candidates logging in from noisy buses, interviews taken in pyjamas, some even joining from a football pitch. It's not a lack of potential. It's a lack of preparation.
+                    At The Light Tutors, we've seen it all, candidates logging in from noisy buses, interviews taken in pyjamas, some even joining from a football pitch. It's not a lack of potential. It's a lack of preparation.
                   </p>
                   
                   <div className="bg-orange-50 rounded-2xl p-6 border-l-4 border-orange-500">

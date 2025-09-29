@@ -17,27 +17,23 @@ const FaqSection = () => {
     },
     {
       question: "Do I need prior experience to attend?",
-      answer: "Not at all! HireGround is designed for people at all career stages. Our content ranges from beginner-friendly sessions for fresh graduates to advanced strategies for experienced professionals looking to level up their careers."
+      answer: "Not at all! HireGround is designed for people at all career stages."
     },
-    {
-      question: "How much does it cost to attend?",
-      answer: "HireGround offers various ticket options to make the event accessible to everyone. We have early bird discounts, student rates, and group packages. Check our pricing section for current rates and special offers."
-    },
-    {
-      question: "What's included in my ticket?",
-      answer: "Your ticket includes access to all keynote sessions, breakout workshops, networking sessions, career coaching corners, CV review sessions, mock interviews, lunch, refreshments, and exclusive career resources and templates."
-    },
-    {
-      question: "Will I get materials or resources to take home?",
-      answer: "Absolutely! All attendees receive a comprehensive career toolkit including CV templates, interview checklists, salary negotiation guides, networking templates, and exclusive access to our online resource portal for 6 months post-event."
-    },
+    // {
+    //   question: "How much does it cost to attend?",
+    //   answer: "HireGround offers various ticket options to make the event accessible to everyone. We have early bird discounts, student rates, and group packages. Check our pricing section for current rates and special offers."
+    // },
+    // {
+    //   question: "What's included in my ticket?",
+    //   answer: "Your ticket includes access to all keynote sessions, breakout workshops, networking sessions, career coaching corners, CV review sessions, mock interviews, lunch, refreshments, and exclusive career resources and templates."
+    // },
+    // {
+    //   question: "Will I get materials or resources to take home?",
+    //   answer: "Absolutely! All attendees receive a comprehensive career toolkit including CV templates, interview checklists, salary negotiation guides, networking templates, and exclusive access to our online resource portal for 6 months post-event."
+    // },
     {
       question: "Can I network with other attendees and speakers?",
       answer: "Yes! Networking is a key component of HireGround. We have dedicated networking sessions, lunch breaks, and informal meet-and-greet opportunities. You'll connect with like-minded professionals, potential mentors, and industry leaders."
-    },
-    {
-      question: "Are there specific tracks for different industries?",
-      answer: "Yes, we offer specialized tracks for Tech, Finance, Healthcare, Creative Industries, Entrepreneurship, and Public Service. Each track features industry-specific speakers and tailored career advice for those sectors."
     },
     {
       question: "Will there be job opportunities available?",
@@ -47,10 +43,10 @@ const FaqSection = () => {
       question: "How do I prepare for the event?",
       answer: "Come with an open mind and specific career goals in mind. Bring copies of your CV for review sessions, prepare questions for speakers, and don't forget your business cards or LinkedIn QR code for networking. We'll send a detailed preparation guide closer to the event date."
     },
-    {
-      question: "Is lunch and refreshments provided?",
-      answer: "Yes! Your ticket includes a networking lunch, coffee breaks, and light refreshments throughout the day. We cater to various dietary requirements - just let us know when registering."
-    },
+    // {
+    //   question: "Is lunch and refreshments provided?",
+    //   answer: "Yes! Your ticket includes a networking lunch, coffee breaks, and light refreshments throughout the day. We cater to various dietary requirements - just let us know when registering."
+    // },
   ];
 
   const containerVariants = {
@@ -246,15 +242,6 @@ const FaqSection = () => {
                   className="px-8 py-4 bg-white text-orange-600 font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Contact Support
-                </motion.button>
-                </a>
-                <a href="https://bit.ly/vtltcf25" target="_blank" rel="noopener noreferrer">
-                <motion.button
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-white/20 backdrop-blur-sm text-white font-bold rounded-full border border-white/30 hover:bg-white/30 transition-all duration-300"
-                >
-                  Become a Volunteer
                 </motion.button>
                 </a>
               </div>

@@ -170,7 +170,7 @@ const WhySponsor = () => {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a
-                  href="mailto:bukunmi@thelightutors.com"
+                  href="mailto:hireground@thelightutors.com"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   className="inline-flex items-center px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-xl shadow-xl transition-all duration-300"

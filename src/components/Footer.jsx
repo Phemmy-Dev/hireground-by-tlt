@@ -27,8 +27,8 @@ const Footer = () => {
     quickLinks: [
       { name: 'Home', path: '/' },
       { name: 'Get Tickets', href: 'https://wa.link/7hogep', external: true },
-      { name: 'Become a Sponsor', href: 'mailto:bukunmi@thelightutors.com', external: true },
-      { name: 'Partnership Inquiry', href: 'mailto:bukunmi@thelightutors.com', external: true }
+      { name: 'Become a Sponsor', href: 'mailto:hireground@thelightutors.com', external: true },
+      { name: 'Partnership Inquiry', href: 'mailto:hireground@thelightutors.com', external: true }
     ]
   }
 
@@ -80,8 +80,8 @@ const Footer = () => {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center gap-3 text-gray-400">
                   <FiMail className="w-4 h-4 text-orange-500" />
-                  <a href="mailto:bukunmi@thelightutors.com" className="text-sm hover:text-orange-500 transition-colors duration-300">
-                    bukunmi@thelightutors.com
+                  <a href="mailto:hireground@thelightutors.com" className="text-sm hover:text-orange-500 transition-colors duration-300">
+                    hireground@thelightutors.com
                   </a>
                 </div>
                 <div className="flex items-center gap-3 text-gray-400">

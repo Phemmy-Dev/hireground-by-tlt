@@ -64,7 +64,7 @@ const Cta = () => {
               </motion.p>
 
               {/* Features */}
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
@@ -80,7 +80,7 @@ const Cta = () => {
                     <span className="font-medium text-sm">{feature.text}</span>
                   </div>
                 ))}
-              </motion.div>
+              </motion.div> */}
             </div>
 
             {/* CTA Buttons Section */}
