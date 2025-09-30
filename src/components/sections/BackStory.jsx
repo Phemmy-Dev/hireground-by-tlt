@@ -141,7 +141,7 @@ const BackStory = () => {
                   </div>
 
                   <p className="text-lg sm:text-md text-gray-700 leading-relaxed">
-                    What started as a small training idea has grown into a nationwide movement — a Career Fair designed to empower over 10,000 young Nigerians with the skills they need to land jobs and thrive at work:
+                    What started as a small training idea has grown into a nationwide movement. A Career Fair designed to empower over 10,000 young Nigerians with the skills they need to land jobs and thrive at work:
                   </p>
 
                   {/* Skills List */}

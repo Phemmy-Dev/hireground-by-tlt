@@ -39,12 +39,12 @@ const Speakers = () => {
     {
       id: 3,
       name: "Paul Adeagbo",
-      title: "Director of Innovation",
-      company: "Global Bank Africa",
-      location: "Accra, Ghana",
+      title: "Career Coach & Editorial Director",
+      company: "MindShift Consulting LTD",
+      location: "Nigeria",
       image: PaulImage,
-      bio: "Sarah Adebayo leads digital transformation initiatives in the financial services sector, focusing on innovative banking solutions for emerging markets.",
-      fullBio: "Sarah Adebayo is the Director of Innovation at Global Bank Africa, where she spearheads digital transformation initiatives that are revolutionizing banking across the continent. With over 10 years of experience in financial technology, she has led the development of mobile banking platforms that serve over 5 million customers.\n\nSarah holds an MBA in Finance and has worked with major financial institutions across Africa and Europe. Her expertise in digital payments, blockchain technology, and financial inclusion has made her a key figure in shaping the future of African banking.\n\nShe is committed to increasing financial inclusion across Africa and has launched several initiatives to bring banking services to underserved communities. Sarah is also an advocate for women in fintech and mentors female professionals in the financial services industry."
+      bio: "Paul Adeagbo is on a mission to transform Nigerian graduates into global talents through strategic career coaching and professional development.",
+      fullBio: "Paul Adeagbo is on a mission with MindShift Consulting LTD to transform Nigerian graduates into global talents. He is a Career Coach with over five years of experience whose Job Search strategy has assisted over 300 clients to secure coveted job opportunities across diverse sectors.\n\nHe has provided invaluable support to 15 clients who successfully gained admission to graduate programs, including the prestigious Chevening Scholarship. He also guided 25 graduates into the Venture in Management Program at Lagos Business School.\n\nBeyond his coaching, Paul is the Editorial Director of EMPLOYABLE, a career development magazine that reaches over 5,000 professionals across 6 African countries. He's also the driving force behind the Campus Career and Employability Conference.\n\nPaul strongly believes that there is a strong correlation between a nation's human capital pool and her economic competitiveness. He specializes in empowering young professionals to excel in their careers, helping them access opportunities that align with their career aspirations.\n\nCrafting professional documents, such as CVs, cover letters, and admission essays, is another area where Paul's expertise shines, making these tasks more manageable and helping clients secure the career opportunities they deserve.\n\nIf you're genuinely committed to achieving your career goals, Paul is the mentor you've been searching for to begin your career transformation journey."
     },
     // {
     //   id: 4,

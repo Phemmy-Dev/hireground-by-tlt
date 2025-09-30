@@ -20,9 +20,9 @@ const SpeakersSection = () => {
     {
       id: 2,
       name: "Paul Adeagbo",
-      title: "Visual Artist",
+      title: "Career Coach",
       image: PaulImage,
-      company: "Kingsville Studios",
+      company: "MindShift Consulting Inc.",
     },
     // {
     //   id: 3,
