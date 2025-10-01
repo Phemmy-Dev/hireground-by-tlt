@@ -1,18 +1,8 @@
 ---
 deployment:
   tasks:
-    # Define deploy path (subdomain root)
     - export DEPLOYPATH=/home/jigsawaf/hireground.thelightutors.com/
-
-    # Optional: Clean up old files before copying
-    - /bin/rm -rf $DEPLOYPATH/*
-
-    # Copy build output
     - /bin/cp -R dist/* $DEPLOYPATH
-
-    # Set proper permissions
     - /bin/chmod -R 644 $DEPLOYPATH
     - /bin/find $DEPLOYPATH -type d -exec chmod 755 {} \;
-
-    # Copy .htaccess if it exists
     - /bin/cp .htaccess $DEPLOYPATH 2>/dev/null || :
