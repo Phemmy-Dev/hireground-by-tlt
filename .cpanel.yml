@@ -5,4 +5,5 @@ deployment:
     - /bin/cp -R dist/* $DEPLOYPATH
     - /bin/chmod -R 644 $DEPLOYPATH
     - /bin/find $DEPLOYPATH -type d -exec chmod 755 {} \;
-    - /bin/cp .htaccess $DEPLOYPATH 2>/dev/null || :
+    - /bin/cp public/.htaccess $DEPLOYPATH 2>/dev/null || :
+    - /bin/cp public/_redirects $DEPLOYPATH 2>/dev/null || :
