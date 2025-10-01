@@ -181,10 +181,10 @@ const SponsorsSectionHero = () => {
             <p className="text-gray-300 text-sm sm:text-base">
               For partnership inquiries: 
               <a 
-                href="mailto:bukunmi@thelightutors.com" 
+                href="mailto:hireground@thelightutors.com" 
                 className="text-orange-400 hover:text-orange-300 ml-2 font-semibold underline"
               >
-                bukunmi@thelightutors.com
+                hireground@thelightutors.com
               </a>
             </p>
           </motion.div>
