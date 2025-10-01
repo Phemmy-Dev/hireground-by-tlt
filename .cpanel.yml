@@ -2,8 +2,14 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/jigsawaf/hireground.thelightutors.com/
+    # Copy all files from dist including .htaccess
     - /bin/cp -R dist/* $DEPLOYPATH
+    - /bin/cp dist/.htaccess $DEPLOYPATH 2>/dev/null || :
+    - /bin/cp dist/_redirects $DEPLOYPATH 2>/dev/null || :
+    # Set proper permissions
     - /bin/chmod -R 644 $DEPLOYPATH
     - /bin/find $DEPLOYPATH -type d -exec chmod 755 {} \;
-    - /bin/cp public/.htaccess $DEPLOYPATH 2>/dev/null || :
-    - /bin/cp public/_redirects $DEPLOYPATH 2>/dev/null || :
+    # Ensure .htaccess has correct permissions
+    - /bin/chmod 644 $DEPLOYPATH/.htaccess 2>/dev/null || :
+    # Verify .htaccess exists (for debugging)
+    - /bin/ls -la $DEPLOYPATH/.htaccess 2>/dev/null || echo ".htaccess not found"
