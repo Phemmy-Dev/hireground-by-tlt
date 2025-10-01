@@ -164,7 +164,7 @@ const Navbar = () => {
                                         rel="noopener noreferrer"
                                         className="block w-full px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold text-center rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                                     >
-                                        Tickets Coming Soon
+                                        Tickets Coming Soon.
                                     </a>
                                 </motion.div>
                             </div>
