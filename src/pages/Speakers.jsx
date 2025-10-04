@@ -8,7 +8,9 @@ import CountdownModal from '../components/CountdownModal'
 import { useCountdownModal } from '../hooks/useCountdownModal'
 import JoshuaImage from '../assets/images/speakers/Joshua.jpg'
 import PaulImage from '../assets/images/speakers/paul.jpg'
+import MrsAdimulaimage from '../assets/images/speakers/MrsAdimula.jpg'
 import GovernerImage from '../assets/images/speakers/govAbdulraham.webp'
+import { i } from 'framer-motion/m'
 
 const Speakers = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState(null)
@@ -31,7 +33,7 @@ const Speakers = () => {
       name: "Joshua Oroge",
       title: "CEO/Founder",
       company: "The Light Tutors",
-      location: "Lagos, Nigeria",
+      location: "Nigeria",
       image: JoshuaImage,
       bio: "Joshua Oroge is a visionary leader in the education technology space, dedicated to transforming learning experiences across Africa.",
       fullBio: "Joshua Oroge is the CEO and Founder of The Light Tutors, an innovative edtech company focused on providing high-quality tutoring services to students across Africa. With a background in computer science and a passion for education, Joshua has been at the forefront of leveraging technology to enhance learning outcomes.\n\nUnder his leadership, The Light Tutors has developed a unique platform that connects students with experienced tutors, offering personalized learning experiences tailored to individual needs. Joshua is committed to making quality education accessible to all and has implemented several initiatives to support underprivileged students.\n\nIn addition to his work at The Light Tutors, Joshua is a sought-after speaker and mentor in the edtech community, regularly sharing his insights on the future of education and the role of technology in driving positive change."
@@ -46,16 +48,16 @@ const Speakers = () => {
       bio: "Paul Adeagbo is on a mission to transform Nigerian graduates into global talents through strategic career coaching and professional development.",
       fullBio: "Paul Adeagbo is on a mission with MindShift Consulting LTD to transform Nigerian graduates into global talents. He is a Career Coach with over five years of experience whose Job Search strategy has assisted over 300 clients to secure coveted job opportunities across diverse sectors.\n\nHe has provided invaluable support to 15 clients who successfully gained admission to graduate programs, including the prestigious Chevening Scholarship. He also guided 25 graduates into the Venture in Management Program at Lagos Business School.\n\nBeyond his coaching, Paul is the Editorial Director of EMPLOYABLE, a career development magazine that reaches over 5,000 professionals across 6 African countries. He's also the driving force behind the Campus Career and Employability Conference.\n\nPaul strongly believes that there is a strong correlation between a nation's human capital pool and her economic competitiveness. He specializes in empowering young professionals to excel in their careers, helping them access opportunities that align with their career aspirations.\n\nCrafting professional documents, such as CVs, cover letters, and admission essays, is another area where Paul's expertise shines, making these tasks more manageable and helping clients secure the career opportunities they deserve.\n\nIf you're genuinely committed to achieving your career goals, Paul is the mentor you've been searching for to begin your career transformation journey."
     },
-    // {
-    //   id: 4,
-    //   name: "Michael Obi",
-    //   title: "Founder & CEO",
-    //   company: "EduTech Solutions",
-    //   location: "Port Harcourt, Nigeria",
-    //   image: null,
-    //   bio: "Michael Obi is revolutionizing education in Africa through innovative technology solutions that make quality learning accessible to millions of students.",
-    //   fullBio: "Michael Obi is the Founder and CEO of EduTech Solutions, an educational technology company that has transformed learning experiences for over 2 million students across Africa. His platform provides quality educational content and interactive learning tools to students in remote and underserved areas.\n\nWith a background in both technology and education, Michael identified the critical gap in educational resources across Africa and developed innovative solutions to bridge this divide. His work has been recognized by UNESCO and other international organizations for its impact on educational equity.\n\nMichael is passionate about democratizing education and ensuring that every child in Africa has access to quality learning opportunities. He regularly collaborates with governments and NGOs to implement educational technology initiatives and has received numerous awards for his contributions to education in Africa."
-    // },
+    {
+      id: 4,
+      name: "Morenikeji Rade Adimula",
+      title: "Human Resource Consultant",
+      company: "I NEED A GOOD TEAM",
+      location: "Nigeria",
+      image: MrsAdimulaimage,
+      bio: "Morenikeji Rade Adimula is a seasoned Human Resource Consultant with over five years of experience across diverse sectors, specializing in organizational transformation and talent management.",
+      fullBio: "Morenikeji Rade Adimula is a seasoned Human Resource Consultant with a wealth of experience spanning over five years across diverse sectors. Her expertise has left an indelible mark on industries such as health, certification and training, agriculture, construction, mining and performance management, showcasing her adaptability and proficiency in navigating varied organizational landscapes.\n\nBorn with an innate drive for excellence, Morenikeji pursued her academic endeavors with zeal, obtaining a Bachelor of Science degree in International Law and Diplomacy. Eager to expand her knowledge and skill set, she pursued further education, amassing a collection of certificates across multiple sectors. These certifications serve as a testament to her commitment to continuous learning and professional development.\n\nThroughout her career, Morenikeji has been a catalyst for organizational transformation, specializing in building robust structures and fostering vibrant cultures within the companies she serves. Her consultancy engagements have primarily revolved around collaborating with organizations and start-ups, where she has played a pivotal role in shaping their organizational identity and operational frameworks.\n\nCurrently, she provides her consultancy services to I NEED A GOOD JOB and I NEED A GOOD TEAM, an HR consulting firm, where she serves as a trusted advisor to a diverse array of organizations, contributing her insights and guidance to enhance their HR practices and overall effectiveness.\n\nMorenikeji's proficiency spans the entire HR spectrum, with a focus on recruitment, talent management, onboarding, training, and performance management. Her proven track record of delivering results and her innate ability to understand the unique needs of each organization set her apart as a trusted partner in the pursuit of excellence.\n\nIn her spare time, Morenikeji remains committed to community engagement and mentorship initiatives, where she shares her knowledge and experiences to uplift aspiring HR professionals. Her dedication to her craft, coupled with her passion for making a meaningful impact, underscores Morenikeji Rade Adimula as a distinguished figure in the field of Human Resource Consultancy."
+    },
     // {
     //   id: 5,
     //   name: "Fatima Al-Zahra",

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { HiChevronLeft, HiChevronRight, HiSparkles, HiEye, HiArrowRight } from 'react-icons/hi';
 import JoshuaImage from '../../assets/images/speakers/Joshua.jpg';
 import PaulImage from '../../assets/images/speakers/paul.jpg';
+import MrsAdimulaimage from '../../assets/images/speakers/MrsAdimula.jpg';
 
 const SpeakersSection = () => {
   const scrollContainerRef = useRef(null);
@@ -24,13 +25,13 @@ const SpeakersSection = () => {
       image: PaulImage,
       company: "MindShift Consulting Inc.",
     },
-    // {
-    //   id: 3,
-    //   name: "Al Amin Idris",
-    //   title: "CEO of Interface Africa",
-    //   image: "/api/placeholder/400/500", // Replace with actual image
-    //   company: "Interface Africa",
-    // },
+    {
+      id: 3,
+      name: "Morenikeji Rade Adimula",
+      title: "Human Resource Consultant",
+      image: MrsAdimulaimage,
+      company: "I NEED A GOOD TEAM",
+    },
     // {
     //   id: 4,
     //   name: "Ganiyat Sani",
