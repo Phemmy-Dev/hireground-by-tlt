@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { HiChevronLeft, HiChevronRight, HiSparkles, HiEye, HiArrowRight } from 'react-icons/hi';
 import JoshuaImage from '../../assets/images/speakers/Joshua.jpg';
 import PaulImage from '../../assets/images/speakers/paul.jpg';
+import solaRahmanImage from '../../assets/images/speakers/SolaRahman.jpg';
+import moboladeAdesokanImage from '../../assets/images/speakers/MoboladeAdesokan.jpg';
 import MrsAdimulaimage from '../../assets/images/speakers/MrsAdimula.jpg';
 
 const SpeakersSection = () => {
@@ -32,20 +34,20 @@ const SpeakersSection = () => {
       image: MrsAdimulaimage,
       company: "I NEED A GOOD TEAM",
     },
-    // {
-    //   id: 4,
-    //   name: "Ganiyat Sani",
-    //   title: "Cultural Manager and Curator",
-    //   image: "/api/placeholder/400/500", // Replace with actual image
-    //   company: "Cultural Dynamics",
-    // },
-    // {
-    //   id: 5,
-    //   name: "Sarah Johnson",
-    //   title: "Product Design Lead",
-    //   image: "/api/placeholder/400/500", // Replace with actual image
-    //   company: "Design Forward",
-    // },
+    {
+      id: 4,
+      name: "Sola Rahman",
+      title: "Event Planner & Master of Ceremonies",
+      image: solaRahmanImage,
+      company: "The Sola Rahman Brand",
+    },
+    {
+      id: 5,
+      name: "Mobolade Miriam Adesokan",
+      title: "Founder",
+      image: moboladeAdesokanImage,
+      company: "Equipr",
+    },
     // {
     //   id: 6,
     //   name: "Michael Chen",

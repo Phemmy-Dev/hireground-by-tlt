@@ -9,6 +9,8 @@ import { useCountdownModal } from '../hooks/useCountdownModal'
 import JoshuaImage from '../assets/images/speakers/Joshua.jpg'
 import PaulImage from '../assets/images/speakers/paul.jpg'
 import MrsAdimulaimage from '../assets/images/speakers/MrsAdimula.jpg'
+import solaRahmanImage from '../assets/images/speakers/solaRahman.jpg'
+import moboladeAdesokanImage from '../assets/images/speakers/moboladeAdesokan.jpg'
 import GovernerImage from '../assets/images/speakers/govAbdulraham.webp'
 import { i } from 'framer-motion/m'
 
@@ -49,7 +51,7 @@ const Speakers = () => {
       fullBio: "Paul Adeagbo is on a mission with MindShift Consulting LTD to transform Nigerian graduates into global talents. He is a Career Coach with over five years of experience whose Job Search strategy has assisted over 300 clients to secure coveted job opportunities across diverse sectors.\n\nHe has provided invaluable support to 15 clients who successfully gained admission to graduate programs, including the prestigious Chevening Scholarship. He also guided 25 graduates into the Venture in Management Program at Lagos Business School.\n\nBeyond his coaching, Paul is the Editorial Director of EMPLOYABLE, a career development magazine that reaches over 5,000 professionals across 6 African countries. He's also the driving force behind the Campus Career and Employability Conference.\n\nPaul strongly believes that there is a strong correlation between a nation's human capital pool and her economic competitiveness. He specializes in empowering young professionals to excel in their careers, helping them access opportunities that align with their career aspirations.\n\nCrafting professional documents, such as CVs, cover letters, and admission essays, is another area where Paul's expertise shines, making these tasks more manageable and helping clients secure the career opportunities they deserve.\n\nIf you're genuinely committed to achieving your career goals, Paul is the mentor you've been searching for to begin your career transformation journey."
     },
     {
-      id: 4,
+      id: 3,
       name: "Morenikeji Rade Adimula",
       title: "Human Resource Consultant",
       company: "I NEED A GOOD TEAM",
@@ -58,28 +60,28 @@ const Speakers = () => {
       bio: "Morenikeji Rade Adimula is a seasoned Human Resource Consultant with over five years of experience across diverse sectors, specializing in organizational transformation and talent management.",
       fullBio: "Morenikeji Rade Adimula is a seasoned Human Resource Consultant with a wealth of experience spanning over five years across diverse sectors. Her expertise has left an indelible mark on industries such as health, certification and training, agriculture, construction, mining and performance management, showcasing her adaptability and proficiency in navigating varied organizational landscapes.\n\nBorn with an innate drive for excellence, Morenikeji pursued her academic endeavors with zeal, obtaining a Bachelor of Science degree in International Law and Diplomacy. Eager to expand her knowledge and skill set, she pursued further education, amassing a collection of certificates across multiple sectors. These certifications serve as a testament to her commitment to continuous learning and professional development.\n\nThroughout her career, Morenikeji has been a catalyst for organizational transformation, specializing in building robust structures and fostering vibrant cultures within the companies she serves. Her consultancy engagements have primarily revolved around collaborating with organizations and start-ups, where she has played a pivotal role in shaping their organizational identity and operational frameworks.\n\nCurrently, she provides her consultancy services to I NEED A GOOD JOB and I NEED A GOOD TEAM, an HR consulting firm, where she serves as a trusted advisor to a diverse array of organizations, contributing her insights and guidance to enhance their HR practices and overall effectiveness.\n\nMorenikeji's proficiency spans the entire HR spectrum, with a focus on recruitment, talent management, onboarding, training, and performance management. Her proven track record of delivering results and her innate ability to understand the unique needs of each organization set her apart as a trusted partner in the pursuit of excellence.\n\nIn her spare time, Morenikeji remains committed to community engagement and mentorship initiatives, where she shares her knowledge and experiences to uplift aspiring HR professionals. Her dedication to her craft, coupled with her passion for making a meaningful impact, underscores Morenikeji Rade Adimula as a distinguished figure in the field of Human Resource Consultancy."
     },
-    // {
-    //   id: 5,
-    //   name: "Fatima Al-Zahra",
-    //   title: "Chief Operating Officer",
-    //   company: "Green Energy Africa",
-    //   location: "Cairo, Egypt",
-    //   image: null,
-    //   bio: "Fatima Al-Zahra is driving sustainable energy solutions across Africa, leading initiatives that bring clean power to communities throughout the continent.",
-    //   fullBio: "Fatima Al-Zahra serves as the Chief Operating Officer of Green Energy Africa, a leading renewable energy company that has installed solar power systems in over 500 communities across the continent. With expertise in sustainable energy solutions and project management, she has been instrumental in expanding access to clean electricity.\n\nFatima holds a Master's degree in Environmental Engineering and has over 8 years of experience in the renewable energy sector. She has led cross-functional teams in implementing large-scale solar and wind projects that have brought power to over 1 million people in rural areas.\n\nShe is a strong advocate for environmental sustainability and women's empowerment in the energy sector. Fatima regularly speaks at climate conferences and has been recognized for her contributions to sustainable development in Africa."
-    // },
+    {
+      id: 4,
+      name: "Sola Rahman",
+      title: "Event Planner & Master of Ceremonies",
+      company: "The Sola Rahman Brand",
+      location: "Nigeria",
+      image: solaRahmanImage,
+      bio: "Sola Rahman is a dynamic event planner and master of ceremonies known for putting event hosting on a new pedestal, turning moments into memorable experiences.",
+      fullBio: "Sola Rahman is a dynamic event planner and master of ceremonies operating under his brand, The Sola Rahman Brand.\n\nAs a compere, Sola is described as young, versatile and engaging. He has hosted over 250 events, each one offering him the opportunity to bring energy, flair and professionalism to the stage.\n\nAs an event planner he delivers bespoke services: crafting occasions that reflect each client's vision, whether it's for weddings, social celebrations or business functions.\n\nKnown for putting event hosting on a new pedestal, Sola Rahman's ethos centres on turning moments into memorable experiences, where seamless coordination, warm hosting, and thoughtful design converge. He brings both the mic and the blueprint: hosting events with charisma and planning them with precision."
+    },
+    {
+      id: 5,
+      name: "Mobolade Adesokan",
+      title: "Founder ",
+      company: "Equipr",
+      location: "Nigeria",
+      image: moboladeAdesokanImage,
+      bio: "Miriam Mobolade Adesokan is a leader in business and portfolio management, passionate about helping people turn their ideas into profitable ventures.",
+      fullBio: "Miriam Mobolade Adesokan is a leader in business and portfolio management, passionate about helping people turn their ideas into profitable ventures.\n\nShe is a people builder and avid investor in communities, with over a decade experience, coaching CEOs from diverse walks of life. She is also a process development guru, with experience helping companies to design their strategy, build stronger infrastructure, and develop their teams.\n\nShe is a firm believer in the New Nigeria, a Nigeria where every individual can achieve their highest potential and thrive.\n\nShe started her career in Biology and Nursing at the Bloomfield College of Montclair State University in New Jersey, went on to earn an MSc in Clinical Research from the University of Hertfordshire Hatfield, UK. She is a trained Project Management Practitioner with a PRINCE II from Pearson Mayfield Imperial College London, switched careers to project management and eventually leading global projects in Healthcare across various continents: NA, EU, EMEA, Asia Pacific regions.\n\nShe started her first company in 2013 - since then she has helped many people to start new businesses or revitalise already established ones, implementing risk and quality management systems and processes, training and compliance systems, process improvement strategies, designing company strategies and culture, helping companies source infrastructure to enhance growth.\n\nShe is the Founder of Equipr for Advancement Foundation, the umbrella organization for the equipr African Youth Partnership, an organization focused on youth advancement for Africa's undergraduate and graduate students, with over 150 students mentored within the five batches of students registered since November 2021. She is also the CEO for Swoop, Anchor Therapeutics Ltd to mention a few.\n\nShe is a mum and a wife, a songwriter, and she teaches music theory and beginners piano in her spare time."
+    },
     // {
     //   id: 6,
-    //   name: "David Mensah",
-    //   title: "Head of Digital Strategy",
-    //   company: "MediaCorp West Africa",
-    //   location: "Accra, Ghana",
-    //   image: null,
-    //   bio: "David Mensah is transforming media and communications across West Africa through innovative digital strategies and content platforms.",
-    //   fullBio: "David Mensah is the Head of Digital Strategy at MediaCorp West Africa, where he oversees digital transformation initiatives for one of the region's largest media companies. With over 9 years of experience in digital marketing and content strategy, he has revolutionized how media companies engage with audiences across Africa.\n\nDavid has successfully launched multiple digital platforms that reach over 10 million users monthly. His innovative approach to content distribution and audience engagement has set new standards in the African media industry.\n\nHe is passionate about promoting African stories and voices on global platforms. David mentors young content creators and digital marketers, and he regularly speaks at conferences about the future of media in Africa."
-    // },
-    // {
-    //   id: 7,
     //   name: "Dr. Kemi Adeleke",
     //   title: "Research Director",
     //   company: "Health Innovation Lab",
