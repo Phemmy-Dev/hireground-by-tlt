@@ -345,16 +345,16 @@ const BackStory = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <span className="text-orange-600 font-semibold text-lg">Ready to transform your future?</span>
-              <Link to="/contact">
+              <a href="https://selar.com/3f604cs136" target="_blank" rel="noopener noreferrer">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="px-8 py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                   style={{ backgroundColor: '#ff7300' }}
                 >
-                  Tickets Coming Soon
+                  Register Now
                 </motion.button>
-              </Link>
+              </a>
               {/* <Link to="/contact">
                 <motion.button
                   whileHover={{ scale: 1.05 }}

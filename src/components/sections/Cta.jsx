@@ -94,7 +94,7 @@ const Cta = () => {
               >
                 {/* Primary CTA */}
                 <motion.a
-                  href=""
+                  href="https://selar.com/3f604cs136"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.02, y: -2 }}
@@ -102,7 +102,7 @@ const Cta = () => {
                   className="group inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-orange-600 hover:bg-orange-700 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 min-w-[200px]"
                 >
                   <span className="flex items-center gap-3">
-                    Tickets Coming Soon
+                    Register Now
                     <FiArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                   </span>
                   {/* <span className="flex items-center gap-3">

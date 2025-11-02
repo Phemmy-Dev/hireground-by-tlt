@@ -7,6 +7,7 @@ import PaulImage from '../../assets/images/speakers/paul.jpg';
 import solaRahmanImage from '../../assets/images/speakers/SolaRahman.jpg';
 import moboladeAdesokanImage from '../../assets/images/speakers/MoboladeAdesokan.jpg';
 import MrsAdimulaimage from '../../assets/images/speakers/MrsAdimula.jpg';
+import profAdepoju from  '../../assets/images/speakers/profAdepoju.jpg';
 
 const SpeakersSection = () => {
   const scrollContainerRef = useRef(null);
@@ -48,13 +49,13 @@ const SpeakersSection = () => {
       image: moboladeAdesokanImage,
       company: "Equipr",
     },
-    // {
-    //   id: 6,
-    //   name: "Michael Chen",
-    //   title: "Startup Founder",
-    //   image: "/api/placeholder/400/500", // Replace with actual image
-    //   company: "NextGen Ventures",
-    // }
+    {
+      id: 6,
+      name: "Prof. Feyi Grace Adepoju",
+      title: "Professor of Ophthalmology",
+      image: profAdepoju,
+      company: "University of Ilorin Teaching Hospital",
+    }
   ];
 
   const containerVariants = {

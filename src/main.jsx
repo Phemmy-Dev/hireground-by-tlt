@@ -7,6 +7,7 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Sponsors from './pages/Sponsors.jsx'
 import Speakers from './pages/Speakers.jsx'
+import Recruiters from './pages/Recruiters.jsx'
 import Contact from './pages/Contact.jsx'
 import NotFound from './pages/NotFound.jsx'
 
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: '/speakers',
     element: <Speakers />,
+  },
+  {
+    path: '/recruiters',
+    element: <Recruiters />,
   },
   {
     path: '/contact',

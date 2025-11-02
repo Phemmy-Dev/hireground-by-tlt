@@ -200,12 +200,14 @@ const WhyAttend = () => {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a
-                  href="#"
+                  href="https://selar.com/3f604cs136"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   className="inline-flex items-center px-8 py-4 bg-white text-orange-600 font-bold rounded-xl hover:bg-gray-50 transition-all duration-300 shadow-lg text-lg"
                 >
-                  Tickets Coming Soon
+                  Register Now
                   <FiArrowRight className="ml-2 w-5 h-5" />
                 </motion.a>
                 {/* <motion.a

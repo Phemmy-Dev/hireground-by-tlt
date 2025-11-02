@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import BackStory from '../components/sections/BackStory'
 import SpeakersSection from '../components/sections/SpeakersSection'
+import RecruiterPartnership from '../components/sections/RecruiterPartnership'
 import FaqSection from '../components/sections/FaqSection'
 import Sponsors from '../components/sections/Sponsors'
 import Cta from '../components/sections/Cta'
@@ -18,10 +19,11 @@ const Home = () => {
     <div>
         <div className={`transition-all duration-300 ${showCountdownModal ? 'blur-sm' : ''}`}>
           <Navbar />
-          <Hero title='HireGround' text='Ready, Set, Your Career starts here' herobtn='Tickets Coming Soon' contCname='hero_cont' sectionCname='hero_text' heroImg={herobg} />
+          <Hero title='HireGround' text='Ready, Set, Your Career starts here' herobtn='Register Now' contCname='hero_cont' sectionCname='hero_text' heroImg={herobg} />
           {/* <Hero title='HireGround' text='Ready, Set, Your Career starts here' herobtn='Get Your Tickets' contCname='hero_cont' sectionCname='hero_text' heroImg={herobg} /> */}
           <BackStory />
           <SpeakersSection />
+          <RecruiterPartnership />
           <Sponsors />
           <FaqSection />
           <Cta />

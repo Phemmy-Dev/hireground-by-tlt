@@ -59,7 +59,7 @@ const Navbar = () => {
                     </motion.div>
 
                     {/* Desktop Menu */}
-                    <div className="hidden lg:flex items-center space-x-8">
+                    <div className="hidden xl:flex items-center space-x-6">
                         {data.map((item, index) => (
                             <motion.div
                                 key={index}
@@ -69,7 +69,7 @@ const Navbar = () => {
                             >
                                 <Link 
                                     to={item.path} 
-                                    className={`relative px-4 py-2 text-base font-medium transition-all duration-300 group ${
+                                    className={`relative px-3 py-2 text-[15px] font-medium transition-all duration-300 group whitespace-nowrap ${
                                         location.pathname === item.path
                                             ? 'text-orange-600' 
                                             : 'text-gray-700 hover:text-orange-600'
@@ -92,12 +92,12 @@ const Navbar = () => {
                             transition={{ duration: 0.5, delay: 0.4 }}
                         >
                             <a 
-                                href="/" 
+                                href="https://selar.com/3f604cs136" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
-                                className="px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-orange-700 hover:to-red-700 transform hover:-translate-y-1 transition-all duration-300"
+                                className="px-5 py-2.5 bg-gradient-to-r from-orange-600 to-red-600 text-white text-sm font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-orange-700 hover:to-red-700 transform hover:-translate-y-1 transition-all duration-300 whitespace-nowrap"
                             >
-                                Tickets Coming Soon
+                                Register Now
                             </a>
                         </motion.div>
                     </div>
@@ -106,7 +106,7 @@ const Navbar = () => {
                     <motion.button
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
-                        className="lg:hidden p-3 rounded-xl transition-all duration-300 text-gray-700 hover:bg-gray-100"
+                        className="xl:hidden p-3 rounded-xl transition-all duration-300 text-gray-700 hover:bg-gray-100"
                         onClick={toggleNavbar}
                         aria-label="Toggle navigation menu"
                     >
@@ -127,7 +127,7 @@ const Navbar = () => {
                             animate={{ opacity: 1, height: 'auto' }}
                             exit={{ opacity: 0, height: 0 }}
                             transition={{ duration: 0.3, ease: "easeInOut" }}
-                            className="lg:hidden border-t border-gray-200/20 bg-white/95 backdrop-blur-lg rounded-b-2xl overflow-hidden"
+                            className="xl:hidden border-t border-gray-200/20 bg-white/95 backdrop-blur-lg rounded-b-2xl overflow-hidden"
                         >
                             <div className="py-4 px-6 space-y-2">
                                 {data.map((item, index) => (
@@ -159,12 +159,12 @@ const Navbar = () => {
                                     className="pt-4 border-t border-gray-200/50"
                                 >
                                     <a 
-                                        href="/" 
+                                        href="https://selar.com/3f604cs136" 
                                         target="_blank" 
                                         rel="noopener noreferrer"
                                         className="block w-full px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold text-center rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                                     >
-                                        Tickets Coming Soon.
+                                        Register Now
                                     </a>
                                 </motion.div>
                             </div>
@@ -181,7 +181,7 @@ const Navbar = () => {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.3 }}
-                        className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 lg:hidden"
+                        className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 xl:hidden"
                         onClick={() => setIsOpen(false)}
                     />
                 )}
