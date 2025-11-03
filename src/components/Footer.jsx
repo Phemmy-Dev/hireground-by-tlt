@@ -35,7 +35,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: <FiLinkedin />, href: '#', label: 'LinkedIn' },
     { icon: <FiTwitter />, href: '#', label: 'Twitter' },
-    { icon: <FiInstagram />, href: '#', label: 'Instagram' },
+    { icon: <FiInstagram />, href: 'https://www.instagram.com/thelightutors.csr/', label: 'Instagram' },
     { icon: <FiFacebook />, href: '#', label: 'Facebook' }
   ]
 

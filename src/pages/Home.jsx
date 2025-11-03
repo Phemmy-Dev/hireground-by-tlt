@@ -4,6 +4,7 @@ import Hero from '../components/Hero'
 import BackStory from '../components/sections/BackStory'
 import SpeakersSection from '../components/sections/SpeakersSection'
 import RecruiterPartnership from '../components/sections/RecruiterPartnership'
+import VendorApplication from '../components/sections/VendorApplication'
 import FaqSection from '../components/sections/FaqSection'
 import Sponsors from '../components/sections/Sponsors'
 import Cta from '../components/sections/Cta'
@@ -24,6 +25,7 @@ const Home = () => {
           <BackStory />
           <SpeakersSection />
           <RecruiterPartnership />
+          <VendorApplication />
           <Sponsors />
           <FaqSection />
           <Cta />

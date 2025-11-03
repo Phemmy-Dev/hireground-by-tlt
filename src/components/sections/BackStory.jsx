@@ -336,23 +336,23 @@ const BackStory = () => {
         >
           <div className="max-w-5xl mx-auto bg-white/90 backdrop-blur-lg rounded-3xl p-8 lg:p-12 shadow-2xl border border-orange-100">
             <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Join the Movement
+              Join the Community
             </h3>
             <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 leading-relaxed mb-8">
-              This isn't just another career fair. It's a movement to ensure no young Nigerian 
+              This isn't just another career fair. It's a community to ensure no young Nigerian 
               walks into an interview unprepared or leaves university without the skills 
               employers demand. Together, we're building the future workforce Nigeria deserves.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <span className="text-orange-600 font-semibold text-lg">Ready to transform your future?</span>
-              <a href="https://selar.com/3f604cs136" target="_blank" rel="noopener noreferrer">
+              <a href="https://chat.whatsapp.com/BuHVOhdeJ7102pGFtBTFjb?mode=wwt" target="_blank" rel="noopener noreferrer">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="px-8 py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                   style={{ backgroundColor: '#ff7300' }}
                 >
-                  Register Now
+                  Join Us
                 </motion.button>
               </a>
               {/* <Link to="/contact">

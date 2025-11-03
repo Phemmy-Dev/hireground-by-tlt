@@ -8,6 +8,7 @@ import solaRahmanImage from '../../assets/images/speakers/SolaRahman.jpg';
 import moboladeAdesokanImage from '../../assets/images/speakers/MoboladeAdesokan.jpg';
 import MrsAdimulaimage from '../../assets/images/speakers/MrsAdimula.jpg';
 import profAdepoju from  '../../assets/images/speakers/profAdepoju.jpg';
+import temiKolawole from '../../assets/images/speakers/temiKolawole.jpg';
 
 const SpeakersSection = () => {
   const scrollContainerRef = useRef(null);
@@ -16,45 +17,52 @@ const SpeakersSection = () => {
   const speakers = [
     {
       id: 1,
-      name: "Joshua Oroge",
-      title: "CEO/Founder",
-      image: JoshuaImage,
-      company: "The Light Tutors Ltd.",
+      name: "Temi Kolawole",
+      title: "Managing Director",
+      image: temiKolawole,
+      company: "Ilorin Innovation Hub",
     },
     {
       id: 2,
-      name: "Paul Adeagbo",
-      title: "Career Coach",
-      image: PaulImage,
-      company: "MindShift Consulting Inc.",
-    },
-    {
-      id: 3,
-      name: "Morenikeji Rade Adimula",
-      title: "Human Resource Consultant",
-      image: MrsAdimulaimage,
-      company: "I NEED A GOOD TEAM",
-    },
-    {
-      id: 4,
       name: "Sola Rahman",
       title: "Event Planner & Master of Ceremonies",
       image: solaRahmanImage,
       company: "The Sola Rahman Brand",
     },
     {
-      id: 5,
+      id: 3,
+      name: "Prof. Feyi Grace Adepoju",
+      title: "Professor of Ophthalmology",
+      image: profAdepoju,
+      company: "University of Ilorin Teaching Hospital",
+    },
+    {
+      id: 4,
       name: "Mobolade Miriam Adesokan",
       title: "Founder",
       image: moboladeAdesokanImage,
       company: "Equipr",
     },
     {
+      id: 5,
+      name: "Morenikeji Rade Adimula",
+      title: "Human Resource Consultant",
+      image: MrsAdimulaimage,
+      company: "I NEED A GOOD TEAM",
+    },
+    {
       id: 6,
-      name: "Prof. Feyi Grace Adepoju",
-      title: "Professor of Ophthalmology",
-      image: profAdepoju,
-      company: "University of Ilorin Teaching Hospital",
+      name: "Paul Adeagbo",
+      title: "Career Coach",
+      image: PaulImage,
+      company: "MindShift Consulting Inc.",
+    },
+    {
+      id: 7,
+      name: "Joshua Oroge",
+      title: "CEO/Founder",
+      image: JoshuaImage,
+      company: "The Light Tutors Ltd.",
     }
   ];
 
