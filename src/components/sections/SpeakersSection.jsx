@@ -9,6 +9,7 @@ import moboladeAdesokanImage from '../../assets/images/speakers/MoboladeAdesokan
 import MrsAdimulaimage from '../../assets/images/speakers/MrsAdimula.jpg';
 import profAdepoju from  '../../assets/images/speakers/profAdepoju.jpg';
 import temiKolawole from '../../assets/images/speakers/temiKolawole.jpg';
+import honorable from '../../assets/images/speakers/honorable.jpg';
 
 const SpeakersSection = () => {
   const scrollContainerRef = useRef(null);
@@ -17,48 +18,55 @@ const SpeakersSection = () => {
   const speakers = [
     {
       id: 1,
+      name: "Damilola Yusuf Adelodun",
+      title: "Commissioner",
+      image: honorable,
+      company: "Kwara State Ministry of Business, Innovation, and Technology",
+    },
+    {
+      id: 2,
       name: "Temi Kolawole",
       title: "Managing Director",
       image: temiKolawole,
       company: "Ilorin Innovation Hub",
     },
     {
-      id: 2,
+      id: 3,
       name: "Sola Rahman",
       title: "Event Planner & Master of Ceremonies",
       image: solaRahmanImage,
       company: "The Sola Rahman Brand",
     },
     {
-      id: 3,
+      id: 4,
       name: "Prof. Feyi Grace Adepoju",
       title: "Professor of Ophthalmology",
       image: profAdepoju,
       company: "University of Ilorin Teaching Hospital",
     },
     {
-      id: 4,
+      id: 5,
       name: "Mobolade Miriam Adesokan",
       title: "Founder",
       image: moboladeAdesokanImage,
       company: "Equipr",
     },
     {
-      id: 5,
+      id: 6,
       name: "Morenikeji Rade Adimula",
       title: "Human Resource Consultant",
       image: MrsAdimulaimage,
       company: "I NEED A GOOD TEAM",
     },
     {
-      id: 6,
+      id: 7,
       name: "Paul Adeagbo",
       title: "Career Coach",
       image: PaulImage,
       company: "MindShift Consulting Inc.",
     },
     {
-      id: 7,
+      id: 8,
       name: "Joshua Oroge",
       title: "CEO/Founder",
       image: JoshuaImage,

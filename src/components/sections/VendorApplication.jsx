@@ -155,7 +155,7 @@ const VendorApplication = () => {
             viewport={{ once: true }}
           >
             <motion.a
-              href="https://forms.gle/o9bC45pD1oUV8GZ39"
+              href="https://selar.com/1717s75715"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -2 }}
@@ -258,7 +258,7 @@ const VendorApplication = () => {
                 </div>
 
                 <motion.a
-                  href="https://forms.gle/cLAcweRz29GtRxcS7"
+                  href="https://selar.com/1717s75715"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.02, y: -2 }}

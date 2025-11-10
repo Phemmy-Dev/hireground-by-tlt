@@ -4,22 +4,27 @@ import kwgovtlogo from '../../assets/images/sponsors/kwgovlogo.webp'
 import tltsponsorlogo from '../../assets/images/sponsors/tltsponsor.png'
 import INeedAGoodTeamLogo from '../../assets/images/sponsors/ineedagoodteamlogo.jpg'
 import Mindshiftlogo from '../../assets/images/sponsors/mindshiftlogo.png'
+import anchor from '../../assets/images/sponsors/anchor.png'
+import cw from '../../assets/images/sponsors/cw.png'
+import swoop from '../../assets/images/sponsors/swoop.png'
+import equipr from '../../assets/images/sponsors/equipr.jpg'
+
 
 const Sponsors = () => {
   // Sponsor data - all sponsors are equal
   const sponsors = [
-        {
+    {
       id: 1,
+      name: 'Kwara State Government',
+      logo: kwgovtlogo,
+      isReal: true
+    },
+        {
+      id: 2,
       name: 'The Light Tutors',
       logo: tltsponsorlogo,
       isReal: true
     },
-    // {
-    //   id: 2,
-    //   name: 'Kwara State Government',
-    //   logo: kwgovtlogo,
-    //   isReal: true
-    // },
     {
       id: 3,
       name: 'I Need A Good Team',
@@ -32,30 +37,30 @@ const Sponsors = () => {
       logo: Mindshiftlogo,
       isReal: true
     },
-    // {
-    //   id: 5,
-    //   name: 'Partner Sponsor',
-    //   logo: null,
-    //   isReal: false
-    // },
-    // {
-    //   id: 6,
-    //   name: 'Partner Sponsor',
-    //   logo: null,
-    //   isReal: false
-    // },
-    // {
-    //   id: 7,
-    //   name: 'Partner Sponsor',
-    //   logo: null,
-    //   isReal: false
-    // },
-    // {
-    //   id: 8,
-    //   name: 'Partner Sponsor',
-    //   logo: null,
-    //   isReal: false
-    // },
+    {
+      id: 5,
+      name: 'CW Music & Media',
+      logo: cw,
+      isReal: true
+    },
+    {
+      id: 6,
+      name: 'Equipr',
+      logo: equipr,
+      isReal: true
+    },
+    {
+      id: 7,
+      name: 'Swoop',
+      logo: swoop,
+      isReal: true
+    },
+    {
+      id: 8,
+      name: 'Anchor',
+      logo: anchor,
+      isReal: true
+    },
     // {
     //   id: 9,
     //   name: 'Partner Sponsor',

@@ -13,6 +13,7 @@ import solaRahmanImage from '../assets/images/speakers/solaRahman.jpg'
 import moboladeAdesokanImage from '../assets/images/speakers/moboladeAdesokan.jpg'
 import profAdepoju from '../assets/images/speakers/profAdepoju.jpg'
 import temiKolawole from '../assets/images/speakers/temiKolawole.jpg'
+import honorable from '../assets/images/speakers/honorable.jpg'
 import GovernerImage from '../assets/images/speakers/govAbdulraham.webp'
 import { i } from 'framer-motion/m'
 
@@ -24,6 +25,16 @@ const Speakers = () => {
   const speakers = [
     {
       id: 1,
+      name: "Damilola Yusuf Adelodun",
+      title: "Commissioner",
+      company: "Kwara State Ministry of Business, Innovation, and Technology",
+      location: "Kwara State, Nigeria",
+      image: honorable,
+      bio: "Damilola Yusuf Adelodun is the Commissioner for the Kwara State Ministry of Business, Innovation, and Technology. She is a distinguished investor, entrepreneur, and philanthropist with a strong passion for business, investment, and finance.",
+      fullBio: "Damilola Yusuf Adelodun is the Commissioner for the Kwara State Ministry of Business, Innovation, and Technology. She is a distinguished investor, entrepreneur, and philanthropist with a strong passion for business, investment, and finance.\n\nShe holds a degree in International Business from the University of Dundee, Scotland, and is fluent in three languages. As the founder of Kidan Global Limited (kidanstore.com), she is spearheading the growth of an emerging e-commerce startup, dedicated to delivering lifestyle and fashion products across Africa.\n\nDamilola previously served as the Director of Strategy and Business Development at KAM Holding, one of Nigeria's largest steel conglomerates, where she led the company's international business operations, internal strategy, and corporate management. She also played a key role as the Director of Operations for the Threshold of Hope Foundation, a non-governmental organization focused on impactful social initiatives.\n\nPassionate about continuous learning and professional growth, Damilola is currently pursuing advanced studies in Finance and Accounting in Europe and is a student member of the Association of Chartered Certified Accountants (ACCA). Her expertise spans international business, investment, corporate governance, and organizational change management.\n\nWith her diverse experience and strategic leadership, Damilola remains dedicated to driving innovation, fostering economic development, and empowering businesses across various industries."
+    },
+    {
+      id: 2,
       name: "Temi Kolawole",
       title: "Managing Director",
       company: "Ilorin Innovation Hub",
@@ -33,7 +44,7 @@ const Speakers = () => {
       fullBio: "Temi Kolawole is a software engineer, tech entrepreneur, and advocate for digital transformation. He holds a BSc in Computer Engineering Technology from Babcock University and has further honed his expertise through executive education at Harvard Business School, the University of Wolverhampton, and Università Bocconi.\n\nIn the early days of the Nigerian internet, Temi played a pivotal role in shaping the digital landscape. As the founder of Antigravity, he led the development of some of Nigeria's most influential blogs, including BellaNaija, Sturvs, Notjustok, and TheNETng. Beyond media, Antigravity provided cutting-edge digital solutions to businesses and organizations such as the Tony Elumelu Foundation, Heirs Holdings, ECOWAS, the European Union, Honeywell, NIBSS, and several state governments. His work earned him multiple nominations for Best Use of Technology at The Future Awards and a nomination for African Entrepreneur of the Year in 2012.\n\nWith a strong belief in technology as a tool for transformation, Temi transitioned from consulting to public service, taking on roles within the Kwara State Government. He has contributed to revenue administration and served as an advisor to the Governor on key technological initiatives. Today, he is the Managing Director of the Ilorin Innovation Hub, a leading technology center focused on solving local problems while creating global opportunities. In this role, he drives digital and ICT skills training programs and supports the growth of scalable startups in Ilorin, a city increasingly recognized for its tech talent.\n\nDespite his leadership roles, Temi remains deeply engaged in software development as a full-stack developer. His commitment to staying ahead of emerging technologies and programming languages ensures that he continues to build innovative solutions and make a lasting impact in the tech ecosystem."
     },
     {
-      id: 2,
+      id: 3,
       name: "Sola Rahman",
       title: "Event Planner & Master of Ceremonies",
       company: "The Sola Rahman Brand",
@@ -43,7 +54,7 @@ const Speakers = () => {
       fullBio: "Sola Rahman is a dynamic event planner and master of ceremonies operating under his brand, The Sola Rahman Brand.\n\nAs a compere, Sola is described as young, versatile and engaging. He has hosted over 250 events, each one offering him the opportunity to bring energy, flair and professionalism to the stage.\n\nAs an event planner he delivers bespoke services: crafting occasions that reflect each client's vision, whether it's for weddings, social celebrations or business functions.\n\nKnown for putting event hosting on a new pedestal, Sola Rahman's ethos centres on turning moments into memorable experiences, where seamless coordination, warm hosting, and thoughtful design converge. He brings both the mic and the blueprint: hosting events with charisma and planning them with precision."
     },
     {
-      id: 3,
+      id: 4,
       name: "Prof. Feyi Grace Adepoju",
       title: "Professor of Ophthalmology & Consultant Ophthalmologist",
       company: "University of Ilorin Teaching Hospital",
@@ -53,7 +64,7 @@ const Speakers = () => {
       fullBio: "Professor Feyi Grace Adepoju is the first female Professor of Ophthalmology in Kwara State, a Consultant Ophthalmologist at the University of Ilorin Teaching Hospital, and a distinguished academic in the College of Health Sciences.\n\nShe graduated with an MBBS from Ahmadu Bello University, Zaria, where she emerged as the Overall Best Final-Year Student. She won multiple awards, including the Alba Medical Prize, the A.I. Saha Prize for Community Medicine, the Best Prize in Obstetrics and Gynaecology, and the Glaxo Paediatrics Prize, along with additional prizes in Agricultural Science, Biology, Physics, and Mathematics.\n\nProfessor Adepoju later obtained an MSc in Community Eye Health from the London School of Hygiene and Tropical Medicine, supported by the Commonwealth and DFID scholarships. She is a Fellow of both the West African College of Surgeons and the National Postgraduate Medical College of Nigeria, and she earned the Oyin Olurin Prize as the best candidate in Part I of the Fellowship examinations.\n\nHer career spans over three decades, marked by pioneering work in community ophthalmology, cataract surgery, and anterior segment practice. She has organized over 200 community outreaches, screened more than 300,000 people, and restored sight through over 30,000 eye surgeries. Beyond the operating theatre, she has championed eye health through television and radio programmes, public health campaigns, and award-winning educational films, including You Are My Eye, broadcast on 27 television stations across Nigeria and beyond.\n\nA prolific scholar, she has published over 72 scientific works, authored four books and four textbook chapters, and served as an examiner and reviewer for national and international journals. She currently serves as Director of the Medical Education Resource Unit at the University of Ilorin, President of the Bioethics Society of Nigeria, Chairman of Women Ophthalmology of Nigeria, and Treasurer/Board Member of the African Ophthalmology Council.\n\nHer excellence has been recognized with numerous prestigious awards, including the Novartis International Excellence in Ophthalmology Vision Award, the American Academy of Ophthalmology Leadership Development Award, and the Excellence in Vision Award for Prevention of Blindness, presented by the Africa Ophthalmology Forum and the Ophthalmological Society of Nigeria.\n\nBeyond academia and medicine, Professor Adepoju is a film actress with over 150 appearances, a playwright, and an ordained Reverend of Abundant Life Gospel Church. She is the founder of two NGOs dedicated to supporting the underprivileged and remains a passionate advocate for education, health, and community empowerment.\n\nA woman of many parts—scholar, surgeon, teacher, community advocate, actress, and minister of faith—she is married to Rev. Yemi Adepoju and is blessed with children and grandchildren."
     },
     {
-      id: 4,
+      id: 5,
       name: "Mobolade Adesokan",
       title: "Founder ",
       company: "Equipr",
@@ -63,7 +74,7 @@ const Speakers = () => {
       fullBio: "Miriam Mobolade Adesokan is a leader in business and portfolio management, passionate about helping people turn their ideas into profitable ventures.\n\nShe is a people builder and avid investor in communities, with over a decade experience, coaching CEOs from diverse walks of life. She is also a process development guru, with experience helping companies to design their strategy, build stronger infrastructure, and develop their teams.\n\nShe is a firm believer in the New Nigeria, a Nigeria where every individual can achieve their highest potential and thrive.\n\nShe started her career in Biology and Nursing at the Bloomfield College of Montclair State University in New Jersey, went on to earn an MSc in Clinical Research from the University of Hertfordshire Hatfield, UK. She is a trained Project Management Practitioner with a PRINCE II from Pearson Mayfield Imperial College London, switched careers to project management and eventually leading global projects in Healthcare across various continents: NA, EU, EMEA, Asia Pacific regions.\n\nShe started her first company in 2013 - since then she has helped many people to start new businesses or revitalise already established ones, implementing risk and quality management systems and processes, training and compliance systems, process improvement strategies, designing company strategies and culture, helping companies source infrastructure to enhance growth.\n\nShe is the Founder of Equipr for Advancement Foundation, the umbrella organization for the equipr African Youth Partnership, an organization focused on youth advancement for Africa's undergraduate and graduate students, with over 150 students mentored within the five batches of students registered since November 2021. She is also the CEO for Swoop, Anchor Therapeutics Ltd to mention a few.\n\nShe is a mum and a wife, a songwriter, and she teaches music theory and beginners piano in her spare time."
     },
     {
-      id: 5,
+      id: 6,
       name: "Morenikeji Rade Adimula",
       title: "Human Resource Consultant",
       company: "I NEED A GOOD TEAM",
@@ -73,7 +84,7 @@ const Speakers = () => {
       fullBio: "Morenikeji Rade Adimula is a seasoned Human Resource Consultant with a wealth of experience spanning over five years across diverse sectors. Her expertise has left an indelible mark on industries such as health, certification and training, agriculture, construction, mining and performance management, showcasing her adaptability and proficiency in navigating varied organizational landscapes.\n\nBorn with an innate drive for excellence, Morenikeji pursued her academic endeavors with zeal, obtaining a Bachelor of Science degree in International Law and Diplomacy. Eager to expand her knowledge and skill set, she pursued further education, amassing a collection of certificates across multiple sectors. These certifications serve as a testament to her commitment to continuous learning and professional development.\n\nThroughout her career, Morenikeji has been a catalyst for organizational transformation, specializing in building robust structures and fostering vibrant cultures within the companies she serves. Her consultancy engagements have primarily revolved around collaborating with organizations and start-ups, where she has played a pivotal role in shaping their organizational identity and operational frameworks.\n\nCurrently, she provides her consultancy services to I NEED A GOOD JOB and I NEED A GOOD TEAM, an HR consulting firm, where she serves as a trusted advisor to a diverse array of organizations, contributing her insights and guidance to enhance their HR practices and overall effectiveness.\n\nMorenikeji's proficiency spans the entire HR spectrum, with a focus on recruitment, talent management, onboarding, training, and performance management. Her proven track record of delivering results and her innate ability to understand the unique needs of each organization set her apart as a trusted partner in the pursuit of excellence.\n\nIn her spare time, Morenikeji remains committed to community engagement and mentorship initiatives, where she shares her knowledge and experiences to uplift aspiring HR professionals. Her dedication to her craft, coupled with her passion for making a meaningful impact, underscores Morenikeji Rade Adimula as a distinguished figure in the field of Human Resource Consultancy."
     },
     {
-      id: 6,
+      id: 7,
       name: "Paul Adeagbo",
       title: "Career Coach & Editorial Director",
       company: "MindShift Consulting LTD",
@@ -83,7 +94,7 @@ const Speakers = () => {
       fullBio: "Paul Adeagbo is on a mission with MindShift Consulting LTD to transform Nigerian graduates into global talents. He is a Career Coach with over five years of experience whose Job Search strategy has assisted over 300 clients to secure coveted job opportunities across diverse sectors.\n\nHe has provided invaluable support to 15 clients who successfully gained admission to graduate programs, including the prestigious Chevening Scholarship. He also guided 25 graduates into the Venture in Management Program at Lagos Business School.\n\nBeyond his coaching, Paul is the Editorial Director of EMPLOYABLE, a career development magazine that reaches over 5,000 professionals across 6 African countries. He's also the driving force behind the Campus Career and Employability Conference.\n\nPaul strongly believes that there is a strong correlation between a nation's human capital pool and her economic competitiveness. He specializes in empowering young professionals to excel in their careers, helping them access opportunities that align with their career aspirations.\n\nCrafting professional documents, such as CVs, cover letters, and admission essays, is another area where Paul's expertise shines, making these tasks more manageable and helping clients secure the career opportunities they deserve.\n\nIf you're genuinely committed to achieving your career goals, Paul is the mentor you've been searching for to begin your career transformation journey."
     },
     {
-      id: 7,
+      id: 8,
       name: "Joshua Oroge",
       title: "CEO/Founder",
       company: "The Light Tutors",
