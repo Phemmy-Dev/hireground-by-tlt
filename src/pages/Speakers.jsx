@@ -19,6 +19,7 @@ import ocheWrites from '../assets/images/speakers/ocheWrites.JPG'
 import olubukolaRoberts from '../assets/images/speakers/olubukolaRoberts.JPG'
 import oluwatobiOzenua from '../assets/images/speakers/oluwatobiOzenua.JPG'
 import GovernerImage from '../assets/images/speakers/govAbdulraham.webp'
+import onifade from '../assets/images/speakers/onifade.jpg'
 import { i } from 'framer-motion/m'
 
 const Speakers = () => {
@@ -39,6 +40,16 @@ const Speakers = () => {
     },
     {
       id: 2,
+      name: "Mr. Onifade Olaoluwa Joshua",
+      title: "State Coordinator",
+      company: "National Youth Service Corps (NYSC), Kwara State",
+      location: "Kwara State, Nigeria",
+      image: onifade,
+      bio: "Mr. Onifade Olaoluwa Joshua is the State Coordinator of the National Youth Service Corps (NYSC) in Kwara State, responsible for overseeing mobilisation, orientation camp operations, corps member welfare and coordination with state authorities.",
+      fullBio: "Mr. Onifade Olaoluwa Joshua is the State Coordinator of the National Youth Service Corps (NYSC) in Kwara State, responsible for overseeing mobilisation, orientation camp operations, corps member welfare and coordination with state authorities.\n\nHe has recently led the NYSC response to local security concerns including the temporary relocation of the permanent Yikpata orientation camp to Kwara State Polytechnic, Ilorin (announced 18 Sept 2025) and regularly represents the scheme at swearing-in ceremonies and public briefings.\n\nAs State Coordinator, Mr. Onifade plays a crucial role in ensuring the smooth operation of the NYSC programme in Kwara State, fostering the development of corps members, and maintaining strong relationships with government agencies and community stakeholders."
+    },
+    {
+      id: 3,
       name: "Sola Rahman",
       title: "Chief Experience Officer",
       company: "The Sola Rahman Brand",
@@ -48,7 +59,7 @@ const Speakers = () => {
       fullBio: "Sola Rahman is a dynamic event planner and master of ceremonies operating under his brand, The Sola Rahman Brand.\n\nAs a compere, Sola is described as young, versatile and engaging. He has hosted over 250 events, each one offering him the opportunity to bring energy, flair and professionalism to the stage.\n\nAs an event planner he delivers bespoke services: crafting occasions that reflect each client's vision, whether it's for weddings, social celebrations or business functions.\n\nKnown for putting event hosting on a new pedestal, Sola Rahman's ethos centres on turning moments into memorable experiences, where seamless coordination, warm hosting, and thoughtful design converge. He brings both the mic and the blueprint: hosting events with charisma and planning them with precision."
     },
     {
-      id: 3,
+      id: 4,
       name: "Dare Adebayo",
       title: "Co-founder and COO",
       company: "Edves",
@@ -58,7 +69,7 @@ const Speakers = () => {
       fullBio: "Dare is a tech entrepreneur, entrepreneurship coach, and business leader with two decades of industry experience. He is a powerful force driving change in the educational landscape in Africa.\n\nHe holds a Bachelor's degree in Computer Science from the University of Ilorin, a Master's degree in Technology Management from Obafemi Awolowo University Ile-Ife, and an MBA from the Quantic School of Business and Technology, USA.\n\nHis entrepreneurial journey began with the launch of his first startup, Duslarcreations. This was before gaining admission into the university; a bold decision that set the stage for a life dedicated to innovation, leadership, and service. While at the University, he co-founded ITvessel, which later on metamorphosed to Edves.\n\nAs the Co-founder and COO at Edves, Dare leads operations and drives revenue growth. A dynamic and strategic executive, he built Edves' salesforce and expanded its presence to various African markets. Leveraging his exceptional negotiation skills, he has infused financial resilience into budgeting and successfully led initiatives in Sales, Marketing, Customer Relations, Project Management, and Product Management. Under his leadership, Edves has grown to over 500,000 users across 12 African countries and the United Kingdom and has received numerous global and local awards.\n\nEdves has been recognized for its innovative contributions to the Edtech ecosystem. In 2016, Edves was accepted into the CChub-Intel Growth Academy in Lagos and won the Aso Villa Grant organized by the Office of the Vice President of Nigeria in collaboration with the World Bank. In 2018, Edves secured a British Council Abuja Grant and won the Seedstars Global Edtech Award for Emerging Markets in Switzerland. In 2018, Dare became a Fellow of the Jacobs Foundation in Switzerland and a 2019 Seedstars alumnus. In 2019, Dare became a MindCET Go alumnus in Tel Aviv, Israel. In 2022, Edves was named the Best Nigerian Edtech Startup by Eko Innovation Centre. In 2024, Dare was invited by the Embassy of France in Nigeria as a delegate to explore the French Tech ecosystem and attend VivaTech, Europe's largest technology startup event, where he was a speaker at the Africa Tech Stage. That same year, Edves won the FrenchWeek Startup Competition hosted by the Franco-Nigerian Chamber of Commerce and sponsored by Zenith Bank and Air France.\n\nOver the years, Dare has traveled across Africa, America, Asia, and Europe to participate in various conferences and business accelerator programs, both as a speaker and an attendee. Dare is a great motivator, a people-centric leader, and a heroic mentor. His excellent interpersonal skills enable him to build long-lasting relationships with colleagues, clients, investors, partners, and vendors across the African and global Edtech ecosystem.\n\nDare believes true leadership involves uplifting others. Having built his businesses from the ground up, he is passionate about nurturing the next generation of young African entrepreneurs, with a focus on those starting businesses early, just like he did. This led him to start the Embark Entrepreneurship Academy, a not-for-profit platform focused on training and mentoring young African entrepreneurs (undergraduates and recent graduates). He also volunteers on various platforms as a Mentor and Facilitator to share his experiences and learnings to guide young entrepreneurs to innovate, scale their businesses, create jobs, and drive meaningful change in their communities.\n\nHe is guided by the belief that faith and purpose should be at the forefront of everything he does. He views his entrepreneurial journey as more than a business venture; for him, it is a mission to impact society positively, uplift his community, and leave behind a legacy of hope and transformation. He is happily married and takes great pride in being a loving husband and father."
     },
     {
-      id: 4,
+      id: 5,
       name: "Oche Writes",
       title: "Founder",
       company: "Reels by Circle",

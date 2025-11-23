@@ -14,6 +14,7 @@ import ocheWrites from '../../assets/images/speakers/ocheWrites.JPG';
 import olubukolaRoberts from '../../assets/images/speakers/olubukolaRoberts.JPG';
 import oluwatobiOzenua from '../../assets/images/speakers/oluwatobiOzenua.JPG';
 import honorable from '../../assets/images/speakers/honorable.jpg';
+import onifade from '../../assets/images/speakers/onifade.jpg';
 
 const SpeakersSection = () => {
   const scrollContainerRef = useRef(null);
@@ -28,20 +29,27 @@ const SpeakersSection = () => {
     },
     {
       id: 2,
+      name: "Mr. Onifade Olaoluwa Joshua",
+      title: "State Coordinator",
+      image: onifade,
+      company: "National Youth Service Corps (NYSC), Kwara State",
+    },
+    {
+      id: 3,
       name: "Sola Rahman",
       title: "Chief Experience Officer",
       image: solaRahmanImage,
       company: "The Sola Rahman Brand",
     },
     {
-      id: 3,
+      id: 4,
       name: "Dare Adebayo",
       title: "Co-founder and COO",
       image: dareAdebayo,
       company: "Edves",
     },
     {
-      id: 4,
+      id: 5,
       name: "Oche Writes",
       title: "Founder",
       image: ocheWrites,
