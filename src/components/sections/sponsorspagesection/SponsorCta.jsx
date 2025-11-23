@@ -122,7 +122,7 @@ const SponsorCta = () => {
               </div>
             </motion.a>
 
-            {/* Secondary CTA - Download Package */}
+            {/* Secondary CTA - Download Package
             <motion.button
               onHoverStart={() => setHoveredButton('download')}
               onHoverEnd={() => setHoveredButton(null)}
@@ -130,7 +130,6 @@ const SponsorCta = () => {
               whileTap={{ scale: 0.95 }}
               className="group relative inline-flex items-center px-10 py-5 border-2 border-white/30 text-white font-bold rounded-2xl backdrop-blur-sm overflow-hidden transition-all duration-300 hover:border-white"
             >
-              {/* Button background animation */}
               <motion.div
                 initial={{ scale: 0 }}
                 animate={{ scale: hoveredButton === 'download' ? 1 : 0 }}
@@ -143,7 +142,7 @@ const SponsorCta = () => {
                 <span className="text-lg">Download Packages</span>
                 <FiArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform duration-300" />
               </div>
-            </motion.button>
+            </motion.button> */}
           </motion.div>
 
           {/* Final compelling statement */}

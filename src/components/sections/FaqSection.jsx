@@ -41,7 +41,7 @@ const FaqSection = () => {
     },
     {
       question: "How do I prepare for the event?",
-      answer: "Come with an open mind and specific career goals in mind. Bring copies of your CV for review sessions, prepare questions for speakers, and don't forget your business cards or LinkedIn QR code for networking. We'll send a detailed preparation guide closer to the event date."
+      answer: "Come with an open mind and specific career goals in mind. Dress corporately to make a great first impression. Bring copies of your CV for review sessions, prepare questions for speakers, and don't forget your business cards or LinkedIn QR code for networking. We'll send a detailed preparation guide closer to the event date."
     },
     // {
     //   question: "Is lunch and refreshments provided?",
@@ -235,7 +235,7 @@ const FaqSection = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
-                <a href="mailto:bukunmi@thelightutors.com">
+                <a href="mailto:hireground@thelightutors.com">
                   <motion.button
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}

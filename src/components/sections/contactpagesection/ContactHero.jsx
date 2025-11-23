@@ -144,7 +144,7 @@ const ContactHero = () => {
                       </div>
                       <div className="min-w-0 flex-1">
                         <p className="text-xs sm:text-sm text-gray-500 font-medium">General Inquiries</p>
-                        <p className="text-sm sm:text-base text-gray-900 font-semibold truncate">bukunmi@thelightutors.com</p>
+                        <p className="text-sm sm:text-base text-gray-900 font-semibold truncate">hireground@thelightutors.com</p>
                       </div>
                     </motion.div>
 
@@ -170,7 +170,7 @@ const ContactHero = () => {
                       </div>
                       <div className="min-w-0 flex-1">
                         <p className="text-xs sm:text-sm text-gray-500 font-medium">Event Location</p>
-                        <p className="text-sm sm:text-base text-gray-900 font-semibold">Kwara, Nigeria</p>
+                        <p className="text-sm sm:text-base text-gray-900 font-semibold">Ilorin, Kwara State, Nigeria</p>
                       </div>
                     </motion.div>
                   </div>

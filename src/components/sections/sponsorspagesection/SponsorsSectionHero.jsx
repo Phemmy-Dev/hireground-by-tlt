@@ -83,7 +83,7 @@ const SponsorsSectionHero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg sm:text-xl lg:text-xl text-gray-200 mb-8 leading-relaxed max-w-3xl mx-auto"
           >
-            Join Kwara's career transformation event and connect with thousands of professionals, 
+            Join Ilorin's career transformation event and connect with thousands of professionals, 
             industry leaders, and emerging talent while showcasing your brand to a highly engaged audience.
           </motion.p>
 

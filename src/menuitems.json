@@ -15,6 +15,11 @@
         "cName": "nav-links"
     },
     {
+        "title": "Companies",
+        "path": "/companies",
+        "cName": "nav-links"
+    },
+    {
         "title": "Recruiters",
         "path": "/recruiters",
         "cName": "nav-links"

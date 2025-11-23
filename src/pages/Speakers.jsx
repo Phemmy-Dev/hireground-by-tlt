@@ -8,12 +8,16 @@ import CountdownModal from '../components/CountdownModal'
 import { useCountdownModal } from '../hooks/useCountdownModal'
 import JoshuaImage from '../assets/images/speakers/Joshua.jpg'
 import PaulImage from '../assets/images/speakers/paul.jpg'
-import MrsAdimulaimage from '../assets/images/speakers/MrsAdimula.jpg'
+import MrsAdimulaimage from '../assets/images/speakers/MrsAdimula.png'
 import solaRahmanImage from '../assets/images/speakers/solaRahman.jpg'
 import moboladeAdesokanImage from '../assets/images/speakers/moboladeAdesokan.jpg'
-import profAdepoju from '../assets/images/speakers/profAdepoju.jpg'
+import profAdepoju from '../assets/images/speakers/profAdepoju.jpeg'
 import temiKolawole from '../assets/images/speakers/temiKolawole.jpg'
 import honorable from '../assets/images/speakers/honorable.jpg'
+import dareAdebayo from '../assets/images/speakers/dareAdebayo.jpg'
+import ocheWrites from '../assets/images/speakers/ocheWrites.JPG'
+import olubukolaRoberts from '../assets/images/speakers/olubukolaRoberts.JPG'
+import oluwatobiOzenua from '../assets/images/speakers/oluwatobiOzenua.JPG'
 import GovernerImage from '../assets/images/speakers/govAbdulraham.webp'
 import { i } from 'framer-motion/m'
 
@@ -25,28 +29,18 @@ const Speakers = () => {
   const speakers = [
     {
       id: 1,
-      name: "Damilola Yusuf Adelodun",
+      name: "Hon. Damilola Yusuf Adelodun",
       title: "Commissioner",
       company: "Kwara State Ministry of Business, Innovation, and Technology",
       location: "Kwara State, Nigeria",
       image: honorable,
-      bio: "Damilola Yusuf Adelodun is the Commissioner for the Kwara State Ministry of Business, Innovation, and Technology. She is a distinguished investor, entrepreneur, and philanthropist with a strong passion for business, investment, and finance.",
-      fullBio: "Damilola Yusuf Adelodun is the Commissioner for the Kwara State Ministry of Business, Innovation, and Technology. She is a distinguished investor, entrepreneur, and philanthropist with a strong passion for business, investment, and finance.\n\nShe holds a degree in International Business from the University of Dundee, Scotland, and is fluent in three languages. As the founder of Kidan Global Limited (kidanstore.com), she is spearheading the growth of an emerging e-commerce startup, dedicated to delivering lifestyle and fashion products across Africa.\n\nDamilola previously served as the Director of Strategy and Business Development at KAM Holding, one of Nigeria's largest steel conglomerates, where she led the company's international business operations, internal strategy, and corporate management. She also played a key role as the Director of Operations for the Threshold of Hope Foundation, a non-governmental organization focused on impactful social initiatives.\n\nPassionate about continuous learning and professional growth, Damilola is currently pursuing advanced studies in Finance and Accounting in Europe and is a student member of the Association of Chartered Certified Accountants (ACCA). Her expertise spans international business, investment, corporate governance, and organizational change management.\n\nWith her diverse experience and strategic leadership, Damilola remains dedicated to driving innovation, fostering economic development, and empowering businesses across various industries."
+      bio: "Hon. Damilola Yusuf Adelodun is the Commissioner for the Kwara State Ministry of Business, Innovation, and Technology. She is a distinguished investor, entrepreneur, and philanthropist with a strong passion for business, investment, and finance.",
+      fullBio: "Hon. Damilola Yusuf Adelodun is the Commissioner for the Kwara State Ministry of Business, Innovation, and Technology. She is a distinguished investor, entrepreneur, and philanthropist with a strong passion for business, investment, and finance.\n\nShe holds a degree in International Business from the University of Dundee, Scotland, and is fluent in three languages. As the founder of Kidan Global Limited (kidanstore.com), she is spearheading the growth of an emerging e-commerce startup, dedicated to delivering lifestyle and fashion products across Africa.\n\nDamilola previously served as the Director of Strategy and Business Development at KAM Holding, one of Nigeria's largest steel conglomerates, where she led the company's international business operations, internal strategy, and corporate management. She also played a key role as the Director of Operations for the Threshold of Hope Foundation, a non-governmental organization focused on impactful social initiatives.\n\nPassionate about continuous learning and professional growth, Damilola is currently pursuing advanced studies in Finance and Accounting in Europe and is a student member of the Association of Chartered Certified Accountants (ACCA). Her expertise spans international business, investment, corporate governance, and organizational change management.\n\nWith her diverse experience and strategic leadership, Damilola remains dedicated to driving innovation, fostering economic development, and empowering businesses across various industries."
     },
     {
       id: 2,
-      name: "Temi Kolawole",
-      title: "Managing Director",
-      company: "Ilorin Innovation Hub",
-      location: "Kwara State, Nigeria",
-      image: temiKolawole,
-      bio: "Temi Kolawole is a software engineer, tech entrepreneur, and advocate for digital transformation with extensive experience in shaping Nigeria's digital landscape.",
-      fullBio: "Temi Kolawole is a software engineer, tech entrepreneur, and advocate for digital transformation. He holds a BSc in Computer Engineering Technology from Babcock University and has further honed his expertise through executive education at Harvard Business School, the University of Wolverhampton, and Università Bocconi.\n\nIn the early days of the Nigerian internet, Temi played a pivotal role in shaping the digital landscape. As the founder of Antigravity, he led the development of some of Nigeria's most influential blogs, including BellaNaija, Sturvs, Notjustok, and TheNETng. Beyond media, Antigravity provided cutting-edge digital solutions to businesses and organizations such as the Tony Elumelu Foundation, Heirs Holdings, ECOWAS, the European Union, Honeywell, NIBSS, and several state governments. His work earned him multiple nominations for Best Use of Technology at The Future Awards and a nomination for African Entrepreneur of the Year in 2012.\n\nWith a strong belief in technology as a tool for transformation, Temi transitioned from consulting to public service, taking on roles within the Kwara State Government. He has contributed to revenue administration and served as an advisor to the Governor on key technological initiatives. Today, he is the Managing Director of the Ilorin Innovation Hub, a leading technology center focused on solving local problems while creating global opportunities. In this role, he drives digital and ICT skills training programs and supports the growth of scalable startups in Ilorin, a city increasingly recognized for its tech talent.\n\nDespite his leadership roles, Temi remains deeply engaged in software development as a full-stack developer. His commitment to staying ahead of emerging technologies and programming languages ensures that he continues to build innovative solutions and make a lasting impact in the tech ecosystem."
-    },
-    {
-      id: 3,
       name: "Sola Rahman",
-      title: "Event Planner & Master of Ceremonies",
+      title: "Chief Experience Officer",
       company: "The Sola Rahman Brand",
       location: "Nigeria",
       image: solaRahmanImage,
@@ -54,7 +48,27 @@ const Speakers = () => {
       fullBio: "Sola Rahman is a dynamic event planner and master of ceremonies operating under his brand, The Sola Rahman Brand.\n\nAs a compere, Sola is described as young, versatile and engaging. He has hosted over 250 events, each one offering him the opportunity to bring energy, flair and professionalism to the stage.\n\nAs an event planner he delivers bespoke services: crafting occasions that reflect each client's vision, whether it's for weddings, social celebrations or business functions.\n\nKnown for putting event hosting on a new pedestal, Sola Rahman's ethos centres on turning moments into memorable experiences, where seamless coordination, warm hosting, and thoughtful design converge. He brings both the mic and the blueprint: hosting events with charisma and planning them with precision."
     },
     {
+      id: 3,
+      name: "Dare Adebayo",
+      title: "Co-founder and COO",
+      company: "Edves",
+      location: "Nigeria",
+      image: dareAdebayo,
+      bio: "Dare is a tech entrepreneur, entrepreneurship coach, and business leader with two decades of industry experience. He is a powerful force driving change in the educational landscape in Africa.",
+      fullBio: "Dare is a tech entrepreneur, entrepreneurship coach, and business leader with two decades of industry experience. He is a powerful force driving change in the educational landscape in Africa.\n\nHe holds a Bachelor's degree in Computer Science from the University of Ilorin, a Master's degree in Technology Management from Obafemi Awolowo University Ile-Ife, and an MBA from the Quantic School of Business and Technology, USA.\n\nHis entrepreneurial journey began with the launch of his first startup, Duslarcreations. This was before gaining admission into the university; a bold decision that set the stage for a life dedicated to innovation, leadership, and service. While at the University, he co-founded ITvessel, which later on metamorphosed to Edves.\n\nAs the Co-founder and COO at Edves, Dare leads operations and drives revenue growth. A dynamic and strategic executive, he built Edves' salesforce and expanded its presence to various African markets. Leveraging his exceptional negotiation skills, he has infused financial resilience into budgeting and successfully led initiatives in Sales, Marketing, Customer Relations, Project Management, and Product Management. Under his leadership, Edves has grown to over 500,000 users across 12 African countries and the United Kingdom and has received numerous global and local awards.\n\nEdves has been recognized for its innovative contributions to the Edtech ecosystem. In 2016, Edves was accepted into the CChub-Intel Growth Academy in Lagos and won the Aso Villa Grant organized by the Office of the Vice President of Nigeria in collaboration with the World Bank. In 2018, Edves secured a British Council Abuja Grant and won the Seedstars Global Edtech Award for Emerging Markets in Switzerland. In 2018, Dare became a Fellow of the Jacobs Foundation in Switzerland and a 2019 Seedstars alumnus. In 2019, Dare became a MindCET Go alumnus in Tel Aviv, Israel. In 2022, Edves was named the Best Nigerian Edtech Startup by Eko Innovation Centre. In 2024, Dare was invited by the Embassy of France in Nigeria as a delegate to explore the French Tech ecosystem and attend VivaTech, Europe's largest technology startup event, where he was a speaker at the Africa Tech Stage. That same year, Edves won the FrenchWeek Startup Competition hosted by the Franco-Nigerian Chamber of Commerce and sponsored by Zenith Bank and Air France.\n\nOver the years, Dare has traveled across Africa, America, Asia, and Europe to participate in various conferences and business accelerator programs, both as a speaker and an attendee. Dare is a great motivator, a people-centric leader, and a heroic mentor. His excellent interpersonal skills enable him to build long-lasting relationships with colleagues, clients, investors, partners, and vendors across the African and global Edtech ecosystem.\n\nDare believes true leadership involves uplifting others. Having built his businesses from the ground up, he is passionate about nurturing the next generation of young African entrepreneurs, with a focus on those starting businesses early, just like he did. This led him to start the Embark Entrepreneurship Academy, a not-for-profit platform focused on training and mentoring young African entrepreneurs (undergraduates and recent graduates). He also volunteers on various platforms as a Mentor and Facilitator to share his experiences and learnings to guide young entrepreneurs to innovate, scale their businesses, create jobs, and drive meaningful change in their communities.\n\nHe is guided by the belief that faith and purpose should be at the forefront of everything he does. He views his entrepreneurial journey as more than a business venture; for him, it is a mission to impact society positively, uplift his community, and leave behind a legacy of hope and transformation. He is happily married and takes great pride in being a loving husband and father."
+    },
+    {
       id: 4,
+      name: "Oche Writes",
+      title: "Founder",
+      company: "Reels by Circle",
+      location: "Nigeria",
+      image: ocheWrites,
+      bio: "Oche Writes is a reputable content marketing trainer, renowned for his exceptional prowess in empowering entrepreneurs, digital marketers, and business owners to create content that builds a global brand.",
+      fullBio: "Oche Writes is a reputable content marketing trainer, renowned for his exceptional prowess in empowering entrepreneurs, digital marketers, and business owners to create content that builds a global brand.\n\nWith over seven years of experience in the dynamic field of content creation, Oche has carved a niche for himself as an expert in crafting compelling narratives that resonate with audiences across various platforms. His journey into the world of content marketing began with a deep passion for storytelling and a keen understanding of the digital landscape.\n\nOche's approach to content marketing is both strategic and creative. He specialises in helping businesses leverage the power of engaging content to drive brand awareness, customer engagement, and business growth. His training programs are designed to equip participants with the skills and knowledge needed to navigate the ever-evolving world of social media and digital marketing.\n\nAs the founder of Reels by Circle, Oche has developed a unique framework that focuses on the art of short-form video content, particularly reels. His innovative methods have helped numerous clients transform their social media presence, turning casual viewers into loyal customers. Oche's training sessions are known for their practical insights, real-world applications, and hands-on approach, ensuring that participants leave with actionable strategies they can implement immediately.\n\nOche Writes is also a sought-after speaker and consultant, frequently invited to share his expertise at industry conferences, workshops, and seminars. His thought leadership in content marketing has made him a respected voice in the community, inspiring others to harness the power of storytelling to build meaningful connections with their audiences.\n\nDriven by a mission to democratise content marketing education, Oche is committed to empowering individuals and businesses to unlock their full potential through effective content strategies. His dedication to excellence and his passion for teaching continue to impact the lives of many, making him a true trailblazer in the content marketing space."
+    },
+    {
+      id: 5,
       name: "Prof. Feyi Grace Adepoju",
       title: "Professor of Ophthalmology & Consultant Ophthalmologist",
       company: "University of Ilorin Teaching Hospital",
@@ -62,16 +76,6 @@ const Speakers = () => {
       image: profAdepoju,
       bio: "Professor Feyi Grace Adepoju is the first female Professor of Ophthalmology in Kwara State, a Consultant Ophthalmologist at the University of Ilorin Teaching Hospital, and a distinguished academic in the College of Health Sciences.",
       fullBio: "Professor Feyi Grace Adepoju is the first female Professor of Ophthalmology in Kwara State, a Consultant Ophthalmologist at the University of Ilorin Teaching Hospital, and a distinguished academic in the College of Health Sciences.\n\nShe graduated with an MBBS from Ahmadu Bello University, Zaria, where she emerged as the Overall Best Final-Year Student. She won multiple awards, including the Alba Medical Prize, the A.I. Saha Prize for Community Medicine, the Best Prize in Obstetrics and Gynaecology, and the Glaxo Paediatrics Prize, along with additional prizes in Agricultural Science, Biology, Physics, and Mathematics.\n\nProfessor Adepoju later obtained an MSc in Community Eye Health from the London School of Hygiene and Tropical Medicine, supported by the Commonwealth and DFID scholarships. She is a Fellow of both the West African College of Surgeons and the National Postgraduate Medical College of Nigeria, and she earned the Oyin Olurin Prize as the best candidate in Part I of the Fellowship examinations.\n\nHer career spans over three decades, marked by pioneering work in community ophthalmology, cataract surgery, and anterior segment practice. She has organized over 200 community outreaches, screened more than 300,000 people, and restored sight through over 30,000 eye surgeries. Beyond the operating theatre, she has championed eye health through television and radio programmes, public health campaigns, and award-winning educational films, including You Are My Eye, broadcast on 27 television stations across Nigeria and beyond.\n\nA prolific scholar, she has published over 72 scientific works, authored four books and four textbook chapters, and served as an examiner and reviewer for national and international journals. She currently serves as Director of the Medical Education Resource Unit at the University of Ilorin, President of the Bioethics Society of Nigeria, Chairman of Women Ophthalmology of Nigeria, and Treasurer/Board Member of the African Ophthalmology Council.\n\nHer excellence has been recognized with numerous prestigious awards, including the Novartis International Excellence in Ophthalmology Vision Award, the American Academy of Ophthalmology Leadership Development Award, and the Excellence in Vision Award for Prevention of Blindness, presented by the Africa Ophthalmology Forum and the Ophthalmological Society of Nigeria.\n\nBeyond academia and medicine, Professor Adepoju is a film actress with over 150 appearances, a playwright, and an ordained Reverend of Abundant Life Gospel Church. She is the founder of two NGOs dedicated to supporting the underprivileged and remains a passionate advocate for education, health, and community empowerment.\n\nA woman of many parts—scholar, surgeon, teacher, community advocate, actress, and minister of faith—she is married to Rev. Yemi Adepoju and is blessed with children and grandchildren."
-    },
-    {
-      id: 5,
-      name: "Mobolade Adesokan",
-      title: "Founder ",
-      company: "Equipr",
-      location: "Nigeria",
-      image: moboladeAdesokanImage,
-      bio: "Miriam Mobolade Adesokan is a leader in business and portfolio management, passionate about helping people turn their ideas into profitable ventures.",
-      fullBio: "Miriam Mobolade Adesokan is a leader in business and portfolio management, passionate about helping people turn their ideas into profitable ventures.\n\nShe is a people builder and avid investor in communities, with over a decade experience, coaching CEOs from diverse walks of life. She is also a process development guru, with experience helping companies to design their strategy, build stronger infrastructure, and develop their teams.\n\nShe is a firm believer in the New Nigeria, a Nigeria where every individual can achieve their highest potential and thrive.\n\nShe started her career in Biology and Nursing at the Bloomfield College of Montclair State University in New Jersey, went on to earn an MSc in Clinical Research from the University of Hertfordshire Hatfield, UK. She is a trained Project Management Practitioner with a PRINCE II from Pearson Mayfield Imperial College London, switched careers to project management and eventually leading global projects in Healthcare across various continents: NA, EU, EMEA, Asia Pacific regions.\n\nShe started her first company in 2013 - since then she has helped many people to start new businesses or revitalise already established ones, implementing risk and quality management systems and processes, training and compliance systems, process improvement strategies, designing company strategies and culture, helping companies source infrastructure to enhance growth.\n\nShe is the Founder of Equipr for Advancement Foundation, the umbrella organization for the equipr African Youth Partnership, an organization focused on youth advancement for Africa's undergraduate and graduate students, with over 150 students mentored within the five batches of students registered since November 2021. She is also the CEO for Swoop, Anchor Therapeutics Ltd to mention a few.\n\nShe is a mum and a wife, a songwriter, and she teaches music theory and beginners piano in her spare time."
     },
     {
       id: 6,
@@ -85,6 +89,56 @@ const Speakers = () => {
     },
     {
       id: 7,
+      name: "Olubukola Roberts Omoleye",
+      title: "Educator, Speaker and Etiquette Coach",
+      company: "Poised Gentry",
+      location: "Nigeria",
+      image: olubukolaRoberts,
+      bio: "Olubukola Roberts Omoleye is an Educator, Speaker and Etiquette Coach dedicated to helping individuals communicate with clarity, confidence and poise.",
+      fullBio: "Olubukola Roberts Omoleye is an Educator, Speaker and Etiquette Coach dedicated to helping individuals communicate with clarity, confidence and poise. With over seven years of experience in communication, diction and public speaking, she has guided professionals, corporate teams and educators to refine their speech and elevate their presence. She is the founder of Poised Gentry, an initiative advancing excellence in communication and social grace through Poised Diction Academy, Poised Ushering Agency and Poised School of Etiquette. Certified in Etiquette and Lifestyle Branding, Emotional Intelligence and Public Engagement, Olubukola served as the Lead Host for the Africa SME 2025 Conference, demonstrating her exceptional communication and presentation skills. Her work inspires confidence, elegance and eloquence across industries."
+    },
+    {
+      id: 8,
+      name: "Temi Kolawole",
+      title: "Managing Director",
+      company: "Ilorin Innovation Hub",
+      location: "Kwara State, Nigeria",
+      image: temiKolawole,
+      bio: "Temi Kolawole is a software engineer, tech entrepreneur, and advocate for digital transformation with extensive experience in shaping Nigeria's digital landscape.",
+      fullBio: "Temi Kolawole is a software engineer, tech entrepreneur, and advocate for digital transformation. He holds a BSc in Computer Engineering Technology from Babcock University and has further honed his expertise through executive education at Harvard Business School, the University of Wolverhampton, and Università Bocconi.\n\nIn the early days of the Nigerian internet, Temi played a pivotal role in shaping the digital landscape. As the founder of Antigravity, he led the development of some of Nigeria's most influential blogs, including BellaNaija, Sturvs, Notjustok, and TheNETng. Beyond media, Antigravity provided cutting-edge digital solutions to businesses and organizations such as the Tony Elumelu Foundation, Heirs Holdings, ECOWAS, the European Union, Honeywell, NIBSS, and several state governments. His work earned him multiple nominations for Best Use of Technology at The Future Awards and a nomination for African Entrepreneur of the Year in 2012.\n\nWith a strong belief in technology as a tool for transformation, Temi transitioned from consulting to public service, taking on roles within the Kwara State Government. He has contributed to revenue administration and served as an advisor to the Governor on key technological initiatives. Today, he is the Managing Director of the Ilorin Innovation Hub, a leading technology center focused on solving local problems while creating global opportunities. In this role, he drives digital and ICT skills training programs and supports the growth of scalable startups in Ilorin, a city increasingly recognized for its tech talent.\n\nDespite his leadership roles, Temi remains deeply engaged in software development as a full-stack developer. His commitment to staying ahead of emerging technologies and programming languages ensures that he continues to build innovative solutions and make a lasting impact in the tech ecosystem."
+    },
+    {
+      id: 9,
+      name: "Oluwatobi Ozenua",
+      title: "Product Designer & Framer Expert",
+      company: "Independent",
+      location: "Nigeria",
+      image: oluwatobiOzenua,
+      bio: "Oluwatobi Ozenua is a product designer, visual storyteller, and Framer expert passionate about creating digital experiences that feel as good as they look.",
+      fullBio: "Oluwatobi Ozenua is a product designer, visual storyteller, and Framer expert passionate about creating digital experiences that feel as good as they look.\n\nWith a strong foundation in user-centered design and a keen eye for aesthetics, Oluwatobi specializes in building intuitive, engaging, and conversion-driven interfaces. His work spans a wide range of industries, helping businesses transform their ideas into beautifully crafted digital products that users love.\n\nAs a Framer expert, Oluwatobi has mastered the art of rapid prototyping and no-code development, enabling him to bring designs to life with speed and precision. He believes that great design is not just about how things look—but how they work, and how they make people feel.\n\nOluwatobi is also passionate about sharing knowledge and empowering others. He regularly mentors aspiring designers, creates educational content, and speaks at design events. His mission is to help individuals and businesses unlock the full potential of design as a tool for growth, connection, and impact.\n\nWhether he's designing a sleek landing page, building an interactive prototype, or crafting a full-scale product experience, Oluwatobi brings creativity, strategy, and technical excellence to every project."
+    },
+    {
+      id: 10,
+      name: "Joshua Oroge",
+      title: "CEO/Founder",
+      company: "The Light Tutors",
+      location: "Nigeria",
+      image: JoshuaImage,
+      bio: "Joshua Oroge is a leader, educator, and operations strategist dedicated to building systems that help people excel.",
+      fullBio: "Joshua Oroge is a leader, educator, and operations strategist dedicated to building systems that help people excel. He serves as the CEO of The Light Tutors Limited, an online tutoring company he founded in 2020 to deliver personalised, high-quality academic support to students across Nigeria and beyond. Under his leadership, TLT has grown into a well-structured organisation known for excellence, strong operations, and meaningful community impact.\n\nJoshua is also passionate about youth development. He is a Trustee and a Volunteer at Equipr Youth Partnership, facilitating sessions on leadership, personal growth, and soft-skills training for university students and young graduates.\n\nHe is involved in workforce development initiatives such as HireGround Ilorin Career Fair 2025, a project focused on equipping young people with employability skills, training, and access to job opportunities.\n\nJoshua holds a First-Class Honours degree in Mathematics from the University of Ilorin. He is committed to continuous learning, leadership development, and building systems that drive organisational excellence and individual growth.\n\nHe also serves in Citizens of Light Church (CLC) as a member of The Vine ushering unit, contributing to the church's service culture.\n\nGrounded in faith and a passion for people, Joshua continues to build, lead, and inspire across education, youth empowerment, and community transformation."
+    },
+    {
+      id: 11,
+      name: "Mobolade Adesokan",
+      title: "Founder",
+      company: "Equipr",
+      location: "Nigeria",
+      image: moboladeAdesokanImage,
+      bio: "Miriam Mobolade Adesokan is a leader in business and portfolio management, passionate about helping people turn their ideas into profitable ventures.",
+      fullBio: "Miriam Mobolade Adesokan is a leader in business and portfolio management, passionate about helping people turn their ideas into profitable ventures.\n\nShe is a people builder and avid investor in communities, with over a decade experience, coaching CEOs from diverse walks of life. She is also a process development guru, with experience helping companies to design their strategy, build stronger infrastructure, and develop their teams.\n\nShe is a firm believer in the New Nigeria, a Nigeria where every individual can achieve their highest potential and thrive.\n\nShe started her career in Biology and Nursing at the Bloomfield College of Montclair State University in New Jersey, went on to earn an MSc in Clinical Research from the University of Hertfordshire Hatfield, UK. She is a trained Project Management Practitioner with a PRINCE II from Pearson Mayfield Imperial College London, switched careers to project management and eventually leading global projects in Healthcare across various continents: NA, EU, EMEA, Asia Pacific regions.\n\nShe started her first company in 2013 - since then she has helped many people to start new businesses or revitalise already established ones, implementing risk and quality management systems and processes, training and compliance systems, process improvement strategies, designing company strategies and culture, helping companies source infrastructure to enhance growth.\n\nShe is the Founder of Equipr for Advancement Foundation, the umbrella organization for the equipr African Youth Partnership, an organization focused on youth advancement for Africa's undergraduate and graduate students, with over 150 students mentored within the five batches of students registered since November 2021. She is also the CEO for Swoop, Anchor Therapeutics Ltd to mention a few.\n\nShe is a mum and a wife, a songwriter, and she teaches music theory and beginners piano in her spare time."
+    },
+    {
+      id: 12,
       name: "Paul Adeagbo",
       title: "Career Coach & Editorial Director",
       company: "MindShift Consulting LTD",
@@ -92,16 +146,6 @@ const Speakers = () => {
       image: PaulImage,
       bio: "Paul Adeagbo is on a mission to transform Nigerian graduates into global talents through strategic career coaching and professional development.",
       fullBio: "Paul Adeagbo is on a mission with MindShift Consulting LTD to transform Nigerian graduates into global talents. He is a Career Coach with over five years of experience whose Job Search strategy has assisted over 300 clients to secure coveted job opportunities across diverse sectors.\n\nHe has provided invaluable support to 15 clients who successfully gained admission to graduate programs, including the prestigious Chevening Scholarship. He also guided 25 graduates into the Venture in Management Program at Lagos Business School.\n\nBeyond his coaching, Paul is the Editorial Director of EMPLOYABLE, a career development magazine that reaches over 5,000 professionals across 6 African countries. He's also the driving force behind the Campus Career and Employability Conference.\n\nPaul strongly believes that there is a strong correlation between a nation's human capital pool and her economic competitiveness. He specializes in empowering young professionals to excel in their careers, helping them access opportunities that align with their career aspirations.\n\nCrafting professional documents, such as CVs, cover letters, and admission essays, is another area where Paul's expertise shines, making these tasks more manageable and helping clients secure the career opportunities they deserve.\n\nIf you're genuinely committed to achieving your career goals, Paul is the mentor you've been searching for to begin your career transformation journey."
-    },
-    {
-      id: 8,
-      name: "Joshua Oroge",
-      title: "CEO/Founder",
-      company: "The Light Tutors",
-      location: "Nigeria",
-      image: JoshuaImage,
-      bio: "Joshua Oroge is a visionary leader in the education technology space, dedicated to transforming learning experiences across Africa.",
-      fullBio: "Joshua Oroge is the CEO and Founder of The Light Tutors, an innovative edtech company focused on providing high-quality tutoring services to students across Africa. With a background in computer science and a passion for education, Joshua has been at the forefront of leveraging technology to enhance learning outcomes.\n\nUnder his leadership, The Light Tutors has developed a unique platform that connects students with experienced tutors, offering personalized learning experiences tailored to individual needs. Joshua is committed to making quality education accessible to all and has implemented several initiatives to support underprivileged students.\n\nIn addition to his work at The Light Tutors, Joshua is a sought-after speaker and mentor in the edtech community, regularly sharing his insights on the future of education and the role of technology in driving positive change."
     },
   ]
 

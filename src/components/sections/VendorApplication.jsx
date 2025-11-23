@@ -22,7 +22,7 @@ const VendorApplication = () => {
     {
       icon: <FiMapPin className="w-6 h-6" />,
       title: "Prime Location",
-      description: "Secure a strategic booth position at one of Kwara's most anticipated career events."
+      description: "Secure a strategic booth position at one of Ilorin's most anticipated career events."
     }
   ]
 
@@ -253,7 +253,7 @@ const VendorApplication = () => {
                     Ready to Join?
                   </h3>
                   <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
-                    Secure your vendor booth at HireGround 2025 and be part of Kwara's premier career development event.
+                    Secure your vendor booth at HireGround 2025 and be part of Ilorin's premier career development event.
                   </p>
                 </div>
 

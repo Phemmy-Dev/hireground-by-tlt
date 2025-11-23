@@ -6,50 +6,53 @@ import JoshuaImage from '../../assets/images/speakers/Joshua.jpg';
 import PaulImage from '../../assets/images/speakers/paul.jpg';
 import solaRahmanImage from '../../assets/images/speakers/SolaRahman.jpg';
 import moboladeAdesokanImage from '../../assets/images/speakers/MoboladeAdesokan.jpg';
-import MrsAdimulaimage from '../../assets/images/speakers/MrsAdimula.jpg';
-import profAdepoju from  '../../assets/images/speakers/profAdepoju.jpg';
+import MrsAdimulaimage from '../../assets/images/speakers/MrsAdimula.png';
+import profAdepoju from  '../../assets/images/speakers/profAdepoju.jpeg';
 import temiKolawole from '../../assets/images/speakers/temiKolawole.jpg';
+import dareAdebayo from '../../assets/images/speakers/dareAdebayo.jpg';
+import ocheWrites from '../../assets/images/speakers/ocheWrites.JPG';
+import olubukolaRoberts from '../../assets/images/speakers/olubukolaRoberts.JPG';
+import oluwatobiOzenua from '../../assets/images/speakers/oluwatobiOzenua.JPG';
 import honorable from '../../assets/images/speakers/honorable.jpg';
 
 const SpeakersSection = () => {
   const scrollContainerRef = useRef(null);
 
-  // Sample speakers data - replace with your actual data
   const speakers = [
     {
       id: 1,
-      name: "Damilola Yusuf Adelodun",
+      name: "Hon. Damilola Yusuf Adelodun",
       title: "Commissioner",
       image: honorable,
       company: "Kwara State Ministry of Business, Innovation, and Technology",
     },
     {
       id: 2,
-      name: "Temi Kolawole",
-      title: "Managing Director",
-      image: temiKolawole,
-      company: "Ilorin Innovation Hub",
-    },
-    {
-      id: 3,
       name: "Sola Rahman",
-      title: "Event Planner & Master of Ceremonies",
+      title: "Chief Experience Officer",
       image: solaRahmanImage,
       company: "The Sola Rahman Brand",
     },
     {
+      id: 3,
+      name: "Dare Adebayo",
+      title: "Co-founder and COO",
+      image: dareAdebayo,
+      company: "Edves",
+    },
+    {
       id: 4,
+      name: "Oche Writes",
+      title: "Founder",
+      image: ocheWrites,
+      company: "Reels by Circle",
+    },
+    {
+      id: 5,
       name: "Prof. Feyi Grace Adepoju",
       title: "Professor of Ophthalmology",
       image: profAdepoju,
       company: "University of Ilorin Teaching Hospital",
-    },
-    {
-      id: 5,
-      name: "Mobolade Miriam Adesokan",
-      title: "Founder",
-      image: moboladeAdesokanImage,
-      company: "Equipr",
     },
     {
       id: 6,
@@ -60,17 +63,45 @@ const SpeakersSection = () => {
     },
     {
       id: 7,
-      name: "Paul Adeagbo",
-      title: "Career Coach",
-      image: PaulImage,
-      company: "MindShift Consulting Inc.",
+      name: "Olubukola Roberts Omoleye",
+      title: "Educator, Speaker and Etiquette Coach",
+      image: olubukolaRoberts,
+      company: "Poised Gentry",
     },
     {
       id: 8,
+      name: "Temi Kolawole",
+      title: "Managing Director",
+      image: temiKolawole,
+      company: "Ilorin Innovation Hub",
+    },
+    {
+      id: 9,
+      name: "Oluwatobi Ozenua",
+      title: "Product Designer & Framer Expert",
+      image: oluwatobiOzenua,
+      company: "Independent",
+    },
+    {
+      id: 10,
       name: "Joshua Oroge",
       title: "CEO/Founder",
       image: JoshuaImage,
       company: "The Light Tutors Ltd.",
+    },
+    {
+      id: 11,
+      name: "Mobolade Miriam Adesokan",
+      title: "Founder",
+      image: moboladeAdesokanImage,
+      company: "Equipr",
+    },
+    {
+      id: 12,
+      name: "Paul Adeagbo",
+      title: "Career Coach",
+      image: PaulImage,
+      company: "MindShift Consulting Inc.",
     }
   ];
 

@@ -7,9 +7,9 @@ const ContactInfo = () => {
     {
       icon: <FiMail className="w-6 h-6" />,
       title: "Email Us",
-      primary: "bukunmi@thelightutors.com",
+      primary: "hireground@thelightutors.com",
       description: "For general inquiries and partnerships",
-      action: "mailto:bukunmi@thelightutors.com",
+      action: "mailto:hireground@thelightutors.com",
       color: "bg-blue-100 text-blue-600"
     },
     {

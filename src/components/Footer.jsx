@@ -72,7 +72,7 @@ const Footer = () => {
                   className="h-12 w-auto mb-4"
                 />
                 <p className="text-gray-400 leading-relaxed mb-6 max-w-sm">
-                  Kwara's  career transformation event. Connecting talent, empowering professionals, and shaping the future of work across the continent.
+                  Ilorin's  career transformation event. Connecting talent, empowering professionals, and shaping the future of work across the continent.
                 </p>
               </div>
 
@@ -86,7 +86,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center gap-3 text-gray-400">
                   <FiMapPin className="w-4 h-4 text-orange-500" />
-                  <span className="text-sm">Kwara, Nigeria</span>
+                  <span className="text-sm">Ilorin, Kwara State, Nigeria</span>
                 </div>
               </div>
 

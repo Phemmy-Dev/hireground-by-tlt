@@ -133,7 +133,7 @@ const OrganizingTeam = () => {
             </div>
             
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Meet The <span className="text-orange-600">Organizing</span> Team
+              Meet The <span className="text-orange-600">Organising</span> Team
             </h2>
             
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
@@ -260,18 +260,18 @@ const OrganizingTeam = () => {
               </h4>
               
               <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                Our organizing team is here to help. Whether you have questions about speaking opportunities, partnerships, or general inquiries, we'd love to hear from you.
+                Our organising team is here to help. Whether you have questions about speaking opportunities, partnerships, or general inquiries, we'd love to hear from you.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a
-                  href="mailto:bukunmi@thelightutors.com"
+                  href="mailto:hireground@thelightutors.com"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="inline-flex items-center px-6 py-3 bg-gray-900 text-white font-medium rounded-lg hover:bg-gray-800 transition-all duration-300"
                 >
                   <FiMail className="mr-2 w-4 h-4" />
-                  bukunmi@thelightutors.com
+                  hireground@thelightutors.com
                 </motion.a>
                 
                 <motion.a

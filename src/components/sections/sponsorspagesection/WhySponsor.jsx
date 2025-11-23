@@ -8,7 +8,7 @@ const WhySponsor = () => {
     {
       icon: <FiUsers className="w-8 h-8" />,
       title: "Reach 1000+ Professionals",
-      description: "Connect with Kwara's most ambitious professionals, from emerging talent to C-suite executives, all actively seeking career transformation.",
+      description: "Connect with Ilorin's most ambitious professionals, from emerging talent to C-suite executives, all actively seeking career transformation.",
       highlight: "1000+",
       subtext: "Expected Attendees"
     },
@@ -168,23 +168,23 @@ const WhySponsor = () => {
                 at the forefront of the continent's professional transformation.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <motion.a
                   href="mailto:hireground@thelightutors.com"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-xl shadow-xl transition-all duration-300"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-xl shadow-xl transition-all duration-300"
                 >
-                  Let's Partner Together
+                  Let's Partner 
                 </motion.a>
                 
-                <motion.button
+                {/* <motion.button
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center px-8 py-4 border-2 border-white/30 hover:border-white hover:bg-white/10 text-white font-semibold rounded-xl transition-all duration-300"
+                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 hover:border-white hover:bg-white/10 text-white font-semibold rounded-xl transition-all duration-300"
                 >
                   Download Sponsorship Deck
-                </motion.button>
+                </motion.button> */}
               </div>
             </motion.div>
           </div>

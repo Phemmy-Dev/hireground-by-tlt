@@ -43,7 +43,7 @@ const AboutHireground = () => {
 
   const stats = [
     { number: "1000+", label: "Expected Attendees" },
-    { number: "20+", label: "Industry Speakers" },
+    { number: "10+", label: "Industry Speakers" },
     { number: "20+", label: "Companies Participating" },
     { number: "2+", label: "Workshop Sessions" },
   ]
@@ -73,7 +73,7 @@ const AboutHireground = () => {
               
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  HireGround is Nigeria's premier career transformation event, designed to bridge the gap between talent and opportunity. Born from the vision of creating a platform where career dreams become reality, we bring together industry leaders, job seekers, career changers, and entrepreneurs under one roof.
+                  HireGround is Ilorin's premier career transformation event, designed to bridge the gap between talent and opportunity. Born from the vision of creating a platform where career dreams become reality, we bring together industry leaders, job seekers, career changers, and entrepreneurs under one roof.
                 </p>
                 
                 <p>
