@@ -18,9 +18,9 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About HireGround Ilorin Career Fair | Mission, Vision & Team</title>
-        <meta name="description" content="Learn about HireGround Ilorin Career Fair - our mission to connect Kwara State talent with career opportunities, meet our organizing team, and discover why to attend." />
-        <meta name="keywords" content="HireGround, Ilorin Career Fair, about us, career fair mission, organizing team, Kwara State career event" />
+        <title>About HireGround | Academy & Career Development by The Light Tutors</title>
+        <meta name="description" content="Learn about HireGround - our mission to empower early-career professionals through HireGround Academy and career development programs. Meet our team and discover our vision." />
+        <meta name="keywords" content="HireGround, HireGround Academy, about us, career development, employability training, The Light Tutors, career program Nigeria" />
       </Helmet>
       <div className={`transition-all duration-300 ${showCountdownModal ? 'blur-sm' : ''}`}>
         <Navbar />
@@ -33,11 +33,11 @@ const About = () => {
         <FaqSection />
         <Footer />
       </div>
-      
+
       {/* Countdown Modal */}
-      <CountdownModal 
-        isOpen={showCountdownModal} 
-        onClose={handleCloseModal} 
+      <CountdownModal
+        isOpen={showCountdownModal}
+        onClose={handleCloseModal}
       />
     </>
   )

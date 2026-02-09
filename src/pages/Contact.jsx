@@ -11,9 +11,9 @@ const Contact = () => {
   return (
     <div>
       <Helmet>
-        <title>Contact HireGround Ilorin Career Fair | Get in Touch</title>
-        <meta name="description" content="Contact HireGround Ilorin Career Fair team for inquiries about registration, sponsorship, recruitment partnerships, and event information." />
-        <meta name="keywords" content="HireGround contact, Ilorin Career Fair contact, career fair inquiries, event information, sponsorship inquiries" />
+        <title>Contact HireGround Academy | Get in Touch</title>
+        <meta name="description" content="Contact HireGround Academy team for inquiries about program enrollment, partnerships, and career development opportunities." />
+        <meta name="keywords" content="HireGround contact, HireGround Academy contact, career program inquiries, partnership inquiries, The Light Tutors" />
       </Helmet>
       <Navbar />
       <ContactHero />

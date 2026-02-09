@@ -11,18 +11,18 @@ import Footer from '../components/Footer'
 const Sponsors = () => {
   return (
     <div>
-        <Helmet>
-          <title>Sponsor HireGround Ilorin Career Fair 2025 | Partnership Opportunities</title>
-          <meta name="description" content="Become a sponsor of HireGround Ilorin Career Fair 2025. Gain brand visibility, connect with talent, and support career development in Kwara State." />
-          <meta name="keywords" content="HireGround sponsorship, Ilorin Career Fair sponsors, event sponsorship, brand visibility, career fair partnership" />
-        </Helmet>
-        <Navbar />
-        <SponsorsSectionHero />
-        <IntroToSponsors />
-        <WhySponsor />
-        <SponsorCta />
-        <FaqSection />
-        <Footer />
+      <Helmet>
+        <title>Partner with HireGround | Sponsorship & Partnership Opportunities</title>
+        <meta name="description" content="Partner with HireGround Academy and support career development in Nigeria. Gain brand visibility, connect with early-career talent, and make an impact." />
+        <meta name="keywords" content="HireGround sponsorship, HireGround Academy partners, career program sponsorship, brand visibility, talent partnership Nigeria" />
+      </Helmet>
+      <Navbar />
+      <SponsorsSectionHero />
+      <IntroToSponsors />
+      <WhySponsor />
+      <SponsorCta />
+      <FaqSection />
+      <Footer />
     </div>
   )
 }
