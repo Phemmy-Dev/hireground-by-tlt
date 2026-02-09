@@ -8,25 +8,15 @@
         "title": "About",
         "path": "/about",
         "cName": "nav-links"
-    }, 
+    },
     {
-        "title": "Speakers",
-        "path": "/speakers",
+        "title": "Academy",
+        "path": "/academy",
         "cName": "nav-links"
     },
     {
-        "title": "Companies",
-        "path": "/companies",
-        "cName": "nav-links"
-    },
-    {
-        "title": "Recruiters",
-        "path": "/recruiters",
-        "cName": "nav-links"
-    },
-    {
-        "title": "Sponsors",
-        "path": "/sponsors",
+        "title": "Career Fair 2025",
+        "path": "/career-fair-2025",
         "cName": "nav-links"
     },
     {
@@ -34,4 +24,4 @@
         "path": "/contact",
         "cName": "nav-links"
     }
-    ]
+]

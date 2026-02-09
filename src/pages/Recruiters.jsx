@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { motion } from 'framer-motion'
 import { FiUsers, FiTrendingUp, FiAward, FiCheckCircle, FiArrowRight, FiBriefcase, FiStar, FiTarget, FiCalendar, FiMapPin, FiClock } from 'react-icons/fi'
 import Navbar from '../components/Navbar'
@@ -97,6 +98,11 @@ const Recruiters = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>Recruiters & Employers at HireGround Ilorin Career Fair 2025</title>
+        <meta name="description" content="Partner with HireGround Ilorin Career Fair 2025 to access top talent. Meet 1,000+ skilled professionals, conduct interviews, and build your team in Kwara State." />
+        <meta name="keywords" content="HireGround recruiters, Ilorin Career Fair employers, talent recruitment, hiring event, job fair Nigeria, recruitment partners" />
+      </Helmet>
       <div className={`transition-all duration-300 ${showCountdownModal ? 'blur-sm' : ''}`}>
         <Navbar />
         
@@ -135,7 +141,7 @@ const Recruiters = () => {
                 <div className="inline-flex items-center px-6 py-3 bg-orange-500/20 backdrop-blur-sm rounded-full border border-orange-500/30 mb-8">
                   <FiTarget className="w-5 h-5 text-orange-400 mr-2" />
                   <span className="text-orange-200 font-medium text-sm sm:text-base uppercase tracking-wide">
-                    Recruiter Partnership Program
+                    HireGround Ilorin Career Fair Recruiter Partnership
                   </span>
                 </div>
 
@@ -147,7 +153,7 @@ const Recruiters = () => {
                 </h1>
 
                 <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 leading-relaxed mb-8 max-w-3xl mx-auto">
-                  Partner with HireGround to discover exceptional talent, build your team, and shape the future workforce of Nigeria.
+                  Partner with HireGround Ilorin Career Fair to discover exceptional talent, build your team, and shape the future workforce of Nigeria.
                 </p>
 
                 {/* Main CTA */}

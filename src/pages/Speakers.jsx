@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Helmet } from 'react-helmet'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FiX, FiCalendar, FiMapPin, FiUsers } from 'react-icons/fi'
 import Navbar from '../components/Navbar'
@@ -279,6 +280,11 @@ const Speakers = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>Speakers at HireGround Ilorin Career Fair 2025 | Industry Leaders & Experts</title>
+        <meta name="description" content="Meet inspiring speakers at HireGround Ilorin Career Fair 2025. Learn from industry leaders, innovators, and professionals shaping careers across Nigeria and Africa." />
+        <meta name="keywords" content="HireGround speakers, Ilorin Career Fair speakers, career mentors, industry experts, professional development, Nigeria career leaders" />
+      </Helmet>
       <div className={`transition-all duration-300 ${showCountdownModal ? 'blur-sm' : ''}`}>
         <Navbar />
       
@@ -292,10 +298,10 @@ const Speakers = () => {
               transition={{ duration: 0.6 }}
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                Meet Our <span className="text-yellow-300">Speakers</span>
+                Meet Our <span className="text-yellow-300">HireGround Ilorin Speakers</span>
               </h1>
               <p className="text-xl md:text-2xl opacity-90 mb-8 leading-relaxed">
-                Learn from industry leaders, innovators, and change-makers who are shaping the future of work and technology across Africa and beyond.
+                Learn from industry leaders, innovators, and change-makers at HireGround Ilorin Career Fair who are shaping the future of work and technology across Africa and beyond.
               </p>
               <div className="flex flex-wrap justify-center gap-8 text-white/80">
                 <div className="flex items-center gap-2">

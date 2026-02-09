@@ -1,13 +1,13 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { 
-  FiMail, 
-  FiPhone, 
-  FiMapPin, 
-  FiLinkedin, 
-  FiTwitter, 
-  FiInstagram, 
+import {
+  FiMail,
+  FiPhone,
+  FiMapPin,
+  FiLinkedin,
+  FiTwitter,
+  FiInstagram,
   FiFacebook,
   FiArrowUp,
   FiHeart
@@ -18,15 +18,15 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   const footerLinks = {
-    event: [
+    explore: [
       { name: 'About HireGround', path: '/about' },
-      { name: 'Speakers', path: '/speakers' },
-      { name: 'Sponsors', path: '/sponsors' },
+      { name: 'HireGround Academy', path: '/academy' },
+      { name: 'Career Fair 2025', path: '/career-fair-2025' },
       { name: 'Contact Us', path: '/contact' }
     ],
     quickLinks: [
       { name: 'Home', path: '/' },
-      { name: 'Register Now', href: 'https://selar.com/3f604cs136', external: true },
+      { name: 'Apply to Academy', href: 'https://forms.gle/pGwPAfz6VLy26mtZ9', external: true },
       { name: 'Become a Sponsor', href: 'mailto:hireground@thelightutors.com', external: true },
       { name: 'Partnership Inquiry', href: 'mailto:hireground@thelightutors.com', external: true }
     ]
@@ -56,9 +56,9 @@ const Footer = () => {
         {/* Main Footer Content */}
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
-            
+
             {/* Brand Section */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -66,13 +66,13 @@ const Footer = () => {
               className="lg:col-span-4"
             >
               <div className="mb-6">
-                <img 
-                  src={Logo} 
-                  alt="HireGround Logo" 
+                <img
+                  src={Logo}
+                  alt="HireGround Logo"
                   className="h-12 w-auto mb-4"
                 />
                 <p className="text-gray-400 leading-relaxed mb-6 max-w-sm">
-                  Ilorin's  career transformation event. Connecting talent, empowering professionals, and shaping the future of work across the continent.
+                  Empowering early-career professionals with the skills, support, and connections they need to succeed in the job market.
                 </p>
               </div>
 
@@ -111,8 +111,8 @@ const Footer = () => {
 
             {/* Links Sections */}
             <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-              
-              {/* Event Links */}
+
+              {/* Explore Links */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -121,9 +121,9 @@ const Footer = () => {
               >
                 <h4 className="font-semibold text-white mb-4">Explore</h4>
                 <ul className="space-y-3">
-                  {footerLinks.event.map((link, index) => (
+                  {footerLinks.explore.map((link, index) => (
                     <li key={index}>
-                      <Link 
+                      <Link
                         to={link.path}
                         className="text-gray-400 hover:text-orange-500 transition-colors duration-300 text-sm"
                       >
@@ -146,7 +146,7 @@ const Footer = () => {
                   {footerLinks.quickLinks.map((link, index) => (
                     <li key={index}>
                       {link.external ? (
-                        <a 
+                        <a
                           href={link.href}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -155,7 +155,7 @@ const Footer = () => {
                           {link.name}
                         </a>
                       ) : (
-                        <Link 
+                        <Link
                           to={link.path}
                           className="text-gray-400 hover:text-orange-500 transition-colors duration-300 text-sm"
                         >
@@ -169,7 +169,7 @@ const Footer = () => {
             </div>
           </div>
 
-          
+
         </div>
 
         {/* Bottom Bar */}

@@ -7,9 +7,9 @@ const Hero = ({ title, text, heroImg, herobtn }) => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImg} 
-          alt="Hero Background" 
+        <img
+          src={heroImg}
+          alt="Hero Background"
           className="w-full h-full object-cover object-center scale-105 transition-transform duration-[10s] ease-in-out hover:scale-110"
         />
         {/* Multiple layered overlays for depth */}
@@ -45,7 +45,7 @@ const Hero = ({ title, text, heroImg, herobtn }) => {
           </motion.div>
 
           {/* Main Title */}
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 50, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 1, delay: 0.4, type: "spring", bounce: 0.3 }}
@@ -57,7 +57,7 @@ const Hero = ({ title, text, heroImg, herobtn }) => {
           </motion.h1>
 
           {/* Description */}
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
@@ -75,8 +75,8 @@ const Hero = ({ title, text, heroImg, herobtn }) => {
             transition={{ duration: 0.8, delay: 1.2, type: "spring", bounce: 0.2 }}
             className="mb-12 sm:mb-16"
           >
-            <a 
-              href="https://selar.com/3f604cs136"
+            <a
+              href="https://forms.gle/pGwPAfz6VLy26mtZ9"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative inline-flex items-center px-8 sm:px-10 py-4 sm:py-5 text-lg sm:text-xl font-semibold text-white overflow-hidden rounded-full shadow-2xl transform transition-all duration-300 hover:-translate-y-2 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-orange-500/50"
@@ -84,17 +84,17 @@ const Hero = ({ title, text, heroImg, herobtn }) => {
             >
               {/* Animated background */}
               <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
-              
+
               {/* Button glow effect */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-orange-400 to-red-400 opacity-75 blur-xl group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
-              
+
               {/* Button content */}
               <span className="relative flex items-center">
                 <span className="mr-3">{herobtn}</span>
-                <svg 
-                  className="w-5 h-5 sm:w-6 sm:h-6 transform group-hover:translate-x-2 transition-transform duration-300" 
-                  fill="none" 
-                  stroke="currentColor" 
+                <svg
+                  className="w-5 h-5 sm:w-6 sm:h-6 transform group-hover:translate-x-2 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

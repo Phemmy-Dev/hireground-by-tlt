@@ -1,10 +1,26 @@
 import React, { useState } from 'react'
+import { Helmet } from 'react-helmet'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FiSearch, FiMapPin, FiBriefcase, FiExternalLink, FiX, FiUsers, FiGlobe } from 'react-icons/fi'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import CountdownModal from '../components/CountdownModal'
 import { useCountdownModal } from '../hooks/useCountdownModal'
+
+// Import company logos
+import tltLogo from '../assets/images/recruitment-partners/tlt.jpg'
+import anchorTherapeuticsLogo from '../assets/images/recruitment-partners/anchortherapeutics.png'
+import cwLogo from '../assets/images/recruitment-partners/cw.jpg'
+import favenLogo from '../assets/images/recruitment-partners/faven.png'
+import utopiaLogo from '../assets/images/recruitment-partners/utopia.jpg'
+import oteoLogo from '../assets/images/recruitment-partners/oteo.JPG'
+import evcLogo from '../assets/images/recruitment-partners/evc.jpg'
+import strinaLogo from '../assets/images/recruitment-partners/strina.jpg'
+import frutosLogo from '../assets/images/recruitment-partners/frutos.png'
+import biudaLogo from '../assets/images/recruitment-partners/biuda.png'
+import swoopLogo from '../assets/images/recruitment-partners/dark_logo.jpg'
+import victorsunlogo from '../assets/images/recruitment-partners/victorsun.jpg'
+import adeayocliniclogo from '../assets/images/recruitment-partners/adeayoclinic.jpeg'
 
 const CompaniesHiring = () => {
   const [searchQuery, setSearchQuery] = useState('')
@@ -16,19 +32,19 @@ const CompaniesHiring = () => {
     {
       id: 1,
       name: "The Light Tutors Limited",
-      logo: "https://via.placeholder.com/120/FF6B35/FFFFFF?text=TLT",
+      logo: tltLogo,
       industry: "Education and Training",
       type: "Direct Employer",
       location: "Online",
       employees: "11 - 50",
       website: "https://www.thelightutors.com",
-      availableJobs: 1,
+      availableJobs: 3,
       contactPerson: "Rose Oroge",
       contactRole: "Human Resources Manager",
       contactPhone: "08036361173",
       contactEmail: "rose@thelightutors.com",
       address: "Online",
-      rolesOffered: "Entry-Level Roles, Human Resources",
+      rolesOffered: "Human Resources Manager, Partnerships Coordinator, Program Manager",
       keySkills: "Experience in Human Resources management",
       conductingInterviews: true,
       needsBoothSpace: true,
@@ -39,7 +55,7 @@ const CompaniesHiring = () => {
     {
       id: 2,
       name: "Victor Sun Bespoke",
-      logo: "https://via.placeholder.com/120/8B4513/FFFFFF?text=VSB",
+      logo: victorsunlogo,
       industry: "Fashion",
       type: "Direct Employer",
       location: "Ilorin, Kwara State",
@@ -62,7 +78,7 @@ const CompaniesHiring = () => {
     {
       id: 3,
       name: "Anchor Therapeutics Ltd",
-      logo: "https://via.placeholder.com/120/00A86B/FFFFFF?text=ATL",
+      logo: anchorTherapeuticsLogo,
       industry: "Healthcare",
       type: "Direct Employer",
       location: "Ibadan, Oyo State",
@@ -85,7 +101,7 @@ const CompaniesHiring = () => {
     {
       id: 4,
       name: "CW Music Media",
-      logo: "https://via.placeholder.com/120/FF1493/FFFFFF?text=CWM",
+      logo: cwLogo,
       industry: "Education and Training",
       type: "Direct Employer",
       location: "Ibadan, Oyo State",
@@ -108,7 +124,7 @@ const CompaniesHiring = () => {
     {
       id: 5,
       name: "Faven Tresses",
-      logo: "https://via.placeholder.com/120/FF69B4/FFFFFF?text=FT",
+      logo: favenLogo,
       industry: "Fashion",
       type: "Direct Employer",
       location: "Ilorin, Kwara State",
@@ -131,7 +147,7 @@ const CompaniesHiring = () => {
     {
       id: 6,
       name: "UtopiaBFS",
-      logo: "https://via.placeholder.com/120/9370DB/FFFFFF?text=UBFS",
+      logo: utopiaLogo,
       industry: "Beauty & Spa",
       type: "Direct Employer",
       location: "Ilorin, Kwara State",
@@ -154,7 +170,7 @@ const CompaniesHiring = () => {
     {
       id: 7,
       name: "OTEO",
-      logo: "https://via.placeholder.com/120/FF6347/FFFFFF?text=OTEO",
+      logo: oteoLogo,
       industry: "Fashion",
       type: "Direct Employer",
       location: "Ilorin, Kwara State",
@@ -177,7 +193,7 @@ const CompaniesHiring = () => {
     {
       id: 8,
       name: "Experience Vision Creations (EVC)",
-      logo: "https://via.placeholder.com/120/4169E1/FFFFFF?text=EVC",
+      logo: evcLogo,
       industry: "Construction/Real Estate",
       type: "Direct Employer",
       location: "Ilorin, Kwara State",
@@ -200,7 +216,7 @@ const CompaniesHiring = () => {
     {
       id: 9,
       name: "St.Rina Creamery and Bakery Confectioneries",
-      logo: "https://via.placeholder.com/120/FFD700/000000?text=SRC",
+      logo: strinaLogo,
       industry: "Food and Beverages",
       type: "Direct Employer",
       location: "Ilorin, Kwara State",
@@ -218,6 +234,98 @@ const CompaniesHiring = () => {
       needsBoothSpace: false,
       needsHRSupport: true,
       description: "A homemade brand that serves sweet treats and delivers home cooked meals.",
+      credentials: []
+    },
+    {
+      id: 10,
+      name: "Frutos Dome",
+      logo: frutosLogo,
+      industry: "Food and Beverages",
+      type: "Direct Employer",
+      location: "Tanke Okeodo, Ilorin, Kwara State",
+      employees: "1 - 10",
+      website: "https://www.instagram.com/Frutosdome_",
+      availableJobs: 9,
+      contactPerson: "Bakare Zaynab",
+      contactRole: "People Operations",
+      contactPhone: "07065885623",
+      contactEmail: "fruitosdome@gmail.com",
+      address: "Tanke Okeodo, Ilorin",
+      rolesOffered: "Customer Service, Finance/Accounting, Kitchen Supports",
+      keySkills: "Accounting- ND/HND/BSc. Customer service: same as above. Kitchen supports: O'level to BSc",
+      conductingInterviews: true,
+      needsBoothSpace: true,
+      needsHRSupport: true,
+      description: "We are leading healthy eating experience brand in Ilorin, committed to providing nutritious and delicious food options for our community.",
+      credentials: []
+    },
+    {
+      id: 11,
+      name: "Biuda",
+      logo: biudaLogo,
+      industry: "Education and Training",
+      type: "Direct Employer",
+      location: "Ilorin (Office coming soon), Abuja",
+      employees: "1 - 10",
+      website: "https://www.biudahq.com",
+      availableJobs: 5,
+      contactPerson: "Patrick Chukwu",
+      contactRole: "CEO",
+      contactPhone: "09154673779",
+      contactEmail: "chukwupatrickify@gmail.com",
+      address: "Ilorin Office coming soon. Abuja: Plot 662, Maimaai Court, Apase Street, Trademore Area, Lugbe",
+      rolesOffered: "Entry-Level Roles, Technical Roles (e.g. IT, Data, Engineering), Sales and Marketing, Administrative/Operations, Human Resources, Customer Service, Internship Positions",
+      keySkills: "Communication and team work",
+      conductingInterviews: true,
+      needsBoothSpace: true,
+      needsHRSupport: true,
+      description: "Biuda is an edtech startup teaching African children coding, AI, and design through animations, games, and interactive content. We work with parents directly through weekly live classes, our prerecorded courses and we also partner with schools.",
+      credentials: []
+    },
+    {
+      id: 12,
+      name: "Delicious Swoop",
+      logo: swoopLogo,
+      industry: "Food and Beverages",
+      type: "Direct Employer",
+      location: "Ilorin, Kwara State",
+      employees: "1 - 10",
+      website: "https://www.instagram.com/Delicious_Swoop",
+      availableJobs: 2,
+      contactPerson: "Mrs Miriam Adesokan",
+      contactRole: "CEO",
+      contactPhone: "+447904932366",
+      contactEmail: "mimoadesokan@gmail.com",
+      address: "Ilorin, Kwara State",
+      rolesOffered: "Technical Roles (e.g. IT, Data, Engineering), Sales and Marketing",
+      keySkills: "Chef and Sales person",
+      conductingInterviews: false,
+      needsBoothSpace: false,
+      needsHRSupport: false,
+      description: "A food vendor that makes freshly made meals in bowls and packs, cater for events and take home and festive period orders.",
+      credentials: []
+    },
+    {
+      id: 13,
+      name: "Adeayo Eye Clinic",
+      logo: adeayocliniclogo,
+      industry: "Healthcare",
+      type: "Direct Employer",
+      location: "Ilorin, Kwara State",
+      employees: "1 - 10",
+      website: "https://youtube.com/@feyiadepojusight-ed",
+      availableJobs: 2,
+      contactPerson: "Esther Odetundun",
+      contactRole: "PA to Founder/Chief Medical Director",
+      contactPhone: "09010701933",
+      contactEmail: "feyiyemiade@yahoo.com",
+      address: "NO.24 Unity Road opposite Ace Supermarket, Ilorin, Ilorin West, Kwara State",
+      rolesOffered: "Technical Roles (e.g. IT, Data, Engineering), Optometrist",
+      keySkills: "BSc Optometry",
+      conductingInterviews: false,
+      needsBoothSpace: true,
+      needsHRSupport: false,
+      description: "Adeayo Eye Clinic is an eye care clinic dedicated to providing comprehensive eye care services to the community.",
       credentials: []
     }
   ]
@@ -406,6 +514,11 @@ const CompaniesHiring = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>Companies Hiring at HireGround Ilorin Career Fair 2025 | Job Opportunities</title>
+        <meta name="description" content="Discover top companies hiring at HireGround Ilorin Career Fair. Connect with leading employers in Nigeria offering entry-level, graduate trainee, and professional positions across multiple industries." />
+        <meta name="keywords" content="HireGround, Ilorin Career Fair, companies hiring, job opportunities Ilorin, career fair Nigeria, graduate jobs, recruitment partners" />
+      </Helmet>
       <div className={`transition-all duration-300 ${showCountdownModal ? 'blur-sm' : ''}`}>
         <Navbar />
 
@@ -419,10 +532,10 @@ const CompaniesHiring = () => {
                 transition={{ duration: 0.6 }}
               >
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                  Companies hiring & <span className="text-yellow-300">top employers</span> in Nigeria
+                  Companies Hiring at <span className="text-yellow-300">HireGround Ilorin Career Fair</span>
                 </h1>
                 <p className="text-xl md:text-2xl opacity-90 mb-8 leading-relaxed">
-                  Explore opportunities with Nigeria's leading companies partnered with HireGround to connect talent with careers.
+                  Explore opportunities with Nigeria's leading companies at HireGround Ilorin Career Fair 2025. Connect with top employers hiring for entry-level, graduate trainee, and professional positions.
                 </p>
                 <div className="flex items-center justify-center gap-2 text-white/80">
                   <FiBriefcase className="w-5 h-5" />
@@ -445,10 +558,11 @@ const CompaniesHiring = () => {
                 <FiSearch className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
                 <input
                   type="text"
-                  placeholder="Search companies or industries..."
+                  placeholder="Search HireGround Ilorin Career Fair companies or industries..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-colors text-gray-900 placeholder-gray-400"
+                  aria-label="Search companies at HireGround Ilorin Career Fair"
                 />
               </div>
             </div>
@@ -474,12 +588,14 @@ const CompaniesHiring = () => {
                   className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer group border border-gray-100"
                 >
                   {/* Company Logo */}
-                  <div className="relative h-32 bg-gray-50 flex items-center justify-center p-6 group-hover:bg-gray-100 transition-colors">
-                    <img
-                      src={company.logo}
-                      alt={company.name}
-                      className="max-w-full max-h-full object-contain"
-                    />
+                  <div className="relative h-40 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-8 group-hover:from-orange-50 group-hover:to-orange-100 transition-all duration-300">
+                    <div className="w-full h-full flex items-center justify-center">
+                      <img
+                        src={company.logo}
+                        alt={company.name}
+                        className="max-w-full max-h-full object-contain drop-shadow-sm"
+                      />
+                    </div>
                   </div>
 
                   {/* Company Info */}

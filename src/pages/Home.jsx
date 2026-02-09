@@ -1,51 +1,34 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
-import BackStory from '../components/sections/BackStory'
-import SpeakersSection from '../components/sections/SpeakersSection'
-import RecruiterPartnership from '../components/sections/RecruiterPartnership'
-import VendorApplication from '../components/sections/VendorApplication'
+import AcademyHero from '../components/sections/AcademyHero'
+import AcademyFeatures from '../components/sections/AcademyFeatures'
+import WhoThisIsFor from '../components/sections/WhoThisIsFor'
+import HowToApply from '../components/sections/HowToApply'
+import CareerFairTeaser from '../components/sections/CareerFairTeaser'
 import FaqSection from '../components/sections/FaqSection'
-import Sponsors from '../components/sections/Sponsors'
 import Cta from '../components/sections/Cta'
 import Footer from '../components/Footer'
-import CountdownModal from '../components/CountdownModal'
-import { useCountdownModal } from '../hooks/useCountdownModal'
-import herobg from '../assets/images/herobg.jpg'
 
 const Home = () => {
-  const { showCountdownModal, handleCloseModal } = useCountdownModal()
-
   return (
     <div>
-        <div className={`transition-all duration-300 ${showCountdownModal ? 'blur-sm' : ''}`}>
-          <Navbar />
-          <Hero title='HireGround' text='Ready, Set, Your Career starts here' herobtn='Register Now' contCname='hero_cont' sectionCname='hero_text' heroImg={herobg} />
-          {/* <Hero title='HireGround' text='Ready, Set, Your Career starts here' herobtn='Get Your Tickets' contCname='hero_cont' sectionCname='hero_text' heroImg={herobg} /> */}
-          <BackStory />
-          <SpeakersSection />
-          <RecruiterPartnership />
-          <VendorApplication />
-          <Sponsors />
-          <FaqSection />
-          <Cta />
-          <Footer />
-        </div>
-        
-
-        
-        {/* Countdown Modal */}
-        {showCountdownModal && (
-          <CountdownModal 
-            isOpen={showCountdownModal} 
-            onClose={handleCloseModal} 
-          />
-        )}
-
-
+      <Helmet>
+        <title>HireGround Academy | Career Readiness Program by The Light Tutors</title>
+        <meta name="description" content="HireGround Academy - A free 6-week employability and skills development program. Get CV support, interview training, soft skills development, and access to our talent pool. Applications now open!" />
+        <meta name="keywords" content="HireGround Academy, career training, employability program, job seekers, CV writing, interview preparation, soft skills, career development, Nigeria, The Light Tutors" />
+      </Helmet>
+      <Navbar />
+      <AcademyHero />
+      <AcademyFeatures />
+      <WhoThisIsFor />
+      <HowToApply />
+      <CareerFairTeaser />
+      <FaqSection />
+      <Cta />
+      <Footer />
     </div>
   )
 }
-
 
 export default Home

@@ -52,10 +52,10 @@ const AboutHireground = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          
+
           {/* Main Content Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20">
-            
+
             {/* Left Content */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -66,20 +66,20 @@ const AboutHireground = () => {
               <div className="inline-flex items-center px-4 py-2 bg-orange-50 rounded-full mb-6">
                 <span className="text-orange-600 font-medium text-sm uppercase tracking-wide">The Story</span>
               </div>
-              
+
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                 What is <span className="text-orange-600">HireGround?</span>
               </h2>
-              
+
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                 <p>
                   HireGround is Ilorin's premier career transformation event, designed to bridge the gap between talent and opportunity. Born from the vision of creating a platform where career dreams become reality, we bring together industry leaders, job seekers, career changers, and entrepreneurs under one roof.
                 </p>
-                
+
                 <p>
                   In today's rapidly evolving job market, traditional career paths are being redefined. HireGround serves as your compass, providing direction, tools, and connections needed to navigate this new landscape successfully.
                 </p>
-                
+
                 <p>
                   More than just an event, HireGround is a movement that believes every individual deserves access to meaningful career opportunities, regardless of their background or current circumstances.
                 </p>
@@ -88,14 +88,14 @@ const AboutHireground = () => {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <motion.a
-                  href="https://selar.com/3f604cs136"
+                  href="https://forms.gle/pGwPAfz6VLy26mtZ9"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                   className="inline-flex items-center px-6 py-3 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
-                  Register Now
+                  Apply to Academy
                   <FiArrowRight className="ml-2 w-5 h-5" />
                 </motion.a>
                 {/* <motion.a
@@ -107,7 +107,7 @@ const AboutHireground = () => {
                   Get Your Ticket
                   <FiArrowRight className="ml-2 w-5 h-5" />
                 </motion.a> */}
-                
+
                 {/* Commented out intro video btn */}
                 {/* <motion.button
                   whileHover={{ scale: 1.02 }}
@@ -140,7 +140,7 @@ const AboutHireground = () => {
                   label="Main HireGround Event Image"
                 />
               )}
-              
+
               {/* Floating Stats Card */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -249,14 +249,14 @@ const AboutHireground = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a
-                  href="https://selar.com/3f604cs136"
+                  href="https://forms.gle/pGwPAfz6VLy26mtZ9"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   className="inline-flex items-center px-8 py-4 bg-white text-orange-600 font-semibold rounded-xl hover:bg-gray-50 transition-all duration-300 shadow-lg"
                 >
-                  Register Now
+                  Apply to Academy
                   <FiArrowRight className="ml-2 w-5 h-5" />
                 </motion.a>
                 <motion.a

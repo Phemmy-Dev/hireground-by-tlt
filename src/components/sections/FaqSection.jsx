@@ -5,48 +5,40 @@ import { HiPlus, HiMinus, HiQuestionMarkCircle, HiSparkles } from 'react-icons/h
 const FaqSection = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
-  // Career-focused FAQ data for HireGround
+  // Academy-focused FAQ data
   const faqs = [
     {
-      question: "Who should attend HireGround?",
-      answer: "HireGround is perfect for recent graduates, job seekers, corps members, career changers, and anyone looking to advance their professional journey. Whether you're just starting out or looking to pivot in your career, our expert speakers and workshops will provide valuable insights for your success."
+      question: "What is HireGround Academy?",
+      answer: "HireGround Academy is a 6-week employability and skills development program designed to prepare early-career professionals and graduates for the job market. It focuses on employability training, soft skills, career readiness, CV/LinkedIn support, and connects you with our talent pool for job opportunities."
     },
     {
-      question: "What will I learn at HireGround?",
-      answer: "You'll gain practical skills in CV writing, interview preparation, personal branding, networking strategies, and career planning. Our sessions cover industry-specific insights, salary negotiation, LinkedIn optimization, and how to stand out in today's competitive job market."
+      question: "Is HireGround Academy really free?",
+      answer: "Yes! Cohort 1 is completely free as a pilot program to support a small group of participants. This is a unique opportunity to get professional career development support at no cost."
     },
     {
-      question: "Do I need prior experience to attend?",
-      answer: "Not at all! HireGround is designed for people at all career stages."
-    },
-    // {
-    //   question: "How much does it cost to attend?",
-    //   answer: "HireGround offers various ticket options to make the event accessible to everyone. We have early bird discounts, student rates, and group packages. Check our pricing section for current rates and special offers."
-    // },
-    // {
-    //   question: "What's included in my ticket?",
-    //   answer: "Your ticket includes access to all keynote sessions, breakout workshops, networking sessions, career coaching corners, CV review sessions, mock interviews, lunch, refreshments, and exclusive career resources and templates."
-    // },
-    // {
-    //   question: "Will I get materials or resources to take home?",
-    //   answer: "Absolutely! All attendees receive a comprehensive career toolkit including CV templates, interview checklists, salary negotiation guides, networking templates, and exclusive access to our online resource portal for 6 months post-event."
-    // },
-    {
-      question: "Can I network with other attendees and speakers?",
-      answer: "Yes! Networking is a key component of HireGround. We have dedicated networking sessions, lunch breaks, and informal meet-and-greet opportunities. You'll connect with like-minded professionals, potential mentors, and industry leaders."
+      question: "Who should apply to HireGround Academy?",
+      answer: "The Academy is designed for students, recent graduates, early-career professionals, and job seekers looking for structure and guidance. If you're willing to learn and participate consistently, you're a great fit!"
     },
     {
-      question: "Will there be job opportunities available?",
-      answer: "While HireGround focuses on career development rather than direct recruitment, many of our partner companies and speakers often share job openings. Plus, the networking opportunities frequently lead to job referrals and career opportunities."
+      question: "How does the application process work?",
+      answer: "It's simple: 1) Complete the registration form and short pre-assessment, 2) Shortlisted applicants will be invited to submit a brief video introduction, 3) Final participants will be contacted via email with program details."
     },
     {
-      question: "How do I prepare for the event?",
-      answer: "Come with an open mind and specific career goals in mind. Dress corporately to make a great first impression. Bring copies of your CV for review sessions, prepare questions for speakers, and don't forget your business cards or LinkedIn QR code for networking. We'll send a detailed preparation guide closer to the event date."
+      question: "Is the program in-person or virtual?",
+      answer: "HireGround Academy is 100% virtual! You can participate from anywhere with an internet connection. This makes it accessible for everyone regardless of location."
     },
-    // {
-    //   question: "Is lunch and refreshments provided?",
-    //   answer: "Yes! Your ticket includes a networking lunch, coffee breaks, and light refreshments throughout the day. We cater to various dietary requirements - just let us know when registering."
-    // },
+    {
+      question: "What will I learn in the program?",
+      answer: "You'll gain practical skills in employability training, workplace readiness, soft skills development, CV writing, LinkedIn optimization, interview preparation, and career planning. You'll also receive personalized feedback and mentorship."
+    },
+    {
+      question: "What happens after the program?",
+      answer: "Upon completion, you'll have the opportunity to be added to HireGround's talent pool for future job and internship recommendations. We'll help connect you with employers who are looking for candidates with your skills."
+    },
+    {
+      question: "How many spots are available?",
+      answer: "Cohort 1 has only 50 spots available. Applications are open for a limited time, so we encourage you to apply as soon as possible to secure your place."
+    },
   ];
 
   const containerVariants = {
@@ -82,11 +74,11 @@ const FaqSection = () => {
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          animate={{ 
+          animate={{
             rotate: [0, 360],
             scale: [1, 1.1, 1],
           }}
-          transition={{ 
+          transition={{
             duration: 30,
             repeat: Infinity,
             ease: "linear"
@@ -94,18 +86,18 @@ const FaqSection = () => {
           className="absolute -top-32 -left-32 w-64 h-64 bg-gradient-to-br from-orange-200/20 to-red-200/20 rounded-full blur-3xl"
         />
         <motion.div
-          animate={{ 
+          animate={{
             rotate: [360, 0],
             scale: [1, 1.2, 1],
           }}
-          transition={{ 
+          transition={{
             duration: 25,
             repeat: Infinity,
             ease: "linear"
           }}
           className="absolute -bottom-32 -right-32 w-96 h-96 bg-gradient-to-br from-blue-200/15 to-purple-200/15 rounded-full blur-3xl"
         />
-        
+
         {/* Grid Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="h-full w-full" style={{
@@ -136,12 +128,12 @@ const FaqSection = () => {
           </motion.div>
 
           {/* Main Title */}
-          <motion.h2 
+          <motion.h2
             variants={itemVariants}
             className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6"
           >
             <span className="text-gray-900">Got </span>
-            <span 
+            <span
               className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent"
               style={{ color: '#ff7300' }}
             >
@@ -154,7 +146,7 @@ const FaqSection = () => {
             variants={itemVariants}
             className="text-lg sm:text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
           >
-            Find answers to common questions about HireGround, our career development event designed to transform your professional journey.
+            Find answers to common questions about HireGround Academy and kickstart your career journey.
           </motion.p>
         </motion.div>
 
@@ -188,7 +180,7 @@ const FaqSection = () => {
                     <HiPlus className="w-5 h-5 text-white" />
                   </motion.div>
                 </button>
-                
+
                 <AnimatePresence>
                   {openIndex === index && (
                     <motion.div
@@ -229,20 +221,20 @@ const FaqSection = () => {
                   Still have questions?
                 </h3>
               </div>
-              
+
               <p className="text-white/90 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
                 Our team is here to help! Reach out to us and we'll get back to you within 24 hours.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
                 <a href="mailto:hireground@thelightutors.com">
                   <motion.button
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-white text-orange-600 font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                >
-                  Contact Support
-                </motion.button>
+                    whileHover={{ scale: 1.05, y: -2 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="px-8 py-4 bg-white text-orange-600 font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                  >
+                    Contact Support
+                  </motion.button>
                 </a>
               </div>
             </div>

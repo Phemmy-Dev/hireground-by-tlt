@@ -46,11 +46,11 @@ const VendorApplication = () => {
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          animate={{ 
+          animate={{
             rotate: [0, 360],
             scale: [1, 1.15, 1],
           }}
-          transition={{ 
+          transition={{
             duration: 28,
             repeat: Infinity,
             ease: "linear"
@@ -58,18 +58,18 @@ const VendorApplication = () => {
           className="absolute -top-32 -left-32 w-96 h-96 bg-gradient-to-br from-orange-200/20 to-red-200/20 rounded-full blur-3xl"
         />
         <motion.div
-          animate={{ 
+          animate={{
             rotate: [360, 0],
             scale: [1, 1.25, 1],
           }}
-          transition={{ 
+          transition={{
             duration: 32,
             repeat: Infinity,
             ease: "linear"
           }}
           className="absolute -bottom-32 -right-32 w-80 h-80 bg-gradient-to-br from-red-200/20 to-orange-200/20 rounded-full blur-3xl"
         />
-        
+
         {/* Grid Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="h-full w-full" style={{
@@ -155,7 +155,7 @@ const VendorApplication = () => {
             viewport={{ once: true }}
           >
             <motion.a
-              href="https://selar.com/1717s75715"
+              href="mailto:hireground@thelightutors.com"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -2 }}
@@ -258,7 +258,7 @@ const VendorApplication = () => {
                 </div>
 
                 <motion.a
-                  href="https://selar.com/1717s75715"
+                  href="mailto:hireground@thelightutors.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.02, y: -2 }}

@@ -1,21 +1,22 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { FiArrowRight, FiCalendar, FiUsers, FiStar } from 'react-icons/fi'
+import { FiArrowRight, FiCheckCircle, FiUsers, FiStar } from 'react-icons/fi'
+import { HiAcademicCap } from 'react-icons/hi'
 
 const Cta = () => {
   const features = [
     {
-      icon: <FiCalendar className="w-5 h-5" />,
-      text: "Early Bird Pricing"
+      icon: <FiCheckCircle className="w-5 h-5" />,
+      text: "100% Free (Cohort 1)"
     },
     {
       icon: <FiUsers className="w-5 h-5" />,
-      text: "Network with Experts"
+      text: "50 Spots Available"
     },
     {
       icon: <FiStar className="w-5 h-5" />,
-      text: "Premium Content"
+      text: "6-Week Program"
     }
   ]
 
@@ -38,9 +39,14 @@ const Cta = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="inline-flex items-center px-4 py-2 bg-orange-50 rounded-full mb-6"
+                className="inline-flex items-center px-4 py-2 bg-green-50 border border-green-200 rounded-full mb-6"
               >
-                <span className="text-orange-600 font-medium text-sm">Limited Time Offer</span>
+                <motion.span
+                  animate={{ scale: [1, 1.2, 1] }}
+                  transition={{ duration: 1.5, repeat: Infinity }}
+                  className="w-2 h-2 bg-green-500 rounded-full mr-2"
+                />
+                <span className="text-green-700 font-medium text-sm">Applications Open – Limited Time</span>
               </motion.div>
 
               <motion.h2
@@ -50,7 +56,7 @@ const Cta = () => {
                 viewport={{ once: true }}
                 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight"
               >
-                Ready to Transform Your Career?
+                Ready to Launch Your Career?
               </motion.h2>
 
               <motion.p
@@ -60,11 +66,11 @@ const Cta = () => {
                 viewport={{ once: true }}
                 className="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto"
               >
-                Join industry leaders and career changers at HireGround 2025. Secure your spot today and unlock exclusive networking opportunities.
+                Join HireGround Academy and get the skills, support, and community you need to succeed. Cohort 1 is completely free!
               </motion.p>
 
               {/* Features */}
-              {/* <motion.div
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
@@ -80,7 +86,7 @@ const Cta = () => {
                     <span className="font-medium text-sm">{feature.text}</span>
                   </div>
                 ))}
-              </motion.div> */}
+              </motion.div>
             </div>
 
             {/* CTA Buttons Section */}
@@ -94,25 +100,22 @@ const Cta = () => {
               >
                 {/* Primary CTA */}
                 <motion.a
-                  href="https://selar.com/3f604cs136"
+                  href="https://forms.gle/pGwPAfz6VLy26mtZ9"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
-                  className="group inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-orange-600 hover:bg-orange-700 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 min-w-[200px]"
+                  className="group inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 rounded-xl shadow-lg shadow-orange-500/25 hover:shadow-xl transition-all duration-300 min-w-[200px]"
                 >
                   <span className="flex items-center gap-3">
-                    Register Now
+                    <HiAcademicCap className="w-5 h-5" />
+                    Apply Now – It's Free
                     <FiArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                   </span>
-                  {/* <span className="flex items-center gap-3">
-                    Get Your Ticket
-                    <FiArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-                  </span> */}
                 </motion.a>
 
                 {/* Secondary CTA */}
-                <Link to="/about">
+                <Link to="/academy">
                   <motion.button
                     whileHover={{ scale: 1.02, y: -2 }}
                     whileTap={{ scale: 0.98 }}
@@ -137,11 +140,11 @@ const Cta = () => {
                 <div className="flex items-center justify-center gap-8 text-sm text-gray-500">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span>1000+ Attendees Expected</span>
+                    <span>100% Virtual Program</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                    <span>10+ Industry Speakers</span>
+                    <span>Talent Pool Access</span>
                   </div>
                 </div>
               </motion.div>

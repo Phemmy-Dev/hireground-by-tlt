@@ -1,11 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { 
-  FiUsers, 
-  FiTrendingUp, 
-  FiBriefcase, 
-  FiAward, 
-  FiGlobe, 
+import {
+  FiUsers,
+  FiTrendingUp,
+  FiBriefcase,
+  FiAward,
+  FiGlobe,
   FiBook,
   FiHeart,
   FiZap,
@@ -80,7 +80,7 @@ const WhyAttend = () => {
     },
     {
       quote: "The workshops were incredibly practical. I implemented what I learned and got promoted within 6 months.",
-      author: "Michael Okonkwo", 
+      author: "Michael Okonkwo",
       role: "Marketing Manager at GlobalBrand",
       avatar: null // Placeholder for avatar
     },
@@ -104,7 +104,7 @@ const WhyAttend = () => {
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          
+
           {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -117,13 +117,13 @@ const WhyAttend = () => {
               <FiZap className="w-4 h-4 text-orange-600 mr-2" />
               <span className="text-orange-600 font-medium text-sm uppercase tracking-wide">Why Attend</span>
             </div>
-            
+
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Why <span className="text-orange-600">HireGround</span> is a 
+              Why <span className="text-orange-600">HireGround</span> is a
               <br className="hidden sm:block" />
               Game-Changer for Your Career
             </h2>
-            
+
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Join thousands of ambitious professionals who are transforming their careers through meaningful connections, expert insights, and exclusive opportunities.
             </p>
@@ -149,7 +149,7 @@ const WhyAttend = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-4 leading-tight">
                   {reason.title}
                 </h3>
-                
+
                 <p className="text-gray-600 leading-relaxed mb-6">
                   {reason.description}
                 </p>
@@ -176,11 +176,11 @@ const WhyAttend = () => {
                 <FiTarget className="w-4 h-4 mr-2" />
                 <span className="font-medium text-sm uppercase tracking-wide">Limited Time</span>
               </div>
-              
+
               <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
                 Don't Miss Out on the Career Event of the Year
               </h3>
-              
+
               <p className="text-xl opacity-90 mb-8 leading-relaxed">
                 Thousands of professionals are already registered. Secure your spot now and join Nigeria's largest career transformation event.
               </p>
@@ -200,14 +200,14 @@ const WhyAttend = () => {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a
-                  href="https://selar.com/3f604cs136"
+                  href="https://forms.gle/pGwPAfz6VLy26mtZ9"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   className="inline-flex items-center px-8 py-4 bg-white text-orange-600 font-bold rounded-xl hover:bg-gray-50 transition-all duration-300 shadow-lg text-lg"
                 >
-                  Register Now
+                  Apply to Academy
                   <FiArrowRight className="ml-2 w-5 h-5" />
                 </motion.a>
                 {/* <motion.a
