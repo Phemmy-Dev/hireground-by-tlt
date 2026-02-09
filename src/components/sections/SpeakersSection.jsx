@@ -6,8 +6,8 @@ import JoshuaImage from '../../assets/images/speakers/Joshua.jpg';
 import PaulImage from '../../assets/images/speakers/paul.jpg';
 import solaRahmanImage from '../../assets/images/speakers/SolaRahman.jpg';
 import moboladeAdesokanImage from '../../assets/images/speakers/MoboladeAdesokan.jpg';
-import MrsAdimulaimage from '../../assets/images/speakers/MrsAdimula.png';
-import profAdepoju from  '../../assets/images/speakers/profAdepoju.jpeg';
+import MrsAdimulaimage from '../../assets/images/speakers/MrsAdimula.PNG';
+import profAdepoju from '../../assets/images/speakers/profAdepoju.jpeg';
 import temiKolawole from '../../assets/images/speakers/temiKolawole.jpg';
 import dareAdebayo from '../../assets/images/speakers/dareAdebayo.jpg';
 import ocheWrites from '../../assets/images/speakers/ocheWrites.JPG';
@@ -156,7 +156,7 @@ const SpeakersSection = () => {
       const cardWidth = scrollContainerRef.current.children[0]?.offsetWidth || 300;
       const gap = 24; // 1.5rem gap
       const scrollAmount = cardWidth + gap;
-      
+
       scrollContainerRef.current.scrollBy({
         left: scrollAmount,
         behavior: 'smooth'
@@ -169,7 +169,7 @@ const SpeakersSection = () => {
       const cardWidth = scrollContainerRef.current.children[0]?.offsetWidth || 300;
       const gap = 24; // 1.5rem gap
       const scrollAmount = cardWidth + gap;
-      
+
       scrollContainerRef.current.scrollBy({
         left: -scrollAmount,
         behavior: 'smooth'
@@ -182,11 +182,11 @@ const SpeakersSection = () => {
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          animate={{ 
+          animate={{
             rotate: [0, 360],
             scale: [1, 1.1, 1],
           }}
-          transition={{ 
+          transition={{
             duration: 25,
             repeat: Infinity,
             ease: "linear"
@@ -194,18 +194,18 @@ const SpeakersSection = () => {
           className="absolute -top-32 -right-32 w-96 h-96 bg-gradient-to-br from-orange-200/20 to-red-200/20 rounded-full blur-3xl"
         />
         <motion.div
-          animate={{ 
+          animate={{
             rotate: [360, 0],
             scale: [1, 1.2, 1],
           }}
-          transition={{ 
+          transition={{
             duration: 30,
             repeat: Infinity,
             ease: "linear"
           }}
           className="absolute -bottom-32 -left-32 w-64 h-64 bg-gradient-to-br from-blue-200/20 to-purple-200/20 rounded-full blur-3xl"
         />
-        
+
         {/* Grid Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="h-full w-full" style={{
@@ -236,12 +236,12 @@ const SpeakersSection = () => {
           </motion.div>
 
           {/* Main Title */}
-          <motion.h2 
+          <motion.h2
             variants={itemVariants}
             className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6"
           >
             <span className="text-gray-900">Meet our </span>
-            <span 
+            <span
               className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent"
               style={{ color: '#ff7300' }}
             >
@@ -287,7 +287,7 @@ const SpeakersSection = () => {
           className="relative"
         >
           {/* Desktop Horizontal Scroll */}
-          <div 
+          <div
             ref={scrollContainerRef}
             className="hidden lg:flex gap-6 overflow-x-auto scrollbar-hide pb-4"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
@@ -356,7 +356,7 @@ const SpeakerCard = ({ speaker }) => {
     >
       {/* Border Gradient Effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-red-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
-      
+
       {/* Image Container */}
       <div className="relative overflow-hidden aspect-[4/5] bg-gradient-to-br from-gray-200 to-gray-300">
         {/* Actual Image */}
@@ -372,7 +372,7 @@ const SpeakerCard = ({ speaker }) => {
             }}
           />
         ) : null}
-        
+
         {/* Image Placeholder/Fallback */}
         <div className={`absolute inset-0 flex items-center justify-center bg-gradient-to-br from-orange-100 to-red-100 image-fallback ${speaker.image && !speaker.image.includes('/api/placeholder') ? 'hidden' : ''}`}>
           <div className="text-center p-8">
