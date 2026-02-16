@@ -12,7 +12,7 @@ const Cta = () => {
     },
     {
       icon: <FiUsers className="w-5 h-5" />,
-      text: "50 Spots Available"
+      text: "20 Spots Available"
     },
     {
       icon: <FiStar className="w-5 h-5" />,

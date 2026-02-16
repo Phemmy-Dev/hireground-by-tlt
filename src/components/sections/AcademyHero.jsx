@@ -6,7 +6,7 @@ import academyherobg from '../../assets/images/academyherobg.jpeg'
 const AcademyHero = () => {
   const stats = [
     { icon: HiClock, value: '6 Weeks', label: 'Program Duration' },
-    { icon: HiAcademicCap, value: '50', label: 'Participants' },
+    { icon: HiAcademicCap, value: '20', label: 'Participants' },
     { icon: HiGlobe, value: '100%', label: 'Virtual' },
   ]
 
