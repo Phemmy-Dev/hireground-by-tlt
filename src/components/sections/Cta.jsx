@@ -9,7 +9,7 @@ const Cta = () => {
     {
       icon: <FiCheckCircle className="w-5 h-5" />,
       text: "100% Free (Cohort 1)"
-    },
+    },  
     {
       icon: <FiUsers className="w-5 h-5" />,
       text: "20 Spots Available"

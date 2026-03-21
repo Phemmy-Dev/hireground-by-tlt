@@ -8,6 +8,7 @@ import HowToApply from '../components/sections/HowToApply'
 import CareerFairTeaser from '../components/sections/CareerFairTeaser'
 import FaqSection from '../components/sections/FaqSection'
 import Cta from '../components/sections/Cta'
+import WaitlistSection from '../components/sections/WaitlistSection'
 import Footer from '../components/Footer'
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
       <WhoThisIsFor />
       <HowToApply />
       <CareerFairTeaser />
+      <WaitlistSection />
       <FaqSection />
       <Cta />
       <Footer />

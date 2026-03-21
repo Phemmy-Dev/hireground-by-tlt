@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import WaitlistSection from '../components/sections/WaitlistSection'
 import { HiLocationMarker, HiCalendar, HiUsers, HiClock, HiArrowRight, HiAcademicCap } from 'react-icons/hi'
 import hiregroundimg from "../assets/images/hireground.jpg"
 
@@ -131,6 +132,9 @@ const CareerFair2025 = () => {
                     </div>
                 </div>
             </section>
+
+            {/* Waitlist Section */}
+            <WaitlistSection />
 
             {/* The Story */}
             <section className="py-20 bg-white">
