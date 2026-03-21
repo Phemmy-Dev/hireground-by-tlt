@@ -5,7 +5,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 
 const WaitlistSection = () => {
     return (
-        <section className="py-20 bg-gradient-to-b from-orange-50 to-white relative overflow-hidden">
+        <section id="waitlist" className="py-20 bg-gradient-to-b from-orange-50 to-white relative overflow-hidden">
             {/* Background elements */}
             <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-orange-200/50 blur-3xl opacity-50 mix-blend-multiply"></div>
             <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-red-200/50 blur-3xl opacity-50 mix-blend-multiply"></div>

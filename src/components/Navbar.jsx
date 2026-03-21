@@ -95,7 +95,7 @@ const Navbar = () => {
                                 rel="noopener noreferrer"
                                 className="px-5 py-2.5 bg-gradient-to-r from-orange-600 to-red-600 text-white text-sm font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-orange-700 hover:to-red-700 transform hover:-translate-y-1 transition-all duration-300 whitespace-nowrap"
                             >
-                                Apply to Academy
+                                Join the Waitlist for HireGround 2026
                             </a>
                         </motion.div>
                     </div>
@@ -161,7 +161,7 @@ const Navbar = () => {
                                         rel="noopener noreferrer"
                                         className="block w-full px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold text-center rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                                     >
-                                        Apply to Academy
+                                        Join the Waitlist for HireGround 2026
                                     </a>
                                 </motion.div>
                             </div>
