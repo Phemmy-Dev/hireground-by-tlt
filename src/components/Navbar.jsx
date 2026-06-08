@@ -59,7 +59,7 @@ const Navbar = () => {
                     </motion.div>
 
                     {/* Desktop Menu */}
-                    <div className="hidden xl:flex items-center space-x-6">
+                    <div className="hidden xl:flex items-center space-x-3">
                         {data.map((item, index) => (
                             <motion.div
                                 key={index}
