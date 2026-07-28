@@ -172,6 +172,7 @@ const VisionAndMission = () => {
           </motion.div>
 
           {/* Call to Action */}
+          {/*
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -196,6 +197,7 @@ const VisionAndMission = () => {
               </motion.a>
             </div>
           </motion.div>
+          */}
         </div>
       </div>
     </section>

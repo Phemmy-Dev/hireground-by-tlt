@@ -200,7 +200,7 @@ const WhyAttend = () => {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a
-                  href="https://selar.com/3f604cs136"
+                  href="https://forms.gle/qYPuM9coDbfYdxGt8"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.05, y: -2 }}

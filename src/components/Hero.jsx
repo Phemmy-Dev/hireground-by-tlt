@@ -1,21 +1,42 @@
 import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import React from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import React, { useState, useEffect } from 'react'
+import hero1 from '../assets/images/hero1.jpg'
+import hero2 from '../assets/images/hero2.jpg'
+import hero3 from '../assets/images/hero3.jpg'
+import hero4 from '../assets/images/hero4.jpg'
 
-const Hero = ({ title, text, heroImg, herobtn }) => {
+const Hero = ({ title, text, herobtn }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const images = [hero1, hero2, hero3, hero4];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    }, 9000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImg} 
-          alt="Hero Background" 
-          className="w-full h-full object-cover object-center scale-105 transition-transform duration-[10s] ease-in-out hover:scale-110"
-        />
+      <div className="absolute inset-0 z-0 bg-black">
+        <AnimatePresence>
+          <motion.img 
+            key={currentImageIndex}
+            src={images[currentImageIndex]} 
+            alt="Hero Background" 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.5 }}
+            className="absolute inset-0 w-full h-full object-cover object-center"
+          />
+        </AnimatePresence>
         {/* Multiple layered overlays for depth */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-purple-900/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/30 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 to-purple-900/10"></div>
       </div>
 
       {/* Floating Particles Effect */}
@@ -76,7 +97,7 @@ const Hero = ({ title, text, heroImg, herobtn }) => {
             className="mb-12 sm:mb-16"
           >
             <a 
-              href="https://selar.com/3f604cs136"
+              href="https://forms.gle/qYPuM9coDbfYdxGt8"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative inline-flex items-center px-8 sm:px-10 py-4 sm:py-5 text-lg sm:text-xl font-semibold text-white overflow-hidden rounded-full shadow-2xl transform transition-all duration-300 hover:-translate-y-2 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-orange-500/50"

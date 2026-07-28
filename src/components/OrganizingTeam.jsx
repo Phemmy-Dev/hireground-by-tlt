@@ -6,7 +6,7 @@ import BukunmiImage from '../assets/images/organisingteam/Oluwabukunmi.jpg'
 import AaliyahImage from '../assets/images/organisingteam/aaliyah.jpg'
 import EriImage from '../assets/images/organisingteam/eri.jpg'
 import PriscillaImage from '../assets/images/organisingteam/priscilla.jpg'
-import FemiImage from '../assets/images/organisingteam/femi.jpg'
+import FemiImage from '../assets/images/organisingteam/femi.jpeg'
 import { a } from 'framer-motion/m'
 
 const OrganizingTeam = () => {
@@ -55,7 +55,7 @@ const OrganizingTeam = () => {
     {
       id: 6,
       name: "Oluwafemi Akinruntan",
-      role: "Head, Technical & Streaming",
+      role: "Head, Technical",
       image: FemiImage,
       linkedin: "https://www.linkedin.com/in/oluwafemi-akinruntan/",
       email: "oluwafemiakinruntan@thelightutors.com"
@@ -206,6 +206,7 @@ const OrganizingTeam = () => {
           </div>
 
           {/* Join Our Team CTA */}
+          {/*
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -245,6 +246,7 @@ const OrganizingTeam = () => {
               </div>
             </div>
           </motion.div>
+          */}
 
           {/* Contact Team Section */}
           <motion.div

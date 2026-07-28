@@ -26,7 +26,7 @@ const Footer = () => {
     ],
     quickLinks: [
       { name: 'Home', path: '/' },
-      { name: 'Register Now', href: 'https://selar.com/3f604cs136', external: true },
+      { name: 'Register Now', href: 'https://forms.gle/qYPuM9coDbfYdxGt8', external: true },
       { name: 'Become a Sponsor', href: 'mailto:hireground@thelightutors.com', external: true },
       { name: 'Partnership Inquiry', href: 'mailto:hireground@thelightutors.com', external: true }
     ]

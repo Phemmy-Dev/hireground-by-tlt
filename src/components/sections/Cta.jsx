@@ -60,7 +60,7 @@ const Cta = () => {
                 viewport={{ once: true }}
                 className="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto"
               >
-                Join industry leaders and career changers at HireGround 2025. Secure your spot today and unlock exclusive networking opportunities.
+                Join industry leaders and career changers at HireGround 2026. Secure your spot today and unlock exclusive networking opportunities.
               </motion.p>
 
               {/* Features */}
@@ -94,7 +94,7 @@ const Cta = () => {
               >
                 {/* Primary CTA */}
                 <motion.a
-                  href="https://selar.com/3f604cs136"
+                  href="https://forms.gle/qYPuM9coDbfYdxGt8"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.02, y: -2 }}
@@ -102,7 +102,7 @@ const Cta = () => {
                   className="group inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-orange-600 hover:bg-orange-700 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 min-w-[200px]"
                 >
                   <span className="flex items-center gap-3">
-                    Register Now
+                    Join the Waitlist
                     <FiArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                   </span>
                   {/* <span className="flex items-center gap-3">

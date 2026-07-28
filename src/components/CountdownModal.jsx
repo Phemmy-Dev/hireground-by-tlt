@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { FiX, FiCalendar, FiMapPin, FiUsers, FiStar, FiAward, FiArrowRight, FiGift } from 'react-icons/fi'
 
 const CountdownModal = ({ isOpen, onClose }) => {
-  // Set your event date here - December 4, 2025 at 9:00 AM
-  const eventDate = new Date('2025-12-04T09:00:00').getTime()
+  // Set your event date here - December 4, 2026 at 9:00 AM
+  const eventDate = new Date('2026-12-04T09:00:00').getTime()
   
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -104,7 +104,7 @@ const CountdownModal = ({ isOpen, onClose }) => {
                 
                 <div className="flex items-center justify-center gap-4 mb-4">
                   <div className="h-px bg-slate-300 flex-1 max-w-16"></div>
-                  <span className="text-xl sm:text-2xl font-semibold text-orange-600">2025</span>
+                  <span className="text-xl sm:text-2xl font-semibold text-orange-600">2026</span>
                   <div className="h-px bg-slate-300 flex-1 max-w-16"></div>
                 </div>
 
@@ -140,7 +140,7 @@ const CountdownModal = ({ isOpen, onClose }) => {
                     </div>
                     <div>
                       <p className="text-slate-500 text-sm font-medium">Date</p>
-                      <p className="text-slate-900 font-semibold">December 4, 2025</p>
+                      <p className="text-slate-900 font-semibold">December 4, 2026</p>
                     </div>
                   </div>
 

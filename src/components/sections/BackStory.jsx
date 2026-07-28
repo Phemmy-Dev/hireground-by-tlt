@@ -120,7 +120,7 @@ const BackStory = () => {
                 {/* Opening Quote */}
                 <div className="border-l-4 border-orange-500 pl-6">
                   <p className="text-2xl sm:text-3xl lg:text-3xl text-gray-800 leading-relaxed font-bold italic">
-                    From One Conversation to 10,000 Careers"
+                    From One Conversation to 1,000 Careers"
                   </p>
                 </div>
                 
@@ -141,7 +141,7 @@ const BackStory = () => {
                   </div>
 
                   <p className="text-lg sm:text-md text-gray-700 leading-relaxed">
-                    What started as a small training idea has grown into a nationwide movement. A Career Fair designed to empower over 10,000 young Nigerians with the skills they need to land jobs and thrive at work:
+                    What started as a small training idea grew into a massive success last year. Now, we are building on that momentum. HireGround 2026 is designed to be bigger and better, aiming to empower even more young Nigerians with the skills they need to land jobs and thrive at work:
                   </p>
 
                   {/* Skills List */}
@@ -163,7 +163,7 @@ const BackStory = () => {
 
                   <div className="text-center bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-6 text-white">
                     <p className="text-xl font-bold mb-2">This is more than an event. It's a launchpad.</p>
-                    <div className="text-2xl font-bold">🚀 HireGround 2025</div>
+                    <div className="text-2xl font-bold">🚀 HireGround 2026</div>
                     <div className="text-lg">Ready. Set. Your Career Starts Here.</div>
                   </div>
                 </div>
@@ -309,7 +309,7 @@ const BackStory = () => {
         >
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8">
             <div className="text-center p-6 lg:p-8 bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl border border-orange-100 hover:shadow-2xl hover:scale-105 transition-all duration-300">
-              <div className="text-4xl lg:text-5xl font-bold text-orange-600 mb-3">10,000+</div>
+              <div className="text-4xl lg:text-5xl font-bold text-orange-600 mb-3">1,000+</div>
               <div className="text-lg text-gray-700 font-semibold">Young Nigerians</div>
               <div className="text-sm text-gray-500 mt-1">To Be Empowered</div>
             </div>

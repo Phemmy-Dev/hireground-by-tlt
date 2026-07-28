@@ -4,6 +4,8 @@ export const useCountdownModal = () => {
   const [showCountdownModal, setShowCountdownModal] = useState(false)
 
   useEffect(() => {
+    // Disabled for now
+    /*
     // Check if user has seen the modal in the last hour
     const lastShownTimestamp = localStorage.getItem('countdownModalLastShown')
     const now = new Date().getTime()
@@ -19,6 +21,7 @@ export const useCountdownModal = () => {
       
       return () => clearTimeout(timer)
     }
+    */
   }, [])
 
   const handleCloseModal = () => {

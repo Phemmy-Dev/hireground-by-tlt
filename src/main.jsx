@@ -11,6 +11,8 @@ import CompaniesHiring from './pages/CompaniesHiring.jsx'
 import Recruiters from './pages/Recruiters.jsx'
 import Contact from './pages/Contact.jsx'
 import NotFound from './pages/NotFound.jsx'
+import Academy from './pages/Academy.jsx'
+import CareerFair2025 from './pages/CareerFair2025.jsx'
 
 
 
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Home />,
+  },
+  {
+    path: '/academy',
+    element: <Academy />,
+  },
+  {
+    path: '/career-fair-2025',
+    element: <CareerFair2025 />,
   },
   {
     path: '/about',

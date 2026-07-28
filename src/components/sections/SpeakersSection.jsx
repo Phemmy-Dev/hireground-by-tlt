@@ -258,85 +258,23 @@ const SpeakersSection = () => {
           </motion.p>
         </motion.div>
 
-        {/* Navigation Controls - Desktop */}
-        <div className="hidden lg:flex justify-end items-center mb-8 gap-4">
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            onClick={scrollToPrev}
-            className="p-3 rounded-full bg-white/80 backdrop-blur-sm border border-orange-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-orange-50"
-          >
-            <HiChevronLeft className="w-6 h-6 text-orange-600" />
-          </motion.button>
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            onClick={scrollToNext}
-            className="p-3 rounded-full bg-white/80 backdrop-blur-sm border border-orange-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-orange-50"
-          >
-            <HiChevronRight className="w-6 h-6 text-orange-600" />
-          </motion.button>
-        </div>
-
-        {/* Speakers Grid/Carousel */}
+        {/* Speakers Coming Soon */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="relative"
+          className="relative max-w-4xl mx-auto mt-12"
         >
-          {/* Desktop Horizontal Scroll */}
-          <div 
-            ref={scrollContainerRef}
-            className="hidden lg:flex gap-6 overflow-x-auto scrollbar-hide pb-4"
-            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-          >
-            {speakers.map((speaker, index) => (
-              <motion.div
-                key={speaker.id}
-                variants={cardVariants}
-                custom={index}
-                className="flex-shrink-0 w-80"
-              >
-                <SpeakerCard speaker={speaker} />
-              </motion.div>
-            ))}
+          <div className="bg-white/80 backdrop-blur-lg rounded-3xl p-12 text-center shadow-xl border border-orange-100">
+            <div className="w-20 h-20 bg-gradient-to-br from-orange-100 to-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <HiSparkles className="w-10 h-10 text-orange-600" />
+            </div>
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">Lineup Coming Soon!</h3>
+            <p className="text-xl text-gray-600">
+              Our 2026 speaker lineup is currently being curated. Stay tuned for an incredible list of industry leaders, innovators, and visionaries!
+            </p>
           </div>
-
-          {/* Mobile Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:hidden gap-6 sm:gap-8">
-            {speakers.slice(0, 4).map((speaker, index) => (
-              <motion.div
-                key={speaker.id}
-                variants={cardVariants}
-                custom={index}
-              >
-                <SpeakerCard speaker={speaker} />
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-
-        {/* See All Speakers Button */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-center mt-12 lg:mt-16"
-        >
-          <Link to="/speakers">
-            <motion.button
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300"
-              style={{ backgroundColor: '#ff7300' }}
-            >
-              <span className="mr-3">SEE ALL SPEAKERS</span>
-              <HiArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" />
-            </motion.button>
-          </Link>
         </motion.div>
       </div>
     </section>

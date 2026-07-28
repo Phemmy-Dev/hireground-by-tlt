@@ -88,7 +88,7 @@ const AboutHireground = () => {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <motion.a
-                  href="https://selar.com/3f604cs136"
+                  href="https://forms.gle/qYPuM9coDbfYdxGt8"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.02, y: -2 }}
@@ -249,7 +249,7 @@ const AboutHireground = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a
-                  href="https://selar.com/3f604cs136"
+                  href="https://forms.gle/qYPuM9coDbfYdxGt8"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.05, y: -2 }}
@@ -259,14 +259,14 @@ const AboutHireground = () => {
                   Register Now
                   <FiArrowRight className="ml-2 w-5 h-5" />
                 </motion.a>
-                <motion.a
+                {/* <motion.a
                   href="/speakers"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-xl hover:bg-white hover:text-orange-600 transition-all duration-300"
                 >
                   Meet Our Speakers
-                </motion.a>
+                </motion.a> */}
               </div>
             </div>
           </motion.div>

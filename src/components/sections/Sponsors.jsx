@@ -11,68 +11,13 @@ import equipr from '../../assets/images/sponsors/equipr.jpg'
 
 
 const Sponsors = () => {
-  // Sponsor data - all sponsors are equal
   const sponsors = [
     {
       id: 1,
-      name: 'Kwara State Government',
-      logo: kwgovtlogo,
-      isReal: true
-    },
-        {
-      id: 2,
       name: 'The Light Tutors',
       logo: tltsponsorlogo,
       isReal: true
-    },
-    {
-      id: 3,
-      name: 'I Need A Good Team',
-      logo: INeedAGoodTeamLogo,
-      isReal: true
-    },
-    {
-      id: 4,
-      name: 'MindShift Consulting Inc',
-      logo: Mindshiftlogo,
-      isReal: true
-    },
-    {
-      id: 5,
-      name: 'CW Music & Media',
-      logo: cw,
-      isReal: true
-    },
-    {
-      id: 6,
-      name: 'Equipr',
-      logo: equipr,
-      isReal: true
-    },
-    {
-      id: 7,
-      name: 'Swoop',
-      logo: swoop,
-      isReal: true
-    },
-    {
-      id: 8,
-      name: 'Anchor',
-      logo: anchor,
-      isReal: true
-    },
-    // {
-    //   id: 9,
-    //   name: 'Partner Sponsor',
-    //   logo: null,
-    //   isReal: false
-    // },
-    // {
-    //   id: 10,
-    //   name: 'Partner Sponsor',
-    //   logo: null,
-    //   isReal: false
-    // }
+    }
   ]
 
   const PlaceholderLogo = ({ name }) => {
