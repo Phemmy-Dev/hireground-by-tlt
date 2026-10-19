@@ -42,7 +42,7 @@ const Navbar = () => {
                 transition={{ duration: 0.6, ease: "easeOut" }}
                 className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-7xl transition-all duration-300 bg-white/95 backdrop-blur-lg shadow-xl border border-gray-200/30 rounded-2xl"
             >
-                <div className="flex justify-between items-center py-4 px-6 lg:px-8">
+                <div className="flex justify-between items-center py-4 xl:py-3 px-6 lg:px-8 xl:px-6">
                     {/* Logo */}
                     <motion.div 
                         className="logo"
@@ -53,13 +53,13 @@ const Navbar = () => {
                             <img 
                                 src={Logo} 
                                 alt="HireGround Logo" 
-                                className="h-8 sm:h-11 w-auto object-contain transition-all duration-300 hover:brightness-110 drop-shadow-lg"
+                                className="h-8 sm:h-11 xl:h-9 w-auto object-contain transition-all duration-300 hover:brightness-110 drop-shadow-lg"
                             />
                         </Link>
                     </motion.div>
 
                     {/* Desktop Menu */}
-                    <div className="hidden xl:flex items-center space-x-3">
+                    <div className="hidden xl:flex items-center gap-1">
                         {data.map((item, index) => (
                             <motion.div
                                 key={index}
@@ -69,7 +69,7 @@ const Navbar = () => {
                             >
                                 <Link 
                                     to={item.path} 
-                                    className={`relative px-3 py-2 text-[15px] font-medium transition-all duration-300 group whitespace-nowrap ${
+                                    className={`relative px-2.5 py-1.5 text-sm font-medium transition-all duration-300 group whitespace-nowrap ${
                                         location.pathname === item.path
                                             ? 'text-orange-600' 
                                             : 'text-gray-700 hover:text-orange-600'
@@ -92,10 +92,10 @@ const Navbar = () => {
                             transition={{ duration: 0.5, delay: 0.4 }}
                         >
                             <a 
-                                href="https://forms.gle/qYPuM9coDbfYdxGt8" 
+                                href="https://trankets.com/invite/hireground-kwara-career-fair-2026" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
-                                className="px-5 py-2.5 bg-gradient-to-r from-orange-600 to-red-600 text-white text-sm font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-orange-700 hover:to-red-700 transform hover:-translate-y-1 transition-all duration-300 whitespace-nowrap"
+                                className="ml-3 inline-block px-4 py-2 bg-gradient-to-r from-orange-600 to-red-600 text-white text-[13px] font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-orange-700 hover:to-red-700 transform hover:-translate-y-1 transition-all duration-300 whitespace-nowrap"
                             >
                                 Register Now
                             </a>
@@ -159,7 +159,7 @@ const Navbar = () => {
                                     className="pt-4 border-t border-gray-200/50"
                                 >
                                     <a 
-                                        href="https://forms.gle/qYPuM9coDbfYdxGt8" 
+                                        href="https://trankets.com/invite/hireground-kwara-career-fair-2026" 
                                         target="_blank" 
                                         rel="noopener noreferrer"
                                         className="block w-full px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white font-semibold text-center rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"

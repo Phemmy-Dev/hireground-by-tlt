@@ -2,116 +2,10 @@ import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { HiChevronLeft, HiChevronRight, HiSparkles, HiEye, HiArrowRight } from 'react-icons/hi';
-import JoshuaImage from '../../assets/images/speakers/Joshua.jpg';
-import PaulImage from '../../assets/images/speakers/paul.jpg';
-import solaRahmanImage from '../../assets/images/speakers/SolaRahman.jpg';
-import moboladeAdesokanImage from '../../assets/images/speakers/MoboladeAdesokan.jpg';
-import MrsAdimulaimage from '../../assets/images/speakers/MrsAdimula.png';
-import profAdepoju from  '../../assets/images/speakers/profAdepoju.jpeg';
-import temiKolawole from '../../assets/images/speakers/temiKolawole.jpg';
-import dareAdebayo from '../../assets/images/speakers/dareAdebayo.jpg';
-import ocheWrites from '../../assets/images/speakers/ocheWrites.JPG';
-import olubukolaRoberts from '../../assets/images/speakers/olubukolaRoberts.JPG';
-import oluwatobiOzenua from '../../assets/images/speakers/oluwatobiOzenua.JPG';
-import honorable from '../../assets/images/speakers/honorable.jpg';
-import onifade from '../../assets/images/speakers/onifade.jpg';
+import speakers from '../../data/speakers';
 
 const SpeakersSection = () => {
   const scrollContainerRef = useRef(null);
-
-  const speakers = [
-    {
-      id: 1,
-      name: "Hon. Damilola Yusuf Adelodun",
-      title: "Commissioner",
-      image: honorable,
-      company: "Kwara State Ministry of Business, Innovation, and Technology",
-    },
-    {
-      id: 2,
-      name: "Mr. Onifade Olaoluwa Joshua",
-      title: "State Coordinator",
-      image: onifade,
-      company: "National Youth Service Corps (NYSC), Kwara State",
-    },
-    {
-      id: 3,
-      name: "Sola Rahman",
-      title: "Chief Experience Officer",
-      image: solaRahmanImage,
-      company: "The Sola Rahman Brand",
-    },
-    {
-      id: 4,
-      name: "Dare Adebayo",
-      title: "Co-founder and COO",
-      image: dareAdebayo,
-      company: "Edves",
-    },
-    {
-      id: 5,
-      name: "Oche Writes",
-      title: "Founder",
-      image: ocheWrites,
-      company: "Reels by Circle",
-    },
-    {
-      id: 5,
-      name: "Prof. Feyi Grace Adepoju",
-      title: "Professor of Ophthalmology",
-      image: profAdepoju,
-      company: "University of Ilorin Teaching Hospital",
-    },
-    {
-      id: 6,
-      name: "Morenikeji Rade Adimula",
-      title: "Human Resource Consultant",
-      image: MrsAdimulaimage,
-      company: "I NEED A GOOD TEAM",
-    },
-    {
-      id: 7,
-      name: "Olubukola Roberts Omoleye",
-      title: "Educator, Speaker and Etiquette Coach",
-      image: olubukolaRoberts,
-      company: "Poised Gentry",
-    },
-    {
-      id: 8,
-      name: "Temi Kolawole",
-      title: "Managing Director",
-      image: temiKolawole,
-      company: "Ilorin Innovation Hub",
-    },
-    {
-      id: 9,
-      name: "Oluwatobi Ozenua",
-      title: "Product Designer & Framer Expert",
-      image: oluwatobiOzenua,
-      company: "Independent",
-    },
-    {
-      id: 10,
-      name: "Joshua Oroge",
-      title: "CEO/Founder",
-      image: JoshuaImage,
-      company: "The Light Tutors Ltd.",
-    },
-    {
-      id: 11,
-      name: "Mobolade Miriam Adesokan",
-      title: "Founder",
-      image: moboladeAdesokanImage,
-      company: "Equipr",
-    },
-    {
-      id: 12,
-      name: "Paul Adeagbo",
-      title: "Career Coach",
-      image: PaulImage,
-      company: "MindShift Consulting Inc.",
-    }
-  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -258,23 +152,85 @@ const SpeakersSection = () => {
           </motion.p>
         </motion.div>
 
-        {/* Speakers Coming Soon */}
+        {/* Navigation Controls - Desktop */}
+        <div className="hidden lg:flex justify-end items-center mb-8 gap-4">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={scrollToPrev}
+            className="p-3 rounded-full bg-white/80 backdrop-blur-sm border border-orange-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-orange-50"
+          >
+            <HiChevronLeft className="w-6 h-6 text-orange-600" />
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={scrollToNext}
+            className="p-3 rounded-full bg-white/80 backdrop-blur-sm border border-orange-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-orange-50"
+          >
+            <HiChevronRight className="w-6 h-6 text-orange-600" />
+          </motion.button>
+        </div>
+
+        {/* Speakers Grid/Carousel */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="relative max-w-4xl mx-auto mt-12"
+          className="relative"
         >
-          <div className="bg-white/80 backdrop-blur-lg rounded-3xl p-12 text-center shadow-xl border border-orange-100">
-            <div className="w-20 h-20 bg-gradient-to-br from-orange-100 to-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <HiSparkles className="w-10 h-10 text-orange-600" />
-            </div>
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">Lineup Coming Soon!</h3>
-            <p className="text-xl text-gray-600">
-              Our 2026 speaker lineup is currently being curated. Stay tuned for an incredible list of industry leaders, innovators, and visionaries!
-            </p>
+          {/* Desktop Horizontal Scroll */}
+          <div 
+            ref={scrollContainerRef}
+            className="hidden lg:flex gap-6 overflow-x-auto scrollbar-hide pb-4"
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          >
+            {speakers.map((speaker, index) => (
+              <motion.div
+                key={speaker.id}
+                variants={cardVariants}
+                custom={index}
+                className="flex-shrink-0 w-80"
+              >
+                <SpeakerCard speaker={speaker} />
+              </motion.div>
+            ))}
           </div>
+
+          {/* Mobile Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:hidden gap-6 sm:gap-8">
+            {speakers.slice(0, 4).map((speaker, index) => (
+              <motion.div
+                key={speaker.id}
+                variants={cardVariants}
+                custom={index}
+              >
+                <SpeakerCard speaker={speaker} />
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* See All Speakers Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="text-center mt-12 lg:mt-16"
+        >
+          <Link to="/speakers">
+            <motion.button
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300"
+              style={{ backgroundColor: '#ff7300' }}
+            >
+              <span className="mr-3">SEE ALL SPEAKERS</span>
+              <HiArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" />
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
     </section>
