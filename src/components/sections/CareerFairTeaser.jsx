@@ -6,61 +6,51 @@ import hiregroundimg from "../../assets/images/hireground.jpg"
 
 const CareerFairTeaser = () => {
     return (
-        <section className="relative py-16 lg:py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
+        <section className="relative py-16 lg:py-24 bg-forest-deep overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-10">
-                <div className="h-full w-full" style={{
-                    backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.2) 1px, transparent 0)`,
-                    backgroundSize: '40px 40px'
-                }}></div>
+                <div className="h-full w-full" style={{ display: 'none' }}></div>
             </div>
 
             <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
                     {/* Image */}
                     <motion.div
-                        initial={{ opacity: 0, x: -50 }}
+                        initial={{ opacity: 0, x: 0 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                         className="relative group"
                     >
-                        <div className="relative overflow-hidden rounded-3xl shadow-2xl">
+                        <div className="relative overflow-hidden rounded-xl">
                             <img
                                 src={hiregroundimg}
                                 alt="HireGround Career Fair 2025"
-                                className="w-full h-[300px] lg:h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
+                                className="w-full h-[300px] lg:h-[400px] object-cover transition-transform duration-500"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                            <div className="absolute inset-0"></div>
 
                             {/* Overlay Badge */}
                             <div className="absolute bottom-6 left-6 right-6">
-                                <span className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-full text-white font-medium text-sm">
-                                    <HiPhotograph className="w-4 h-4 mr-2" />
-                                    Event Highlights
-                                </span>
                             </div>
                         </div>
 
                         {/* Decorative Element */}
-                        <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-br from-orange-500/30 to-red-500/30 rounded-full blur-2xl"></div>
+                        <div className="hidden absolute -bottom-4 -right-4 w-24 h-24 rounded-full blur-2xl"></div>
                     </motion.div>
 
                     {/* Content */}
                     <motion.div
-                        initial={{ opacity: 0, x: 50 }}
+                        initial={{ opacity: 0, x: 0 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="text-center lg:text-left"
                     >
-                        <span className="inline-flex items-center px-4 py-2 bg-orange-500/20 backdrop-blur-md border border-orange-500/30 rounded-full text-orange-300 font-semibold text-sm mb-6">
-                            Completed Event
-                        </span>
 
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
                             HireGround Career Fair
-                            <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent"> 2025</span>
+                             2025
                         </h2>
 
                         <p className="text-lg text-gray-300 mb-6 leading-relaxed">
@@ -86,12 +76,9 @@ const CareerFairTeaser = () => {
                         {/* CTA */}
                         <Link to="/career-fair-2025">
                             <motion.button
-                                whileHover={{ scale: 1.05, x: 5 }}
-                                whileTap={{ scale: 0.95 }}
-                                className="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white font-semibold hover:bg-white/20 transition-all duration-300"
+                                className="inline-flex items-center px-6 py-3 bg-white/10 border border-white/20 rounded-md text-white font-semibold hover:bg-white/20 transition-all duration-300"
                             >
                                 See What Happened
-                                <HiArrowRight className="w-5 h-5 ml-2" />
                             </motion.button>
                         </Link>
                     </motion.div>

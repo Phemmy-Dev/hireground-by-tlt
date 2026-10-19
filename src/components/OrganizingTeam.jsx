@@ -66,17 +66,17 @@ const OrganizingTeam = () => {
   const TeamMemberPlaceholder = ({ name }) => {
     const initials = name.split(' ').map(n => n[0]).join('')
     const colors = [
-      'from-blue-400 to-blue-600',
-      'from-purple-400 to-purple-600',
-      'from-green-400 to-green-600',
-      'from-orange-400 to-orange-600',
-      'from-red-400 to-red-600',
-      'from-indigo-400 to-indigo-600'
+      'bg-forest',
+      'bg-ember',
+      'bg-forest-deep',
+      'bg-orange-600',
+      'bg-forest',
+      'bg-ink'
     ]
     const colorIndex = name.length % colors.length
     
     return (
-      <div className={`w-full h-full bg-gradient-to-br ${colors[colorIndex]} flex items-center justify-center`}>
+      <div className={`w-full h-full ${colors[colorIndex]} flex items-center justify-center`}>
         <span className="text-white font-bold text-4xl">{initials}</span>
       </div>
     )
@@ -126,17 +126,14 @@ const OrganizingTeam = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="mb-16"
           >
-            <div className="inline-flex items-center px-4 py-2 bg-orange-50 rounded-full mb-6">
-              <span className="text-orange-600 font-medium text-sm uppercase tracking-wide">Our Team</span>
-            </div>
             
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Meet The <span className="text-orange-600">Organising</span> Team
+              Meet The Organising Team
             </h2>
             
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-600 max-w-4xl leading-relaxed">
               HireGround is organized and run by a dedicated team of professionals who are passionate about career transformation and their potential to make a difference in people's lives.
             </p>
           </motion.div>
@@ -152,7 +149,7 @@ const OrganizingTeam = () => {
                 viewport={{ once: true }}
                 className="group"
               >
-                <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-orange-200 hover:-translate-y-1">
+                <div className="bg-white rounded-lg transition-all duration-300 overflow-hidden border border-gray-200 hover:border-orange-200">
                   
                   {/* Smart Image Container */}
                   <div className="relative h-72 overflow-hidden bg-gray-50">
@@ -163,23 +160,19 @@ const OrganizingTeam = () => {
                     />
                     
                     {/* Professional Social Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                       <div className="absolute bottom-4 left-4 right-4 flex justify-center gap-3">
                         <motion.a
                           href={member.linkedin}
                           target="_blank"
                           rel="noopener noreferrer"
-                          whileHover={{ scale: 1.1, y: -2 }}
-                          whileTap={{ scale: 0.9 }}
-                          className="w-9 h-9 bg-white/90 backdrop-blur-sm rounded-lg flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-lg"
+                          className="w-9 h-9 bg-white/90 rounded-lg flex items-center justify-center text-forest hover:bg-forest hover:text-white transition-all duration-300"
                         >
                           <FiLinkedin className="w-4 h-4" />
                         </motion.a>
                         <motion.a
                           href={`mailto:${member.email}`}
-                          whileHover={{ scale: 1.1, y: -2 }}
-                          whileTap={{ scale: 0.9 }}
-                          className="w-9 h-9 bg-white/90 backdrop-blur-sm rounded-lg flex items-center justify-center text-orange-600 hover:bg-orange-600 hover:text-white transition-all duration-300 shadow-lg"
+                          className="w-9 h-9 bg-white/90 rounded-lg flex items-center justify-center text-orange-600 hover:bg-orange-600 hover:text-white transition-all duration-300"
                         >
                           <FiMail className="w-4 h-4" />
                         </motion.a>
@@ -212,7 +205,7 @@ const OrganizingTeam = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-gradient-to-r from-gray-50 to-orange-50 rounded-3xl p-8 md:p-12 text-center border border-orange-100"
+            className="bg-mist rounded-xl p-8 md:p-12 text-center border border-orange-100"
           >
             <div className="max-w-3xl mx-auto">
               <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -227,9 +220,7 @@ const OrganizingTeam = () => {
                 <motion.a
                   href="https://bit.ly/vtltcf25"
                   target='_blank'
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center px-8 py-4 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transition-all duration-300 shadow-lg"
+                  className="inline-flex items-center px-8 py-4 bg-orange-600 text-white font-semibold rounded-md hover:bg-orange-700 transition-all duration-300"
                 >
                   Become a Volunteer
                 </motion.a>
@@ -237,9 +228,7 @@ const OrganizingTeam = () => {
                 <motion.a
                   href="https://docs.google.com/document/d/1JDUvt-nRoGU8mJBeLXcOxkrUFE9Lx5Ig2sM33rLlZPk/edit?tab=t.0#heading=h.kmm8prf9zyf2"
                   target='_blank'
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center px-8 py-4 bg-white border-2 border-orange-300 text-orange-600 font-semibold rounded-xl hover:bg-orange-50 transition-all duration-300"
+                  className="inline-flex items-center px-8 py-4 bg-white border-2 border-orange-300 text-orange-600 font-semibold rounded-md hover:bg-mist transition-all duration-300"
                 >
                   View Open Positions
                 </motion.a>
@@ -256,7 +245,7 @@ const OrganizingTeam = () => {
             viewport={{ once: true }}
             className="mt-16 text-center"
           >
-            <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+            <div className="bg-white rounded-lg p-8 border border-gray-100">
               <h4 className="text-2xl font-bold text-gray-900 mb-4">
                 Have Questions for Our Team?
               </h4>
@@ -268,8 +257,6 @@ const OrganizingTeam = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a
                   href="mailto:hireground@thelightutors.com"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
                   className="inline-flex items-center px-6 py-3 bg-gray-900 text-white font-medium rounded-lg hover:bg-gray-800 transition-all duration-300"
                 >
                   <FiMail className="mr-2 w-4 h-4" />
@@ -278,8 +265,6 @@ const OrganizingTeam = () => {
                 
                 <motion.a
                   href="tel:+2349132681049"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
                   className="inline-flex items-center px-6 py-3 bg-gray-100 text-gray-700 font-medium rounded-lg hover:bg-gray-200 transition-all duration-300"
                 >
                   <FiPhone className="mr-2 w-4 h-4" />

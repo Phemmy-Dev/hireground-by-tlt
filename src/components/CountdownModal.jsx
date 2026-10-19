@@ -76,7 +76,7 @@ const CountdownModal = ({ isOpen, onClose }) => {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="relative bg-white rounded-xl sm:rounded-2xl max-w-sm sm:max-w-4xl w-full shadow-xl border border-slate-200 overflow-hidden max-h-[95vh] overflow-y-auto"
+            className="relative bg-white rounded-xl sm:rounded-lg max-w-sm sm:max-w-4xl w-full border border-slate-200 overflow-hidden max-h-[95vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Simple top accent */}
@@ -92,11 +92,7 @@ const CountdownModal = ({ isOpen, onClose }) => {
 
             <div className="p-6 sm:p-8 lg:p-10">
               {/* Clean Hero Section */}
-              <div className="text-center mb-8 sm:mb-10">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-orange-50 text-orange-700 rounded-full text-sm font-medium mb-6">
-                  <FiStar className="w-4 h-4" />
-                  Event Countdown
-                </div>
+              <div className="mb-8 sm:mb-10">
 
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 mb-3 leading-tight">
                   HIREGROUND
@@ -133,7 +129,7 @@ const CountdownModal = ({ isOpen, onClose }) => {
 
               {/* Event Info */}
               <div className="bg-slate-50 rounded-xl p-6 mb-8 border border-slate-200">
-                <div className="grid sm:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center">
                       <FiCalendar className="w-5 h-5" />
@@ -169,13 +165,15 @@ const CountdownModal = ({ isOpen, onClose }) => {
               {/* Clean CTA Section */}
               <div className="text-center space-y-4">
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <button
+                  <a
+                    href="https://trankets.com/invite/hireground-kwara-career-fair-2026"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={onClose}
                     className="px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
                   >
-                    Reserve Your Seat
-                    <FiArrowRight className="w-4 h-4" />
-                  </button>
+                    Register Now
+                  </a>
 
                   <button
                     onClick={onClose}

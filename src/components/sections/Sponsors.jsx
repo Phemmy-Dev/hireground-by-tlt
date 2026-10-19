@@ -1,7 +1,17 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import kwgovtlogo from '../../assets/images/sponsors/kwgovlogo.webp'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { 
+  FiMail, 
+  FiAward, 
+  FiShoppingBag, 
+  FiMic, 
+  FiClock, 
+  FiCheckCircle, 
+  FiCopy, 
+  FiCheck
+} from 'react-icons/fi'
 import tltsponsorlogo from '../../assets/images/sponsors/tltsponsor.png'
+import kwgovtlogo from '../../assets/images/sponsors/kwgovlogo.webp'
 import INeedAGoodTeamLogo from '../../assets/images/sponsors/ineedagoodteamlogo.jpg'
 import Mindshiftlogo from '../../assets/images/sponsors/mindshiftlogo.png'
 import anchor from '../../assets/images/sponsors/anchor.png'
@@ -9,179 +19,193 @@ import cw from '../../assets/images/sponsors/cw.png'
 import swoop from '../../assets/images/sponsors/swoop.png'
 import equipr from '../../assets/images/sponsors/equipr.jpg'
 
-
 const Sponsors = () => {
-  const sponsors = [
-    {
-      id: 1,
-      name: 'The Light Tutors',
-      logo: tltsponsorlogo,
-      isReal: true
-    }
-  ]
+  const [copied, setCopied] = useState(false)
 
-  const PlaceholderLogo = ({ name }) => {
-    return (
-      <div className="w-full h-full rounded-xl border-2 border-dashed bg-gradient-to-br from-gray-100 to-gray-50 border-gray-200 text-gray-600 flex flex-col items-center justify-center p-4 transition-all duration-300 hover:shadow-md hover:border-orange-300 hover:text-orange-600">
-        <div className="w-8 h-8 mb-2 opacity-40">
-          <svg fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-          </svg>
-        </div>
-        <span className="text-xs font-medium text-center leading-tight">{name}</span>
-      </div>
-    )
+  const sponsorMailto = `mailto:hireground@thelightutors.com?subject=${encodeURIComponent(
+    'HireGround 2026 - Sponsorship Inquiry'
+  )}&body=${encodeURIComponent(
+    `Hello HireGround Team,
+
+I am writing to inquire about sponsorship opportunities for HireGround 2026.
+
+Organization / Brand Name: 
+Contact Person: 
+Phone Number: 
+Target Sponsorship Tier / Interests: 
+Key Goals (e.g., Brand Visibility, Talent Recruitment, CSR): 
+
+Please share the official sponsorship deck and available tiers with us.
+
+Best regards,`
+  )}`
+
+  const exhibitorMailto = `mailto:hireground@thelightutors.com?subject=${encodeURIComponent(
+    'HireGround 2026 - Exhibition & Stage Speaking Inquiry'
+  )}&body=${encodeURIComponent(
+    `Hello HireGround Team,
+
+We would like to inquire about securing an exhibition booth and a stage speaking/presentation slot at HireGround 2026.
+
+Organization / Business Name: 
+Contact Person: 
+Phone Number: 
+Products / Services to Exhibit: 
+Preferred Speaking / Presentation Duration (Negotiable, e.g., 5 mins, 10 mins, custom): 
+Special Requirements (e.g., AV / Projector display, power supply, specific booth size): 
+
+Please share the pricing options and booth details with us.
+
+Best regards,`
+  )}`
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText('hireground@thelightutors.com')
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2500)
   }
 
+  const partners = [
+    { id: 1, name: 'The Light Tutors', logo: tltsponsorlogo, isReal: true },
+    { id: 2, name: 'Kwara State Government', logo: kwgovtlogo, isReal: true },
+    { id: 3, name: 'Mindshift', logo: Mindshiftlogo, isReal: true },
+    { id: 4, name: 'I Need A Good Team', logo: INeedAGoodTeamLogo, isReal: true },
+    { id: 5, name: 'Equipr', logo: equipr, isReal: true },
+    { id: 6, name: 'Swoop', logo: swoop, isReal: true },
+  ]
+
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="bg-forest text-white py-20 lg:py-28">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         {/* Header */}
-        <div className="text-center mb-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="inline-flex items-center px-4 py-2 bg-orange-50 rounded-full mb-4"
-          >
-            <span className="text-orange-600 font-medium text-sm uppercase tracking-wide">Sponsors</span>
-          </motion.div>
-
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            viewport={{ once: true }}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
-          >
-            Become a <span className="text-orange-600">Sponsor</span>
-          </motion.h2>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8"
-          >
-            Showcase your brand to over 1,000 participants onsite and 10,000 virtually nationwide. Position your company at the heart of youth empowerment and talent development
-          </motion.p>
-
-          {/* CTA Button */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            viewport={{ once: true }}
-            className="mb-16"
-          >
-            <motion.a
-              href="mailto:hireground@thelightutors.com"
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center px-8 py-4 bg-gray-900 text-white font-semibold rounded-xl hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl"
-            >
-              Contact Us
-            </motion.a>
-          </motion.div>
+        <div className="max-w-3xl mb-14">
+          <h2 className="section-title !text-white mb-6">
+            Partner with HireGround 2026
+          </h2>
+          <p className="text-lg leading-relaxed text-white/80">
+            Position your organization at the center of career transformation. Choose between
+            <strong className="text-white"> official event sponsorship</strong> for brand prestige or an
+            <strong className="text-white"> exhibition booth + main stage speaking slot</strong> to pitch live to over 1,000 in-person attendees.
+          </p>
         </div>
 
-        {/* Sponsors Grid */}
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            viewport={{ once: true }}
-            className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center"
-          >
-            {sponsors.map((sponsor, index) => (
-              <motion.div
-                key={sponsor.id}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="h-24 md:h-28 flex items-center justify-center"
-              >
-                {sponsor.isReal ? (
-                  <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    className="w-full h-full bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 p-4 flex items-center justify-center group"
-                  >
-                    <img
-                      src={sponsor.logo}
-                      alt={sponsor.name}
-                      className="max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
-                    />
-                  </motion.div>
-                ) : (
-                  <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    className="w-full h-full"
-                  >
-                    <PlaceholderLogo name={sponsor.name} />
-                  </motion.div>
-                )}
-              </motion.div>
-            ))}
-          </motion.div>
+        {/* Two partnership tracks */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-12">
 
-          {/* Partners Info */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            viewport={{ once: true }}
-            className="mt-12 text-center"
-          >
-            <p className="text-gray-600 text-sm">
-              Join our amazing partners in supporting career transformation across Nigeria
+          {/* Track 1: Event Sponsorship */}
+          <div className="bg-white text-ink rounded-lg p-8 sm:p-10 flex flex-col">
+            <p className="flex items-center gap-2 text-sm font-semibold text-ember-deep mb-4">
+              <FiAward className="w-4 h-4" />
+              Corporate & Brand Impact
             </p>
-          </motion.div>
-
-          {/* Partnership Benefits */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1 }}
-            viewport={{ once: true }}
-            className="mt-16 bg-gray-50 rounded-2xl p-8"
-          >
-            <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Partnership Benefits</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="text-center">
-                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                  </svg>
-                </div>
-                <h4 className="font-semibold text-gray-900 mb-2">Brand Visibility</h4>
-                <p className="text-gray-600 text-sm">Showcase your brand to 1,000+ onsite participants and 10,000+ virtual attendees.</p>
-              </div>
-              <div className="text-center">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
-                </div>
-                <h4 className="font-semibold text-gray-900 mb-2">Networking</h4>
-                <p className="text-gray-600 text-sm">Build connections with industry leaders, recruiters, and emerging talent.</p>
-              </div>
-              <div className="text-center">
-                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <h4 className="font-semibold text-gray-900 mb-2">Impact</h4>
-                <p className="text-gray-600 text-sm">Play a key role in shaping careers and empowering the next generation of professionals.</p>
-              </div>
+            <h3 className="text-2xl sm:text-3xl font-extrabold mb-4">
+              Become an Official Sponsor
+            </h3>
+            <p className="text-muted leading-relaxed mb-6">
+              Align your organization with youth empowerment and economic mobility. Reach over 1,000 on-site professionals and 10,000+ virtual attendees with premier brand positioning and direct graduate recruitment channels.
+            </p>
+            <ul className="space-y-3 mb-8">
+              {[
+                "Prominent logo branding across all stages, banners & digital streams",
+                "VIP recognition & media coverage in pre/post event press",
+                "Direct access to vetted job seeker and graduate resume repository",
+                "Customized sponsorship tiers & CSR impact reporting"
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <FiCheckCircle className="w-5 h-5 text-ember-deep shrink-0 mt-0.5" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="mt-auto pt-6 border-t border-line flex flex-wrap items-center gap-x-6 gap-y-4">
+              <a href={sponsorMailto} className="btn btn-primary">
+                <FiMail className="w-5 h-5" />
+                Inquire for Sponsorship
+              </a>
+              <Link to="/sponsors" className="font-semibold text-ember-deep underline underline-offset-4 hover:text-ink">
+                Explore full sponsorship overview & deck
+              </Link>
             </div>
-          </motion.div>
+          </div>
+
+          {/* Track 2: Exhibition & Stage Spotlight */}
+          <div className="bg-forest-deep border border-white/15 rounded-lg p-8 sm:p-10 flex flex-col">
+            <p className="flex items-center gap-2 text-sm font-semibold text-sun mb-4">
+              <FiMic className="w-4 h-4" />
+              Live Demos & Direct Sales
+            </p>
+            <h3 className="text-2xl sm:text-3xl font-extrabold mb-4">
+              Exhibition Booth + Stage Time
+            </h3>
+            <p className="text-white/75 leading-relaxed mb-6">
+              Showcase your products directly to a packed room of career-focused professionals. Secure a dedicated exhibition booth space plus <strong className="text-white">official speaking/presentation time</strong> on the main stage to pitch your solutions.
+            </p>
+            <ul className="space-y-3 mb-6">
+              {[
+                "Dedicated branded exhibition booth in the high-traffic showcase zone",
+                "Dedicated speaking/pitch slot on the main event stage (flexible time)",
+                "Live on-stage demo or video playback on the main conference screens",
+                "Direct on-site selling, user onboarding & qualified lead capture"
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <FiCheckCircle className="w-5 h-5 text-sun shrink-0 mt-0.5" />
+                  <span className="text-white/90">{item}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="flex items-center gap-2 text-sm text-white/70 mb-8">
+              <FiClock className="w-4 h-4 shrink-0" />
+              Speaking duration is flexible & negotiable based on your budget
+            </p>
+            <div className="mt-auto pt-6 border-t border-white/15 flex flex-wrap items-center gap-x-6 gap-y-4">
+              <a href={exhibitorMailto} className="btn bg-sun text-ink hover:bg-white">
+                <FiShoppingBag className="w-5 h-5" />
+                Book Exhibition & Stage Slot
+              </a>
+              <Link to="/sponsors#exhibition" className="font-semibold text-white underline underline-offset-4 hover:text-sun">
+                Learn about exhibition packages & requirements
+              </Link>
+            </div>
+          </div>
         </div>
+
+        {/* Direct email */}
+        <div className="flex flex-wrap items-center gap-3 text-white/80 mb-16">
+          <span>Direct Inquiries:</span>
+          <a href="mailto:hireground@thelightutors.com" className="font-semibold text-white underline underline-offset-4 hover:text-sun">
+            hireground@thelightutors.com
+          </a>
+          <button
+            onClick={handleCopyEmail}
+            className="inline-flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-md border border-white/30 hover:bg-white hover:text-forest transition-colors"
+          >
+            {copied ? <FiCheck className="w-4 h-4" /> : <FiCopy className="w-4 h-4" />}
+            {copied ? 'Copied' : 'Copy'}
+          </button>
+        </div>
+
+        {/* Confirmed partners */}
+        <div className="bg-white rounded-lg p-8 sm:p-10">
+          <h3 className="text-lg font-bold text-ink mb-8">
+            Proudly Supported & Partnered By Leading Brands
+          </h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 items-center">
+            {partners.map((partner) => (
+              <div key={partner.id} className="h-16 flex items-center justify-center">
+                <img
+                  src={partner.logo}
+                  alt={partner.name}
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+            ))}
+          </div>
+          <p className="mt-8 text-sm text-muted">
+            Join leading organizations and high-growth brands at HireGround 2026.
+          </p>
+        </div>
+
       </div>
     </section>
   )

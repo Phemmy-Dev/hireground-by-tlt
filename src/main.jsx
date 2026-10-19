@@ -20,38 +20,47 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Home />,
+    errorElement: <NotFound />,
   },
   {
     path: '/academy',
     element: <Academy />,
+    errorElement: <NotFound />,
   },
   {
     path: '/career-fair-2025',
     element: <CareerFair2025 />,
+    errorElement: <NotFound />,
   },
   {
     path: '/about',
     element: <About />,
+    errorElement: <NotFound />,
   },
   {
     path: '/sponsors',
     element: <Sponsors />,
+    errorElement: <NotFound />,
   },
   {
     path: '/speakers',
     element: <Speakers />,
+    errorElement: <NotFound />,
   },
   {
     path: '/companies',
     element: <CompaniesHiring />,
+    errorElement: <NotFound />,
   },
   {
     path: '/recruiters',
     element: <Recruiters />,
+    errorElement: <NotFound />,
   },
   {
     path: '/contact',
     element: <Contact />,
+    errorElement: <NotFound />,
   },
   {
     path: '*',

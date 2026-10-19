@@ -40,26 +40,23 @@ const WhySponsor = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-16 lg:mb-20"
+          className="mb-16 lg:mb-20"
         >
-          <div className="inline-block px-4 py-2 bg-orange-100 text-orange-600 rounded-full text-sm font-semibold mb-6">
-            Why Partner With Us?
-          </div>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Your Brand. <span className="text-orange-600">Their Future.</span>
+                    <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            Your Brand. Their Future.
             <br />
             <span className="text-2xl sm:text-3xl lg:text-4xl text-gray-600 font-semibold">
               Infinite Possibilities.
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-3xl leading-relaxed">
             Join the movement that's reshaping Nigeria's professional landscape. 
             Your sponsorship doesn't just support an event—it fuels careers, builds futures, and creates lasting impact.
           </p>
         </motion.div>
 
         {/* Main Value Propositions - Centered Two-Column Grid */}
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-16 mb-20 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 mb-20 max-w-5xl mx-auto">
           {mainReasons.map((reason, index) => (
             <motion.div
               key={index}
@@ -70,14 +67,14 @@ const WhySponsor = () => {
               className="group relative"
             >
               {/* Card with enhanced styling for two-column layout */}
-              <div className="relative bg-gradient-to-br from-white to-gray-50 rounded-3xl p-10 lg:p-12 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-2">
+              <div className="relative bg-white rounded-xl p-10 lg:p-12 border border-gray-100 transition-all duration-500 group-">
                 
                 {/* Decorative element */}
-                <div className="absolute -top-6 -right-6 w-32 h-32 bg-gradient-to-br from-orange-400 to-red-500 rounded-full opacity-10 group-hover:opacity-20 transition-opacity duration-500"></div>
+                
                 
                 {/* Icon and highlight number */}
                 <div className="flex items-start justify-between mb-8">
-                  <div className="w-20 h-20 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center group-hover:bg-orange-600 group-hover:text-white transition-all duration-300">
+                  <div className="w-20 h-20 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center group-hover:bg-orange-600 group-hover:text-white transition-all duration-300">
                     {reason.icon}
                   </div>
                   <div className="text-right">
@@ -98,7 +95,7 @@ const WhySponsor = () => {
                 </p>
 
                 {/* Hover effect line */}
-                <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-orange-500 to-red-500 group-hover:w-full transition-all duration-500 rounded-full"></div>
+                
               </div>
             </motion.div>
           ))}
@@ -121,18 +118,18 @@ const WhySponsor = () => {
             </div>
           </div>
 
-          <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-orange-900 rounded-3xl p-8 sm:p-12 lg:p-16">
-            <div className="text-center mb-12">
+          <div className="relative bg-forest-deep rounded-xl p-8 sm:p-12 lg:p-16">
+            <div className="mb-12">
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
                 What You <span className="text-orange-400">Actually Get</span>
               </h3>
-              <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+              <p className="text-gray-300 text-lg max-w-2xl">
                 Beyond the numbers, here's the real value of partnering with HireGround
               </p>
             </div>
 
             {/* Benefits in a creative hexagonal-inspired layout */}
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {additionalBenefits.map((benefit, index) => (
                 <motion.div
                   key={index}
@@ -140,9 +137,9 @@ const WhySponsor = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-2xl p-4 hover:bg-white/20 transition-all duration-300 group"
+                  className="flex items-center gap-4 bg-white/10 rounded-lg p-4 hover:bg-white/20 transition-all duration-300 group"
                 >
-                  <div className="w-12 h-12 bg-orange-500 text-white rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-12 h-12 bg-orange-500 text-white rounded-xl flex items-center justify-center flex-shrink-0 transition-transform duration-300">
                     {benefit.icon}
                   </div>
                   <p className="text-white font-medium leading-relaxed">
@@ -171,17 +168,13 @@ const WhySponsor = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <motion.a
                   href="mailto:hireground@thelightutors.com"
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center justify-center px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-xl shadow-xl transition-all duration-300"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-md transition-all duration-300"
                 >
                   Let's Partner 
                 </motion.a>
                 
                 {/* <motion.button
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 hover:border-white hover:bg-white/10 text-white font-semibold rounded-xl transition-all duration-300"
+                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 hover:border-white hover:bg-white/10 text-white font-semibold rounded-md transition-all duration-300"
                 >
                   Download Sponsorship Deck
                 </motion.button> */}

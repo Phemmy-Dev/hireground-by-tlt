@@ -31,12 +31,12 @@ const WhoThisIsFor = () => {
     ]
 
     return (
-        <section className="relative py-20 lg:py-28 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
+        <section className="relative py-20 lg:py-28 bg-forest-deep overflow-hidden">
             {/* Background Elements */}
             <div className="absolute inset-0">
                 {/* Gradient Orbs */}
-                <div className="absolute top-1/4 left-0 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"></div>
-                <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+                <div className="hidden absolute top-1/4 left-0 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"></div>
+                <div className="hidden absolute bottom-1/4 right-0 w-96 h-96 bg-forest/10 rounded-full blur-3xl"></div>
 
                 {/* Grid Pattern */}
                 <div className="absolute inset-0 opacity-5">
@@ -54,24 +54,15 @@ const WhoThisIsFor = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-center mb-16"
+                    className="mb-16"
                 >
-                    <motion.span
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        className="inline-flex items-center px-5 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-orange-300 font-semibold text-sm mb-6"
-                    >
-                        <HiHeart className="w-4 h-4 mr-2" />
-                        Who Should Apply
-                    </motion.span>
 
                     <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
                         Is This
-                        <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent"> For You?</span>
+                         For You?
                     </h2>
 
-                    <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+                    <p className="text-xl text-gray-300 max-w-2xl">
                         HireGround Academy is designed for those ready to invest in their future. See if you fit the profile.
                     </p>
                 </motion.div>
@@ -85,17 +76,16 @@ const WhoThisIsFor = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
-                            whileHover={{ scale: 1.03, y: -5 }}
                             className="group relative"
                         >
-                            <div className="relative bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl p-8 hover:bg-white/10 hover:border-orange-500/30 transition-all duration-300 overflow-hidden">
+                            <div className="relative bg-white/5 border border-white/10 rounded-xl p-8 hover:bg-white/10 hover:border-orange-500/30 transition-all duration-300 overflow-hidden">
                                 {/* Hover Glow */}
-                                <div className="absolute inset-0 bg-gradient-to-br from-orange-500/0 to-red-500/0 group-hover:from-orange-500/5 group-hover:to-red-500/5 transition-all duration-300 rounded-3xl"></div>
+                                <div className="absolute inset-0 group-hover:from-orange-500/5 group-hover:to-red-500/5 transition-all duration-300 rounded-xl"></div>
 
                                 <div className="relative z-10">
                                     {/* Icon & Highlight Badge */}
                                     <div className="flex items-start justify-between mb-6">
-                                        <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center shadow-lg shadow-orange-500/20">
+                                        <div className="w-14 h-14 rounded-lg bg-orange-600 flex items-center justify-center shadow-orange-500/20">
                                             <audience.icon className="w-7 h-7 text-white" />
                                         </div>
                                         <span className="px-3 py-1 bg-orange-500/20 text-orange-300 text-xs font-semibold rounded-full">
@@ -113,7 +103,7 @@ const WhoThisIsFor = () => {
                                 </div>
 
                                 {/* Corner Decoration */}
-                                <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-gradient-to-br from-orange-500/10 to-transparent rounded-full group-hover:from-orange-500/20 transition-all duration-300"></div>
+                                <div className="absolute -bottom-10 -right-10 w-32 h-32 rounded-full group-hover:from-orange-500/20 transition-all duration-300"></div>
                             </div>
                         </motion.div>
                     ))}
@@ -127,7 +117,7 @@ const WhoThisIsFor = () => {
                     transition={{ duration: 0.6, delay: 0.4 }}
                     className="mt-16 text-center"
                 >
-                    <div className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-500/10 to-red-500/10 backdrop-blur-md border border-orange-500/20 rounded-2xl">
+                    <div className="inline-flex items-center px-8 py-4 border border-orange-500/20 rounded-lg">
                         <p className="text-lg text-gray-300">
                             <span className="text-orange-400 font-semibold">Not sure if you qualify?</span>
                             <span className="mx-2">·</span>

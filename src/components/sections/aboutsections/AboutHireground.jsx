@@ -8,7 +8,7 @@ const AboutHireground = () => {
   const aboutImage = hiregroundimg // Add your image import here later
 
   const ImagePlaceholder = ({ className, label }) => (
-    <div className={`${className} bg-gradient-to-br from-gray-100 to-gray-200 border-2 border-dashed border-gray-300 rounded-2xl flex flex-col items-center justify-center p-8 transition-all duration-300 hover:border-orange-300 hover:from-orange-50 hover:to-orange-100`}>
+    <div className={`${className} bg-mist border-2 border-dashed border-gray-300 rounded-2xl flex flex-col items-center justify-center p-8 transition-all duration-300 hover:border-orange-300`}>
       <div className="w-16 h-16 mb-4 text-gray-400">
         <svg fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
@@ -58,17 +58,14 @@ const AboutHireground = () => {
             
             {/* Left Content */}
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0, x: 0 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <div className="inline-flex items-center px-4 py-2 bg-orange-50 rounded-full mb-6">
-                <span className="text-orange-600 font-medium text-sm uppercase tracking-wide">The Story</span>
-              </div>
               
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                What is <span className="text-orange-600">HireGround?</span>
+                What is HireGround?
               </h2>
               
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
@@ -88,31 +85,23 @@ const AboutHireground = () => {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <motion.a
-                  href="https://forms.gle/qYPuM9coDbfYdxGt8"
+                  href="https://trankets.com/invite/hireground-kwara-career-fair-2026"
                   target="_blank"
                   rel="noopener noreferrer"
-                  whileHover={{ scale: 1.02, y: -2 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="inline-flex items-center px-6 py-3 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="inline-flex items-center px-6 py-3 bg-orange-600 text-white font-semibold rounded-md hover:bg-orange-700 transition-all duration-300"
                 >
                   Register Now
-                  <FiArrowRight className="ml-2 w-5 h-5" />
                 </motion.a>
                 {/* <motion.a
                   href="/register"
-                  whileHover={{ scale: 1.02, y: -2 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="inline-flex items-center px-6 py-3 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="inline-flex items-center px-6 py-3 bg-orange-600 text-white font-semibold rounded-md hover:bg-orange-700 transition-all duration-300"
                 >
                   Get Your Ticket
-                  <FiArrowRight className="ml-2 w-5 h-5" />
                 </motion.a> */}
                 
                 {/* Commented out intro video btn */}
                 {/* <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="inline-flex items-center px-6 py-3 bg-white border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:border-orange-300 hover:text-orange-600 transition-all duration-300"
+                  className="inline-flex items-center px-6 py-3 bg-white border-2 border-gray-300 text-gray-700 font-semibold rounded-md hover:border-orange-300 hover:text-orange-600 transition-all duration-300"
                 >
                   <FiPlay className="mr-2 w-5 h-5" />
                   Watch Introduction
@@ -122,7 +111,7 @@ const AboutHireground = () => {
 
             {/* Right Image */}
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 0, x: 0 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
@@ -132,7 +121,7 @@ const AboutHireground = () => {
                 <img
                   src={aboutImage}
                   alt="HireGround Event"
-                  className="w-full h-96 lg:h-[500px] object-cover rounded-2xl shadow-xl"
+                  className="w-full h-96 lg:h-[500px] object-cover rounded-lg"
                 />
               ) : (
                 <ImagePlaceholder
@@ -147,7 +136,7 @@ const AboutHireground = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
                 viewport={{ once: true }}
-                className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-6 border border-gray-100"
+                className="absolute -bottom-6 -left-6 bg-white rounded-xl p-6 border border-gray-100"
               >
                 <div className="text-center">
                   <div className="text-2xl font-bold text-gray-900">2025</div>
@@ -165,11 +154,11 @@ const AboutHireground = () => {
             viewport={{ once: true }}
             className="mb-20"
           >
-            <div className="text-center mb-12">
+            <div className="mb-12">
               <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 What Makes HireGround Special?
               </h3>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              <p className="text-lg text-gray-600 max-w-3xl">
                 We've designed every aspect of HireGround to maximize your career growth potential and create lasting professional relationships.
               </p>
             </div>
@@ -182,7 +171,7 @@ const AboutHireground = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-orange-200"
+                  className="bg-white border border-gray-200 rounded-xl p-6 transition-all duration-300 hover:border-orange-200"
                 >
                   <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4 text-orange-600">
                     {feature.icon}
@@ -200,9 +189,9 @@ const AboutHireground = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-gray-50 rounded-2xl p-8 md:p-12"
+            className="bg-gray-50 rounded-lg p-8 md:p-12"
           >
-            <div className="text-center mb-10">
+            <div className="mb-10">
               <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 HireGround by the Numbers
               </h3>
@@ -219,7 +208,7 @@ const AboutHireground = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="text-center bg-white rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105"
+                  className="text-center bg-white rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-6 shadow-sm transition-all duration-300"
                 >
                   <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-orange-600 mb-1 sm:mb-2">
                     {stat.number}
@@ -240,7 +229,7 @@ const AboutHireground = () => {
             viewport={{ once: true }}
             className="mt-20 text-center"
           >
-            <div className="bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl p-8 md:p-12 text-white">
+            <div className="bg-orange-600 rounded-lg p-8 md:p-12 text-white">
               <h3 className="text-3xl md:text-4xl font-bold mb-4">
                 Ready to Transform Your Career?
               </h3>
@@ -249,21 +238,16 @@ const AboutHireground = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a
-                  href="https://forms.gle/qYPuM9coDbfYdxGt8"
+                  href="https://trankets.com/invite/hireground-kwara-career-fair-2026"
                   target="_blank"
                   rel="noopener noreferrer"
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center px-8 py-4 bg-white text-orange-600 font-semibold rounded-xl hover:bg-gray-50 transition-all duration-300 shadow-lg"
+                  className="inline-flex items-center px-8 py-4 bg-white text-orange-600 font-semibold rounded-md hover:bg-gray-50 transition-all duration-300"
                 >
                   Register Now
-                  <FiArrowRight className="ml-2 w-5 h-5" />
                 </motion.a>
                 {/* <motion.a
                   href="/speakers"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-xl hover:bg-white hover:text-orange-600 transition-all duration-300"
+                  className="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-md hover:bg-white hover:text-orange-600 transition-all duration-300"
                 >
                   Meet Our Speakers
                 </motion.a> */}

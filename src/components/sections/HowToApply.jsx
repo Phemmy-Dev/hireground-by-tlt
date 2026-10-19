@@ -28,10 +28,10 @@ const HowToApply = () => {
     ]
 
     return (
-        <section className="relative py-20 lg:py-28 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+        <section className="relative py-20 lg:py-28 bg-mist overflow-hidden">
             {/* Background Decorations */}
             <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-orange-200 to-transparent"></div>
+                <div className="absolute top-1/2 left-0 w-full h-px"></div>
             </div>
 
             <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,24 +41,15 @@ const HowToApply = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-center mb-16"
+                    className="mb-16"
                 >
-                    <motion.span
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        className="inline-flex items-center px-5 py-2 bg-orange-100 rounded-full text-orange-700 font-semibold text-sm mb-6"
-                    >
-                        <HiCheckCircle className="w-4 h-4 mr-2" />
-                        Simple Process
-                    </motion.span>
 
                     <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
                         How to
-                        <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent"> Apply</span>
+                         Apply
                     </h2>
 
-                    <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                    <p className="text-xl text-gray-600 max-w-2xl">
                         Getting started is easy. Follow these three simple steps to join HireGround Academy.
                     </p>
                 </motion.div>
@@ -67,7 +58,7 @@ const HowToApply = () => {
                 <div className="max-w-5xl mx-auto">
                     <div className="relative">
                         {/* Connecting Line */}
-                        <div className="absolute left-8 lg:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-orange-200 via-orange-400 to-orange-200 hidden sm:block lg:transform lg:-translate-x-1/2"></div>
+                        <div className="absolute left-8 lg:left-1/2 top-0 bottom-0 w-0.5 bg-orange-50 hidden sm:block lg:transform lg:-translate-x-1/2"></div>
 
                         {steps.map((step, index) => (
                             <motion.div
@@ -82,8 +73,7 @@ const HowToApply = () => {
                                 {/* Step Number Circle */}
                                 <div className="relative z-10 flex-shrink-0">
                                     <motion.div
-                                        whileHover={{ scale: 1.1, rotate: 5 }}
-                                        className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center shadow-lg shadow-orange-500/30"
+                                        className="w-16 h-16 bg-orange-600 rounded-lg flex items-center justify-center shadow-orange-500/30"
                                     >
                                         <span className="text-white font-bold text-xl">{step.step}</span>
                                     </motion.div>
@@ -92,8 +82,7 @@ const HowToApply = () => {
                                 {/* Content Card */}
                                 <div className={`flex-1 ${index % 2 === 0 ? 'lg:text-right lg:pr-12' : 'lg:text-left lg:pl-12'}`}>
                                     <motion.div
-                                        whileHover={{ y: -5, scale: 1.02 }}
-                                        className="bg-white rounded-3xl p-8 shadow-xl shadow-gray-200/50 border border-gray-100 hover:border-orange-200/50 transition-all duration-300"
+                                        className="bg-white rounded-xl p-8 shadow-gray-200/50 border border-gray-100 hover:border-orange-200/50 transition-all duration-300"
                                     >
                                         <div className={`flex items-center gap-4 mb-4 ${index % 2 === 0 ? 'lg:justify-end' : ''}`}>
                                             <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
@@ -106,9 +95,9 @@ const HowToApply = () => {
                                             {step.description}
                                         </p>
 
-                                        <span className="inline-flex items-center px-4 py-2 bg-orange-50 text-orange-700 font-medium text-sm rounded-full">
+                                        <p className="font-semibold text-ember-deep">
                                             {step.action}
-                                        </span>
+                                        </p>
                                     </motion.div>
                                 </div>
                             </motion.div>
@@ -124,7 +113,7 @@ const HowToApply = () => {
                     transition={{ duration: 0.6, delay: 0.6 }}
                     className="mt-16 text-center"
                 >
-                    <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-3xl p-8 lg:p-12 max-w-3xl mx-auto">
+                    <div className="bg-orange-600 rounded-xl p-8 lg:p-12 max-w-3xl mx-auto">
                         <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">
                             Ready to Get Started?
                         </h3>
@@ -132,7 +121,7 @@ const HowToApply = () => {
                             Cohort 1 applications are currently closed. Stay tuned for our next cohort!
                         </p>
                         <div
-                            className="inline-flex items-center px-8 py-4 bg-gray-400 text-white font-bold rounded-full shadow-lg opacity-80 cursor-not-allowed"
+                            className="inline-flex items-center px-8 py-4 bg-gray-400 text-white font-bold rounded-md opacity-80 cursor-not-allowed"
                         >
                             <HiClipboardList className="w-5 h-5 mr-2" />
                             Applications Closed

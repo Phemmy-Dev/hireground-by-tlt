@@ -235,14 +235,14 @@ const CompaniesHiring = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto"
+        className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 overflow-y-auto"
         onClick={onClose}
       >
         <motion.div
           initial={{ opacity: 0, scale: 0.9, y: 50 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.9, y: 50 }}
-          className="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto my-8"
+          className="bg-white rounded-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto my-8"
           onClick={(e) => e.stopPropagation()}
         >
           {/* Modal Header */}
@@ -293,7 +293,7 @@ const CompaniesHiring = () => {
           {/* Modal Content */}
           <div className="p-6">
             {/* Company Details Grid */}
-            <div className="grid md:grid-cols-3 gap-4 mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
               <div className="bg-gray-50 rounded-xl p-4">
                 <p className="text-gray-600 text-sm mb-1">Industry</p>
                 <p className="font-semibold text-gray-900">{company.industry}</p>
@@ -332,10 +332,10 @@ const CompaniesHiring = () => {
             <div className="mb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Job Opportunities</h3>
               {company.availableJobs > 0 ? (
-                <div className="bg-green-50 border border-green-200 rounded-xl p-4 space-y-3">
+                <div className="bg-mist border border-line rounded-xl p-4 space-y-3">
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                      <FiBriefcase className="w-6 h-6 text-green-600" />
+                    <div className="w-12 h-12 bg-mist rounded-lg flex items-center justify-center">
+                      <FiBriefcase className="w-6 h-6 text-forest" />
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">{company.availableJobs} Open Position{company.availableJobs > 1 ? 's' : ''}</p>
@@ -358,7 +358,7 @@ const CompaniesHiring = () => {
                   )}
                   
                   {company.conductingInterviews && (
-                    <div className="flex items-center gap-2 text-green-700 bg-green-100 px-3 py-2 rounded-lg mt-3">
+                    <div className="flex items-center gap-2 text-forest bg-mist px-3 py-2 rounded-lg mt-3">
                       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
@@ -382,7 +382,7 @@ const CompaniesHiring = () => {
                 <div className="space-y-3">
                   {company.credentials.map((credential, index) => (
                     <div key={index} className="flex items-start gap-3 bg-gray-50 rounded-xl p-4">
-                      <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <div className="w-12 h-12 bg-mist rounded-lg flex items-center justify-center flex-shrink-0">
                         <img
                           src="https://via.placeholder.com/48/008000/FFFFFF?text=CAC"
                           alt={credential.name}
@@ -410,7 +410,7 @@ const CompaniesHiring = () => {
         <Navbar />
 
         {/* Hero Section */}
-        <section className="pt-32 sm:pt-36 lg:pt-40 pb-12 bg-gradient-to-r from-orange-600 to-red-600">
+        <section className="pt-32 sm:pt-36 lg:pt-40 pb-12 bg-orange-600">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center text-white">
               <motion.div
@@ -471,7 +471,7 @@ const CompaniesHiring = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.05 }}
                   onClick={() => setSelectedCompany(company)}
-                  className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer group border border-gray-100"
+                  className="bg-white rounded-xl transition-all duration-300 overflow-hidden cursor-pointer group border border-gray-100"
                 >
                   {/* Company Logo */}
                   <div className="relative h-32 bg-gray-50 flex items-center justify-center p-6 group-hover:bg-gray-100 transition-colors">
@@ -506,7 +506,7 @@ const CompaniesHiring = () => {
                     {/* Available Jobs Badge */}
                     <div className={`text-sm font-semibold ${
                       company.availableJobs > 0 
-                        ? 'text-green-700 bg-green-50' 
+                        ? 'text-forest bg-mist' 
                         : 'text-gray-600 bg-gray-100'
                     } px-3 py-2 rounded-lg`}>
                       {company.availableJobs > 0 

@@ -42,7 +42,7 @@ const VendorApplication = () => {
   ]
 
   return (
-    <section className="relative py-16 sm:py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-white via-orange-50/30 to-red-50/30">
+    <section className="relative py-16 sm:py-20 lg:py-32 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -52,10 +52,10 @@ const VendorApplication = () => {
           }}
           transition={{ 
             duration: 28,
-            repeat: Infinity,
+            repeat: 0,
             ease: "linear"
           }}
-          className="absolute -top-32 -left-32 w-96 h-96 bg-gradient-to-br from-orange-200/20 to-red-200/20 rounded-full blur-3xl"
+          className="hidden absolute -top-32 -left-32 w-96 h-96 rounded-full blur-3xl"
         />
         <motion.div
           animate={{ 
@@ -64,18 +64,15 @@ const VendorApplication = () => {
           }}
           transition={{ 
             duration: 32,
-            repeat: Infinity,
+            repeat: 0,
             ease: "linear"
           }}
-          className="absolute -bottom-32 -right-32 w-80 h-80 bg-gradient-to-br from-red-200/20 to-orange-200/20 rounded-full blur-3xl"
+          className="hidden absolute -bottom-32 -right-32 w-80 h-80 rounded-full blur-3xl"
         />
         
         {/* Grid Pattern */}
         <div className="absolute inset-0 opacity-5">
-          <div className="h-full w-full" style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, #ff7300 1px, transparent 0)`,
-            backgroundSize: '50px 50px'
-          }}></div>
+          <div className="h-full w-full" style={{ display: 'none' }}></div>
         </div>
       </div>
 
@@ -86,21 +83,9 @@ const VendorApplication = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16 lg:mb-20"
+          className="mb-16 lg:mb-20"
         >
           {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-orange-100 to-red-100 rounded-full border border-orange-200 mb-8"
-          >
-            <FiShoppingBag className="w-5 h-5 text-orange-600 mr-2" />
-            <span className="text-orange-800 font-medium text-sm sm:text-base uppercase tracking-wide">
-              For Vendors & Businesses
-            </span>
-          </motion.div>
 
           {/* Main Title */}
           <motion.h2
@@ -111,9 +96,9 @@ const VendorApplication = () => {
             className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6"
           >
             <span className="text-gray-900">Showcase Your </span>
-            <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+            
               Business
-            </span>
+            
           </motion.h2>
 
           {/* Subtitle */}
@@ -122,7 +107,7 @@ const VendorApplication = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-lg sm:text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8"
+            className="text-lg sm:text-xl lg:text-2xl text-gray-600 max-w-3xl leading-relaxed mb-8"
           >
             Join us as a vendor at HireGround 2025 and connect with thousands of potential customers while supporting career development.
           </motion.p>
@@ -137,7 +122,7 @@ const VendorApplication = () => {
           >
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-2">
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-orange-600 mb-2">
                   {stat.number}
                 </div>
                 <div className="text-gray-600 text-sm sm:text-base font-medium">
@@ -158,13 +143,9 @@ const VendorApplication = () => {
               href="https://selar.com/1717s75715"
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              className="group inline-flex items-center px-8 py-4 sm:px-10 sm:py-5 text-lg sm:text-xl font-bold text-white bg-gradient-to-r from-orange-600 to-red-600 rounded-full shadow-2xl hover:shadow-orange-500/50 transition-all duration-300"
-              style={{ backgroundColor: '#ff7300' }}
+              className="group inline-flex items-center px-8 py-4 sm:px-10 sm:py-5 text-lg sm:text-xl font-bold text-white bg-orange-600 rounded-md hover:shadow-orange-500/50 transition-all duration-300"
             >
               <span className="mr-3">Apply as Vendor</span>
-              <FiArrowRight className="w-6 h-6 transform group-hover:translate-x-1 transition-transform duration-300" />
             </motion.a>
           </motion.div>
         </motion.div>
@@ -185,10 +166,9 @@ const VendorApplication = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                whileHover={{ y: -8, scale: 1.02 }}
-                className="group bg-white/80 backdrop-blur-sm border border-orange-100 rounded-2xl p-6 transition-all duration-300 hover:bg-white hover:border-orange-300 hover:shadow-xl"
+                className="group bg-white/80 border border-orange-100 rounded-lg p-6 transition-all duration-300 hover:bg-white hover:border-orange-300"
               >
-                <div className="w-14 h-14 bg-gradient-to-br from-orange-100 to-red-100 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center mb-4 transition-transform duration-300">
                   <div className="text-orange-600">
                     {benefit.icon}
                   </div>
@@ -212,12 +192,12 @@ const VendorApplication = () => {
           viewport={{ once: true }}
           className="max-w-5xl mx-auto"
         >
-          <div className="bg-white/90 backdrop-blur-lg border border-gray-200 rounded-3xl overflow-hidden shadow-xl">
-            <div className="grid md:grid-cols-2 gap-0">
+          <div className="bg-white/90 border border-gray-200 rounded-xl overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
               {/* Features List */}
               <div className="p-8 sm:p-10 lg:p-12">
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-orange-600 to-red-600 rounded-xl flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center mr-4">
                     <FiStar className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
@@ -228,13 +208,13 @@ const VendorApplication = () => {
                   {features.map((feature, index) => (
                     <motion.li
                       key={index}
-                      initial={{ opacity: 0, x: -20 }}
+                      initial={{ opacity: 0, x: 0 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.5, delay: index * 0.1 }}
                       viewport={{ once: true }}
                       className="flex items-start"
                     >
-                      <FiCheckCircle className="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
+                      <FiCheckCircle className="w-6 h-6 text-forest mr-3 flex-shrink-0 mt-0.5" />
                       <span className="text-gray-700 text-base sm:text-lg">
                         {feature}
                       </span>
@@ -244,11 +224,9 @@ const VendorApplication = () => {
               </div>
 
               {/* CTA Card */}
-              <div className="bg-gradient-to-br from-orange-50 to-red-50 border-l border-gray-200 p-8 sm:p-10 lg:p-12 flex flex-col justify-center">
+              <div className="bg-mist border-l border-gray-200 p-8 sm:p-10 lg:p-12 flex flex-col justify-center">
                 <div className="mb-6">
-                  <div className="inline-flex items-center px-4 py-2 bg-orange-100 rounded-full mb-4">
-                    <span className="text-orange-700 font-semibold text-sm uppercase">Limited Vendor Spots</span>
-                  </div>
+                  <p className="text-ember-deep font-semibold mb-3">Limited Vendor Spots</p>
                   <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
                     Ready to Join?
                   </h3>
@@ -261,13 +239,9 @@ const VendorApplication = () => {
                   href="https://selar.com/1717s75715"
                   target="_blank"
                   rel="noopener noreferrer"
-                  whileHover={{ scale: 1.02, y: -2 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="group w-full inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-orange-600 to-red-600 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300"
-                  style={{ backgroundColor: '#ff7300' }}
+                  className="group w-full inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-orange-600 rounded-md transition-all duration-300"
                 >
                   <span className="mr-3">Apply Now</span>
-                  <FiArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" />
                 </motion.a>
 
                 <p className="text-gray-600 text-sm text-center mt-4">

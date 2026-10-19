@@ -1,1 +1,148 @@
 @import "tailwindcss";
+
+/*
+  HireGround design tokens.
+  Colours come from the event itself: the brand orange, the deep green worn by
+  organisers and corps members, and a sun yellow for small highlights.
+  Colour is used as flat blocks, never as gradients.
+*/
+@theme {
+  --font-sans: "Archivo", ui-sans-serif, system-ui, sans-serif;
+
+  --color-ink: #1b1f1d;
+  --color-muted: #5b6660;
+  --color-mist: #f2f5f3;
+  --color-line: #e1e6e3;
+
+  --color-ember: #f26a1b;
+  --color-ember-deep: #c2410c;
+  --color-forest: #0e4d3a;
+  --color-forest-deep: #0a3a2c;
+  --color-sun: #ffc233;
+
+  /* Remap Tailwind's orange so every existing orange utility lands on the
+     brand scale. 600 and up pass WCAG AA with white text and as text on white. */
+  --color-orange-50: #fff4ec;
+  --color-orange-100: #ffe6d4;
+  --color-orange-200: #ffc9a6;
+  --color-orange-300: #ffa36e;
+  --color-orange-400: #f7843f;
+  --color-orange-500: #f26a1b;
+  --color-orange-600: #c2410c;
+  --color-orange-700: #9a330b;
+  --color-orange-800: #7a2a0c;
+  --color-orange-900: #5c200a;
+
+  /* Red only ever appeared as the far end of orange gradients. */
+  --color-red-50: #fff4ec;
+  --color-red-100: #ffe6d4;
+  --color-red-200: #ffc9a6;
+  --color-red-400: #f7843f;
+  --color-red-500: #c2410c;
+  --color-red-600: #c2410c;
+  --color-red-700: #9a330b;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background: #fff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+
+  /* Headlines use Archivo's expanded width, like an event poster. */
+  h1,
+  h2 {
+    font-stretch: 118%;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.02;
+    text-wrap: balance;
+  }
+
+  h3 {
+    font-stretch: 106%;
+    letter-spacing: -0.01em;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ember);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 0.375rem;
+    padding: 0.875rem 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    white-space: nowrap;
+    transition: background-color 150ms, color 150ms, border-color 150ms;
+  }
+
+  /* Dark text on ember keeps AA contrast (5.4:1); white on ember does not. */
+  .btn-primary {
+    background: var(--color-ember);
+    color: var(--color-ink);
+  }
+  .btn-primary:hover {
+    background: var(--color-ink);
+    color: #fff;
+  }
+
+  .btn-secondary {
+    border: 1.5px solid var(--color-ink);
+    color: var(--color-ink);
+  }
+  .btn-secondary:hover {
+    background: var(--color-ink);
+    color: #fff;
+  }
+
+  .btn-on-dark {
+    border: 1.5px solid rgb(255 255 255 / 0.7);
+    color: #fff;
+  }
+  .btn-on-dark:hover {
+    background: #fff;
+    border-color: #fff;
+    color: var(--color-forest);
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 1.2rem + 3.2vw, 3.5rem);
+    color: var(--color-ink);
+  }
+
+  .lede {
+    font-size: 1.125rem;
+    line-height: 1.65;
+    color: var(--color-muted);
+    max-width: 40rem;
+  }
+}

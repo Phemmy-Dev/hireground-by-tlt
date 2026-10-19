@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FiX, FiCalendar, FiMapPin, FiUsers } from 'react-icons/fi'
+import { FiX } from 'react-icons/fi'
 import Navbar from '../components/Navbar'
+import PageHero from '../components/PageHero'
 import Cta from '../components/sections/Cta'
 import Footer from '../components/Footer'
 import CountdownModal from '../components/CountdownModal'
@@ -14,7 +15,7 @@ const Speakers = () => {
 
   // Placeholder component for speaker images
   const SpeakerImagePlaceholder = ({ name, className }) => (
-    <div className={`${className} bg-gradient-to-br from-orange-100 to-red-100 flex flex-col items-center justify-center p-2`}>
+    <div className={`${className} bg-orange-50 flex flex-col items-center justify-center p-2`}>
       <div className="w-8 h-8 sm:w-12 sm:h-12 mb-1 sm:mb-2 text-orange-400 flex-shrink-0">
         <svg fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
@@ -69,14 +70,14 @@ const Speakers = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+        className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4"
         onClick={onClose}
       >
         <motion.div
           initial={{ opacity: 0, scale: 0.9, y: 50 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.9, y: 50 }}
-          className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+          className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto"
           onClick={(e) => e.stopPropagation()}
         >
           {/* Modal Header */}
@@ -94,7 +95,7 @@ const Speakers = () => {
                 <SpeakerImage
                   src={speaker.image}
                   alt={speaker.name}
-                  className="w-32 h-32 md:w-40 md:h-40 rounded-2xl"
+                  className="w-32 h-32 md:w-40 md:h-40 rounded-lg"
                   isModal={true}
                 />
               </div>
@@ -130,42 +131,18 @@ const Speakers = () => {
   )
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-mist">
       <div className={`transition-all duration-300 ${showCountdownModal ? 'blur-sm' : ''}`}>
         <Navbar />
       
-      {/* Hero Section */}
-      <section className="pt-32 sm:pt-36 lg:pt-40 pb-12 bg-gradient-to-r from-orange-600 to-red-600">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center text-white">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                Meet Our <span className="text-yellow-300">Speakers</span>
-              </h1>
-              <p className="text-xl md:text-2xl opacity-90 mb-8 leading-relaxed">
-                Learn from industry leaders, innovators, and change-makers who are shaping the future of work and technology across Africa and beyond.
-              </p>
-              <div className="flex flex-wrap justify-center gap-8 text-white/80">
-                <div className="flex items-center gap-2">
-                  <FiUsers className="w-5 h-5" />
-                  <span>Expert Speakers</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <FiMapPin className="w-5 h-5" />
-                  <span>Kwara State, Nigeria</span>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        kicker="HireGround 2026, Kwara State, Nigeria"
+        title="Meet Our Speakers"
+        intro="Learn from industry leaders, innovators, and change-makers who are shaping the future of work and technology across Africa and beyond."
+      />
 
       {/* Speakers Grid */}
-      <section className="py-16">
+      <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <motion.div
@@ -179,12 +156,12 @@ const Speakers = () => {
                   key={speaker.id}
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer"
+                  transition={{ duration: 0.4 }}
+                  className="bg-white rounded-lg border border-line hover:border-ink transition-colors overflow-hidden group cursor-pointer"
                   onClick={() => setSelectedSpeaker(speaker)}
                 >
                   {/* Speaker Image */}
-                  <div className="relative h-64 overflow-hidden rounded-t-2xl">
+                  <div className="relative aspect-[4/5] overflow-hidden">
                     <SpeakerImage
                       src={speaker.image}
                       alt={speaker.name}
@@ -207,7 +184,7 @@ const Speakers = () => {
                     {/* Read More Button */}
                     <button className="text-orange-600 font-semibold text-sm hover:text-orange-700 transition-colors duration-300 flex items-center gap-1">
                       Read Full Bio
-                      <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
                     </button>

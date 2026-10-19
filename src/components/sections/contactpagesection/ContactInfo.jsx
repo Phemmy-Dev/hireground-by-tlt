@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FiMail, FiPhone, FiMapPin, FiClock, FiTwitter, FiLinkedin, FiInstagram, FiGlobe } from 'react-icons/fi'
+import { FiMail, FiPhone, FiMapPin, FiClock, FiInstagram } from 'react-icons/fi'
 
 const ContactInfo = () => {
   const contactMethods = [
@@ -10,7 +10,7 @@ const ContactInfo = () => {
       primary: "hireground@thelightutors.com",
       description: "For general inquiries and partnerships",
       action: "mailto:hireground@thelightutors.com",
-      color: "bg-blue-100 text-blue-600"
+      color: "bg-mist text-forest"
     },
     {
       icon: <FiPhone className="w-6 h-6" />,
@@ -19,7 +19,7 @@ const ContactInfo = () => {
       secondary: "Available during business hours",
       description: "Speak directly with our team",
       action: "tel:+2349132681049",
-      color: "bg-green-100 text-green-600"
+      color: "bg-mist text-forest"
     },
     // {
     //   icon: <FiMapPin className="w-6 h-6" />,
@@ -28,7 +28,7 @@ const ContactInfo = () => {
     //   secondary: "Banquet Hall, Ilorin",
     //   description: "Event venue",
     //   action: "#",
-    //   color: "bg-purple-100 text-purple-600"
+    //   color: "bg-mist text-forest"
     // },
     {
       icon: <FiClock className="w-6 h-6" />,
@@ -42,10 +42,7 @@ const ContactInfo = () => {
   ]
 
   const socialLinks = [
-    { icon: <FiTwitter className="w-5 h-5" />, name: "Twitter", url: "#", color: "hover:text-blue-400" },
-    { icon: <FiLinkedin className="w-5 h-5" />, name: "LinkedIn", url: "#", color: "hover:text-blue-600" },
-    { icon: <FiInstagram className="w-5 h-5" />, name: "Instagram", url: "https://www.instagram.com/thelightutors.csr", color: "hover:text-pink-500" },
-    { icon: <FiGlobe className="w-5 h-5" />, name: "Website", url: "#", color: "hover:text-orange-500" }
+    { icon: <FiInstagram className="w-5 h-5" />, name: "Instagram", url: "https://www.instagram.com/thelightutors.csr", color: "hover:text-forest" }
   ]
 
   const officeHours = [
@@ -64,19 +61,19 @@ const ContactInfo = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="mb-16"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Multiple Ways to <span className="text-orange-600">Connect</span>
+            Multiple Ways to Connect
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-3xl">
             Choose the communication method that works best for you. We're available through 
             various channels to ensure you can reach us easily.
           </p>
         </motion.div>
 
         {/* Contact Methods Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {contactMethods.map((method, index) => (
             <motion.a
               key={index}
@@ -85,8 +82,7 @@ const ContactInfo = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              whileHover={{ scale: 1.05, y: -5 }}
-              className="group bg-white rounded-3xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 text-center block"
+              className="group bg-white rounded-xl p-8 border border-gray-100 transition-all duration-300 text-center block"
             >
               <div className={`w-16 h-16 ${method.color} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
                 {method.icon}
@@ -109,21 +105,21 @@ const ContactInfo = () => {
               </p>
 
               {/* Hover indicator */}
-              <div className="w-0 h-1 bg-gradient-to-r from-orange-500 to-red-500 mx-auto mt-4 group-hover:w-full transition-all duration-300 rounded-full"></div>
+              <div className="w-0 h-1 bg-orange-600 mx-auto mt-4 group-hover:w-full transition-all duration-300 rounded-full"></div>
             </motion.a>
           ))}
         </div>
 
         {/* Additional Info Section */}
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           
           {/* Office Hours */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: 0 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="bg-gradient-to-br from-gray-50 to-orange-50 rounded-3xl p-8"
+            className="bg-mist rounded-xl p-8"
           >
             <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
               <div className="w-8 h-8 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center">
@@ -150,14 +146,14 @@ const ContactInfo = () => {
 
           {/* Social Media & Additional Info */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x: 0 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
             {/* Social Media */}
-            <div className="bg-gradient-to-br from-gray-50 to-red-50 rounded-3xl p-8">
+            <div className="bg-mist rounded-xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Follow Our Journey</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Stay updated with the latest news, behind-the-scenes content, and announcements 
@@ -169,8 +165,6 @@ const ContactInfo = () => {
                   <motion.a
                     key={index}
                     href={social.url}
-                    whileHover={{ scale: 1.1, y: -2 }}
-                    whileTap={{ scale: 0.95 }}
                     className={`w-12 h-12 bg-white rounded-xl shadow-md flex items-center justify-center text-gray-600 ${social.color} transition-all duration-300`}
                   >
                     {social.icon}
@@ -180,7 +174,7 @@ const ContactInfo = () => {
             </div>
 
             {/* Quick Response Guarantee */}
-            <div className="bg-gradient-to-br from-orange-500 to-red-500 rounded-3xl p-8 text-white">
+            <div className="bg-orange-600 rounded-xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-4">Our Promise to You</h3>
               <div className="space-y-3">
                 <div className="flex items-center gap-3">

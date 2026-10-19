@@ -59,22 +59,22 @@ const ContactForm = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-16"
+            className="mb-16"
           >
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Send Us a <span className="text-orange-600">Message</span>
+              Send Us a Message
             </h2>
-            <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-2xl">
               Tell us about your inquiry and we'll get back to you within 24 hours. 
               We're excited to hear from you!
             </p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             
             {/* Inquiry Types Sidebar */}
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
+              initial={{ opacity: 0, x: 0 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
@@ -85,7 +85,6 @@ const ContactForm = () => {
                 {inquiryTypes.map((type) => (
                   <motion.label
                     key={type.value}
-                    whileHover={{ scale: 1.02 }}
                     className={`block p-4 rounded-xl border-2 cursor-pointer transition-all duration-300 ${
                       formData.inquiryType === type.value
                         ? 'border-orange-500 bg-orange-50'
@@ -122,22 +121,22 @@ const ContactForm = () => {
 
             {/* Main Form */}
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
+              initial={{ opacity: 0, x: 0 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
               className="lg:col-span-2"
             >
-              <form onSubmit={handleSubmit} className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100">
+              <form onSubmit={handleSubmit} className="bg-white rounded-xl p-8 border border-gray-100">
                 
                 {/* Name and Email Row */}
-                <div className="grid sm:grid-cols-2 gap-6 mb-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
                       Full Name *
                     </label>
                     <div className="relative">
-                      <FiUser className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+                      <FiUser className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
                       <input
                         type="text"
                         id="name"
@@ -156,7 +155,7 @@ const ContactForm = () => {
                       Email Address *
                     </label>
                     <div className="relative">
-                      <FiMail className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+                      <FiMail className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
                       <input
                         type="email"
                         id="email"
@@ -212,12 +211,10 @@ const ContactForm = () => {
                 <motion.button
                   type="submit"
                   disabled={isSubmitting}
-                  whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
-                  whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
                   className={`w-full py-4 px-8 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-3 ${
                     isSubmitting
                       ? 'bg-gray-400 cursor-not-allowed'
-                      : 'bg-orange-600 hover:bg-orange-700 shadow-lg hover:shadow-xl'
+                      : 'bg-orange-600 hover:bg-orange-700 '
                   } text-white`}
                 >
                   {isSubmitting ? (
@@ -238,10 +235,10 @@ const ContactForm = () => {
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="mt-6 p-4 bg-green-50 border border-green-200 rounded-xl flex items-center gap-3"
+                    className="mt-6 p-4 bg-mist border border-line rounded-xl flex items-center gap-3"
                   >
-                    <FiCheck className="w-5 h-5 text-green-600" />
-                    <p className="text-green-700 font-medium">
+                    <FiCheck className="w-5 h-5 text-forest" />
+                    <p className="text-forest font-medium">
                       Thank you! Your message has been sent successfully. We'll get back to you within 24 hours.
                     </p>
                   </motion.div>

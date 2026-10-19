@@ -15,43 +15,43 @@ const AcademyFeatures = () => {
             icon: HiBriefcase,
             title: 'Employability Training',
             description: 'Master workplace readiness skills that employers actively seek in candidates.',
-            color: 'from-orange-500 to-red-500',
-            bgColor: 'from-orange-500/10 to-red-500/10',
+            color: 'bg-forest',
+            bgColor: '',
         },
         {
             icon: HiLightBulb,
             title: 'Soft Skills Development',
             description: 'Build essential communication, teamwork, and problem-solving abilities.',
-            color: 'from-blue-500 to-cyan-500',
-            bgColor: 'from-blue-500/10 to-cyan-500/10',
+            color: 'bg-ember',
+            bgColor: '',
         },
         {
             icon: HiDocumentText,
             title: 'CV & LinkedIn Support',
             description: 'Get hands-on help crafting a standout CV and optimizing your LinkedIn profile.',
-            color: 'from-purple-500 to-pink-500',
-            bgColor: 'from-purple-500/10 to-pink-500/10',
+            color: 'bg-forest-deep',
+            bgColor: '',
         },
         {
             icon: HiUserGroup,
             title: 'Interview Preparation',
             description: 'Practice with mock interviews and receive personalized feedback from mentors.',
-            color: 'from-green-500 to-emerald-500',
-            bgColor: 'from-green-500/10 to-emerald-500/10',
+            color: 'bg-orange-600',
+            bgColor: '',
         },
         {
             icon: HiChartBar,
             title: 'Skill Assessment',
             description: 'Track your growth with pre and post evaluations to measure real progress.',
-            color: 'from-amber-500 to-orange-500',
-            bgColor: 'from-amber-500/10 to-orange-500/10',
+            color: 'bg-forest',
+            bgColor: '',
         },
         {
             icon: HiSparkles,
             title: 'Talent Pool Access',
             description: 'Get added to HireGround\'s talent pool for future job and internship recommendations.',
-            color: 'from-rose-500 to-red-500',
-            bgColor: 'from-rose-500/10 to-red-500/10',
+            color: 'bg-ink',
+            bgColor: '',
         },
     ]
 
@@ -78,11 +78,11 @@ const AcademyFeatures = () => {
     }
 
     return (
-        <section id="learn-more" className="relative py-20 lg:py-32 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
+        <section id="learn-more" className="relative py-20 lg:py-32 bg-white overflow-hidden">
             {/* Background Decorations */}
             <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute top-0 left-1/4 w-72 h-72 bg-orange-100 rounded-full blur-3xl opacity-30"></div>
-                <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-30"></div>
+                <div className="hidden absolute top-0 left-1/4 w-72 h-72 bg-orange-100 rounded-full blur-3xl opacity-30"></div>
+                <div className="hidden absolute bottom-0 right-1/4 w-96 h-96 bg-mist rounded-full blur-3xl opacity-30"></div>
             </div>
 
             <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
@@ -92,27 +92,18 @@ const AcademyFeatures = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-center mb-16"
+                    className="mb-16"
                 >
-                    <motion.span
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        className="inline-flex items-center px-5 py-2 bg-orange-100 rounded-full text-orange-700 font-semibold text-sm mb-6"
-                    >
-                        <HiSparkles className="w-4 h-4 mr-2" />
-                        What You'll Gain
-                    </motion.span>
 
                     <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
                         Everything You Need to
                         <br />
-                        <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+                        
                             Launch Your Career
-                        </span>
+                        
                     </h2>
 
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                    <p className="text-xl text-gray-600 max-w-3xl">
                         Our comprehensive program covers all aspects of career readiness, from foundational skills to direct employer connections.
                     </p>
                 </motion.div>
@@ -129,15 +120,14 @@ const AcademyFeatures = () => {
                         <motion.div
                             key={index}
                             variants={itemVariants}
-                            whileHover={{ y: -8, scale: 1.02 }}
-                            className="group relative bg-white rounded-3xl p-8 shadow-lg shadow-gray-200/50 border border-gray-100 hover:shadow-2xl hover:border-orange-200/50 transition-all duration-300"
+                            className="group relative bg-white rounded-xl p-8 shadow-gray-200/50 border border-gray-100 hover:border-orange-200/50 transition-all duration-300"
                         >
                             {/* Gradient Background on Hover */}
-                            <div className={`absolute inset-0 bg-gradient-to-br ${feature.bgColor} opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl`}></div>
+                            <div className={`absolute inset-0 hidden transition-opacity duration-300 rounded-3xl`}></div>
 
                             <div className="relative z-10">
                                 {/* Icon */}
-                                <div className={`w-14 h-14 mb-6 rounded-2xl bg-gradient-to-br ${feature.color} flex items-center justify-center shadow-lg`}>
+                                <div className={`w-14 h-14 mb-6 rounded-2xl ${feature.color} flex items-center justify-center`}>
                                     <feature.icon className="w-7 h-7 text-white" />
                                 </div>
 
@@ -151,7 +141,7 @@ const AcademyFeatures = () => {
 
                                 {/* Decorative Corner */}
                                 <div className="absolute top-4 right-4 w-8 h-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <div className={`w-full h-full rounded-full bg-gradient-to-br ${feature.color} opacity-20`}></div>
+                                    <div className={`w-full h-full hidden`}></div>
                                 </div>
                             </div>
                         </motion.div>
@@ -170,7 +160,7 @@ const AcademyFeatures = () => {
                         Cohort 1 applications are currently closed. Stay tuned for our next cohort!
                     </p>
                     <div
-                        className="inline-flex items-center px-8 py-4 bg-gray-400 text-white font-semibold rounded-full shadow-lg opacity-80 cursor-not-allowed"
+                        className="inline-flex items-center px-8 py-4 bg-gray-400 text-white font-semibold rounded-md opacity-80 cursor-not-allowed"
                     >
                         Applications Closed
                     </div>

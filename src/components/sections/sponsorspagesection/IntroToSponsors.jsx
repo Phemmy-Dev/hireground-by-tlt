@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 
 const IntroToSponsors = () => {
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-orange-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
+    <section className="py-20 lg:py-28 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl">
           
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -13,25 +13,25 @@ const IntroToSponsors = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 sm:mb-8">
-              Welcome to <span className="text-orange-600">HireGround</span>
+            <h2 className="section-title mb-8">
+              Welcome to HireGround
             </h2>
             
-            <div className="space-y-6 text-base sm:text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+            <div className="space-y-6 text-lg text-ink/85 leading-relaxed">
               <p>
-                HireGround is more than just a career fair. It's a transformative movement designed to bridge the gap between talent and opportunity across Nigeria. On December 4th, 2025, we're bringing together over 1,000 onsite participants and 10,000+ virtual attendees, creating the largest career development platform in the country.
+                HireGround is more than just a career fair. It's a transformative movement designed to bridge the gap between talent and opportunity across Nigeria. We're bringing together over 1,000 onsite participants and 10,000+ virtual attendees, creating the largest career development and professional growth platform in the region.
               </p>
               
               <p>
-                As a HireGround sponsor, you're not just supporting an event; you're investing in the future workforce of Nigeria. Our participants are ambitious young professionals, fresh graduates, and career changers who are serious about their professional growth. They represent the next generation of leaders, innovators, and dedicated employees who will drive businesses forward.
+                Whether you join us as a <strong>corporate sponsor</strong> or an <strong>exhibiting brand</strong>, you are placing your business directly in front of ambitious young professionals, fresh graduates, tech innovators, and career changers who are eager to engage with forward-thinking solutions.
               </p>
 
               <p>
-                This is your opportunity to showcase your brand to a highly engaged audience, connect with top-tier talent, and demonstrate your commitment to youth empowerment and professional development. Join us in creating pathways to success and building the careers that will shape Nigeria's future.
+                Showcase your products in our high-traffic exhibition hall, take the main stage for an exclusive speaking pitch to the entire audience, or cement your organization as an official champion of youth empowerment and economic development.
               </p>
               
-              <p className="text-xl sm:text-2xl font-semibold text-orange-600 mt-8">
-                LET'S BUILD THE FUTURE WORKFORCE TOGETHER.
+              <p className="text-2xl font-bold text-ember-deep mt-8">
+                Let's build the future workforce together.
               </p>
             </div>
           </motion.div>

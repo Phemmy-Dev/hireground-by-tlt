@@ -1,21 +1,66 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { FiArrowRight, FiMail, FiPhone, FiDownload, FiCheck, FiClock, FiUsers } from 'react-icons/fi'
+import { FiArrowRight, FiMail, FiPhone, FiDownload, FiCheck, FiClock, FiUsers, FiShoppingBag, FiCopy } from 'react-icons/fi'
 
 const SponsorCta = () => {
   const [hoveredButton, setHoveredButton] = useState(null)
 
+  const [copied, setCopied] = useState(false)
+
+  const sponsorMailto = `mailto:hireground@thelightutors.com?subject=${encodeURIComponent(
+    'HireGround 2026 - Sponsorship Inquiry'
+  )}&body=${encodeURIComponent(
+    `Hello HireGround Team,
+
+I am writing to inquire about sponsorship opportunities for HireGround 2026.
+
+Organization / Brand Name: 
+Contact Person: 
+Phone Number: 
+Target Sponsorship Tier / Interests: 
+Key Goals (e.g., Brand Visibility, Talent Recruitment, CSR): 
+
+Please share the official sponsorship deck and available tiers with us.
+
+Best regards,`
+  )}`
+
+  const exhibitorMailto = `mailto:hireground@thelightutors.com?subject=${encodeURIComponent(
+    'HireGround 2026 - Exhibition & Stage Speaking Inquiry'
+  )}&body=${encodeURIComponent(
+    `Hello HireGround Team,
+
+We would like to inquire about securing an exhibition booth and a stage speaking/presentation slot at HireGround 2026.
+
+Organization / Business Name: 
+Contact Person: 
+Phone Number: 
+Products / Services to Exhibit: 
+Preferred Speaking / Presentation Duration (Negotiable, e.g., 5 mins, 10 mins, custom): 
+Special Requirements (e.g., AV / Projector display, power supply, specific booth size): 
+
+Please share the pricing options and booth details with us.
+
+Best regards,`
+  )}`
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText('hireground@thelightutors.com')
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2500)
+  }
+
   // Urgency indicators
   const urgencyPoints = [
-    { icon: <FiClock className="w-4 h-4" />, text: "Limited sponsorship slots available" },
-    { icon: <FiUsers className="w-4 h-4" />, text: "Join 50+ confirmed industry leaders" },
-    { icon: <FiCheck className="w-4 h-4" />, text: "Early bird pricing ends soon" }
+    { icon: <FiClock className="w-4 h-4" />, text: "Limited sponsorship & stage slots available" },
+    { icon: <FiUsers className="w-4 h-4" />, text: "1,000+ In-person & 10,000+ Virtual Audience" },
+    { icon: <FiCheck className="w-4 h-4" />, text: "Flexible speaking durations tailored to budget" }
   ]
 
   return (
     <section className="relative py-20 lg:py-28 overflow-hidden">
       {/* Unique background with geometric pattern */}
-      <div className="absolute inset-0 bg-gradient-to-br from-orange-600 via-red-600 to-orange-800">
+      <div className="absolute inset-0 bg-orange-600">
         {/* Animated background elements */}
         <div className="absolute inset-0 opacity-10">
           <motion.div
@@ -25,10 +70,10 @@ const SponsorCta = () => {
             }}
             transition={{ 
               duration: 20,
-              repeat: Infinity,
+              repeat: 0,
               ease: "linear"
             }}
-            className="absolute top-10 right-10 w-64 h-64 border-2 border-white rounded-full"
+            className="hidden"
           />
           <motion.div
             animate={{ 
@@ -37,10 +82,10 @@ const SponsorCta = () => {
             }}
             transition={{ 
               duration: 25,
-              repeat: Infinity,
+              repeat: 0,
               ease: "linear"
             }}
-            className="absolute bottom-10 left-10 w-48 h-48 border border-white rounded-full"
+            className="hidden"
           />
           <motion.div
             animate={{ 
@@ -48,10 +93,10 @@ const SponsorCta = () => {
             }}
             transition={{ 
               duration: 6,
-              repeat: Infinity,
+              repeat: 0,
               ease: "easeInOut"
             }}
-            className="absolute top-1/2 left-1/4 w-32 h-32 bg-white/5 rounded-2xl rotate-45"
+            className="absolute top-1/2 left-1/4 w-32 h-32 bg-white/5 rounded-lg rotate-45"
           />
         </div>
         
@@ -70,22 +115,29 @@ const SponsorCta = () => {
             transition={{ duration: 0.8 }}
           >
             {/* Attention-grabbing badge */}
-            <div className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full mb-6">
-              <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
-              <span className="text-white text-sm font-semibold">Partnership Opportunities Open</span>
-            </div>
+            <p className="text-sun font-semibold mb-6">Partnership & Exhibition Inquiries Open</p>
 
             {/* Compelling headline */}
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Don't Just Watch.
               <br />
-              <span className="text-yellow-300">Shape History.</span>
+              Take Center Stage.
             </h2>
 
             <p className="text-xl sm:text-2xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Join the brands and leaders who are already transforming Nigeria's professional landscape. 
-              Your sponsorship decision today becomes tomorrow's success story.
+              Join the brands and leaders who are transforming Nigeria's professional landscape. 
+              Whether sponsoring or exhibiting on the main stage, your impact starts here.
             </p>
+
+            {/* Urgency indicators */}
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-10 text-white/90 text-sm">
+              {urgencyPoints.map((item, index) => (
+                <div key={index} className="flex items-center gap-2">
+                  <span className="text-sun">{item.icon}</span>
+                  <span>{item.text}</span>
+                </div>
+              ))}
+            </div>
           </motion.div>
 
           {/* CTA Buttons with unique design */}
@@ -94,56 +146,48 @@ const SponsorCta = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
+            className="flex flex-col sm:flex-row gap-5 justify-center mb-8"
           >
             {/* Primary CTA - Become a Sponsor */}
             <motion.a
-              href="mailto:hireground@thelightutors.com"
+              href={sponsorMailto}
               onHoverStart={() => setHoveredButton('sponsor')}
               onHoverEnd={() => setHoveredButton(null)}
-              whileHover={{ scale: 1.05, y: -3 }}
-              whileTap={{ scale: 0.95 }}
-              className="group relative inline-flex items-center px-10 py-5 bg-white text-orange-600 font-bold rounded-2xl shadow-2xl overflow-hidden transition-all duration-300"
+              className="group relative inline-flex items-center justify-center px-8 py-5 bg-white text-orange-600 font-bold rounded-md overflow-hidden transition-all duration-300 text-base sm:text-lg"
             >
-              {/* Button background animation */}
-              <motion.div
-                initial={{ x: '-100%' }}
-                animate={{ x: hoveredButton === 'sponsor' ? '0%' : '-100%' }}
-                transition={{ duration: 0.3 }}
-                className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-orange-400"
-              />
-              
               <div className="relative flex items-center">
-                <FiMail className="w-6 h-6 mr-3 group-hover:text-white transition-colors duration-300" />
-                <span className="text-lg group-hover:text-white transition-colors duration-300">
-                  Become a Sponsor
-                </span>
-                <FiArrowRight className="w-6 h-6 ml-3 group-hover:text-white group-hover:translate-x-1 transition-all duration-300" />
+                <FiMail className="w-5 h-5 mr-3 text-orange-600 transition-transform" />
+                <span>Become a Sponsor</span>
               </div>
             </motion.a>
 
-            {/* Secondary CTA - Download Package
-            <motion.button
-              onHoverStart={() => setHoveredButton('download')}
+            {/* Secondary CTA - Exhibition & Speaking Slot */}
+            <motion.a
+              href={exhibitorMailto}
+              onHoverStart={() => setHoveredButton('exhibit')}
               onHoverEnd={() => setHoveredButton(null)}
-              whileHover={{ scale: 1.05, y: -3 }}
-              whileTap={{ scale: 0.95 }}
-              className="group relative inline-flex items-center px-10 py-5 border-2 border-white/30 text-white font-bold rounded-2xl backdrop-blur-sm overflow-hidden transition-all duration-300 hover:border-white"
+              className="group relative inline-flex items-center justify-center px-8 py-5 bg-forest-deep border-2 border-white/40 text-white font-bold rounded-md overflow-hidden transition-all duration-300 text-base sm:text-lg hover:border-white"
             >
-              <motion.div
-                initial={{ scale: 0 }}
-                animate={{ scale: hoveredButton === 'download' ? 1 : 0 }}
-                transition={{ duration: 0.3 }}
-                className="absolute inset-0 bg-white/20 rounded-2xl"
-              />
-              
               <div className="relative flex items-center">
-                <FiDownload className="w-6 h-6 mr-3 group-hover:scale-110 transition-transform duration-300" />
-                <span className="text-lg">Download Packages</span>
-                <FiArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform duration-300" />
+                <FiShoppingBag className="w-5 h-5 mr-3 text-sun transition-transform" />
+                <span>Exhibition & Stage Slot</span>
               </div>
-            </motion.button> */}
+            </motion.a>
           </motion.div>
+
+          {/* Quick Copy Email Widget */}
+          <div className="inline-flex items-center gap-3 px-5 py-2.5 bg-black/30 border border-white/20 rounded-xl text-sm text-white/90">
+            <span>Official Email:</span>
+            <span className="font-semibold text-sun">hireground@thelightutors.com</span>
+            <button
+              onClick={handleCopyEmail}
+              className="p-1.5 hover:bg-white/20 rounded-lg text-white transition-all ml-1"
+              title="Copy email to clipboard"
+            >
+              {copied ? <FiCheck className="w-4 h-4 text-sun" /> : <FiCopy className="w-4 h-4" />}
+            </button>
+            {copied && <span className="text-xs text-sun font-medium">Copied!</span>}
+          </div>
 
           {/* Final compelling statement */}
           <motion.div
@@ -164,15 +208,15 @@ const SponsorCta = () => {
       {/* Floating action elements */}
       <motion.div
         animate={{ y: [0, -10, 0] }}
-        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+        transition={{ duration: 3, repeat: 0, ease: "easeInOut" }}
         className="absolute bottom-10 right-10 hidden lg:block"
       >
-        <div className="w-4 h-4 bg-yellow-300 rounded-full shadow-lg"></div>
+        <div className="w-4 h-4 bg-sun rounded-full"></div>
       </motion.div>
       
       <motion.div
         animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+        transition={{ duration: 4, repeat: 0, ease: "easeInOut" }}
         className="absolute top-20 left-10 hidden lg:block"
       >
         <div className="w-3 h-3 bg-white/50 rounded-full"></div>

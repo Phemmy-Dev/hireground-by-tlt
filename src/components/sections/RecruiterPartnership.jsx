@@ -42,7 +42,7 @@ const RecruiterPartnership = () => {
   ]
 
   return (
-    <section className="relative py-16 sm:py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-orange-900">
+    <section className="relative py-16 sm:py-20 lg:py-32 overflow-hidden bg-forest-deep">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -52,10 +52,10 @@ const RecruiterPartnership = () => {
           }}
           transition={{ 
             duration: 30,
-            repeat: Infinity,
+            repeat: 0,
             ease: "linear"
           }}
-          className="absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-br from-orange-500/10 to-red-500/10 rounded-full blur-3xl"
+          className="hidden absolute -top-40 -right-40 w-96 h-96 rounded-full blur-3xl"
         />
         <motion.div
           animate={{ 
@@ -64,18 +64,15 @@ const RecruiterPartnership = () => {
           }}
           transition={{ 
             duration: 35,
-            repeat: Infinity,
+            repeat: 0,
             ease: "linear"
           }}
-          className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-full blur-3xl"
+          className="hidden absolute -bottom-40 -left-40 w-80 h-80 rounded-full blur-3xl"
         />
         
         {/* Grid Pattern */}
         <div className="absolute inset-0 opacity-5">
-          <div className="h-full w-full" style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
-            backgroundSize: '50px 50px'
-          }}></div>
+          <div className="h-full w-full" style={{ display: 'none' }}></div>
         </div>
       </div>
 
@@ -86,21 +83,9 @@ const RecruiterPartnership = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16 lg:mb-20"
+          className="mb-16 lg:mb-20"
         >
           {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="inline-flex items-center px-6 py-3 bg-orange-500/20 backdrop-blur-sm rounded-full border border-orange-500/30 mb-8"
-          >
-            <FiTarget className="w-5 h-5 text-orange-400 mr-2" />
-            <span className="text-orange-200 font-medium text-sm sm:text-base uppercase tracking-wide">
-              For Recruiters & Employers
-            </span>
-          </motion.div>
 
           {/* Main Title */}
           <motion.h2
@@ -111,9 +96,9 @@ const RecruiterPartnership = () => {
             className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6"
           >
             <span className="text-white">Recruit the </span>
-            <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
+            
               Best Talent
-            </span>
+            
           </motion.h2>
 
           {/* Subtitle */}
@@ -122,7 +107,7 @@ const RecruiterPartnership = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-lg sm:text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8"
+            className="text-lg sm:text-xl lg:text-2xl text-gray-300 max-w-3xl leading-relaxed mb-8"
           >
             Partner with HireGround to discover exceptional talent, build your team, and shape the future workforce of Nigeria.
           </motion.p>
@@ -137,7 +122,7 @@ const RecruiterPartnership = () => {
           >
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent mb-2">
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-orange-600 mb-2">
                   {stat.number}
                 </div>
                 <div className="text-gray-400 text-sm sm:text-base font-medium">
@@ -158,12 +143,9 @@ const RecruiterPartnership = () => {
               href="https://forms.gle/cLAcweRz29GtRxcS7"
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              className="group inline-flex items-center px-8 py-4 sm:px-10 sm:py-5 text-lg sm:text-xl font-bold text-gray-900 bg-gradient-to-r from-orange-400 to-red-400 rounded-full shadow-2xl hover:shadow-orange-500/50 transition-all duration-300"
+              className="group inline-flex items-center px-8 py-4 sm:px-10 sm:py-5 text-lg sm:text-xl font-bold text-gray-900 bg-orange-600 rounded-md hover:shadow-orange-500/50 transition-all duration-300"
             >
               <span className="mr-3">Apply to Recruit</span>
-              <FiArrowRight className="w-6 h-6 transform group-hover:translate-x-1 transition-transform duration-300" />
             </motion.a>
           </motion.div>
         </motion.div>
@@ -184,10 +166,9 @@ const RecruiterPartnership = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                whileHover={{ y: -8, scale: 1.02 }}
-                className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 transition-all duration-300 hover:bg-white/10 hover:border-orange-500/30 hover:shadow-xl"
+                className="group bg-white/5 border border-white/10 rounded-lg p-6 transition-all duration-300 hover:bg-white/10 hover:border-orange-500/30"
               >
-                <div className="w-14 h-14 bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-4 transition-transform duration-300">
                   <div className="text-orange-400">
                     {benefit.icon}
                   </div>
@@ -211,12 +192,12 @@ const RecruiterPartnership = () => {
           viewport={{ once: true }}
           className="max-w-5xl mx-auto"
         >
-          <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl overflow-hidden">
-            <div className="grid md:grid-cols-2 gap-0">
+          <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
               {/* Features List */}
               <div className="p-8 sm:p-10 lg:p-12">
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center mr-4">
                     <FiStar className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-2xl sm:text-3xl font-bold text-white">
@@ -227,13 +208,13 @@ const RecruiterPartnership = () => {
                   {features.map((feature, index) => (
                     <motion.li
                       key={index}
-                      initial={{ opacity: 0, x: -20 }}
+                      initial={{ opacity: 0, x: 0 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.5, delay: index * 0.1 }}
                       viewport={{ once: true }}
                       className="flex items-start"
                     >
-                      <FiCheckCircle className="w-6 h-6 text-green-400 mr-3 flex-shrink-0 mt-0.5" />
+                      <FiCheckCircle className="w-6 h-6 text-sun mr-3 flex-shrink-0 mt-0.5" />
                       <span className="text-gray-300 text-base sm:text-lg">
                         {feature}
                       </span>
@@ -243,11 +224,9 @@ const RecruiterPartnership = () => {
               </div>
 
               {/* CTA Card */}
-              <div className="bg-gradient-to-br from-orange-500/10 to-red-500/10 border-l border-white/10 p-8 sm:p-10 lg:p-12 flex flex-col justify-center">
+              <div className="border-l border-white/10 p-8 sm:p-10 lg:p-12 flex flex-col justify-center">
                 <div className="mb-6">
-                  <div className="inline-flex items-center px-4 py-2 bg-orange-500/20 rounded-full mb-4">
-                    <span className="text-orange-300 font-semibold text-sm uppercase">Limited Spots Available</span>
-                  </div>
+                  <p className="text-sun font-semibold mb-3">Limited Spots Available</p>
                   <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
                     Ready to Find Your Next Hire?
                   </h3>
@@ -260,12 +239,9 @@ const RecruiterPartnership = () => {
                   href="https://forms.gle/cLAcweRz29GtRxcS7"
                   target="_blank"
                   rel="noopener noreferrer"
-                  whileHover={{ scale: 1.02, y: -2 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="group w-full inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-gray-900 bg-white rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300"
+                  className="group w-full inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-gray-900 bg-white rounded-md transition-all duration-300"
                 >
                   <span className="mr-3">Submit Application</span>
-                  <FiArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" />
                 </motion.a>
 
                 <p className="text-gray-400 text-sm text-center mt-4">
