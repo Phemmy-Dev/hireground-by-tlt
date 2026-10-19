@@ -156,7 +156,7 @@ const CountdownModal = ({ isOpen, onClose }) => {
                     </div>
                     <div>
                       <p className="text-slate-500 text-sm font-medium">Expected</p>
-                      <p className="text-slate-900 font-semibold">1000+ Attendees</p>
+                      <p className="text-slate-900 font-semibold">500+ Attendees</p>
                     </div>
                   </div>
                 </div>

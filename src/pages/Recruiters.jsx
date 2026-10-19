@@ -13,7 +13,7 @@ const Recruiters = () => {
     {
       icon: <FiUsers className="w-6 h-6" />,
       title: "Access Top Talent",
-      description: "Connect with 1,000+ skilled, job-ready professionals eager to join your team."
+      description: "Connect with 500+ skilled, job-ready professionals eager to join your team."
     },
     {
       icon: <FiTrendingUp className="w-6 h-6" />,
@@ -54,7 +54,7 @@ const Recruiters = () => {
   ]
 
   const stats = [
-    { number: "1,000+", label: "Job Seekers Onsite", icon: <FiUsers className="w-6 h-6" /> },
+    { number: "500+", label: "Job Seekers Onsite", icon: <FiUsers className="w-6 h-6" /> },
     { number: "50+", label: "Industries Represented", icon: <FiBriefcase className="w-6 h-6" /> },
     { number: "100%", label: "Career-Focused Attendees", icon: <FiTarget className="w-6 h-6" /> }
   ]
@@ -163,7 +163,7 @@ const Recruiters = () => {
                   </div>
                   <div className="flex items-center gap-2">
                     <FiUsers className="w-5 h-5 text-orange-400" />
-                    <span>1,000+ Attendees</span>
+                    <span>500+ Attendees</span>
                   </div>
                 </div>
               </motion.div>

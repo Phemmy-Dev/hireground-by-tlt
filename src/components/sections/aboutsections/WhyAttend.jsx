@@ -17,12 +17,12 @@ const WhyAttend = () => {
   const reasons = [
     {
       icon: <FiUsers className="w-8 h-8" />,
-      title: "Network with 1000+ Professionals",
+      title: "Network with 500+ Professionals",
       description: "Connect with industry leaders, entrepreneurs, and like-minded individuals who can accelerate your career growth.",
       color: "bg-forest",
       bgColor: "bg-mist",
       borderColor: "border-line",
-      stats: "1000+ Attendees"
+      stats: "500+ Attendees"
     },
     {
       icon: <FiBriefcase className="w-8 h-8" />,
@@ -185,7 +185,7 @@ const WhyAttend = () => {
                 </div>
                 <div className="bg-white/10 rounded-xl p-4">
                   <div className="text-2xl font-bold mb-1">Limited Seats</div>
-                  <div className="text-sm opacity-80">Only 1000 spots available</div>
+                  <div className="text-sm opacity-80">Only 500 spots available</div>
                 </div>
               </div>
 

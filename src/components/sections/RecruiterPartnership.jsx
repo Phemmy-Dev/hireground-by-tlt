@@ -7,7 +7,7 @@ const RecruiterPartnership = () => {
     {
       icon: <FiUsers className="w-6 h-6" />,
       title: "Access Top Talent",
-      description: "Connect with 1,000+ skilled, job-ready professionals eager to join your team."
+      description: "Connect with 500+ skilled, job-ready professionals eager to join your team."
     },
     {
       icon: <FiTrendingUp className="w-6 h-6" />,
@@ -36,7 +36,7 @@ const RecruiterPartnership = () => {
   ]
 
   const stats = [
-    { number: "1,000+", label: "Job Seekers" },
+    { number: "500+", label: "Job Seekers" },
     { number: "50+", label: "Industries Represented" },
     { number: "100%", label: "Career-Focused Attendees" }
   ]

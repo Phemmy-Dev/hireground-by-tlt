@@ -42,7 +42,7 @@ const AboutHireground = () => {
   ]
 
   const stats = [
-    { number: "1000+", label: "Expected Attendees" },
+    { number: "500+", label: "Expected Attendees" },
     { number: "10+", label: "Industry Speakers" },
     { number: "20+", label: "Companies Participating" },
     { number: "2+", label: "Workshop Sessions" },

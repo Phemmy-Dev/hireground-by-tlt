@@ -12,12 +12,6 @@ import {
 } from 'react-icons/fi'
 import tltsponsorlogo from '../../assets/images/sponsors/tltsponsor.png'
 import kwgovtlogo from '../../assets/images/sponsors/kwgovlogo.webp'
-import INeedAGoodTeamLogo from '../../assets/images/sponsors/ineedagoodteamlogo.jpg'
-import Mindshiftlogo from '../../assets/images/sponsors/mindshiftlogo.png'
-import anchor from '../../assets/images/sponsors/anchor.png'
-import cw from '../../assets/images/sponsors/cw.png'
-import swoop from '../../assets/images/sponsors/swoop.png'
-import equipr from '../../assets/images/sponsors/equipr.jpg'
 
 const Sponsors = () => {
   const [copied, setCopied] = useState(false)
@@ -67,11 +61,7 @@ Best regards,`
 
   const partners = [
     { id: 1, name: 'The Light Tutors', logo: tltsponsorlogo, isReal: true },
-    { id: 2, name: 'Kwara State Government', logo: kwgovtlogo, isReal: true },
-    { id: 3, name: 'Mindshift', logo: Mindshiftlogo, isReal: true },
-    { id: 4, name: 'I Need A Good Team', logo: INeedAGoodTeamLogo, isReal: true },
-    { id: 5, name: 'Equipr', logo: equipr, isReal: true },
-    { id: 6, name: 'Swoop', logo: swoop, isReal: true },
+    { id: 2, name: 'Kwara State Government', logo: kwgovtlogo, isReal: true }
   ]
 
   return (
@@ -86,7 +76,7 @@ Best regards,`
           <p className="text-lg leading-relaxed text-white/80">
             Position your organization at the center of career transformation. Choose between
             <strong className="text-white"> official event sponsorship</strong> for brand prestige or an
-            <strong className="text-white"> exhibition booth + main stage speaking slot</strong> to pitch live to over 1,000 in-person attendees.
+            <strong className="text-white"> exhibition booth + main stage speaking slot</strong> to pitch live to over 500 in-person attendees.
           </p>
         </div>
 
@@ -103,7 +93,7 @@ Best regards,`
               Become an Official Sponsor
             </h3>
             <p className="text-muted leading-relaxed mb-6">
-              Align your organization with youth empowerment and economic mobility. Reach over 1,000 on-site professionals and 10,000+ virtual attendees with premier brand positioning and direct graduate recruitment channels.
+              Align your organization with youth empowerment and economic mobility. Reach over 500 on-site professionals and 10,000+ virtual attendees with premier brand positioning and direct graduate recruitment channels.
             </p>
             <ul className="space-y-3 mb-8">
               {[
@@ -190,9 +180,9 @@ Best regards,`
           <h3 className="text-lg font-bold text-ink mb-8">
             Proudly Supported & Partnered By Leading Brands
           </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 items-center">
+          <div className="flex flex-wrap items-center gap-x-14 gap-y-8">
             {partners.map((partner) => (
-              <div key={partner.id} className="h-16 flex items-center justify-center">
+              <div key={partner.id} className="h-20 flex items-center">
                 <img
                   src={partner.logo}
                   alt={partner.name}

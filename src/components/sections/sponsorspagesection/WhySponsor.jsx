@@ -7,9 +7,9 @@ const WhySponsor = () => {
   const mainReasons = [
     {
       icon: <FiUsers className="w-8 h-8" />,
-      title: "Reach 1000+ Professionals",
+      title: "Reach 500+ Professionals",
       description: "Connect with Ilorin's most ambitious professionals, from emerging talent to C-suite executives, all actively seeking career transformation.",
-      highlight: "1000+",
+      highlight: "500+",
       subtext: "Expected Attendees"
     },
     {

@@ -56,7 +56,7 @@ Best regards,`
     },
     {
       icon: <FiUsers className="w-6 h-6" />,
-      title: "Direct Access to 1,000+ Buyers & Talent",
+      title: "Direct Access to 500+ Buyers & Talent",
       description: "Sell products on-site, onboard new users, distribute brochures, and generate qualified leads from an ambitious professional audience."
     },
     {

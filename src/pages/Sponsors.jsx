@@ -16,7 +16,7 @@ const Sponsors = () => {
         <title>Partnership & Exhibition | HireGround 2026 | The Light Tutors</title>
         <meta 
           name="description" 
-          content="Sponsor HireGround 2026 or book a prime exhibition booth with an exclusive stage speaking slot. Reach 1,000+ top talent in-person and 10,000+ virtually." 
+          content="Sponsor HireGround 2026 or book a prime exhibition booth with an exclusive stage speaking slot. Reach 500+ top talent in-person and 10,000+ virtually." 
         />
         <meta 
           name="keywords" 

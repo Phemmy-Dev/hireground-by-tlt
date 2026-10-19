@@ -25,7 +25,7 @@ const SponsorsSectionHero = () => {
 
   // Event statistics for credibility
   const eventStats = [
-    { icon: <FiUsers className="w-5 h-5" />, number: "1000+", label: "Expected Attendees" },
+    { icon: <FiUsers className="w-5 h-5" />, number: "500+", label: "Expected Attendees" },
     { icon: <FiCalendar className="w-5 h-5" />, number: "2", label: "Days of Networking" },
     { icon: <FiTrendingUp className="w-5 h-5" />, number: "50+", label: "Industry Leaders" },
     { icon: <FiStar className="w-5 h-5" />, number: "100+", label: "Companies Participating" }
@@ -53,7 +53,7 @@ Best regards,`
     <PageHero
       kicker="HireGround 2026 Partnerships & Exhibitions"
       title="Partner with HireGround"
-      intro={<>Sponsor or exhibit on the big stage. Connect with 1,000+ ambitious on-site professionals and 10,000+ virtual attendees across Nigeria. Sponsor the movement or book an <strong className="text-white">exhibition booth with a dedicated stage speaking/pitch slot</strong>.</>}
+      intro={<>Sponsor or exhibit on the big stage. Connect with 500+ ambitious on-site professionals and 10,000+ virtual attendees across Nigeria. Sponsor the movement or book an <strong className="text-white">exhibition booth with a dedicated stage speaking/pitch slot</strong>.</>}
       image={heroBackgroundImage}
       imageAlt="Attendees at HireGround 2025"
     >

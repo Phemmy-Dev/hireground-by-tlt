@@ -66,7 +66,7 @@ const VisionAndMission = () => {
                 <h3 className="text-2xl font-bold text-gray-900">Our Mission</h3>
               </div>
               <p className="text-gray-700 leading-relaxed text-lg mb-4">
-                To equip 1,000 young pe ople with practical interview readiness and employability skills through targeted training, mentorship, and community support, thereby bridging the gap between education and workplace success.
+                To equip 500 young people with practical interview readiness and employability skills through targeted training, mentorship, and community support, thereby bridging the gap between education and workplace success.
               </p>
               <div className="bg-white/60 rounded-lg p-4 border border-orange-200">
                 <p className="text-orange-800 font-medium text-sm italic">

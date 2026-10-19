@@ -17,7 +17,7 @@ const features = [
 ];
 
 const stats = [
-  { value: "1,000+", label: "Young Nigerians", note: "To Be Empowered" },
+  { value: "500+", label: "Young Nigerians", note: "To Be Empowered" },
   { value: "6h", label: "Intensive Training", note: "Skills & Networking" },
   { value: "1", label: "Movement", note: "Nationwide Impact" },
 ];
@@ -35,7 +35,7 @@ const BackStory = () => {
           <div className="lg:col-span-7">
             <blockquote className="border-l-4 border-ember pl-6 mb-10">
               <p className="text-2xl sm:text-3xl font-bold leading-snug text-ink" style={{ fontStretch: '110%' }}>
-                “From One Conversation to 1,000 Careers”
+                “From One Conversation to 500 Careers”
               </p>
             </blockquote>
 

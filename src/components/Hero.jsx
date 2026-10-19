@@ -56,7 +56,7 @@ const Hero = ({ title, text, herobtn, herolink = "https://trankets.com/invite/hi
             {text}
           </p>
           <p className="text-sun font-semibold text-base sm:text-lg mb-10">
-            Career fair, Ilorin, Kwara State
+            31st October 2026, Ilorin Innovation Hub
           </p>
 
           <div className="flex flex-wrap gap-3">

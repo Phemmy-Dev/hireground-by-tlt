@@ -13,7 +13,7 @@ const Cta = () => {
             Join industry leaders and career changers at HireGround 2026. Secure your spot today and unlock exclusive networking opportunities.
           </p>
           <p className="mt-6 font-semibold flex flex-wrap gap-x-6 gap-y-1">
-            <span>1000+ Attendees Expected</span>
+            <span>500+ Attendees Expected</span>
             <span>10+ Industry Speakers</span>
           </p>
         </div>

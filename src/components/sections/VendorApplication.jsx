@@ -36,7 +36,7 @@ const VendorApplication = () => {
   ]
 
   const stats = [
-    { number: "1,000+", label: "On-Site Attendees" },
+    { number: "500+", label: "On-Site Attendees" },
     { number: "10,000+", label: "Virtual Reach" },
     { number: "All Day", label: "Vendor Access" }
   ]
