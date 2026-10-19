@@ -19,7 +19,7 @@ const WhyAttend = () => {
       icon: <FiUsers className="w-8 h-8" />,
       title: "Network with 500+ Professionals",
       description: "Connect with industry leaders, entrepreneurs, and like-minded individuals who can accelerate your career growth.",
-      color: "bg-forest",
+      color: "bg-ember",
       bgColor: "bg-mist",
       borderColor: "border-line",
       stats: "500+ Attendees"
@@ -28,7 +28,7 @@ const WhyAttend = () => {
       icon: <FiBriefcase className="w-8 h-8" />,
       title: "Access Exclusive Job Opportunities",
       description: "Get first access to job openings from 20+ companies actively recruiting at the event.",
-      color: "bg-ember",
+      color: "bg-azure",
       bgColor: "bg-mist",
       borderColor: "border-line",
       stats: "20+ Companies"
@@ -37,7 +37,7 @@ const WhyAttend = () => {
       icon: <FiBook className="w-8 h-8" />,
       title: "Learn from Industry Experts",
       description: "Attend masterclasses and workshops led by 50+ top professionals sharing their success strategies.",
-      color: "bg-forest-deep",
+      color: "bg-kelly",
       bgColor: "bg-mist",
       borderColor: "border-line",
       stats: "20+ Expert Speakers"
@@ -46,7 +46,7 @@ const WhyAttend = () => {
       icon: <FiTrendingUp className="w-8 h-8" />,
       title: "Accelerate Your Career Growth",
       description: "Gain insights and strategies that can fast-track your professional development by years.",
-      color: "bg-orange-600",
+      color: "bg-gold",
       bgColor: "bg-orange-50",
       borderColor: "border-orange-200",
       stats: "Years of Growth"
@@ -55,7 +55,7 @@ const WhyAttend = () => {
       icon: <FiGlobe className="w-8 h-8" />,
       title: "Discover Global Opportunities",
       description: "Explore international career paths and remote work opportunities with multinational companies.",
-      color: "bg-forest",
+      color: "bg-pink",
       bgColor: "bg-mist",
       borderColor: "border-line",
       stats: "Global Reach"
@@ -64,7 +64,7 @@ const WhyAttend = () => {
     //   icon: <FiAward className="w-8 h-8" />,
     //   title: "Get Industry Recognition",
     //   description: "Showcase your achievements and get recognized through our awards and recognition programs.",
-    //   color: "bg-ink",
+    //   color: "bg-turquoise",
     //   bgColor: "bg-yellow-50",
     //   borderColor: "border-yellow-200",
     //   stats: "Recognition Awards"
@@ -137,7 +137,7 @@ const WhyAttend = () => {
                 className={`bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border ${reason.borderColor} group hover:-translate-y-2`}
               >
                 {/* Icon */}
-                <div className={`w-16 h-16 rounded-xl ${reason.color} flex items-center justify-center text-white mb-6`}>
+                <div className={`w-16 h-16 rounded-xl ${reason.color} flex items-center justify-center text-ink mb-6`}>
                   {reason.icon}
                 </div>
 

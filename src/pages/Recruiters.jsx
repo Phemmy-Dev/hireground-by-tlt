@@ -101,7 +101,7 @@ const Recruiters = () => {
         <Navbar />
         
         {/* Hero Section */}
-        <section className="relative pt-32 sm:pt-36 lg:pt-40 pb-20 lg:pb-32 bg-forest-deep overflow-hidden">
+        <section className="relative pt-32 sm:pt-36 lg:pt-40 pb-20 lg:pb-32 bg-night-deep overflow-hidden">
           {/* Background Elements */}
           <div className="absolute inset-0 overflow-hidden">
             <motion.div
@@ -297,7 +297,7 @@ const Recruiters = () => {
         </section>
 
         {/* Features & CTA Section */}
-        <section className="py-20 bg-forest-deep">
+        <section className="py-20 bg-night-deep">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden">
@@ -322,7 +322,7 @@ const Recruiters = () => {
                           viewport={{ once: true }}
                           className="flex items-start"
                         >
-                          <FiCheckCircle className="w-6 h-6 text-sun mr-3 flex-shrink-0 mt-0.5" />
+                          <FiCheckCircle className="w-6 h-6 text-gold mr-3 flex-shrink-0 mt-0.5" />
                           <span className="text-gray-300 text-base sm:text-lg">
                             {feature}
                           </span>
@@ -334,7 +334,7 @@ const Recruiters = () => {
                   {/* CTA Card */}
                   <div className="border-l border-white/10 p-8 sm:p-10 lg:p-12 flex flex-col justify-center">
                     <div className="mb-6">
-                      <p className="text-sun font-semibold mb-3">Limited Spots Available</p>
+                      <p className="text-gold font-semibold mb-3">Limited Spots Available</p>
                       <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
                         Ready to Find Your Next Hire?
                       </h3>

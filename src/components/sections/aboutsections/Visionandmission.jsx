@@ -36,7 +36,7 @@ const VisionAndMission = () => {
               className="rounded-lg p-8 border border-line transition-all duration-300"
             >
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-forest rounded-xl flex items-center justify-center mr-4">
+                <div className="w-12 h-12 bg-night rounded-xl flex items-center justify-center mr-4">
                   <FiEye className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900">Our Vision</h3>
@@ -45,7 +45,7 @@ const VisionAndMission = () => {
                 To see a generation of young Nigerians graduates, undergraduates, and corps members, empowered with the confidence, competence, and character to excel in interviews, secure opportunities, and contribute meaningfully to society.
               </p>
               <div className="bg-white/60 rounded-lg p-4 border border-line">
-                <p className="text-forest font-medium text-sm italic">
+                <p className="text-night font-medium text-sm italic">
                   "Building bridges between potential and success, one career at a time."
                 </p>
               </div>
@@ -77,7 +77,7 @@ const VisionAndMission = () => {
           </div>
 
           {/* Core Values */}
-          <div className="bg-forest text-white rounded-lg p-8 md:p-12 grid grid-cols-1 lg:grid-cols-12 gap-10">
+          <div className="bg-night text-white rounded-lg p-8 md:p-12 grid grid-cols-1 lg:grid-cols-12 gap-10">
             <div className="lg:col-span-4">
               <h3 className="text-3xl md:text-4xl font-extrabold mb-4" style={{ fontStretch: '115%' }}>Our Core Values</h3>
               <p className="text-white/75">
@@ -91,7 +91,7 @@ const VisionAndMission = () => {
                 ['Integrity', 'We build trust through transparency and honesty'],
                 ['Impact', 'We measure success by the lives we transform'],
               ].map(([name, text]) => (
-                <div key={name} className="border-t-2 border-sun pt-4">
+                <div key={name} className="border-t-2 border-gold pt-4">
                   <dt className="text-xl font-bold mb-1">{name}</dt>
                   <dd className="text-white/75">{text}</dd>
                 </div>

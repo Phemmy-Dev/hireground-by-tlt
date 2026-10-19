@@ -15,42 +15,42 @@ const AcademyFeatures = () => {
             icon: HiBriefcase,
             title: 'Employability Training',
             description: 'Master workplace readiness skills that employers actively seek in candidates.',
-            color: 'bg-forest',
+            color: 'bg-ember',
             bgColor: '',
         },
         {
             icon: HiLightBulb,
             title: 'Soft Skills Development',
             description: 'Build essential communication, teamwork, and problem-solving abilities.',
-            color: 'bg-ember',
+            color: 'bg-azure',
             bgColor: '',
         },
         {
             icon: HiDocumentText,
             title: 'CV & LinkedIn Support',
             description: 'Get hands-on help crafting a standout CV and optimizing your LinkedIn profile.',
-            color: 'bg-forest-deep',
+            color: 'bg-kelly',
             bgColor: '',
         },
         {
             icon: HiUserGroup,
             title: 'Interview Preparation',
             description: 'Practice with mock interviews and receive personalized feedback from mentors.',
-            color: 'bg-orange-600',
+            color: 'bg-gold',
             bgColor: '',
         },
         {
             icon: HiChartBar,
             title: 'Skill Assessment',
             description: 'Track your growth with pre and post evaluations to measure real progress.',
-            color: 'bg-forest',
+            color: 'bg-pink',
             bgColor: '',
         },
         {
             icon: HiSparkles,
             title: 'Talent Pool Access',
             description: 'Get added to HireGround\'s talent pool for future job and internship recommendations.',
-            color: 'bg-ink',
+            color: 'bg-turquoise',
             bgColor: '',
         },
     ]
@@ -128,7 +128,7 @@ const AcademyFeatures = () => {
                             <div className="relative z-10">
                                 {/* Icon */}
                                 <div className={`w-14 h-14 mb-6 rounded-2xl ${feature.color} flex items-center justify-center`}>
-                                    <feature.icon className="w-7 h-7 text-white" />
+                                    <feature.icon className="w-7 h-7 text-ink" />
                                 </div>
 
                                 {/* Content */}

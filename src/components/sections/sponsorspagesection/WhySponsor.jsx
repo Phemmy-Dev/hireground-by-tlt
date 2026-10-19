@@ -118,7 +118,7 @@ const WhySponsor = () => {
             </div>
           </div>
 
-          <div className="relative bg-forest-deep rounded-xl p-8 sm:p-12 lg:p-16">
+          <div className="relative bg-night-deep rounded-xl p-8 sm:p-12 lg:p-16">
             <div className="mb-12">
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
                 What You <span className="text-orange-400">Actually Get</span>
@@ -139,7 +139,7 @@ const WhySponsor = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="flex items-center gap-4 bg-white/10 rounded-lg p-4 hover:bg-white/20 transition-all duration-300 group"
                 >
-                  <div className="w-12 h-12 bg-orange-500 text-white rounded-xl flex items-center justify-center flex-shrink-0 transition-transform duration-300">
+                  <div className="w-12 h-12 bg-orange-500 text-ink rounded-xl flex items-center justify-center flex-shrink-0 transition-transform duration-300">
                     {benefit.icon}
                   </div>
                   <p className="text-white font-medium leading-relaxed">

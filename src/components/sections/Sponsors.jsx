@@ -65,7 +65,7 @@ Best regards,`
   ]
 
   return (
-    <section className="bg-forest text-white py-20 lg:py-28">
+    <section className="bg-night text-white py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
@@ -120,8 +120,8 @@ Best regards,`
           </div>
 
           {/* Track 2: Exhibition & Stage Spotlight */}
-          <div className="bg-forest-deep border border-white/15 rounded-lg p-8 sm:p-10 flex flex-col">
-            <p className="flex items-center gap-2 text-sm font-semibold text-sun mb-4">
+          <div className="bg-night-deep border border-white/15 rounded-lg p-8 sm:p-10 flex flex-col">
+            <p className="flex items-center gap-2 text-sm font-semibold text-gold mb-4">
               <FiMic className="w-4 h-4" />
               Live Demos & Direct Sales
             </p>
@@ -139,7 +139,7 @@ Best regards,`
                 "Direct on-site selling, user onboarding & qualified lead capture"
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <FiCheckCircle className="w-5 h-5 text-sun shrink-0 mt-0.5" />
+                  <FiCheckCircle className="w-5 h-5 text-gold shrink-0 mt-0.5" />
                   <span className="text-white/90">{item}</span>
                 </li>
               ))}
@@ -149,11 +149,11 @@ Best regards,`
               Speaking duration is flexible & negotiable based on your budget
             </p>
             <div className="mt-auto pt-6 border-t border-white/15 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <a href={exhibitorMailto} className="btn bg-sun text-ink hover:bg-white">
+              <a href={exhibitorMailto} className="btn bg-gold text-ink hover:bg-white">
                 <FiShoppingBag className="w-5 h-5" />
                 Book Exhibition & Stage Slot
               </a>
-              <Link to="/sponsors#exhibition" className="font-semibold text-white underline underline-offset-4 hover:text-sun">
+              <Link to="/sponsors#exhibition" className="font-semibold text-white underline underline-offset-4 hover:text-gold">
                 Learn about exhibition packages & requirements
               </Link>
             </div>
@@ -163,12 +163,12 @@ Best regards,`
         {/* Direct email */}
         <div className="flex flex-wrap items-center gap-3 text-white/80 mb-16">
           <span>Direct Inquiries:</span>
-          <a href="mailto:hireground@thelightutors.com" className="font-semibold text-white underline underline-offset-4 hover:text-sun">
+          <a href="mailto:hireground@thelightutors.com" className="font-semibold text-white underline underline-offset-4 hover:text-gold">
             hireground@thelightutors.com
           </a>
           <button
             onClick={handleCopyEmail}
-            className="inline-flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-md border border-white/30 hover:bg-white hover:text-forest transition-colors"
+            className="inline-flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-md border border-white/30 hover:bg-white hover:text-night transition-colors"
           >
             {copied ? <FiCheck className="w-4 h-4" /> : <FiCopy className="w-4 h-4" />}
             {copied ? 'Copied' : 'Copy'}

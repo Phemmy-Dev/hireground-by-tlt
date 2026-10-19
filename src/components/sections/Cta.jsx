@@ -23,7 +23,7 @@ const Cta = () => {
             href="https://trankets.com/invite/hireground-kwara-career-fair-2026"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn bg-ink text-white hover:bg-forest text-lg px-8 py-4"
+            className="btn bg-ink text-white hover:bg-night text-lg px-8 py-4"
           >
             Register Now
           </a>

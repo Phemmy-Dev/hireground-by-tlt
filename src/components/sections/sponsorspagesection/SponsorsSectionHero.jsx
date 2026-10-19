@@ -60,7 +60,7 @@ Best regards,`
       <ul className="flex flex-wrap gap-x-6 gap-y-2 mb-10 text-white/90">
         {['Event Sponsorship', 'Exhibition Booths', 'Stage Speaking Slots', 'Talent Acquisition'].map((item) => (
           <li key={item} className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-sm bg-sun"></span>
+            <span className="w-2 h-2 rounded-sm bg-gold"></span>
             {item}
           </li>
         ))}
@@ -77,7 +77,7 @@ Best regards,`
 
       <p className="text-white/75">
         Direct inquiries:{' '}
-        <a href="mailto:hireground@thelightutors.com" className="text-white font-semibold underline underline-offset-4 hover:text-sun">
+        <a href="mailto:hireground@thelightutors.com" className="text-white font-semibold underline underline-offset-4 hover:text-gold">
           hireground@thelightutors.com
         </a>
       </p>

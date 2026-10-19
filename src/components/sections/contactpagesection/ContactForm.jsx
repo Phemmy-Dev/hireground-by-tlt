@@ -237,8 +237,8 @@ const ContactForm = () => {
                     animate={{ opacity: 1, y: 0 }}
                     className="mt-6 p-4 bg-mist border border-line rounded-xl flex items-center gap-3"
                   >
-                    <FiCheck className="w-5 h-5 text-forest" />
-                    <p className="text-forest font-medium">
+                    <FiCheck className="w-5 h-5 text-night" />
+                    <p className="text-night font-medium">
                       Thank you! Your message has been sent successfully. We'll get back to you within 24 hours.
                     </p>
                   </motion.div>

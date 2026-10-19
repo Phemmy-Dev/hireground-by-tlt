@@ -34,10 +34,10 @@ const Footer = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
-  const linkClass = 'text-white/70 hover:text-sun transition-colors'
+  const linkClass = 'text-white/70 hover:text-gold transition-colors'
 
   return (
-    <footer className="bg-forest-deep text-white">
+    <footer className="bg-night-deep text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           {/* Brand */}
@@ -49,11 +49,11 @@ const Footer = () => {
 
             <div className="space-y-3 mb-8">
               <a href="mailto:hireground@thelightutors.com" className={`flex items-center gap-3 ${linkClass}`}>
-                <FiMail className="w-4 h-4 text-sun" />
+                <FiMail className="w-4 h-4 text-gold" />
                 hireground@thelightutors.com
               </a>
               <p className="flex items-center gap-3 text-white/70">
-                <FiMapPin className="w-4 h-4 text-sun" />
+                <FiMapPin className="w-4 h-4 text-gold" />
                 Ilorin, Kwara State, Nigeria
               </p>
             </div>
@@ -65,7 +65,7 @@ const Footer = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-md border border-white/20 flex items-center justify-center text-white/80 hover:bg-white hover:text-forest transition-colors"
+                  className="w-10 h-10 rounded-md border border-white/20 flex items-center justify-center text-white/80 hover:bg-white hover:text-night transition-colors"
                   aria-label={social.label}
                 >
                   {social.icon}

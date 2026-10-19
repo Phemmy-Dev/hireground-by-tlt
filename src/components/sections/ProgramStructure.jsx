@@ -94,7 +94,7 @@ const ProgramStructure = () => {
                                 <ul className="space-y-2">
                                     {week.topics.map((topic, topicIndex) => (
                                         <li key={topicIndex} className="flex items-start gap-3">
-                                            <HiCheckCircle className="w-5 h-5 text-forest flex-shrink-0 mt-0.5" />
+                                            <HiCheckCircle className="w-5 h-5 text-night flex-shrink-0 mt-0.5" />
                                             <span className="text-gray-600 text-sm">{topic}</span>
                                         </li>
                                     ))}
@@ -130,7 +130,7 @@ const ProgramStructure = () => {
                     className="mt-16 text-center"
                 >
                     <div className="inline-flex items-center px-6 py-4 bg-mist border border-line rounded-lg">
-                        <HiCheckCircle className="w-6 h-6 text-forest mr-3" />
+                        <HiCheckCircle className="w-6 h-6 text-night mr-3" />
                         <p className="text-gray-700">
                             <span className="font-semibold">100% Virtual Program</span> · Flexible learning that fits your schedule
                         </p>

@@ -48,7 +48,7 @@ const CareerFair2025 = () => {
                         <div key={stat.label} className="pt-5 pr-4">
                             <dt className="sr-only">{stat.label}</dt>
                             <dd className="flex items-center gap-2 text-white font-bold text-xl">
-                                <stat.icon className="w-5 h-5 text-sun" />
+                                <stat.icon className="w-5 h-5 text-gold" />
                                 {stat.value}
                             </dd>
                             <dd className="text-white/70 text-sm mt-1">{stat.label}</dd>
@@ -88,7 +88,7 @@ const CareerFair2025 = () => {
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 {eventHighlights.map((highlight, index) => (
                                     <div key={index} className="flex items-center gap-3">
-                                        <div className="w-6 h-6 bg-sun rounded-full flex items-center justify-center flex-shrink-0">
+                                        <div className="w-6 h-6 bg-gold rounded-full flex items-center justify-center flex-shrink-0">
                                             <span className="text-white text-sm">✓</span>
                                         </div>
                                         <span className="text-gray-700">{highlight}</span>
@@ -142,7 +142,7 @@ const CareerFair2025 = () => {
             </section>
 
             {/* CTA to Academy */}
-            <section className="py-20 bg-forest-deep">
+            <section className="py-20 bg-night-deep">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
@@ -150,11 +150,11 @@ const CareerFair2025 = () => {
                         viewport={{ once: true }}
                         className="max-w-3xl mx-auto text-center"
                     >
-                        <span className="inline-flex items-center px-5 py-2 bg-sun/20 border border-forest/40 rounded-md text-sun font-semibold text-sm mb-6">
+                        <span className="inline-flex items-center px-5 py-2 bg-gold/20 border border-night/40 rounded-md text-gold font-semibold text-sm mb-6">
                             <motion.span
                                 animate={{ scale: [1, 1.2, 1] }}
                                 transition={{ duration: 1.5, repeat: 0 }}
-                                className="w-2 h-2 bg-sun rounded-full mr-2"
+                                className="w-2 h-2 bg-gold rounded-full mr-2"
                             />
                             Now Open
                         </span>

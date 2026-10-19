@@ -42,7 +42,7 @@ const RecruiterPartnership = () => {
   ]
 
   return (
-    <section className="relative py-16 sm:py-20 lg:py-32 overflow-hidden bg-forest-deep">
+    <section className="relative py-16 sm:py-20 lg:py-32 overflow-hidden bg-night-deep">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -214,7 +214,7 @@ const RecruiterPartnership = () => {
                       viewport={{ once: true }}
                       className="flex items-start"
                     >
-                      <FiCheckCircle className="w-6 h-6 text-sun mr-3 flex-shrink-0 mt-0.5" />
+                      <FiCheckCircle className="w-6 h-6 text-gold mr-3 flex-shrink-0 mt-0.5" />
                       <span className="text-gray-300 text-base sm:text-lg">
                         {feature}
                       </span>
@@ -226,7 +226,7 @@ const RecruiterPartnership = () => {
               {/* CTA Card */}
               <div className="border-l border-white/10 p-8 sm:p-10 lg:p-12 flex flex-col justify-center">
                 <div className="mb-6">
-                  <p className="text-sun font-semibold mb-3">Limited Spots Available</p>
+                  <p className="text-gold font-semibold mb-3">Limited Spots Available</p>
                   <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
                     Ready to Find Your Next Hire?
                   </h3>

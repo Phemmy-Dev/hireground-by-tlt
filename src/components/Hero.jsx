@@ -18,7 +18,7 @@ const Hero = ({ title, text, herobtn, herolink = "https://trankets.com/invite/hi
   }, []);
 
   return (
-    <section className="relative min-h-[92svh] flex items-end overflow-hidden bg-forest-deep">
+    <section className="relative min-h-[92svh] flex items-end overflow-hidden bg-night-deep">
       {/* Photos from HireGround 2025 */}
       <div className="absolute inset-0">
         <AnimatePresence>
@@ -55,7 +55,7 @@ const Hero = ({ title, text, herobtn, herolink = "https://trankets.com/invite/hi
           <p className="text-white text-xl sm:text-2xl max-w-2xl mb-3">
             {text}
           </p>
-          <p className="text-sun font-semibold text-base sm:text-lg mb-10">
+          <p className="text-gold font-semibold text-base sm:text-lg mb-10">
             31st October 2026, Ilorin Innovation Hub
           </p>
 

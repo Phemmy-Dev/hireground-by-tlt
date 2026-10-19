@@ -65,9 +65,9 @@ const BackStory = () => {
               ))}
             </ul>
 
-            <div className="bg-forest text-white rounded-lg p-8">
+            <div className="bg-night text-white rounded-lg p-8">
               <p className="text-lg mb-2">This is more than an event. It's a launchpad.</p>
-              <p className="text-3xl font-extrabold text-sun mb-1" style={{ fontStretch: '118%' }}>HireGround 2026</p>
+              <p className="text-3xl font-extrabold text-gold mb-1" style={{ fontStretch: '118%' }}>HireGround 2026</p>
               <p className="text-lg text-white/85">Ready. Set. Your Career Starts Here.</p>
             </div>
           </div>
@@ -97,7 +97,7 @@ const BackStory = () => {
                   </li>
                 ))}
               </ul>
-              <Link to="/about" className="btn w-full bg-ink text-white hover:bg-forest">
+              <Link to="/about" className="btn w-full bg-ink text-white hover:bg-night">
                 Learn More About HireGround
               </Link>
             </div>

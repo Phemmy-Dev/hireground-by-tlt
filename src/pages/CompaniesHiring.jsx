@@ -335,7 +335,7 @@ const CompaniesHiring = () => {
                 <div className="bg-mist border border-line rounded-xl p-4 space-y-3">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 bg-mist rounded-lg flex items-center justify-center">
-                      <FiBriefcase className="w-6 h-6 text-forest" />
+                      <FiBriefcase className="w-6 h-6 text-night" />
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">{company.availableJobs} Open Position{company.availableJobs > 1 ? 's' : ''}</p>
@@ -358,7 +358,7 @@ const CompaniesHiring = () => {
                   )}
                   
                   {company.conductingInterviews && (
-                    <div className="flex items-center gap-2 text-forest bg-mist px-3 py-2 rounded-lg mt-3">
+                    <div className="flex items-center gap-2 text-night bg-mist px-3 py-2 rounded-lg mt-3">
                       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
@@ -506,7 +506,7 @@ const CompaniesHiring = () => {
                     {/* Available Jobs Badge */}
                     <div className={`text-sm font-semibold ${
                       company.availableJobs > 0 
-                        ? 'text-forest bg-mist' 
+                        ? 'text-night bg-mist' 
                         : 'text-gray-600 bg-gray-100'
                     } px-3 py-2 rounded-lg`}>
                       {company.availableJobs > 0 

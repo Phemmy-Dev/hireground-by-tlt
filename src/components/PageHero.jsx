@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 // is given. Extra content (buttons, facts) goes in children.
 const PageHero = ({ title, intro, image, imageAlt = '', kicker, children }) => {
   return (
-    <section className={`relative overflow-hidden ${image ? 'min-h-[70svh] flex items-end bg-forest-deep' : 'bg-forest'}`}>
+    <section className={`relative overflow-hidden ${image ? 'min-h-[70svh] flex items-end bg-night-deep' : 'bg-night'}`}>
       {image && (
         <div className="absolute inset-0">
           <img src={image} alt={imageAlt} className="w-full h-full object-cover object-center" />
@@ -22,7 +22,7 @@ const PageHero = ({ title, intro, image, imageAlt = '', kicker, children }) => {
           className="max-w-4xl"
         >
           {kicker && (
-            <p className="text-sun font-semibold text-base sm:text-lg mb-5">{kicker}</p>
+            <p className="text-gold font-semibold text-base sm:text-lg mb-5">{kicker}</p>
           )}
           <h1 className="text-white text-4xl sm:text-6xl lg:text-7xl mb-6">{title}</h1>
           {intro && (

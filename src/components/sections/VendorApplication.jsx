@@ -214,7 +214,7 @@ const VendorApplication = () => {
                       viewport={{ once: true }}
                       className="flex items-start"
                     >
-                      <FiCheckCircle className="w-6 h-6 text-forest mr-3 flex-shrink-0 mt-0.5" />
+                      <FiCheckCircle className="w-6 h-6 text-night mr-3 flex-shrink-0 mt-0.5" />
                       <span className="text-gray-700 text-base sm:text-lg">
                         {feature}
                       </span>

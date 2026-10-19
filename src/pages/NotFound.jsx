@@ -13,7 +13,7 @@ const quickLinks = [
 
 const NotFound = () => {
   return (
-    <div className="min-h-screen bg-forest text-white flex flex-col">
+    <div className="min-h-screen bg-night text-white flex flex-col">
       <header className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <Link to="/" className="inline-block">
           <img src={Logo} alt="HireGround home" className="h-8 w-auto" />
@@ -22,7 +22,7 @@ const NotFound = () => {
 
       <main className="flex-1 flex items-center">
         <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <p className="text-sun text-[7rem] sm:text-[10rem] lg:text-[13rem] font-extrabold leading-none mb-6" style={{ fontStretch: '125%' }}>
+          <p className="text-gold text-[7rem] sm:text-[10rem] lg:text-[13rem] font-extrabold leading-none mb-6" style={{ fontStretch: '125%' }}>
             404
           </p>
           <h1 className="text-4xl sm:text-5xl mb-5">Oops! Page Not Found</h1>
@@ -46,7 +46,7 @@ const NotFound = () => {
           <ul className="flex flex-wrap gap-x-8 gap-y-3">
             {quickLinks.map((link) => (
               <li key={link.path}>
-                <Link to={link.path} className="text-white/80 underline underline-offset-4 hover:text-sun">
+                <Link to={link.path} className="text-white/80 underline underline-offset-4 hover:text-gold">
                   {link.name}
                 </Link>
               </li>

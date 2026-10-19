@@ -15,12 +15,12 @@ const SpeakersSection = () => {
   };
 
   return (
-    <section className="bg-mist py-20 lg:py-28">
+    <section className="bg-gold py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
           <div>
             <h2 className="section-title mb-5">Meet our seasoned speakers</h2>
-            <p className="lede">
+            <p className="lede !text-ink/80">
               Learn from industry leaders, innovators, and visionaries who are shaping the future of work and technology.
             </p>
           </div>
@@ -75,7 +75,7 @@ const SpeakersSection = () => {
 
 const SpeakerCard = ({ speaker }) => (
   <Link to="/speakers" className="group block">
-    <div className="aspect-[4/5] overflow-hidden rounded-lg bg-line">
+    <div className="aspect-[4/5] overflow-hidden rounded-lg bg-ink/10">
       <img
         src={speaker.image}
         alt={speaker.name}
@@ -83,11 +83,11 @@ const SpeakerCard = ({ speaker }) => (
       />
     </div>
     <div className="pt-4">
-      <h3 className="text-xl font-bold text-ink group-hover:text-ember-deep transition-colors">
+      <h3 className="text-xl font-bold text-ink underline-offset-4 decoration-2 group-hover:underline">
         {speaker.name}
       </h3>
       <p className="text-ink/80 font-medium mt-1">{speaker.title}</p>
-      <p className="text-muted text-sm mt-0.5">{speaker.company}</p>
+      <p className="text-ink/70 text-sm mt-0.5">{speaker.company}</p>
     </div>
   </Link>
 );

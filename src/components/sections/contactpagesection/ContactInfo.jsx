@@ -10,7 +10,7 @@ const ContactInfo = () => {
       primary: "hireground@thelightutors.com",
       description: "For general inquiries and partnerships",
       action: "mailto:hireground@thelightutors.com",
-      color: "bg-mist text-forest"
+      color: "bg-mist text-night"
     },
     {
       icon: <FiPhone className="w-6 h-6" />,
@@ -19,7 +19,7 @@ const ContactInfo = () => {
       secondary: "Available during business hours",
       description: "Speak directly with our team",
       action: "tel:+2349132681049",
-      color: "bg-mist text-forest"
+      color: "bg-mist text-night"
     },
     // {
     //   icon: <FiMapPin className="w-6 h-6" />,
@@ -28,7 +28,7 @@ const ContactInfo = () => {
     //   secondary: "Banquet Hall, Ilorin",
     //   description: "Event venue",
     //   action: "#",
-    //   color: "bg-mist text-forest"
+    //   color: "bg-mist text-night"
     // },
     {
       icon: <FiClock className="w-6 h-6" />,
@@ -42,7 +42,7 @@ const ContactInfo = () => {
   ]
 
   const socialLinks = [
-    { icon: <FiInstagram className="w-5 h-5" />, name: "Instagram", url: "https://www.instagram.com/thelightutors.csr", color: "hover:text-forest" }
+    { icon: <FiInstagram className="w-5 h-5" />, name: "Instagram", url: "https://www.instagram.com/thelightutors.csr", color: "hover:text-night" }
   ]
 
   const officeHours = [

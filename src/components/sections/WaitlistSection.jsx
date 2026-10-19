@@ -83,11 +83,11 @@ const WaitlistSection = () => {
                             transition={{ duration: 0.6, delay: 0.4 }}
                             className="bg-white rounded-xl p-8 shadow-gray-200/50 border border-gray-100 relative group hover:border-line transition-colors"
                         >
-                            <div className="absolute -top-6 -right-6 w-12 h-12 bg-forest rounded-xl flex items-center justify-center text-white font-bold text-lg -rotate-12 group-hover:rotate-0 transition-transform">
+                            <div className="absolute -top-6 -right-6 w-12 h-12 bg-night rounded-xl flex items-center justify-center text-white font-bold text-lg -rotate-12 group-hover:rotate-0 transition-transform">
                                 2
                             </div>
                             <div className="w-14 h-14 bg-mist rounded-lg flex items-center justify-center mb-6 mt-2">
-                                <FaWhatsapp className="w-7 h-7 text-forest" />
+                                <FaWhatsapp className="w-7 h-7 text-night" />
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-3">Join the Community</h3>
                             <p className="text-gray-600">

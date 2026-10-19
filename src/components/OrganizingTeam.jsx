@@ -66,18 +66,18 @@ const OrganizingTeam = () => {
   const TeamMemberPlaceholder = ({ name }) => {
     const initials = name.split(' ').map(n => n[0]).join('')
     const colors = [
-      'bg-forest',
       'bg-ember',
-      'bg-forest-deep',
-      'bg-orange-600',
-      'bg-forest',
-      'bg-ink'
+      'bg-azure',
+      'bg-kelly',
+      'bg-gold',
+      'bg-pink',
+      'bg-turquoise'
     ]
     const colorIndex = name.length % colors.length
     
     return (
       <div className={`w-full h-full ${colors[colorIndex]} flex items-center justify-center`}>
-        <span className="text-white font-bold text-4xl">{initials}</span>
+        <span className="text-ink font-bold text-4xl">{initials}</span>
       </div>
     )
   }
@@ -166,7 +166,7 @@ const OrganizingTeam = () => {
                           href={member.linkedin}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="w-9 h-9 bg-white/90 rounded-lg flex items-center justify-center text-forest hover:bg-forest hover:text-white transition-all duration-300"
+                          className="w-9 h-9 bg-white/90 rounded-lg flex items-center justify-center text-night hover:bg-night hover:text-white transition-all duration-300"
                         >
                           <FiLinkedin className="w-4 h-4" />
                         </motion.a>

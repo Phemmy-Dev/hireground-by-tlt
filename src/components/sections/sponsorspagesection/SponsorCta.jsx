@@ -115,7 +115,7 @@ Best regards,`
             transition={{ duration: 0.8 }}
           >
             {/* Attention-grabbing badge */}
-            <p className="text-sun font-semibold mb-6">Partnership & Exhibition Inquiries Open</p>
+            <p className="text-gold font-semibold mb-6">Partnership & Exhibition Inquiries Open</p>
 
             {/* Compelling headline */}
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
@@ -133,7 +133,7 @@ Best regards,`
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-10 text-white/90 text-sm">
               {urgencyPoints.map((item, index) => (
                 <div key={index} className="flex items-center gap-2">
-                  <span className="text-sun">{item.icon}</span>
+                  <span className="text-gold">{item.icon}</span>
                   <span>{item.text}</span>
                 </div>
               ))}
@@ -166,10 +166,10 @@ Best regards,`
               href={exhibitorMailto}
               onHoverStart={() => setHoveredButton('exhibit')}
               onHoverEnd={() => setHoveredButton(null)}
-              className="group relative inline-flex items-center justify-center px-8 py-5 bg-forest-deep border-2 border-white/40 text-white font-bold rounded-md overflow-hidden transition-all duration-300 text-base sm:text-lg hover:border-white"
+              className="group relative inline-flex items-center justify-center px-8 py-5 bg-night-deep border-2 border-white/40 text-white font-bold rounded-md overflow-hidden transition-all duration-300 text-base sm:text-lg hover:border-white"
             >
               <div className="relative flex items-center">
-                <FiShoppingBag className="w-5 h-5 mr-3 text-sun transition-transform" />
+                <FiShoppingBag className="w-5 h-5 mr-3 text-gold transition-transform" />
                 <span>Exhibition & Stage Slot</span>
               </div>
             </motion.a>
@@ -178,15 +178,15 @@ Best regards,`
           {/* Quick Copy Email Widget */}
           <div className="inline-flex items-center gap-3 px-5 py-2.5 bg-black/30 border border-white/20 rounded-xl text-sm text-white/90">
             <span>Official Email:</span>
-            <span className="font-semibold text-sun">hireground@thelightutors.com</span>
+            <span className="font-semibold text-gold">hireground@thelightutors.com</span>
             <button
               onClick={handleCopyEmail}
               className="p-1.5 hover:bg-white/20 rounded-lg text-white transition-all ml-1"
               title="Copy email to clipboard"
             >
-              {copied ? <FiCheck className="w-4 h-4 text-sun" /> : <FiCopy className="w-4 h-4" />}
+              {copied ? <FiCheck className="w-4 h-4 text-gold" /> : <FiCopy className="w-4 h-4" />}
             </button>
-            {copied && <span className="text-xs text-sun font-medium">Copied!</span>}
+            {copied && <span className="text-xs text-gold font-medium">Copied!</span>}
           </div>
 
           {/* Final compelling statement */}
@@ -211,7 +211,7 @@ Best regards,`
         transition={{ duration: 3, repeat: 0, ease: "easeInOut" }}
         className="absolute bottom-10 right-10 hidden lg:block"
       >
-        <div className="w-4 h-4 bg-sun rounded-full"></div>
+        <div className="w-4 h-4 bg-gold rounded-full"></div>
       </motion.div>
       
       <motion.div

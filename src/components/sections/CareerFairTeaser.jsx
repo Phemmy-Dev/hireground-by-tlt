@@ -6,7 +6,7 @@ import hiregroundimg from "../../assets/images/hireground.jpg"
 
 const CareerFairTeaser = () => {
     return (
-        <section className="relative py-16 lg:py-24 bg-forest-deep overflow-hidden">
+        <section className="relative py-16 lg:py-24 bg-night-deep overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-10">
                 <div className="h-full w-full" style={{ display: 'none' }}></div>

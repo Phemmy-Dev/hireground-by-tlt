@@ -1,46 +1,51 @@
 @import "tailwindcss";
 
 /*
-  HireGround design tokens.
-  Colours come from the event itself: the brand orange, the deep green worn by
-  organisers and corps members, and a sun yellow for small highlights.
-  Colour is used as flat blocks, never as gradients.
+  HireGround design tokens, built on The Light Tutors brand palette.
+  Rule of thumb: every bright brand colour carries Smoky Black text (all pass
+  WCAG AA that way; none pass with white). Dark surfaces are Smoky Black with
+  white, gold or orange text. Colour is used as flat blocks, never gradients.
 */
 @theme {
   --font-sans: "Archivo", ui-sans-serif, system-ui, sans-serif;
 
-  --color-ink: #1b1f1d;
-  --color-muted: #5b6660;
-  --color-mist: #f2f5f3;
-  --color-line: #e1e6e3;
+  /* Brand palette */
+  --color-ink: #16120f;          /* Smoky Black */
+  --color-ember: #ff7300;        /* Vivid Orange */
+  --color-gold: #ffd600;         /* Gold */
+  --color-azure: #007bff;        /* Azure Blue */
+  --color-kelly: #04bf09;        /* Kelly Green */
+  --color-pink: #ff4fcb;         /* Pink Pizzazz */
+  --color-turquoise: #00d4c7;    /* Turquoise */
 
-  --color-ember: #f26a1b;
-  --color-ember-deep: #c2410c;
-  --color-forest: #0e4d3a;
-  --color-forest-deep: #0a3a2c;
-  --color-sun: #ffc233;
+  /* Supporting tones */
+  --color-ember-deep: #b85200;   /* brand orange darkened for text on white (4.95:1) */
+  --color-night: #16120f;        /* dark bands */
+  --color-night-deep: #0c0a08;   /* footer and inset panels on dark bands */
+  --color-muted: #5e5853;
+  --color-mist: #f5f3f0;
+  --color-line: #e6e2dd;
 
-  /* Remap Tailwind's orange so every existing orange utility lands on the
-     brand scale. 600 and up pass WCAG AA with white text and as text on white. */
-  --color-orange-50: #fff4ec;
-  --color-orange-100: #ffe6d4;
-  --color-orange-200: #ffc9a6;
-  --color-orange-300: #ffa36e;
-  --color-orange-400: #f7843f;
-  --color-orange-500: #f26a1b;
-  --color-orange-600: #c2410c;
-  --color-orange-700: #9a330b;
-  --color-orange-800: #7a2a0c;
-  --color-orange-900: #5c200a;
+  /* Remap Tailwind's orange (and the red ends of old gradients) onto the brand
+     orange. 600 and up pass AA with white text and as text on white. */
+  --color-orange-50: #fff4eb;
+  --color-orange-100: #ffe5cc;
+  --color-orange-200: #ffc999;
+  --color-orange-300: #ffab66;
+  --color-orange-400: #ff8f33;
+  --color-orange-500: #ff7300;
+  --color-orange-600: #b85200;
+  --color-orange-700: #8f4000;
+  --color-orange-800: #6b3000;
+  --color-orange-900: #4a2100;
 
-  /* Red only ever appeared as the far end of orange gradients. */
-  --color-red-50: #fff4ec;
-  --color-red-100: #ffe6d4;
-  --color-red-200: #ffc9a6;
-  --color-red-400: #f7843f;
-  --color-red-500: #c2410c;
-  --color-red-600: #c2410c;
-  --color-red-700: #9a330b;
+  --color-red-50: #fff4eb;
+  --color-red-100: #ffe5cc;
+  --color-red-200: #ffc999;
+  --color-red-400: #ff8f33;
+  --color-red-500: #b85200;
+  --color-red-600: #b85200;
+  --color-red-700: #8f4000;
 }
 
 @layer base {
@@ -131,7 +136,7 @@
   .btn-on-dark:hover {
     background: #fff;
     border-color: #fff;
-    color: var(--color-forest);
+    color: var(--color-night);
   }
 
   .section-title {

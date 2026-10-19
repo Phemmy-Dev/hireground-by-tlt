@@ -36,7 +36,7 @@ const AcademyHero = () => {
           <div key={stat.label} className="pt-5 pr-4">
             <dt className="sr-only">{stat.label}</dt>
             <dd className="flex items-center gap-2 text-white font-bold text-xl">
-              <stat.icon className="w-5 h-5 text-sun" />
+              <stat.icon className="w-5 h-5 text-gold" />
               {stat.value}
             </dd>
             <dd className="text-white/70 text-sm mt-1">{stat.label}</dd>

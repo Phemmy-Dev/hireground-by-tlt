@@ -11,7 +11,7 @@ const contactRows = [
 
 const ContactHero = () => {
   return (
-    <section className="bg-forest text-white">
+    <section className="bg-night text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-16 sm:pb-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -19,7 +19,7 @@ const ContactHero = () => {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="lg:col-span-7"
         >
-          <p className="text-sun font-semibold text-base sm:text-lg mb-5">Get In Touch</p>
+          <p className="text-gold font-semibold text-base sm:text-lg mb-5">Get In Touch</p>
           <h1 className="text-4xl sm:text-6xl lg:text-7xl mb-6">
             Let's Start a Conversation
           </h1>
@@ -38,7 +38,7 @@ const ContactHero = () => {
           <ul className="divide-y divide-line border-t border-line">
             {contactRows.map(({ icon: Icon, label, value, href }) => (
               <li key={label} className="flex items-center gap-4 py-4">
-                <span className="w-10 h-10 rounded-md bg-mist text-forest flex items-center justify-center shrink-0">
+                <span className="w-10 h-10 rounded-md bg-mist text-night flex items-center justify-center shrink-0">
                   <Icon className="w-5 h-5" />
                 </span>
                 <div className="min-w-0">

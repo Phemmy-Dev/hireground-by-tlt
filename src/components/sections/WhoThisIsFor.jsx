@@ -31,12 +31,12 @@ const WhoThisIsFor = () => {
     ]
 
     return (
-        <section className="relative py-20 lg:py-28 bg-forest-deep overflow-hidden">
+        <section className="relative py-20 lg:py-28 bg-night-deep overflow-hidden">
             {/* Background Elements */}
             <div className="absolute inset-0">
                 {/* Gradient Orbs */}
                 <div className="hidden absolute top-1/4 left-0 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"></div>
-                <div className="hidden absolute bottom-1/4 right-0 w-96 h-96 bg-forest/10 rounded-full blur-3xl"></div>
+                <div className="hidden absolute bottom-1/4 right-0 w-96 h-96 bg-night/10 rounded-full blur-3xl"></div>
 
                 {/* Grid Pattern */}
                 <div className="absolute inset-0 opacity-5">

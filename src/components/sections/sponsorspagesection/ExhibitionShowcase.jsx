@@ -78,7 +78,7 @@ Best regards,`
   ]
 
   return (
-    <section id="exhibition" className="relative py-20 lg:py-28 bg-forest-deep text-white overflow-hidden">
+    <section id="exhibition" className="relative py-20 lg:py-28 bg-night-deep text-white overflow-hidden">
       {/* Background Glow */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="hidden absolute top-1/4 -left-40 w-96 h-96 bg-orange-500/15 rounded-full blur-3xl"></div>
@@ -128,7 +128,7 @@ Best regards,`
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="bg-white/5 border border-white/10 hover:border-orange-500/40 rounded-lg p-6 transition-all duration-300 group"
             >
-              <div className="w-14 h-14 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-white transition-all duration-300">
+              <div className="w-14 h-14 text-orange-400 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-500 group-hover:text-ink transition-all duration-300">
                 {perk.icon}
               </div>
               <h3 className="text-xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">
@@ -166,7 +166,7 @@ Best regards,`
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
                 {includedFeatures.map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <FiCheckCircle className="w-5 h-5 text-sun flex-shrink-0 mt-0.5" />
+                    <FiCheckCircle className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
                     <span className="text-sm text-gray-200 leading-snug">{item}</span>
                   </div>
                 ))}
@@ -213,8 +213,8 @@ Best regards,`
                   >
                     {copied ? (
                       <>
-                        <FiCheck className="w-4 h-4 text-sun" />
-                        <span className="text-sun font-semibold">Copied!</span>
+                        <FiCheck className="w-4 h-4 text-gold" />
+                        <span className="text-gold font-semibold">Copied!</span>
                       </>
                     ) : (
                       <>
