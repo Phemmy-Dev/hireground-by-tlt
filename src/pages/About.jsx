@@ -7,6 +7,7 @@ import Visionandmission from '../components/sections/aboutsections/Visionandmiss
 import OrganizingTeam from '../components/OrganizingTeam'
 import Cta from '../components/sections/Cta'
 import Footer from '../components/Footer'
+import CountdownSection from '../components/sections/CountdownSection'
 import FaqSection from '../components/sections/FaqSection'
 import CountdownModal from '../components/CountdownModal'
 import { useCountdownModal } from '../hooks/useCountdownModal'
@@ -24,6 +25,7 @@ const About = () => {
         <WhyAttend />
         {/* <Cta /> */}
         <OrganizingTeam />
+        <CountdownSection />
         <FaqSection />
         <Footer />
       </div>

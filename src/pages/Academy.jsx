@@ -8,6 +8,7 @@ import ProgramStructure from '../components/sections/ProgramStructure'
 import HowToApply from '../components/sections/HowToApply'
 import FaqSection from '../components/sections/FaqSection'
 import Footer from '../components/Footer'
+import CountdownSection from '../components/sections/CountdownSection'
 
 const Academy = () => {
     return (
@@ -23,6 +24,7 @@ const Academy = () => {
             <WhoThisIsFor />
             <ProgramStructure />
             <HowToApply />
+            <CountdownSection tone="white" />
             <FaqSection />
             <Footer />
         </>

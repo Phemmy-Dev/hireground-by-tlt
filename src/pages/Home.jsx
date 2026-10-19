@@ -9,6 +9,7 @@ import FaqSection from '../components/sections/FaqSection'
 import Sponsors from '../components/sections/Sponsors'
 import Cta from '../components/sections/Cta'
 import Footer from '../components/Footer'
+import CountdownSection from '../components/sections/CountdownSection'
 import CountdownModal from '../components/CountdownModal'
 import { useCountdownModal } from '../hooks/useCountdownModal'
 import herobg from '../assets/images/herobg.jpg'
@@ -27,6 +28,7 @@ const Home = () => {
           {/* <RecruiterPartnership /> */}
           {/* <VendorApplication /> */}
           <Sponsors />
+          <CountdownSection />
           <FaqSection />
           <Cta />
           <Footer />

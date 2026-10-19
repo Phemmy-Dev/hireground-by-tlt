@@ -8,6 +8,7 @@ import ExhibitionShowcase from '../components/sections/sponsorspagesection/Exhib
 import SponsorCta from '../components/sections/sponsorspagesection/SponsorCta'
 import FaqSection from '../components/sections/FaqSection'
 import Footer from '../components/Footer'
+import CountdownSection from '../components/sections/CountdownSection'
 
 const Sponsors = () => {
   return (
@@ -29,6 +30,7 @@ const Sponsors = () => {
       <WhySponsor />
       <ExhibitionShowcase />
       <SponsorCta />
+      <CountdownSection />
       <FaqSection />
       <Footer />
     </div>

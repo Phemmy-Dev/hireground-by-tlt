@@ -5,6 +5,7 @@ import ContactForm from '../components/sections/contactpagesection/ContactForm'
 import ContactInfo from '../components/sections/contactpagesection/ContactInfo'
 import FaqSection from '../components/sections/FaqSection'
 import Footer from '../components/Footer'
+import CountdownSection from '../components/sections/CountdownSection'
 
 const Contact = () => {
   return (
@@ -13,6 +14,7 @@ const Contact = () => {
       <ContactHero />
       {/* <ContactForm /> */}
       <ContactInfo />
+      <CountdownSection />
       <FaqSection />
       <Footer />
     </div>

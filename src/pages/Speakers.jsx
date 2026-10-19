@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 import PageHero from '../components/PageHero'
 import Cta from '../components/sections/Cta'
 import Footer from '../components/Footer'
+import CountdownSection from '../components/sections/CountdownSection'
 import CountdownModal from '../components/CountdownModal'
 import { useCountdownModal } from '../hooks/useCountdownModal'
 import speakers from '../data/speakers'
@@ -197,6 +198,7 @@ const Speakers = () => {
       </section>
 
         {/* CTA Section */}
+        <CountdownSection tone="white" />
         <Cta />
         <Footer />
       </div>

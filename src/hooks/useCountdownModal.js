@@ -1,42 +1,49 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
+import { EVENT_DATE } from '../data/event'
 
+const STORAGE_KEY = 'countdownModalLastShown'
+const ONE_DAY = 24 * 60 * 60 * 1000
+
+const readLastShown = () => {
+  try {
+    return parseInt(localStorage.getItem(STORAGE_KEY) || '0', 10)
+  } catch {
+    return 0
+  }
+}
+
+const writeLastShown = (value) => {
+  try {
+    if (value) localStorage.setItem(STORAGE_KEY, String(value))
+    else localStorage.removeItem(STORAGE_KEY)
+  } catch {
+    // Storage blocked (private mode etc.): the modal just shows again next visit.
+  }
+}
+
+// Shows the countdown once a day per visitor, a moment after the page loads,
+// and never once the event has started. Add ?countdown to any URL to force it.
 export const useCountdownModal = () => {
   const [showCountdownModal, setShowCountdownModal] = useState(false)
 
   useEffect(() => {
-    // Disabled for now
-    /*
-    // Check if user has seen the modal in the last hour
-    const lastShownTimestamp = localStorage.getItem('countdownModalLastShown')
-    const now = new Date().getTime()
-    const oneHour = 60 * 60 * 1000 // 1 hour in milliseconds
-    
-    // Show modal if it's never been shown or if more than 1 hour has passed
-    if (!lastShownTimestamp || (now - parseInt(lastShownTimestamp)) > oneHour) {
-      // Show modal after a short delay for better UX
-      const timer = setTimeout(() => {
-        setShowCountdownModal(true)
-        localStorage.setItem('countdownModalLastShown', now.toString())
-      }, 2000) // 2 second delay
-      
-      return () => clearTimeout(timer)
-    }
-    */
+    const now = Date.now()
+    const forced = new URLSearchParams(window.location.search).has('countdown')
+    if (!forced && (now >= EVENT_DATE || now - readLastShown() < ONE_DAY)) return
+
+    const timer = setTimeout(() => {
+      setShowCountdownModal(true)
+      writeLastShown(now)
+    }, 2500)
+    return () => clearTimeout(timer)
   }, [])
 
-  const handleCloseModal = () => {
-    setShowCountdownModal(false)
-  }
+  const handleCloseModal = useCallback(() => setShowCountdownModal(false), [])
 
-  const resetModal = () => {
-    // Clear localStorage to reset the modal state
-    localStorage.removeItem('countdownModalLastShown')
+  const resetModal = useCallback(() => {
+    writeLastShown(0)
     setShowCountdownModal(false)
-  }
+  }, [])
 
-  return {
-    showCountdownModal,
-    handleCloseModal,
-    resetModal
-  }
+  return { showCountdownModal, handleCloseModal, resetModal }
 }
