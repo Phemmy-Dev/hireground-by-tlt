@@ -89,8 +89,8 @@ const speakers = [
     company: "The Light Tutors",
     location: "Nigeria",
     image: aaliyahMomoh,
-    bio: "Aaliyah Zemaiye Momoh is the Chief Marketing Officer at The Light Tutors.",
-    fullBio: "Aaliyah Zemaiye Momoh is the Chief Marketing Officer at The Light Tutors."
+    bio: "Aaliyah Zemaiye Momoh is the Chief Marketing Officer at The Light Tutors, with a career in brand, media, and digital marketing built on storytelling, intentional content, and data-driven strategy.",
+    fullBio: "Aaliyah Zemaiye Momoh is the Chief Marketing Officer at The Light Tutors Ltd, an online platform that provides quality tutoring to students particularly in the UK.\n\nShe is a multipotentialite with a passion for creativity and strategy, she has built a career in brand, media, and digital marketing, helping brands and professionals craft compelling identities through storytelling, intentional content, and data-driven strategy.\n\nHer work has spanned healthcare, edutech, fashion, beauty, entertainment, PR, and faith-based organizations, including some of Nigeria's major entertainment shows. Outside her corporate role, she runs a professional makeup artistry business in Lagos called Makeup By Zee, and also creates digital content that resonates with people.\n\nAt the heart of everything she does is her mantra: \"Turning What Ifs to Why Nots.\" It's a reminder that creativity has no ceiling, only opportunities waiting to be explored."
   },
   {
     id: 9,
